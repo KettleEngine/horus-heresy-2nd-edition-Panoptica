@@ -144,6 +144,9 @@ Detachment.</description>
             <categoryLink name="Infantry Unit Type" hidden="false" id="e6e9-c7d2-c493-b2ef" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
             <categoryLink name="Asuryani Unit Sub-Type:" hidden="false" id="8b44-8587-f34c-ccf4" targetId="cf01-e0e7-4567-a4b9" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Acrobatic" hidden="false" id="b5b7-ee02-0ecb-6f3f" type="rule" targetId="400d-05a6-d655-2b35"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
