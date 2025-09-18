@@ -123,7 +123,7 @@ Detachment.</description>
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="4f7a-71f9-3627-9ce2"/>
           </constraints>
           <profiles>
-            <profile name="Howling Banshee" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="9e68-f0ca-dd91-45ed" page="">
+            <profile name="Howling Banshee" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="9e68-f0ca-dd91-45ed">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Asuryani)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>

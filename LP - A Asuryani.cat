@@ -4,10 +4,6 @@
     <catalogueLink type="catalogue" name="Liber Panoptica" id="2e6e-7f63-bbd6-a102" targetId="4f4a-443f-4294-c338" importRootEntries="true"/>
   </catalogueLinks>
   <entryLinks>
-    <entryLink import="true" name="Howling Banshees" hidden="false" id="c6ae-ef4f-6472-8601" type="selectionEntry" targetId="0698-53b1-e65b-4db3">
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="7"/>
-      </costs>
-    </entryLink>
+    <entryLink import="true" name="Howling Banshees" hidden="false" id="df53-9b23-f8dc-3d80" targetId="0698-53b1-e65b-4db3" type="selectionEntry"/>
   </entryLinks>
 </catalogue>
