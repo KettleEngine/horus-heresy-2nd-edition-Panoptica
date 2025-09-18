@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="1a76-dc44-8219-b37d" name="LP - A: Asuryani" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Liber Panoptica" id="2e6e-7f63-bbd6-a102" targetId="4f4a-443f-4294-c338" importRootEntries="true"/>
+  </catalogueLinks>
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Howling Banshees" hidden="false" id="c43c-5f2e-ed68-2964" publicationId="a179-8e8f-4601-987c" page="41" defaultAmount="95">
+      <categoryLinks>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="671c-7e8a-4bef-c8a2" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="4efc-79ce-59e3-3262" primary="true" name="Infantry Unit Type"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Howling Banshees" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="c304-954c-d937-b0c1" publicationId="a179-8e8f-4601-987c" page="41">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Asuryani)</characteristic>
+            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+            <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+            <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
+            <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">4+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>

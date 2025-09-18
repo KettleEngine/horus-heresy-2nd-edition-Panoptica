@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="true" id="4f4a-443f-4294-c338" name="Liber Panoptica" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="129" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry name="Asuryani Unit Sub-Type:" id="cf01-e0e7-4567-a4b9" hidden="false">
+      <rules>
+        <rule name="Asuryani Unit Sub-Type" id="ea11-1594-b5ce-14cb" hidden="false" publicationId="a179-8e8f-4601-987c" page="136">
+          <description>The following rules apply to all models with the Asuryani Sub-type:
+• Any model with this Sub-type has the Legacies of the Fall Special Rule.
+• Any model with the Infantry or Cavalry Unit Type and this Sub-type has the Battle Focus Special Rule.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Daemon Primarch Unit Type:" id="7f27-689f-9f07-7b44" hidden="false">
+      <rules>
+        <rule name="Daemon Primarch Unit Type" id="fcb2-45fd-dcb8-fc57" hidden="false" publicationId="a179-8e8f-4601-987c" page="136">
+          <description>The following rules apply to all models with the Daemon Primarch Unit Type:
+• Independent Character, Eternal Warrior, Fear (2), It Will Not Die (5+), Bulky (6), and Relentless. In addition, all models with the Daemon
+Primarch Unit Type always count as Character models.
+• Models with the Daemon Primarch Unit Type are not affected by Special Rules that negatively modify their Characteristics (other than
+Wounds) and, in addition, models with the Daemon Primarch Unit Type always resolve Snap Shots at their normal BS.
+• All models with the Daemon Primarch Unit Type are immune to the effects of the Fear (X) special rule, cannot be Pinned, and a unit that
+includes one or more models with the Daemon Primarch Unit Type automatically passes Pinning and Regroup tests and cannot choose to fail
+a Morale check due to the Our Weapons Are Useless special rule. When a unit that includes one or more models with the Daemon Primarch
+Unit Type fails a Morale check, the unit does not Fall Back as per the standard rules, but instead suffers D3 automatic Wounds with no Saves of
+any kind allowed which must be allocated to a model with the Daemon Primarch or Daemon Unit Type or the Corrupted Unit Sub-type.
+• Primarchs have the Precision Strikes (2+) and Precision Shots (2+) Special Rules, and may choose to use these rules when attacking even when
+ordinarily they would be prevented from doing so, including when making Snap Shots.
+• If an army includes any models with the Daemon Primarch Unit Type, then one of those models must be chosen as the army&apos;s Warlord.
+• For the purposes of any special rule that affects or has additional effects that target models with the Daemon or Primarch Unit Type, a model
+with the Daemon Primarch Unit Type is considered to have the Daemon and Primarch Unit Types.
+• Any unit entirely composed of models with the Primarch Unit Type may choose to ignore the Heroic Stand Special Rule, ignoring any penalties
+normally applied for declining a Challenge, unless the Challenge was issued by a model with the Knight, Gargantuan, Titan, Primarch, or
+Daemon Primarch Unit Types.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Grav-Platform Unit Sub-Type:" id="a322-3d81-74c2-1452" hidden="false">
+      <rules>
+        <rule name="Grav-Platform Unit Sub-Type" id="02cc-10ce-9762-4a94" hidden="false" publicationId="a179-8e8f-4601-987c" page="137">
+          <description>The following rules apply to all models with the Grav-Platform Sub-type:
+• If a unit that includes any models with the Grav-Platform Sub-type has no models without the Grav-Platform Sub-type, then all models in the
+unit are removed from play as casualties immediately.
+• Any model with this Sub-type cannot shoot as part of any Reaction.
+• Any model with this Sub-type can shoot with Heavy or Ordnance weapons, counting as Stationary, even if they moved in the previous
+Movement phase.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Phoenix Lord Unit Type:" id="a7b4-47c6-acba-5c47" hidden="false">
+      <rules>
+        <rule name="Phoenix Lord Unit Type" id="4471-4657-9f95-ab72" hidden="false" publicationId="a179-8e8f-4601-987c" page="136">
+          <description>The following rules apply to all models with the Phoenix Lord Unit Type:
+• All Phoenix Lords have the following Special Rules: Independent Character, Eternal Warrior, Fearless, Relentless, Favoured of Khaine, and Path
+of Command. In addition, all models with the Phoenix Lord unit type always count as Character models.
+• Phoenix Lords are not affected by Special Rules that negatively modify their Characteristics (other than Wounds) and, in addition, Phoenix
+Lords always resolve Snap Shots at their normal BS.
+• Phoenix Lords have the Precision Strikes (2+) and Precision Shots (2+) Special Rules, and may choose to use these rules when attacking even
+when ordinarily they would be prevented from doing so, including when making Snap Shots.
+• If an army includes any Phoenix Lord models, then one of those models must be chosen as the army’s Warlord.
+• Any unit entirely composed of models with the Phoenix Lord Unit Type may choose to ignore the Heroic Stand Special Rule, ignoring any
+penalties normally applied for declining a Challenge, unless the Challenge was issued by a model with the Knight, Gargantuan, Titan,
+Primarch, or Daemon Primarch Unit Types.
+• Any attacks made or effects applied against a unit with the Phoenix Lord Unit Type are resolved as if the Phoenix Lord had the Primarch Unit
+Type, for the purposes of resolving these attacks. Note that this affects any Wargear, Weapons, Special Rules, Psychic Powers, or any other
+abilities.
+• A model with this Unit Type may join units and embark upon Transports as though it had the Infantry Unit Type.
+• A unit containing at least one model with this Unit Type may take Shrouded Damage Mitigation rolls as though it did not have the Fearless
+Special Rule, in the same manner as the Primarch Unit Type.
+• For the purposes of any Wargear or Special Rules which state that models with the Primarch Unit Type may ignore their effects, count a model
+with the Phoenix Lord Unit Type as having the Primarch Unit Type.
+
+</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Wraith Unit Sub-Type:" id="40ca-4bd8-55cd-e550" hidden="false">
+      <rules>
+        <rule name="Wraith Unit Sub-Type" id="5aee-8894-6620-97d3" hidden="false" page="137" publicationId="a179-8e8f-4601-987c">
+          <description>The following rules apply to all models with the Wraith Sub-type:
+• Models with the Wraith Unit Sub-type are subject to the Wraithsight provision. At the start of each of the Controlling Player’s Movement
+Phases, a unit which includes any models with the Wraith Sub-type must take a Leadership test, using the unmodified Leadership
+Characteristic of a model in the unit which has the Wraith Sub-type. Models which are not on the board at the start of the Controlling Player’s
+Movement Phase, but which are Deployed or Disembark after the start of the Phase must test immediately after being Deployed or
+Disembarking.
+A unit which passes suffers no negative penalty, and in addition may react as normal, ignoring the limitations imposed from the Automata
+Unit Type, until the start of the Controlling Player’s next Movement Phase. A unit which fails the Leadership test suffers a -2 modifier to its
+Movement, Weapon Skill, Ballistic Skill, and Initiative, which is also applied to any Rules or Restrictions that call for a unit&apos;s unmodified
+Characteristics, until the start of the Controlling Player’s next Movement Phase.
+• A model with the Wraith Unit Sub-type may fire all weapons they are equipped with in each Shooting Attack they make, including as part of a
+Reaction, where eligible.
+• Models with the Wraith Unit Sub-type may fire Heavy and Ordnance weapons and count as Stationary even if they moved in the preceding
+Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn.
+• Models with the Wraith Unit Sub-type ignore the effects of Night Fighting.
+• Models with the Wraith Unit Sub-type ignore any penalties to their Initiative Characteristic when Charging into or through Difficult Terrain
+or Dangerous Terrain.
+• Models with the Wraith Unit Sub-type cannot be affected by any Cybertheurgic Rites, and ignore any effects imposed by them.
+• Models with the Wraith Unit Sub-type ignore the effects of the Disruption and Haywire Special Rules.
+• You may only include up to two units with the Wraith Unit Sub-type for each model with the Path of the Dead Special Rule in the same
+Detachment.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+  </categoryEntries>
+  <sharedRules>
+    <rule name="Acrobatic" id="400d-05a6-d655-2b35" hidden="false" publicationId="a179-8e8f-4601-987c" page="140">
+      <description>A unit made up entirely of models with this special rule that chooses to Run in the Movement phase may still declare a Charge in the Assault phase of the same turn. Furthermore, models with this special rule attack at their normal Initiative Step during an Assault after it has successfully Charged through Difficult Terrain or Dangerous Terrain, but still suffers any penalties to Charge rolls imposed by Difficult or Dangerous Terrain.</description>
+    </rule>
+  </sharedRules>
+</catalogue>
