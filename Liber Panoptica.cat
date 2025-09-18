@@ -112,7 +112,7 @@ Detachment.</description>
       <categoryLinks>
         <categoryLink name="Asuryani Unit Sub-Type:" hidden="false" id="4085-ceef-9fa7-d8be" targetId="cf01-e0e7-4567-a4b9" primary="false"/>
         <categoryLink name="Infantry Unit Type" hidden="false" id="a71c-c9d0-4c4e-fbd0" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
-        <categoryLink targetId="7aee-565f-b0ae-294e" id="6f89-4098-9ce0-3839" primary="false" name="Elites:"/>
+        <categoryLink targetId="7aee-565f-b0ae-294e" id="6f89-4098-9ce0-3839" primary="true" name="Elites:"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Howling Banshee" hidden="false" id="9f38-587b-3843-3fac" publicationId="a179-8e8f-4601-987c" page="41">
