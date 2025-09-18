@@ -146,9 +146,9 @@ Detachment.</description>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink import="true" name="Acrobatic" hidden="false" id="b5b7-ee02-0ecb-6f3f" type="rule" targetId="400d-05a6-d655-2b35"/>
-      </entryLinks>
+      <infoLinks>
+        <infoLink name="Acrobatic" id="c613-a241-0b82-5676" hidden="false" type="rule" targetId="400d-05a6-d655-2b35"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>
