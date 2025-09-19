@@ -154,26 +154,26 @@
                 </entryLink>
                 <entryLink import="true" name="Plasma Grenades" hidden="false" id="1bf7-9b03-8cd5-8e10" type="selectionEntry" targetId="0a4e-f69a-2e83-cb4c"/>
               </entryLinks>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="One Banshee may take: " hidden="false" id="7a5b-3e20-8762-0d94">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d75-9a17-1479-c3a6" includeChildSelections="false"/>
-                  </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="One Banshee may take: " id="6b6a-6777-b762-7ef9" hidden="false">
                   <entryLinks>
-                    <entryLink import="true" name=" Craftworld Standard" hidden="false" id="8fcc-610d-2069-d72a" type="selectionEntry" targetId="34a8-ff38-f64d-4b34">
+                    <entryLink import="true" name=" Craftworld Standard" hidden="false" id="a29a-bb1f-3942-468e" type="selectionEntry" targetId="34a8-ff38-f64d-4b34">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="cef9-7428-bebc-312e" shared="true" id="9a05-cc30-ae3f-b099" includeChildSelections="true"/>
+                        <constraint type="max" value="1" field="selections" scope="cef9-7428-bebc-312e" shared="true" id="fc68-273f-2f69-081c" includeChildSelections="true"/>
                       </constraints>
                     </entryLink>
-                    <entryLink import="true" name="Augury Scanner" hidden="false" id="c838-96f4-b9bc-80f7" type="selectionEntry" targetId="5bd4-bd5a-25da-3d8b">
+                    <entryLink import="true" name="Augury Scanner" hidden="false" id="2f0e-0e4b-1550-e872" type="selectionEntry" targetId="5bd4-bd5a-25da-3d8b">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="cef9-7428-bebc-312e" shared="true" id="66f1-9efb-a251-eccd" includeChildSelections="true"/>
+                        <constraint type="max" value="1" field="selections" scope="cef9-7428-bebc-312e" shared="true" id="f2b7-6631-9b0c-22f3" includeChildSelections="true"/>
                       </constraints>
                     </entryLink>
-                    <entryLink import="true" name="Comm-Bead" hidden="false" id="50db-54c8-bacb-40af" type="selectionEntry" targetId="465c-227f-babe-1b73"/>
+                    <entryLink import="true" name="Comm-Bead" hidden="false" id="f37a-f5cc-9f60-60a2" type="selectionEntry" targetId="465c-227f-babe-1b73"/>
                   </entryLinks>
-                </selectionEntry>
-              </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f554-2f09-bd8b-7f2e" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
           <constraints>
