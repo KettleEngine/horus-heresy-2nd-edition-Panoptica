@@ -111,7 +111,7 @@ Whilst each Aspect Shrine upgrade notes the amount of times an Exarch from a Det
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Aspect Armour" hidden="false" id="7c09-bc4e-e8a9-4a75" publicationId="a179-8e8f-4601-987c" page="160">
+    <selectionEntry type="upgrade" import="true" name="Aspect Armour" hidden="false" id="7c09-bc4e-e8a9-4a75" publicationId="a179-8e8f-4601-987c" page="160" collective="true">
       <profiles>
         <profile name="Aspect Armour" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="7e03-ccd9-41c1-86f1" publicationId="a179-8e8f-4601-987c" page="160">
           <characteristics>
@@ -120,7 +120,7 @@ Whilst each Aspect Shrine upgrade notes the amount of times an Exarch from a Det
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Heavy Aspect Armour" hidden="false" id="c81b-3334-7a37-1473" publicationId="a179-8e8f-4601-987c" page="160">
+    <selectionEntry type="upgrade" import="true" name="Heavy Aspect Armour" hidden="false" id="c81b-3334-7a37-1473" publicationId="a179-8e8f-4601-987c" page="160" collective="true">
       <profiles>
         <profile name="Heavy Aspect Armour" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="cd88-1030-4596-8fa6" publicationId="a179-8e8f-4601-987c" page="160">
           <characteristics>
@@ -129,7 +129,7 @@ Whilst each Aspect Shrine upgrade notes the amount of times an Exarch from a Det
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Phoenix Armour" hidden="false" id="6e43-6b37-3f19-04d5" publicationId="a179-8e8f-4601-987c" page="160">
+    <selectionEntry type="upgrade" import="true" name="Phoenix Armour" hidden="false" id="6e43-6b37-3f19-04d5" publicationId="a179-8e8f-4601-987c" page="160" collective="true">
       <profiles>
         <profile name="Phoenix Armour" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="b84a-43c3-a08e-c6ac" publicationId="a179-8e8f-4601-987c" page="160">
           <characteristics>
