@@ -162,14 +162,12 @@
                   <entryLinks>
                     <entryLink import="true" name=" Craftworld Standard" hidden="false" id="8fcc-610d-2069-d72a" type="selectionEntry" targetId="34a8-ff38-f64d-4b34">
                       <constraints>
-                        <constraint type="min" value="1" field="selections" scope="cef9-7428-bebc-312e" shared="true" id="9a05-cc30-ae3f-b099-min" includeChildSelections="true"/>
-                        <constraint type="max" value="1" field="selections" scope="cef9-7428-bebc-312e" shared="true" id="9a05-cc30-ae3f-b099-max" includeChildSelections="true"/>
+                        <constraint type="max" value="1" field="selections" scope="cef9-7428-bebc-312e" shared="true" id="9a05-cc30-ae3f-b099" includeChildSelections="true"/>
                       </constraints>
                     </entryLink>
                     <entryLink import="true" name="Augury Scanner" hidden="false" id="c838-96f4-b9bc-80f7" type="selectionEntry" targetId="5bd4-bd5a-25da-3d8b">
                       <constraints>
-                        <constraint type="min" value="1" field="selections" scope="cef9-7428-bebc-312e" shared="true" id="66f1-9efb-a251-eccd-min" includeChildSelections="true"/>
-                        <constraint type="max" value="1" field="selections" scope="cef9-7428-bebc-312e" shared="true" id="66f1-9efb-a251-eccd-max" includeChildSelections="true"/>
+                        <constraint type="max" value="1" field="selections" scope="cef9-7428-bebc-312e" shared="true" id="66f1-9efb-a251-eccd" includeChildSelections="true"/>
                       </constraints>
                     </entryLink>
                     <entryLink import="true" name="Comm-Bead" hidden="false" id="50db-54c8-bacb-40af" type="selectionEntry" targetId="465c-227f-babe-1b73"/>
