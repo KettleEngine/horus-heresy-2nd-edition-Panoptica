@@ -4,7 +4,11 @@
     <catalogueLink type="catalogue" name="Liber Panoptica" id="2e6e-7f63-bbd6-a102" targetId="4f4a-443f-4294-c338" importRootEntries="true"/>
   </catalogueLinks>
   <entryLinks>
-    <entryLink import="true" name="Wave Serpent" hidden="false" id="09e5-c8ba-bbdd-2ceb" type="selectionEntry" targetId="83e4-e416-937a-b35f"/>
+    <entryLink import="true" name="Wave Serpent" hidden="false" id="09e5-c8ba-bbdd-2ceb" type="selectionEntry" targetId="83e4-e416-937a-b35f">
+      <categoryLinks>
+        <categoryLink targetId="7aee-565f-b0ae-294e" id="a278-c929-df67-250b" primary="true" name="Elites:"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="Howling Banshees" hidden="false" id="833f-2324-e41b-4a65" type="selectionEntry" targetId="cef9-7428-bebc-312e"/>
   </entryLinks>
   <sharedSelectionEntries>
