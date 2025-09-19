@@ -132,10 +132,6 @@ Whilst each Aspect Shrine upgrade notes the amount of times an Exarch from a Det
           </characteristics>
         </profile>
       </profiles>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1791-50f4-0dac-5d2f" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ce7-ea7d-1a62-e556" includeChildSelections="false"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Phoenix Armour" hidden="false" id="6e43-6b37-3f19-04d5" publicationId="a179-8e8f-4601-987c" page="160">
       <profiles>
@@ -763,6 +759,23 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
         <entryLink import="true" name="Wave Serpent Shield" hidden="false" id="e62d-896e-1977-3c4f" type="selectionEntry" targetId="a901-8992-2626-36ee"/>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Tempest Launcher" hidden="false" id="564b-6e50-6aef-df7b">
+      <profiles>
+        <profile name="Tempest Launcher" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5130-9348-7035-c9a5">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Barrage, Blast (3”), Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Barrage" id="d361-95f0-09e5-181c" hidden="false" type="rule" targetId="7255-b5ee-c3f4-3037"/>
+        <infoLink name="Pinning" id="bd12-d0f1-ffd1-32b0" hidden="false" type="rule" targetId="1c96-205c-59a0-3cf2"/>
+        <infoLink name="Blast" id="184c-0671-b826-13ab" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Dedicated Transport" id="2143-410c-0690-5d43" hidden="false">
@@ -772,6 +785,30 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d50-5f85-1bde-8bce" includeChildSelections="false"/>
       </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Aspect Shrine (x)" id="cdd4-9cae-6a32-bbf0" hidden="false">
+      <comment>Selection for Autarchs and Exarchs</comment>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Dark Reaper" hidden="false" id="5278-de23-57c7-8e6c">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="an Autarch or Exarch which selects the Dark Reaper Aspect Shrine upgrade may choose to replace their Reaper Launcher  for one of the following options below:" id="58bf-6c5f-3075-c2c9" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Shuriken Cannon " hidden="false" id="5e38-c7b5-b84d-5b0d" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14"/>
+                <entryLink import="true" name="Aeldari Missile Launcher" hidden="false" id="95ec-93fb-f807-f558" type="selectionEntry" targetId="21d6-c4ce-1a4e-6cd4">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Tempest Launcher" hidden="false" id="f2ed-66e9-5706-4b69" type="selectionEntry" targetId="564b-6e50-6aef-df7b">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>
