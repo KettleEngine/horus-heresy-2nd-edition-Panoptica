@@ -11,6 +11,7 @@
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="767b-1da5-247a-8d8f" primary="false" name="Infantry Unit Type"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Howling Banshees" hidden="false" id="e8bb-5982-95d5-9f76" type="selectionEntry" targetId="cef9-7428-bebc-312e"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Howling Banshees" hidden="false" id="cef9-7428-bebc-312e" publicationId="a179-8e8f-4601-987c" page="41">
@@ -179,8 +180,8 @@
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="f894-7006-300b-c5e7" includeChildSelections="false"/>
-            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="5acd-1f6f-4bcb-85ef" includeChildSelections="false"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="fa01-3c41-8c82-e4d5" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="87b4-cf1c-b1e4-f383" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
