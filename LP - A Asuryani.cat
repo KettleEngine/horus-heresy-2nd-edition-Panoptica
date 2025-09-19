@@ -4,12 +4,7 @@
     <catalogueLink type="catalogue" name="Liber Panoptica" id="2e6e-7f63-bbd6-a102" targetId="4f4a-443f-4294-c338" importRootEntries="true"/>
   </catalogueLinks>
   <entryLinks>
-    <entryLink import="true" name="Wave Serpent" hidden="false" id="09e5-c8ba-bbdd-2ceb" type="selectionEntry" targetId="83e4-e416-937a-b35f">
-      <categoryLinks>
-        <categoryLink targetId="7aee-565f-b0ae-294e" id="a278-c929-df67-250b" primary="true" name="Elites:"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Howling Banshees" hidden="false" id="833f-2324-e41b-4a65" type="selectionEntry" targetId="cef9-7428-bebc-312e"/>
+    <entryLink import="true" name="Howling Banshees" hidden="false" id="75b5-2c30-d24e-e511" type="selectionEntry" targetId="cef9-7428-bebc-312e"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Howling Banshees" hidden="false" id="cef9-7428-bebc-312e" publicationId="a179-8e8f-4601-987c" page="41">
@@ -179,118 +174,8 @@
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="9ebb-c0fc-44b5-e892" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="391e-e93e-3018-3620" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Wave Serpent" hidden="false" id="83e4-e416-937a-b35f" publicationId="a179-8e8f-4601-987c" page="53">
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="125"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink name="Vehicle:" hidden="false" id="147b-4a9b-d329-64fa" targetId="e2b6-b770-784c-9e95" primary="true"/>
-        <categoryLink name="Asuryani Unit Sub-Type:" hidden="false" id="8a8e-32d0-465f-2c97" targetId="cf01-e0e7-4567-a4b9" primary="false"/>
-        <categoryLink name="Skimmer" hidden="false" id="1584-09fb-c8c5-b4ad" targetId="6a28-17c5-8117-d99c" primary="false"/>
-        <categoryLink name="Fast Sub-type" hidden="false" id="b5e8-61c7-d083-1a00" targetId="0ea2-efb5-b7af-226e" primary="false"/>
-        <categoryLink name="Transport Sub-type" hidden="false" id="d1b5-9188-fd4b-e78e" targetId="7b0a-a743-a8da-3a39" primary="false"/>
-      </categoryLinks>
-      <profiles>
-        <profile name="Wave Serpent" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="8bb3-4653-1ae3-6630" publicationId="a179-8e8f-4601-987c" page="53">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Transport)</characteristic>
-            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">12</characteristic>
-            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
-            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
-            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
-            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
-            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
-            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">14</characteristic>
-            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">A Wave Serpent has one access point on its rear.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="A Wave Serpent may exchange its Turret Mounted Gravis Shuriken Cannon for one of the following:" id="15ca-3e53-8262-5b0c" hidden="false" page="" defaultSelectionEntryId="0829-7517-0ea7-61bc">
           <entryLinks>
-            <entryLink import="true" name="Gravis Shuriken Cannon" hidden="false" id="0829-7517-0ea7-61bc" type="selectionEntry" targetId="4197-9e5c-412b-b13c" sortIndex="">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Gravis Scatter Laser" hidden="false" id="ac56-c57c-c787-78d3" type="selectionEntry" targetId="788d-07ea-6d03-ed67" sortIndex="">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Gravis Bright Lance" hidden="false" id="ee62-d2ac-f6a5-bd7e" type="selectionEntry" targetId="1806-b2f1-2da1-7938">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Twin-Linked Aeldari Missile Launcher" hidden="false" id="c31e-0dfb-2b04-6495" type="selectionEntry" targetId="eac7-14c2-095e-abba">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Gravis Starcannon" hidden="false" id="a902-59af-9336-ce46" type="selectionEntry" targetId="99ae-090e-9d2c-c498">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce85-6feb-9ce8-8683-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce85-6feb-9ce8-8683-max" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="A Wave Serpent may exchange its Hull (Front) Mounted Twin-Linked Shuriken Catapult for a:" id="f9ba-497b-d3be-0fdb" hidden="false" defaultSelectionEntryId="bd4f-cf8a-9af6-54a1">
-          <entryLinks>
-            <entryLink import="true" name=" Twin-Linked Shuriken Catapult" hidden="false" id="bd4f-cf8a-9af6-54a1" type="selectionEntry" targetId="9ec7-cc82-393e-0a78"/>
-            <entryLink import="true" name="Shuriken Cannon " hidden="false" id="c8a9-c3f6-8b25-034b" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14">
-              <modifiers>
-                <modifier type="set" value="Hull (Front) Mounted Shuriken Cannon" field="name"/>
-              </modifiers>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f2e-2f50-f10f-9e46-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f2e-2f50-f10f-9e46-max" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="A Wave Serpent may take one of the following:" id="8e93-8206-c109-45f4" hidden="false" publicationId="a179-8e8f-4601-987c" page="53">
-          <entryLinks>
-            <entryLink import="true" name="Star Engines" hidden="false" id="1211-1312-27f3-deb8" type="selectionEntry" targetId="3391-adc6-766d-c959">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Vectored Engines" hidden="false" id="74b3-da87-bf0c-fd1d" type="selectionEntry" targetId="a939-89d5-5a69-1ffc">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64e6-14bf-f1be-7c91" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntryGroup>
-        <selectionEntryGroup name=" A Wave Serpent may take any of the following:" id="cc00-d574-31d8-7e64" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Searchlights" hidden="false" id="c9a8-e842-37f6-7d63" type="selectionEntry" targetId="18d4-67b4-5392-8db0">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a3e-31a7-808e-79bb" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Spirit Stones" hidden="false" id="87f2-ce95-5595-37f7" type="selectionEntry" targetId="f1a5-b497-5a54-71fd">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b476-6d30-5d16-d746" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
+            <entryLink import="true" name="Dedicated Transport" hidden="false" id="d6ee-1572-99f9-71f4" type="selectionEntryGroup" targetId="2143-410c-0690-5d43"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>

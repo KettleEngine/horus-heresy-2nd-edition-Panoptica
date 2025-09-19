@@ -530,9 +530,6 @@ In addition, any unit that has been the target of a Shooting Attack made by a u
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
       </costs>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aacf-ca3f-afd9-07d3" includeChildSelections="false"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Spirit Stones" hidden="false" id="f1a5-b497-5a54-71fd">
       <profiles>
@@ -545,9 +542,236 @@ In addition, any unit that has been the target of a Shooting Attack made by a u
       <modifiers>
         <modifier type="add" value="9b0d-738c-10e4-4ec1" field="category"/>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Holo-Fields" hidden="false" id="be3f-6e6d-fc9e-37a4">
+      <profiles>
+        <profile name="Holo-Fields" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="ff4f-25b0-47e8-ac90">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model equipped with a Holo-Fields has a 5+ Invulnerable Save against Shooting Attacks, unless it is Immobilised.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Improved Holo-Fields" hidden="false" id="bcf1-504a-8615-c161">
+      <profiles>
+        <profile name="Improved Holo-Fields" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="9bba-92bc-4c07-eb90">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model equipped with a Holo-Fields has a 4+ Invulnerable Save against Shooting Attacks, unless it is Immobilised.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="600e-e9c8-18f2-18df"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="868b-cb9d-8249-5775" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Improved Forceshield" hidden="false" id="13d7-d8b3-b4c7-47ae">
+      <profiles>
+        <profile name="Improved Forceshield" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="6258-740c-0124-ffee">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">An Improved Forceshield confers a 4+ Invulnerable Save.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d5c-02ba-c44c-bc49" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Forceshield" hidden="false" id="9cc3-aadd-5496-a9f9">
+      <profiles>
+        <profile name="Forceshield" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="8f0a-f819-dacc-0298">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Forceshield confers a 5+ Invulnerable Save.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b17-3244-1862-24d9" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Wave Serpent Shield" hidden="false" id="a901-8992-2626-36ee">
+      <profiles>
+        <profile name="Wave Serpent Shield" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="0320-72c4-c1ff-d0b2">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model equipped with a Wave Serpent Shield has a 6+ Invulnerable Save against Shooting Attacks made on their Front or Side Armour Facings.
+
+
+In addition, once per game, the Controlling Player may choose to use the Wave Serpent Shield to make a Shield Blast attack. A Shield Blast is a Shooting Attack with the following Profile, and is counted as a Hull (Front) Mounted weapon:
+
+For the remainder of the battle after the Shield Blast has been resolved, the model that made the Shield Blast attack may not claim the 6+ Invulnerable Save granted by the Wave Serpent Shield.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Shield Blast" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="34b9-2919-fc2d-1553">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 8, Ignores Cover, Concussive (2), One Use</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Concussive (X)" id="d675-e5bd-2783-7b49" hidden="false" type="rule" targetId="7ce5-1bfb-64e6-f826">
+          <modifiers>
+            <modifier type="set" value="Concussive (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="One Use/One Shot" id="130b-1d76-1341-d77a" hidden="false" type="rule" targetId="df0c-5423-b892-491e"/>
+        <infoLink name="Ignores Cover" id="4cbe-d88f-0c9a-04c3" hidden="false" type="rule" targetId="fdb5-59e2-c446-1cbc"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5dfd-56f6-078d-1e37" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Crystal Targeting Matrix" hidden="false" id="e17f-bc6d-78b0-3ae6">
+      <profiles>
+        <profile name="Crystal Targeting Matrix" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="2539-3b4c-701a-4bfc" publicationId="a179-8e8f-4601-987c" page="162">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Once per game, a model equipped with a Crystal Targeting Matrix may choose to fire a single weapon it is armed with at its full Ballistic Skill Characteristic in the Controlling Player’s Shooting Phase after moving Flat Out.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57b6-9ec5-0ab2-c499" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Wave Serpent" hidden="false" id="85e3-9fd7-8906-e5f7" publicationId="a179-8e8f-4601-987c" page="53">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="125"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Vehicle:" hidden="false" id="8aba-9ff8-e5fc-e307" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink name="Asuryani Unit Sub-Type:" hidden="false" id="3afd-101f-5ee5-e9c5" targetId="cf01-e0e7-4567-a4b9" primary="false"/>
+        <categoryLink name="Skimmer" hidden="false" id="bef1-5927-482f-3cda" targetId="6a28-17c5-8117-d99c" primary="false"/>
+        <categoryLink name="Fast Sub-type" hidden="false" id="f497-ced1-44a3-86a8" targetId="0ea2-efb5-b7af-226e" primary="false"/>
+        <categoryLink name="Transport Sub-type" hidden="false" id="86ef-d1bc-7034-defb" targetId="7b0a-a743-a8da-3a39" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Wave Serpent" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="9988-171a-285c-fa99" publicationId="a179-8e8f-4601-987c" page="53">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Transport)</characteristic>
+            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">12</characteristic>
+            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">14</characteristic>
+            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">A Wave Serpent has one access point on its rear.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="A Wave Serpent may exchange its Turret Mounted Gravis Shuriken Cannon for one of the following:" id="a91d-f118-9de7-1295" hidden="false" page="" defaultSelectionEntryId="0829-7517-0ea7-61bc">
+          <entryLinks>
+            <entryLink import="true" name="Gravis Shuriken Cannon" hidden="false" id="eb67-9ce7-06b6-e603" type="selectionEntry" targetId="4197-9e5c-412b-b13c" sortIndex="">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Gravis Scatter Laser" hidden="false" id="3854-685d-b15b-4723" type="selectionEntry" targetId="788d-07ea-6d03-ed67" sortIndex="">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Gravis Bright Lance" hidden="false" id="ee4f-0bb1-50f4-d0b3" type="selectionEntry" targetId="1806-b2f1-2da1-7938">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Twin-Linked Aeldari Missile Launcher" hidden="false" id="6267-8522-0ab2-715a" type="selectionEntry" targetId="eac7-14c2-095e-abba">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Gravis Starcannon" hidden="false" id="7c39-9e6c-b38a-76ce" type="selectionEntry" targetId="99ae-090e-9d2c-c498">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0fa2-3fcd-b1b0-cb04-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fa2-3fcd-b1b0-cb04-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="A Wave Serpent may exchange its Hull (Front) Mounted Twin-Linked Shuriken Catapult for a:" id="717d-e780-4cf7-9f66" hidden="false" defaultSelectionEntryId="bd4f-cf8a-9af6-54a1">
+          <entryLinks>
+            <entryLink import="true" name=" Twin-Linked Shuriken Catapult" hidden="false" id="064f-fb75-e144-ca79" type="selectionEntry" targetId="9ec7-cc82-393e-0a78"/>
+            <entryLink import="true" name="Shuriken Cannon " hidden="false" id="c1a0-98aa-57ff-3b23" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14">
+              <modifiers>
+                <modifier type="set" value="Hull (Front) Mounted Shuriken Cannon" field="name"/>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b39-7d02-b28e-0903-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b39-7d02-b28e-0903-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="A Wave Serpent may take one of the following:" id="4db9-f88d-fa68-9056" hidden="false" publicationId="a179-8e8f-4601-987c" page="53">
+          <entryLinks>
+            <entryLink import="true" name="Star Engines" hidden="false" id="a37e-2df7-6929-a591" type="selectionEntry" targetId="3391-adc6-766d-c959">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Vectored Engines" hidden="false" id="1901-f4a0-143c-8bc7" type="selectionEntry" targetId="a939-89d5-5a69-1ffc">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8ad-b0e7-0b49-8a2c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name=" A Wave Serpent may take any of the following:" id="9fd4-9215-2c64-266d" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Searchlights" hidden="false" id="9c01-5f83-b003-7959" type="selectionEntry" targetId="18d4-67b4-5392-8db0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bdf8-486c-4c17-69ae" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Spirit Stones" hidden="false" id="b5cf-1220-0444-304f" type="selectionEntry" targetId="f1a5-b497-5a54-71fd">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ee6-6ff2-851a-fa5f" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Holo-Fields" hidden="false" id="80be-a6b7-c140-65bc" type="selectionEntry" targetId="be3f-6e6d-fc9e-37a4">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba68-1776-53cf-408c" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Crystal Targeting Matrix" hidden="false" id="473a-3640-b3e2-9a7e" type="selectionEntry" targetId="e17f-bc6d-78b0-3ae6">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Wave Serpent Shield" hidden="false" id="e62d-896e-1977-3c4f" type="selectionEntry" targetId="a901-8992-2626-36ee"/>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Dedicated Transport" id="2143-410c-0690-5d43" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Wave Serpent" hidden="false" id="c104-93b9-008d-5d9a" type="selectionEntry" targetId="85e3-9fd7-8906-e5f7"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d50-5f85-1bde-8bce" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>
