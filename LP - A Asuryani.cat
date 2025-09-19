@@ -11,7 +11,6 @@
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="767b-1da5-247a-8d8f" primary="false" name="Infantry Unit Type"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Howling Banshees" hidden="false" id="1f03-0003-6a4c-52f1" type="selectionEntry" targetId="cef9-7428-bebc-312e"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Howling Banshees" hidden="false" id="cef9-7428-bebc-312e" publicationId="a179-8e8f-4601-987c" page="41">
@@ -23,79 +22,155 @@
         <categoryLink name="Infantry Unit Type" hidden="false" id="41ca-1ee3-47b0-7164" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink name="Elites:" hidden="false" id="1959-1483-3037-3128" targetId="7aee-565f-b0ae-294e" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Howling Banshee" hidden="false" id="a8e8-e66d-8c75-53e9" publicationId="a179-8e8f-4601-987c" page="41">
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="22"/>
-          </costs>
-          <constraints>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="1676-8576-2e29-010e"/>
-            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="2229-887c-6705-e6f4"/>
-          </constraints>
-          <profiles>
-            <profile name="Howling Banshee" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="9146-176f-099e-09fe">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Asuryani)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">4+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink name="Infantry Unit Type" hidden="false" id="5126-6c3d-f361-3470" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
-            <categoryLink name="Asuryani Unit Sub-Type:" hidden="false" id="fa41-c6d2-2d66-1baf" targetId="cf01-e0e7-4567-a4b9" primary="false"/>
-          </categoryLinks>
-          <infoLinks>
-            <infoLink name="Acrobatic" id="1d98-6f62-5017-4c00" hidden="false" type="rule" targetId="4ab6-2b25-0eb9-f964"/>
-            <infoLink name="Fleet (X)" id="90e0-0b0b-58ab-3379" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
-              <modifiers>
-                <modifier type="set" value="Fleet (2)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Fear (X)" id="5823-dd8a-756c-8c90" hidden="false" type="rule" targetId="21f6-7842-df5c-d2e7">
-              <modifiers>
-                <modifier type="set" value="Fear (1)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Aspect Shrine (X)" id="c0e9-15fb-3e47-e819" hidden="false" type="rule" targetId="e1cb-87c6-8282-ba6e">
-              <modifiers>
-                <modifier type="set" value="Aspect Shrine (Howling Banshee)" field="name"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <entryLinks>
-            <entryLink import="true" name="Power Sword" hidden="false" id="e7bd-970d-c9b2-637e" type="selectionEntry" targetId="226f-96da-94c9-35c8">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ec4-2101-b617-b0a3-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ec4-2101-b617-b0a3-max" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Shuriken Pistol" hidden="false" id="ba03-f773-e0db-061e" type="selectionEntry" targetId="c1af-d7e7-d404-7a33">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f159-cd54-c9b9-ee03-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f159-cd54-c9b9-ee03-max" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Banshee Mask" hidden="false" id="fd4e-3154-987a-2f7c" type="selectionEntry" targetId="8bb0-67de-2a2e-f268">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba2b-6f8c-2565-170c-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba2b-6f8c-2565-170c-max" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Aspect Armour" hidden="false" id="d7d5-4d9a-e0fd-5a5a" type="selectionEntry" targetId="7c09-bc4e-e8a9-4a75"/>
+        <entryLink import="true" name="Banshee Mask" hidden="false" id="fd4e-3154-987a-2f7c" type="selectionEntry" targetId="8bb0-67de-2a2e-f268">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba2b-6f8c-2565-170c-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba2b-6f8c-2565-170c-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Howling Banshees" id="f81d-7699-4783-691c" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Howling Banshee" hidden="false" id="8e9e-7e5b-a24a-658f" publicationId="a179-8e8f-4601-987c" page="41">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="22"/>
+              </costs>
+              <profiles>
+                <profile name="Howling Banshee" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="fa22-50fa-5498-1553">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Asuryani)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink name="Infantry Unit Type" hidden="false" id="8f44-a01e-674d-bba8" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+                <categoryLink name="Asuryani Unit Sub-Type:" hidden="false" id="3362-f687-b3d8-8180" targetId="cf01-e0e7-4567-a4b9" primary="false"/>
+              </categoryLinks>
+              <infoLinks>
+                <infoLink name="Acrobatic" id="6165-c1ec-605c-a72a" hidden="false" type="rule" targetId="4ab6-2b25-0eb9-f964"/>
+                <infoLink name="Fleet (X)" id="151d-d153-0c3e-7446" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+                  <modifiers>
+                    <modifier type="set" value="Fleet (2)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Fear (X)" id="14df-21da-0bc8-f5e3" hidden="false" type="rule" targetId="21f6-7842-df5c-d2e7">
+                  <modifiers>
+                    <modifier type="set" value="Fear (1)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Aspect Shrine (X)" id="a1b6-d7a4-036f-d275" hidden="false" type="rule" targetId="e1cb-87c6-8282-ba6e">
+                  <modifiers>
+                    <modifier type="set" value="Aspect Shrine (Howling Banshee)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Shuriken Pistol" hidden="false" id="14d3-5643-0f8f-dad1" type="selectionEntry" targetId="c1af-d7e7-d404-7a33">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1081-cc9b-9418-6105-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1081-cc9b-9418-6105-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Power Sword" hidden="false" id="d991-d9a1-85ee-4986" type="selectionEntry" targetId="226f-96da-94c9-35c8">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c30-318a-7081-2be8-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c30-318a-7081-2be8-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Plasma Grenades" hidden="false" id="8682-ffcf-e02d-def8" type="selectionEntry" targetId="0a4e-f69a-2e83-cb4c"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Howling Banshee w/ Options: " hidden="false" id="3122-1a4a-3dee-1a25" publicationId="a179-8e8f-4601-987c" page="41">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="22"/>
+              </costs>
+              <profiles>
+                <profile name="Howling Banshee" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="4b5d-7321-6fb2-abb8">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Asuryani)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink name="Infantry Unit Type" hidden="false" id="c1bf-bf22-9fbc-dd7c" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+                <categoryLink name="Asuryani Unit Sub-Type:" hidden="false" id="2346-97b2-e7b5-7196" targetId="cf01-e0e7-4567-a4b9" primary="false"/>
+              </categoryLinks>
+              <infoLinks>
+                <infoLink name="Acrobatic" id="073b-3a27-852b-21a2" hidden="false" type="rule" targetId="4ab6-2b25-0eb9-f964"/>
+                <infoLink name="Fleet (X)" id="2b83-0fd7-3060-fdd3" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+                  <modifiers>
+                    <modifier type="set" value="Fleet (2)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Fear (X)" id="583f-2157-a74b-66f7" hidden="false" type="rule" targetId="21f6-7842-df5c-d2e7">
+                  <modifiers>
+                    <modifier type="set" value="Fear (1)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Aspect Shrine (X)" id="4ada-4a7d-d449-e8a8" hidden="false" type="rule" targetId="e1cb-87c6-8282-ba6e">
+                  <modifiers>
+                    <modifier type="set" value="Aspect Shrine (Howling Banshee)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Shuriken Pistol" hidden="false" id="17f5-5b16-8dde-d1a8" type="selectionEntry" targetId="c1af-d7e7-d404-7a33">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b2d2-7aeb-6be5-d513-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2d2-7aeb-6be5-d513-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Power Sword" hidden="false" id="66e6-1d1b-d9ed-d1c8" type="selectionEntry" targetId="226f-96da-94c9-35c8">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff3c-43e6-086d-0d67-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff3c-43e6-086d-0d67-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Plasma Grenades" hidden="false" id="1bf7-9b03-8cd5-8e10" type="selectionEntry" targetId="0a4e-f69a-2e83-cb4c"/>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="One Banshee may take: " hidden="false" id="7a5b-3e20-8762-0d94">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17a6-6adb-e4a4-10ec" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name=" Craftworld Standard" hidden="false" id="8fcc-610d-2069-d72a" type="selectionEntry" targetId="34a8-ff38-f64d-4b34"/>
+                    <entryLink import="true" name="Augury Scanner" hidden="false" id="c838-96f4-b9bc-80f7" type="selectionEntry" targetId="5bd4-bd5a-25da-3d8b"/>
+                    <entryLink import="true" name="Comm-Bead" hidden="false" id="50db-54c8-bacb-40af" type="selectionEntry" targetId="465c-227f-babe-1b73"/>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="f894-7006-300b-c5e7" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="5acd-1f6f-4bcb-85ef" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>

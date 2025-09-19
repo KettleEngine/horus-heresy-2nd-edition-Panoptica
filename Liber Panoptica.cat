@@ -197,5 +197,70 @@ Whilst each Aspect Shrine upgrade notes the amount of times an Exarch from a Det
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Plasma Grenades" hidden="false" id="0a4e-f69a-2e83-cb4c" publicationId="a179-8e8f-4601-987c" page="163">
+      <profiles>
+        <profile name="Plasma Grenades" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="df0d-4fe1-298b-4a84" publicationId="a179-8e8f-4601-987c" page="163">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with Plasma Grenades makes attacks at its normal Initiative Step during an Assault after it has successfully Charged through Difficult Terrain or Dangerous Terrain, but still suffers any penalties to Charge rolls imposed by Difficult Terrain or Dangerous Terrain when resolving a Charge through Difficult Terrain or Dangerous Terrain.
+
+
+In addition, the Controlling Player may choose to have a model with Plasma Grenades that is Engaged or otherwise in base contact during the Assault phase with a Building or Fortification, or a model with the Vehicle, Dreadnought or Automata Unit Type, inflict one automatic Str 5, AP 4 Hit with the Breaching (6+) Special Rule, on the target in Initiative Step 1 instead of attacking normally. If this option is selected, the unit makes its Pile In move at the Initiative 1 step. Any model in a unit that is chosen to inflict Hits using Plasma Grenades may not otherwise attack or make use of any other Special Rule or item of Wargear that inflicts Hits or Wounds on a model in the same Assault phase (but may participate in Sweeping Advances as normal).
+
+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eafa-a567-d3e7-e425-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eafa-a567-d3e7-e425-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name=" Craftworld Standard" hidden="false" id="34a8-ff38-f64d-4b34">
+      <profiles>
+        <profile name=" Craftworld Standard" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="58c2-81b8-dec7-6ebe" publicationId="a179-8e8f-4601-987c" page="162">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with a Craftworld Standard adds +1 to the Wounds score used to determine if they win a Combat in the Assault phase. In addition, a unit that includes at least one model with a Craftworld Standard may, before any dice are rolled to determine Fall Back distance, choose to Fall Back only a distance equal to the roll of a D6 instead of 2D6 (or 3D6 if a Cavalry unit), and if forced to move off the edge of the battlefield will instead stop moving, with any model that would have moved off of the battlefield ending its Fall Back move prematurely when it reaches 1&quot; from the edge of the battlefield.
+
+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ebb8-8a5c-05db-136e-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebb8-8a5c-05db-136e-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Augury Scanner" hidden="false" id="5bd4-bd5a-25da-3d8b">
+      <profiles>
+        <profile name="Augury Scanner" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="102f-8d0b-f277-983b" publicationId="a179-8e8f-4601-987c" page="162">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with an Augury Scanner
+gains all of the following benefits:
+
+
+• Enemy models cannot be deployed using the Infiltrate Special Rule within 18&quot; of a model with an Augury Scanner.
+• A unit that includes at least one model with an Augury Scanner ignores the 24&quot; limit to line of sight when making Shooting Attacks while the Night Fighting rules are in effect.
+• When any enemy unit is deployed to the battlefield from Reserves, a unit that includes at least one model with an Augury Scanner may make the Interceptor Advanced Reaction (see the Horus Heresy: Age of Darkness Core Rulebook, page 309) without expending a point of the Reactive player’s Reaction Allotment. This does not allow the unit to make more than one Reaction per Phase, but does allow the controlling player to exceed the normal three Reactions limit in a given Phase</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="636e-691b-171d-53e1-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="636e-691b-171d-53e1-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Comm-Bead" hidden="false" id="465c-227f-babe-1b73">
+      <profiles>
+        <profile name="Comm-Bead" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="5546-d8e5-a597-529f" publicationId="a179-8e8f-4601-987c" page="162">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">While at least one model with a Comm-Bead is present on the battlefield and not Embarked in a Vehicle or Building, the Controlling Player may re-roll any Scatter rolls made (whether as part of a weapon attack or the deployment of a model or unit), as long as the model with the Comm-Bead has line of sight to the unit targeted by the attack or the point chosen as the target of the deployment. In addition, a unit that includes at least one model with a Comm-Bead ignores the -1 penalty to Leadership imposed by the Night Fighting rules.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38ea-6c7f-2e89-05b1-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38ea-6c7f-2e89-05b1-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>
