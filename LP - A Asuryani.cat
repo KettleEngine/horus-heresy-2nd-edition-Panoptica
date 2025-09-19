@@ -3,6 +3,15 @@
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Liber Panoptica" id="2e6e-7f63-bbd6-a102" targetId="4f4a-443f-4294-c338" importRootEntries="true"/>
   </catalogueLinks>
+  <entryLinks>
+    <entryLink import="true" name="Howling Banshees" hidden="false" id="0abc-dec3-c5fb-8402" type="selectionEntry" targetId="0698-53b1-e65b-4db3">
+      <categoryLinks>
+        <categoryLink targetId="7aee-565f-b0ae-294e" id="b208-12c3-2531-df26" primary="true" name="Elites:"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="9441-bb68-5187-9725" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="767b-1da5-247a-8d8f" primary="false" name="Infantry Unit Type"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Howling Banshees" hidden="false" id="0698-53b1-e65b-4db3" publicationId="a179-8e8f-4601-987c" page="41">
       <costs>
