@@ -111,69 +111,6 @@ Whilst each Aspect Shrine upgrade notes the amount of times an Exarch from a Det
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
-    <selectionEntry type="unit" import="true" name="Howling Banshees" hidden="false" id="0698-53b1-e65b-4db3" publicationId="a179-8e8f-4601-987c" page="41">
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="7"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink name="Asuryani Unit Sub-Type:" hidden="false" id="4085-ceef-9fa7-d8be" targetId="cf01-e0e7-4567-a4b9" primary="false"/>
-        <categoryLink name="Infantry Unit Type" hidden="false" id="a71c-c9d0-4c4e-fbd0" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
-        <categoryLink targetId="7aee-565f-b0ae-294e" id="6f89-4098-9ce0-3839" primary="true" name="Elites:"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Howling Banshee" hidden="false" id="9f38-587b-3843-3fac" publicationId="a179-8e8f-4601-987c" page="41">
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="22"/>
-          </costs>
-          <constraints>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="05ed-1b56-0b1b-2dd5"/>
-            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="4f7a-71f9-3627-9ce2"/>
-          </constraints>
-          <profiles>
-            <profile name="Howling Banshee" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="9e68-f0ca-dd91-45ed">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Asuryani)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">4+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink name="Infantry Unit Type" hidden="false" id="e6e9-c7d2-c493-b2ef" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
-            <categoryLink name="Asuryani Unit Sub-Type:" hidden="false" id="8b44-8587-f34c-ccf4" targetId="cf01-e0e7-4567-a4b9" primary="false"/>
-          </categoryLinks>
-          <infoLinks>
-            <infoLink name="Acrobatic" id="c693-3969-5536-e416" hidden="false" type="rule" targetId="4ab6-2b25-0eb9-f964"/>
-            <infoLink name="Fleet (X)" id="a72c-d3ae-92ea-368b" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
-              <modifiers>
-                <modifier type="set" value="Fleet (2)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Fear (X)" id="4d38-2d9b-a997-2b48" hidden="false" type="rule" targetId="21f6-7842-df5c-d2e7">
-              <modifiers>
-                <modifier type="set" value="Fear (1)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Aspect Shrine (X)" id="5c70-d1ef-cc3e-1209" hidden="false" type="rule" targetId="e1cb-87c6-8282-ba6e">
-              <modifiers>
-                <modifier type="set" value="Aspect Shrine (Howling Banshee)" field="name"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <entryLinks>
-            <entryLink import="true" name="Aspect Armour" hidden="false" id="315e-7a75-6012-e635" type="selectionEntry" targetId="7c09-bc4e-e8a9-4a75"/>
-          </entryLinks>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Aspect Armour" hidden="false" id="7c09-bc4e-e8a9-4a75" publicationId="a179-8e8f-4601-987c" page="160">
       <profiles>
         <profile name="Aspect Armour" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="7e03-ccd9-41c1-86f1" publicationId="a179-8e8f-4601-987c" page="160">
