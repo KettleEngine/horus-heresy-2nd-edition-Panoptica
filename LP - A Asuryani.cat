@@ -71,7 +71,7 @@
             </infoLink>
           </infoLinks>
           <entryLinks>
-            <entryLink import="true" name="Aspect Armour" hidden="false" id="4b5b-1528-7c13-d4a6" type="selectionEntry" targetId="7c09-bc4e-e8a9-4a75"/>
+            <entryLink import="true" name="Aspect Armour" hidden="false" id="d7d5-4d9a-e0fd-5a5a" type="selectionEntry" targetId="7c09-bc4e-e8a9-4a75"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
