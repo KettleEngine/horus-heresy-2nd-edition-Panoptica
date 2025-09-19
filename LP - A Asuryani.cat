@@ -156,6 +156,9 @@
               </entryLinks>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="One Banshee may take: " hidden="false" id="7a5b-3e20-8762-0d94">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d75-9a17-1479-c3a6" includeChildSelections="false"/>
+                  </constraints>
                   <entryLinks>
                     <entryLink import="true" name=" Craftworld Standard" hidden="false" id="8fcc-610d-2069-d72a" type="selectionEntry" targetId="34a8-ff38-f64d-4b34">
                       <constraints>
