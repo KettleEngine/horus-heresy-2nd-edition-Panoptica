@@ -149,6 +149,11 @@ Detachment.</description>
       <infoLinks>
         <infoLink name="Acrobatic" id="c613-a241-0b82-5676" hidden="false" type="rule" targetId="400d-05a6-d655-2b35"/>
       </infoLinks>
+      <rules>
+        <rule name="Acrobatic" id="a2eb-4f42-c746-71c6" hidden="false" publicationId="a179-8e8f-4601-987c" page="140">
+          <description>A unit made up entirely of models with this special rule that chooses to Run in the Movement phase may still declare a Charge in the Assault phase of the same turn. Furthermore, models with this special rule attack at their normal Initiative Step during an Assault after it has successfully Charged through Difficult Terrain or Dangerous Terrain, but still suffers any penalties to Charge rolls imposed by Difficult or Dangerous Terrain.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>
