@@ -69,7 +69,6 @@
                 <modifier type="set" value="Aspect Shrine (Howling Banshee)" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Cataphractii Terminator Armour" id="4c56-8738-9726-f473" hidden="false" type="profile" targetId="7d3b-41e9-887f-7085"/>
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Aspect Armour" hidden="false" id="d7d5-4d9a-e0fd-5a5a" type="selectionEntry" targetId="7c09-bc4e-e8a9-4a75"/>
