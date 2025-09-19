@@ -32,7 +32,7 @@
         </entryLink>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Howling Banshees" id="f81d-7699-4783-691c" hidden="false">
+        <selectionEntryGroup name="Howling Banshees" id="f81d-7699-4783-691c" hidden="false" defaultSelectionEntryId="8e9e-7e5b-a24a-658f">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Howling Banshee" hidden="false" id="8e9e-7e5b-a24a-658f" publicationId="a179-8e8f-4601-987c" page="41">
               <costs>
