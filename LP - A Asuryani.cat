@@ -4,13 +4,8 @@
     <catalogueLink type="catalogue" name="Liber Panoptica" id="2e6e-7f63-bbd6-a102" targetId="4f4a-443f-4294-c338" importRootEntries="true"/>
   </catalogueLinks>
   <entryLinks>
-    <entryLink import="true" name="Howling Banshees" hidden="false" id="0abc-dec3-c5fb-8402" type="selectionEntry" targetId="cef9-7428-bebc-312e">
-      <categoryLinks>
-        <categoryLink targetId="7aee-565f-b0ae-294e" id="b208-12c3-2531-df26" primary="true" name="Elites:"/>
-        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="9441-bb68-5187-9725" primary="false" name="Asuryani Unit Sub-Type:"/>
-        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="767b-1da5-247a-8d8f" primary="false" name="Infantry Unit Type"/>
-      </categoryLinks>
-    </entryLink>
+    <entryLink import="true" name="Wave Serpent" hidden="false" id="09e5-c8ba-bbdd-2ceb" type="selectionEntry" targetId="83e4-e416-937a-b35f"/>
+    <entryLink import="true" name="Howling Banshees" hidden="false" id="833f-2324-e41b-4a65" type="selectionEntry" targetId="cef9-7428-bebc-312e"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Howling Banshees" hidden="false" id="cef9-7428-bebc-312e" publicationId="a179-8e8f-4601-987c" page="41">
@@ -188,11 +183,11 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="125"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="e2b6-b770-784c-9e95" id="147b-4a9b-d329-64fa" primary="true" name="Vehicle:"/>
-        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="8a8e-32d0-465f-2c97" primary="false" name="Asuryani Unit Sub-Type:"/>
-        <categoryLink targetId="6a28-17c5-8117-d99c" id="1584-09fb-c8c5-b4ad" primary="false" name="Skimmer"/>
-        <categoryLink targetId="0ea2-efb5-b7af-226e" id="b5e8-61c7-d083-1a00" primary="false" name="Fast Sub-type"/>
-        <categoryLink targetId="7b0a-a743-a8da-3a39" id="d1b5-9188-fd4b-e78e" primary="false" name="Transport Sub-type"/>
+        <categoryLink name="Vehicle:" hidden="false" id="147b-4a9b-d329-64fa" targetId="e2b6-b770-784c-9e95" primary="true"/>
+        <categoryLink name="Asuryani Unit Sub-Type:" hidden="false" id="8a8e-32d0-465f-2c97" targetId="cf01-e0e7-4567-a4b9" primary="false"/>
+        <categoryLink name="Skimmer" hidden="false" id="1584-09fb-c8c5-b4ad" targetId="6a28-17c5-8117-d99c" primary="false"/>
+        <categoryLink name="Fast Sub-type" hidden="false" id="b5e8-61c7-d083-1a00" targetId="0ea2-efb5-b7af-226e" primary="false"/>
+        <categoryLink name="Transport Sub-type" hidden="false" id="d1b5-9188-fd4b-e78e" targetId="7b0a-a743-a8da-3a39" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Wave Serpent" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="8bb3-4653-1ae3-6630" publicationId="a179-8e8f-4601-987c" page="53">
