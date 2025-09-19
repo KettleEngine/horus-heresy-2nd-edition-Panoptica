@@ -225,10 +225,6 @@ In addition, the Controlling Player may choose to have a model with Plasma Gren
           </characteristics>
         </profile>
       </profiles>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ebb8-8a5c-05db-136e-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebb8-8a5c-05db-136e-max" includeChildSelections="false"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Augury Scanner" hidden="false" id="5bd4-bd5a-25da-3d8b">
       <profiles>
@@ -244,10 +240,6 @@ gains all of the following benefits:
           </characteristics>
         </profile>
       </profiles>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="636e-691b-171d-53e1-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="636e-691b-171d-53e1-max" includeChildSelections="false"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Comm-Bead" hidden="false" id="465c-227f-babe-1b73">
       <profiles>
@@ -258,8 +250,8 @@ gains all of the following benefits:
         </profile>
       </profiles>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38ea-6c7f-2e89-05b1-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38ea-6c7f-2e89-05b1-max" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="cef9-7428-bebc-312e" shared="true" id="38ea-6c7f-2e89-05b1-min" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="cef9-7428-bebc-312e" shared="true" id="38ea-6c7f-2e89-05b1-max" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
