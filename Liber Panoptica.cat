@@ -500,6 +500,9 @@ gains all of the following benefits:
           </characteristics>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0b2-3656-5979-b99f" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Vectored Engines" hidden="false" id="a939-89d5-5a69-1ffc">
       <profiles>
@@ -509,6 +512,9 @@ gains all of the following benefits:
           </characteristics>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ece-b463-8e3f-3cb3" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Searchlights" hidden="false" id="18d4-67b4-5392-8db0">
       <profiles>
@@ -524,6 +530,9 @@ In addition, any unit that has been the target of a Shooting Attack made by a u
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aacf-ca3f-afd9-07d3" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Spirit Stones" hidden="false" id="f1a5-b497-5a54-71fd">
       <profiles>
@@ -536,6 +545,9 @@ In addition, any unit that has been the target of a Shooting Attack made by a u
       <modifiers>
         <modifier type="add" value="9b0d-738c-10e4-4ec1" field="category"/>
       </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="600e-e9c8-18f2-18df"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>

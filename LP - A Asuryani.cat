@@ -278,11 +278,18 @@
         </selectionEntryGroup>
         <selectionEntryGroup name=" A Wave Serpent may take any of the following:" id="cc00-d574-31d8-7e64" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="Searchlights" hidden="false" id="c9a8-e842-37f6-7d63" type="selectionEntry" targetId="18d4-67b4-5392-8db0"/>
+            <entryLink import="true" name="Searchlights" hidden="false" id="c9a8-e842-37f6-7d63" type="selectionEntry" targetId="18d4-67b4-5392-8db0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a3e-31a7-808e-79bb" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
             <entryLink import="true" name="Spirit Stones" hidden="false" id="87f2-ce95-5595-37f7" type="selectionEntry" targetId="f1a5-b497-5a54-71fd">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b476-6d30-5d16-d746" includeChildSelections="false"/>
+              </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
