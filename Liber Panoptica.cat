@@ -111,7 +111,7 @@ Whilst each Aspect Shrine upgrade notes the amount of times an Exarch from a Det
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Aspect Armour" hidden="false" id="7c09-bc4e-e8a9-4a75" publicationId="a179-8e8f-4601-987c" page="160" collective="true">
+    <selectionEntry type="upgrade" import="true" name="Aspect Armour" hidden="false" id="7c09-bc4e-e8a9-4a75" publicationId="a179-8e8f-4601-987c" page="160">
       <profiles>
         <profile name="Aspect Armour" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="7e03-ccd9-41c1-86f1" publicationId="a179-8e8f-4601-987c" page="160">
           <characteristics>
@@ -119,6 +119,10 @@ Whilst each Aspect Shrine upgrade notes the amount of times an Exarch from a Det
           </characteristics>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c9f-d6f6-aa20-3d30" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="781c-a9e4-bf6b-e7e6" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy Aspect Armour" hidden="false" id="c81b-3334-7a37-1473" publicationId="a179-8e8f-4601-987c" page="160" collective="true">
       <profiles>
