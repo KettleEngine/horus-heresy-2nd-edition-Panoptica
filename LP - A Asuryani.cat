@@ -11,6 +11,7 @@
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="767b-1da5-247a-8d8f" primary="false" name="Infantry Unit Type"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Howling Banshees" hidden="false" id="1f03-0003-6a4c-52f1" type="selectionEntry" targetId="cef9-7428-bebc-312e"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Howling Banshees" hidden="false" id="cef9-7428-bebc-312e" publicationId="a179-8e8f-4601-987c" page="41">
