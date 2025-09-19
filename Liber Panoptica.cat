@@ -99,11 +99,6 @@ Detachment.</description>
       </rules>
     </categoryEntry>
   </categoryEntries>
-  <sharedRules>
-    <rule name="Acrobatic" id="400d-05a6-d655-2b35" hidden="false" publicationId="a179-8e8f-4601-987c" page="140">
-      <description>A unit made up entirely of models with this special rule that chooses to Run in the Movement phase may still declare a Charge in the Assault phase of the same turn. Furthermore, models with this special rule attack at their normal Initiative Step during an Assault after it has successfully Charged through Difficult Terrain or Dangerous Terrain, but still suffers any penalties to Charge rolls imposed by Difficult or Dangerous Terrain.</description>
-    </rule>
-  </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Howling Banshees" hidden="false" id="0698-53b1-e65b-4db3" publicationId="a179-8e8f-4601-987c" page="41">
       <costs>
@@ -144,16 +139,11 @@ Detachment.</description>
             <categoryLink name="Infantry Unit Type" hidden="false" id="e6e9-c7d2-c493-b2ef" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
             <categoryLink name="Asuryani Unit Sub-Type:" hidden="false" id="8b44-8587-f34c-ccf4" targetId="cf01-e0e7-4567-a4b9" primary="false"/>
           </categoryLinks>
+          <infoLinks>
+            <infoLink name="Acrobatic" id="c693-3969-5536-e416" hidden="false" type="rule" targetId="4ab6-2b25-0eb9-f964"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
-      <infoLinks>
-        <infoLink name="Acrobatic" id="c613-a241-0b82-5676" hidden="false" type="rule" targetId="400d-05a6-d655-2b35"/>
-      </infoLinks>
-      <rules>
-        <rule name="Acrobatic" id="a2eb-4f42-c746-71c6" hidden="false" publicationId="a179-8e8f-4601-987c" page="140">
-          <description>A unit made up entirely of models with this special rule that chooses to Run in the Movement phase may still declare a Charge in the Assault phase of the same turn. Furthermore, models with this special rule attack at their normal Initiative Step during an Assault after it has successfully Charged through Difficult Terrain or Dangerous Terrain, but still suffers any penalties to Charge rolls imposed by Difficult or Dangerous Terrain.</description>
-        </rule>
-      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>
