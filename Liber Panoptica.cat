@@ -204,9 +204,7 @@ Whilst each Aspect Shrine upgrade notes the amount of times an Exarch from a Det
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with Plasma Grenades makes attacks at its normal Initiative Step during an Assault after it has successfully Charged through Difficult Terrain or Dangerous Terrain, but still suffers any penalties to Charge rolls imposed by Difficult Terrain or Dangerous Terrain when resolving a Charge through Difficult Terrain or Dangerous Terrain.
 
 
-In addition, the Controlling Player may choose to have a model with Plasma Grenades that is Engaged or otherwise in base contact during the Assault phase with a Building or Fortification, or a model with the Vehicle, Dreadnought or Automata Unit Type, inflict one automatic Str 5, AP 4 Hit with the Breaching (6+) Special Rule, on the target in Initiative Step 1 instead of attacking normally. If this option is selected, the unit makes its Pile In move at the Initiative 1 step. Any model in a unit that is chosen to inflict Hits using Plasma Grenades may not otherwise attack or make use of any other Special Rule or item of Wargear that inflicts Hits or Wounds on a model in the same Assault phase (but may participate in Sweeping Advances as normal).
-
-</characteristic>
+In addition, the Controlling Player may choose to have a model with Plasma Grenades that is Engaged or otherwise in base contact during the Assault phase with a Building or Fortification, or a model with the Vehicle, Dreadnought or Automata Unit Type, inflict one automatic Str 5, AP 4 Hit with the Breaching (6+) Special Rule, on the target in Initiative Step 1 instead of attacking normally. If this option is selected, the unit makes its Pile In move at the Initiative 1 step. Any model in a unit that is chosen to inflict Hits using Plasma Grenades may not otherwise attack or make use of any other Special Rule or item of Wargear that inflicts Hits or Wounds on a model in the same Assault phase (but may participate in Sweeping Advances as normal).</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -219,9 +217,7 @@ In addition, the Controlling Player may choose to have a model with Plasma Gren
       <profiles>
         <profile name=" Craftworld Standard" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="58c2-81b8-dec7-6ebe" publicationId="a179-8e8f-4601-987c" page="162">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with a Craftworld Standard adds +1 to the Wounds score used to determine if they win a Combat in the Assault phase. In addition, a unit that includes at least one model with a Craftworld Standard may, before any dice are rolled to determine Fall Back distance, choose to Fall Back only a distance equal to the roll of a D6 instead of 2D6 (or 3D6 if a Cavalry unit), and if forced to move off the edge of the battlefield will instead stop moving, with any model that would have moved off of the battlefield ending its Fall Back move prematurely when it reaches 1&quot; from the edge of the battlefield.
-
-</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with a Craftworld Standard adds +1 to the Wounds score used to determine if they win a Combat in the Assault phase. In addition, a unit that includes at least one model with a Craftworld Standard may, before any dice are rolled to determine Fall Back distance, choose to Fall Back only a distance equal to the roll of a D6 instead of 2D6 (or 3D6 if a Cavalry unit), and if forced to move off the edge of the battlefield will instead stop moving, with any model that would have moved off of the battlefield ending its Fall Back move prematurely when it reaches 1&quot; from the edge of the battlefield.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -359,6 +355,187 @@ gains all of the following benefits:
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name=" Twin-Linked Shuriken Catapult" hidden="false" id="9ec7-cc82-393e-0a78">
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="0b4e-3ac7-482d-89bc" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Twin-linked" id="c6e4-af84-d306-de2e" hidden="false" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
+      </infoLinks>
+      <profiles>
+        <profile name=" Twin-Linked Shuriken Catapult" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a67c-0764-da61-167c">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Breaching (6+), Twin-Linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-Linked Aeldari Missile Launcher" hidden="false" id="eac7-14c2-095e-abba">
+      <profiles>
+        <profile name="Aeldari Missile Launcher (Sunburst)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a098-9c7b-f5d8-bedd">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3”), Blind</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Aeldari Missile Launcher (Starhawk)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="676b-2c41-7e6d-f51a">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Skyfire</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Aeldari Missile Launcher (Starshot)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="6d2d-6b19-cb6e-79ce">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blind" id="db19-2a5c-bb8c-132a" hidden="false" type="rule" targetId="d836-747d-07d6-2b63"/>
+        <infoLink name="Skyfire" id="52b7-3371-365a-80ac" hidden="false" type="rule" targetId="f2bf-5daa-9f93-0b01"/>
+        <infoLink name="Twin-linked" id="3719-b0cc-8b45-40ff" hidden="false" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Aeldari Missile Launcher" hidden="false" id="21d6-c4ce-1a4e-6cd4">
+      <profiles>
+        <profile name="Aeldari Missile Launcher (Sunburst)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="4059-e79c-d2e9-239a">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3”), Blind</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Aeldari Missile Launcher (Starhawk)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="c632-8e94-c3e5-596b">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Skyfire</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Aeldari Missile Launcher (Starshot)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="487e-a2f6-c38f-4d0a">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blind" id="4d46-8f5c-cab9-1c81" hidden="false" type="rule" targetId="d836-747d-07d6-2b63"/>
+        <infoLink name="Skyfire" id="61f8-64e7-2821-ffe1" hidden="false" type="rule" targetId="f2bf-5daa-9f93-0b01"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bright Lance" hidden="false" id="7728-c3bd-f061-bf9e">
+      <profiles>
+        <profile name="Bright Lance" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="7054-7fc5-866d-94bc">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Lance, Sunder</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Lance" id="8d87-0749-e8d8-3116" hidden="false" type="rule" targetId="3d6b-9e0b-56f0-8a1e"/>
+        <infoLink name="Sunder" id="a3f3-1fa7-a70b-b692" hidden="false" type="rule" targetId="20e2-75cf-bc16-cd8f"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gravis Bright Lance" hidden="false" id="1806-b2f1-2da1-7938">
+      <profiles>
+        <profile name="Gravis Bright Lance" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="dfd4-7faf-b0df-0cde">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Lance, Sunder</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Lance" id="cb11-c558-9bab-2b67" hidden="false" type="rule" targetId="3d6b-9e0b-56f0-8a1e"/>
+        <infoLink name="Sunder" id="cfef-fa48-3d4c-aa03" hidden="false" type="rule" targetId="20e2-75cf-bc16-cd8f"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gravis Starcannon" hidden="false" id="99ae-090e-9d2c-c498">
+      <profiles>
+        <profile name="Gravis Starcannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="9d49-9934-91ab-e190">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 6, Breaching (4+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="56c1-1c5a-924a-3908" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
+          <modifiers>
+            <modifier type="set" value="Breaching (4+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Star Engines" hidden="false" id="3391-adc6-766d-c959">
+      <profiles>
+        <profile name="Star Engines" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="ca72-97a1-dcf7-9b13" page="161" publicationId="a179-8e8f-4601-987c">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model equipped with Star Engines moves an additional 3” when making Movement Reactions.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Vectored Engines" hidden="false" id="a939-89d5-5a69-1ffc">
+      <profiles>
+        <profile name="Vectored Engines" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3ed6-4e3b-4be4-564e" publicationId="a179-8e8f-4601-987c" page="161">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Whenever a model equipped with Vectored Engines is targeted by a Shooting Attack in the Opposing Player’s turn, if the Reactive Player chooses to have the model react, before any Shooting Attacks are resolved the model may immediately pivot on the spot to face any direction.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Searchlights" hidden="false" id="18d4-67b4-5392-8db0">
+      <profiles>
+        <profile name="Searchlights" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="2994-1fdf-688d-b799">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with searchlights ignores the 24&quot; limit to line of sight imposed by the Night Fighting rules when making Shooting Attacks, however enemy units also ignore that same restriction when making Shooting Attacks that target a model with searchlights.
+
+
+In addition, any unit that has been the target of a Shooting Attack made by a unit with searchlights (regardless of whether any Hits were inflicted or not) may be freely targeted for Shooting Attacks by any other unit in the same Shooting phase, ignoring the 24&quot; restriction to line of sight imposed by the Night Fighting rules. Searchlights do not count as weapons and may not be targeted by the Weapon Destroyed result on the Vehicle Damage table.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Spirit Stones" hidden="false" id="f1a5-b497-5a54-71fd">
+      <profiles>
+        <profile name="Spirit Stones" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="84c8-93b7-ef09-4adf" publicationId="a179-8e8f-4601-987c" page="164">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model equipped with Spirit Stones gains the Reinforced Sub-type.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="add" value="9b0d-738c-10e4-4ec1" field="category"/>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>
