@@ -70,6 +70,26 @@
               </modifiers>
             </infoLink>
           </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Power Sword" hidden="false" id="e7bd-970d-c9b2-637e" type="selectionEntry" targetId="226f-96da-94c9-35c8">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ec4-2101-b617-b0a3-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ec4-2101-b617-b0a3-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shuriken Pistol" hidden="false" id="ba03-f773-e0db-061e" type="selectionEntry" targetId="c1af-d7e7-d404-7a33">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f159-cd54-c9b9-ee03-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f159-cd54-c9b9-ee03-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Banshee Mask" hidden="false" id="fd4e-3154-987a-2f7c" type="selectionEntry" targetId="8bb0-67de-2a2e-f268">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba2b-6f8c-2565-170c-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba2b-6f8c-2565-170c-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>

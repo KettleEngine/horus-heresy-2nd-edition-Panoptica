@@ -124,7 +124,7 @@ Whilst each Aspect Shrine upgrade notes the amount of times an Exarch from a Det
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="781c-a9e4-bf6b-e7e6" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Heavy Aspect Armour" hidden="false" id="c81b-3334-7a37-1473" publicationId="a179-8e8f-4601-987c" page="160" collective="true">
+    <selectionEntry type="upgrade" import="true" name="Heavy Aspect Armour" hidden="false" id="c81b-3334-7a37-1473" publicationId="a179-8e8f-4601-987c" page="160">
       <profiles>
         <profile name="Heavy Aspect Armour" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="cd88-1030-4596-8fa6" publicationId="a179-8e8f-4601-987c" page="160">
           <characteristics>
@@ -132,12 +132,67 @@ Whilst each Aspect Shrine upgrade notes the amount of times an Exarch from a Det
           </characteristics>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1791-50f4-0dac-5d2f" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ce7-ea7d-1a62-e556" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Phoenix Armour" hidden="false" id="6e43-6b37-3f19-04d5" publicationId="a179-8e8f-4601-987c" page="160" collective="true">
+    <selectionEntry type="upgrade" import="true" name="Phoenix Armour" hidden="false" id="6e43-6b37-3f19-04d5" publicationId="a179-8e8f-4601-987c" page="160">
       <profiles>
         <profile name="Phoenix Armour" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="b84a-43c3-a08e-c6ac" publicationId="a179-8e8f-4601-987c" page="160">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Phoenix Armour confers a 2+ Armour Save and a 4+ Invulnerable Save.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a386-112e-6197-f3fa" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75d0-66d3-26a6-a803" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Shuriken Pistol" hidden="false" id="c1af-d7e7-d404-7a33" publicationId="a179-8e8f-4601-987c" page="154">
+      <profiles>
+        <profile name="Shuriken Pistol" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5b4b-24ff-aee1-fe2b">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="c85e-2f9c-8cba-1e84" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Power Sword" hidden="false" id="226f-96da-94c9-35c8" publicationId="a179-8e8f-4601-987c" page="155">
+      <profiles>
+        <profile name="Power Sword" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="d47f-c8db-cb67-843a" page="155" publicationId="a179-8e8f-4601-987c">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rending (X)" id="fac6-2bc6-a1b6-0f36" hidden="false" type="rule" targetId="0ac9-fab7-aef3-de1d">
+          <modifiers>
+            <modifier type="set" value="Rending (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Banshee Mask" hidden="false" id="8bb0-67de-2a2e-f268" publicationId="a179-8e8f-4601-987c" page="162">
+      <profiles>
+        <profile name="Banshee Mask" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="2bd5-6b86-d635-a83d" publicationId="a179-8e8f-4601-987c" page="162">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">During the Assault phase, the Reactive player may not make Reactions targeting a unit that contains at least one model equipped with a Banshee Mask. This wargear’s effect does not activate if the unit equipped with it makes a Disordered Charge.</characteristic>
           </characteristics>
         </profile>
       </profiles>
