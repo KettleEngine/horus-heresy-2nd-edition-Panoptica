@@ -168,6 +168,9 @@ Whilst each Aspect Shrine upgrade notes the amount of times an Exarch from a Det
               </modifiers>
             </infoLink>
           </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Aspect Armour" hidden="false" id="315e-7a75-6012-e635" type="selectionEntry" targetId="7c09-bc4e-e8a9-4a75"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
