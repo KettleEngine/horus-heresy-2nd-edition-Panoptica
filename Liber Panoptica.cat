@@ -99,6 +99,17 @@ Detachment.</description>
       </rules>
     </categoryEntry>
   </categoryEntries>
+  <sharedRules>
+    <rule name="Aspect Shrine (X)" id="e1cb-87c6-8282-ba6e" hidden="false" publicationId="a179-8e8f-4601-987c" page="14">
+      <description>An Exarch or Autarch must select one of the following upgrades at the cost specified on their profile as part of your army list construction. In return, they gain all of the Special Rules, Wargear, Unit Types, Unit Sub-types, and Characteristic changes specified for their chosen Path. 
+
+
+Each Exarch or Autarch may only select a single Aspect Shrine upgrade, unless they are explicitly given the ability to select additional ones from another source. If this occurs and a model already possesses a version of the Aspect Shrine (X) Special Rule - and does not have a version to replace - simply add the relevant Aspect Shrine (X) Special Rule to its unit profile instead.
+
+
+Whilst each Aspect Shrine upgrade notes the amount of times an Exarch from a Detachment may select it (usually only one), an Autarch may select any Aspect Shrine upgrade and does not count toward the amount of times it may be selected by Exarchs in the same Detachment.</description>
+    </rule>
+  </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Howling Banshees" hidden="false" id="0698-53b1-e65b-4db3" publicationId="a179-8e8f-4601-987c" page="41">
       <costs>
@@ -141,6 +152,21 @@ Detachment.</description>
           </categoryLinks>
           <infoLinks>
             <infoLink name="Acrobatic" id="c693-3969-5536-e416" hidden="false" type="rule" targetId="4ab6-2b25-0eb9-f964"/>
+            <infoLink name="Fleet (X)" id="a72c-d3ae-92ea-368b" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+              <modifiers>
+                <modifier type="set" value="Fleet (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Fear (X)" id="4d38-2d9b-a997-2b48" hidden="false" type="rule" targetId="21f6-7842-df5c-d2e7">
+              <modifiers>
+                <modifier type="set" value="Fear (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Aspect Shrine (X)" id="5c70-d1ef-cc3e-1209" hidden="false" type="rule" targetId="e1cb-87c6-8282-ba6e">
+              <modifiers>
+                <modifier type="set" value="Aspect Shrine (Howling Banshee)" field="name"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
