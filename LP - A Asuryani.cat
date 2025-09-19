@@ -70,11 +70,11 @@
               </modifiers>
             </infoLink>
           </infoLinks>
-          <entryLinks>
-            <entryLink import="true" name="Aspect Armour" hidden="false" id="d7d5-4d9a-e0fd-5a5a" type="selectionEntry" targetId="7c09-bc4e-e8a9-4a75"/>
-          </entryLinks>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Aspect Armour" hidden="false" id="d7d5-4d9a-e0fd-5a5a" type="selectionEntry" targetId="7c09-bc4e-e8a9-4a75"/>
+      </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>
