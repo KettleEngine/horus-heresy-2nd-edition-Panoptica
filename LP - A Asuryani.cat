@@ -183,5 +183,32 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Wave Serpent" hidden="false" id="83e4-e416-937a-b35f" publicationId="a179-8e8f-4601-987c" page="53">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="125"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="e2b6-b770-784c-9e95" id="147b-4a9b-d329-64fa" primary="true" name="Vehicle:"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="8a8e-32d0-465f-2c97" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="6a28-17c5-8117-d99c" id="1584-09fb-c8c5-b4ad" primary="false" name="Skimmer"/>
+        <categoryLink targetId="0ea2-efb5-b7af-226e" id="b5e8-61c7-d083-1a00" primary="false" name="Fast Sub-type"/>
+        <categoryLink targetId="7b0a-a743-a8da-3a39" id="d1b5-9188-fd4b-e78e" primary="false" name="Transport Sub-type"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Wave Serpent" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="8bb3-4653-1ae3-6630" publicationId="a179-8e8f-4601-987c" page="53">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Transport)</characteristic>
+            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">12</characteristic>
+            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">14</characteristic>
+            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">A Wave Serpent has one access point on its rear.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>
