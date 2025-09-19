@@ -98,7 +98,7 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="22"/>
               </costs>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e87d-b6c9-4cf9-8979" includeChildSelections="false"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e87d-b6c9-4cf9-8979" includeChildSelections="false"/>
               </constraints>
               <profiles>
                 <profile name="Howling Banshee" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="4b5d-7321-6fb2-abb8">
