@@ -1537,10 +1537,6 @@ In addition to the bonus move during the Movement phase, a unit composed entire
       <infoLinks>
         <infoLink name="Flickerjump" id="d376-f872-a246-b859" hidden="false" type="rule" targetId="5e7b-68e7-d09f-da23"/>
       </infoLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="712d-5827-b800-afc2-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="712d-5827-b800-afc2-max" includeChildSelections="false"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Spinneret Rifle" hidden="false" id="96c4-4f57-e675-aadd">
       <profiles>
@@ -2103,7 +2099,12 @@ In addition to the bonus move during the Movement phase, a unit composed entire
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Heavy Aspect Armour" hidden="false" id="86e9-bd2e-cc7f-7f06" type="selectionEntry" targetId="c81b-3334-7a37-1473"/>
-            <entryLink import="true" name="Warp Jump Generator " hidden="false" id="d978-6fad-6b07-9368" type="selectionEntry" targetId="17fa-dfd3-62c8-4f49"/>
+            <entryLink import="true" name="Warp Jump Generator " hidden="false" id="d978-6fad-6b07-9368" type="selectionEntry" targetId="17fa-dfd3-62c8-4f49">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="44dc-7b25-67c7-f10c-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44dc-7b25-67c7-f10c-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Two Power Swords" hidden="false" id="3bff-9f41-3551-1c95">
