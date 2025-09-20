@@ -584,9 +584,6 @@ In addition, any unit that has been the target of a Shooting Attack made by a u
           </characteristics>
         </profile>
       </profiles>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d5c-02ba-c44c-bc49" includeChildSelections="false"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Forceshield" hidden="false" id="9cc3-aadd-5496-a9f9">
       <profiles>
@@ -912,7 +909,12 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
             <modifier type="set" value="Aspect Shrine (Dire Avenger)" field="name"/>
           </modifiers>
           <entryLinks>
-            <entryLink import="true" name="Augury Scanner" hidden="false" id="8567-69e5-3a83-01b8" type="selectionEntry" targetId="5bd4-bd5a-25da-3d8b"/>
+            <entryLink import="true" name="Augury Scanner" hidden="false" id="8567-69e5-3a83-01b8" type="selectionEntry" targetId="5bd4-bd5a-25da-3d8b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b192-ca64-5b57-0998-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b192-ca64-5b57-0998-max"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapons Choice:" id="7d72-4a9a-7bd4-6cc2" hidden="false">
@@ -924,7 +926,12 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
                 <selectionEntry type="upgrade" import="true" name="Power Weapon and Improved Forceshield" hidden="false" id="c7d4-7b67-e911-b8f8" sortIndex="2">
                   <entryLinks>
                     <entryLink import="true" name="Power Weapon" hidden="false" id="c779-1d0d-0f25-d259" type="selectionEntryGroup" targetId="5ff5-48c0-b9f1-5a05"/>
-                    <entryLink import="true" name="Improved Forceshield" hidden="false" id="28ee-d292-7a36-fb85" type="selectionEntry" targetId="13d7-d8b3-b4c7-47ae"/>
+                    <entryLink import="true" name="Improved Forceshield" hidden="false" id="28ee-d292-7a36-fb85" type="selectionEntry" targetId="13d7-d8b3-b4c7-47ae">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d5a-b263-4793-76a5-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d5a-b263-4793-76a5-max" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
@@ -932,7 +939,12 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Shuriken Pistol &amp; Twin-Linked Avenger Catapult" hidden="false" id="516a-6922-c1e5-a3ee" sortIndex="1">
                   <entryLinks>
-                    <entryLink import="true" name="Shuriken Pistol" hidden="false" id="7a6a-c403-e91c-da7d" type="selectionEntry" targetId="c1af-d7e7-d404-7a33"/>
+                    <entryLink import="true" name="Shuriken Pistol" hidden="false" id="7a6a-c403-e91c-da7d" type="selectionEntry" targetId="c1af-d7e7-d404-7a33">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7edc-c9d9-545f-af96-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7edc-c9d9-545f-af96-max" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Dire Avenger Aspect Shrine upgrade may choose to replace their Twin-Linked Avenger Catapult for one of the following options" id="3bee-b9cc-b154-98e2" hidden="false" defaultSelectionEntryId="44c6-97d2-28ad-2fc7" sortIndex="">
@@ -961,8 +973,18 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
                   </costs>
                   <entryLinks>
-                    <entryLink import="true" name="Diresword" hidden="false" id="aafb-2826-b45a-c141" type="selectionEntry" targetId="b018-d38c-24b1-7b1c"/>
-                    <entryLink import="true" name="Improved Forceshield" hidden="false" id="6e10-1cda-3edf-4f43" type="selectionEntry" targetId="13d7-d8b3-b4c7-47ae"/>
+                    <entryLink import="true" name="Diresword" hidden="false" id="aafb-2826-b45a-c141" type="selectionEntry" targetId="b018-d38c-24b1-7b1c">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="929c-f9b7-77a3-0eb9-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="929c-f9b7-77a3-0eb9-max" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Improved Forceshield" hidden="false" id="6e10-1cda-3edf-4f43" type="selectionEntry" targetId="13d7-d8b3-b4c7-47ae">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c05f-9db1-9be4-0576-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c05f-9db1-9be4-0576-max" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntry>
               </selectionEntries>
