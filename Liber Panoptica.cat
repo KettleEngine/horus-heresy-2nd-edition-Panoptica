@@ -2119,25 +2119,20 @@ In addition to the bonus move during the Movement phase, a unit composed entire
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a13-a122-7f8c-0cbc-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a13-a122-7f8c-0cbc-max" includeChildSelections="false"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup name="Warp Spider Aspect Shrine upgrade may exchange their Death Spinner for one of the following options:" id="ca07-f64b-25b5-df3a" hidden="false" defaultSelectionEntryId="8cf8-4a21-9f40-689c">
               <entryLinks>
-                <entryLink import="true" name="Deathspinner" hidden="false" id="8cf8-4a21-9f40-689c" type="selectionEntry" targetId="510f-e692-c652-3df0" sortIndex="1">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d05a-6da9-e3b9-fb3c-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d05a-6da9-e3b9-fb3c-max" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
+                <entryLink import="true" name="Deathspinner" hidden="false" id="8cf8-4a21-9f40-689c" type="selectionEntry" targetId="510f-e692-c652-3df0" sortIndex="1"/>
                 <entryLink import="true" name="Spinneret Rifle" hidden="false" id="6e17-0192-3b00-d67d" type="selectionEntry" targetId="96c4-4f57-e675-aadd" sortIndex="3">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9cd5-fe52-0d1b-511a-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9cd5-fe52-0d1b-511a-max" includeChildSelections="false"/>
-                  </constraints>
                 </entryLink>
               </entryLinks>
               <selectionEntries>
