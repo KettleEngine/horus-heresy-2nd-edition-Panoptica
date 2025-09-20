@@ -1968,7 +1968,12 @@ In addition to the bonus move during the Movement phase, a unit composed entire
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab9c-cf6d-a4c5-ed9c" includeChildSelections="false"/>
                       </constraints>
                       <entryLinks>
-                        <entryLink import="true" name="Scorpion Chainsword" hidden="false" id="ddcb-bb17-db67-0d65" type="selectionEntry" targetId="6dea-bcfd-2382-5b02"/>
+                        <entryLink import="true" name="Scorpion Chainsword" hidden="false" id="ddcb-bb17-db67-0d65" type="selectionEntry" targetId="6dea-bcfd-2382-5b02">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aeb4-9301-9938-db21-min" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aeb4-9301-9938-db21-max" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
                       </entryLinks>
                     </entryLink>
                     <entryLink import="true" name="Biting Blade" hidden="false" id="3f1b-8c8e-96d6-b0c2" type="selectionEntry" targetId="a51f-8c9b-bdff-d7df" sortIndex="2">
@@ -1979,7 +1984,12 @@ In addition to the bonus move during the Movement phase, a unit composed entire
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9303-6f1a-ee29-5968" includeChildSelections="false"/>
                       </constraints>
                       <entryLinks>
-                        <entryLink import="true" name="Scorpion Chainsword" hidden="false" id="29b9-819e-4e31-ef57" type="selectionEntry" targetId="6dea-bcfd-2382-5b02"/>
+                        <entryLink import="true" name="Scorpion Chainsword" hidden="false" id="29b9-819e-4e31-ef57" type="selectionEntry" targetId="6dea-bcfd-2382-5b02">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7dc0-1739-05a7-a973-min" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7dc0-1739-05a7-a973-max" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
                       </entryLinks>
                     </entryLink>
                     <entryLink import="true" name="Scorpion’s Claw" hidden="false" id="abb6-d53d-f20a-4249" type="selectionEntry" targetId="d500-9c3f-6f6d-94a8" sortIndex="3">
@@ -1990,7 +2000,12 @@ In addition to the bonus move during the Movement phase, a unit composed entire
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f5e-da6d-a9bc-29f1" includeChildSelections="false"/>
                       </constraints>
                       <entryLinks>
-                        <entryLink import="true" name="Scorpion Chainsword" hidden="false" id="9ef9-250c-70c5-350d" type="selectionEntry" targetId="6dea-bcfd-2382-5b02"/>
+                        <entryLink import="true" name="Scorpion Chainsword" hidden="false" id="9ef9-250c-70c5-350d" type="selectionEntry" targetId="6dea-bcfd-2382-5b02">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7d83-a31b-73ee-797f-min" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d83-a31b-73ee-797f-max" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
                       </entryLinks>
                     </entryLink>
                   </entryLinks>
