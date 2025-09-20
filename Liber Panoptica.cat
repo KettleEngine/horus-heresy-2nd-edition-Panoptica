@@ -124,6 +124,15 @@ If a unit with this Tactic has at least half of its models within 6&quot; of an
 Offensive Rush
 Whenever a unit with this Tactic makes a Shooting Attack, each weapon they are equipped with makes one additional shot - a weapon with Assault 2 becoming Assault 3, and so on.</description>
     </rule>
+    <rule name="Breath of Khaine" id="ffdd-69e3-b217-0443" hidden="false" page="141" publicationId="a179-8e8f-4601-987c">
+      <description>When attacking using the Wall of Death Special Rule (see the Template rules on page 248 of the Horus Heresy: Age of Darkness rulebook), a Weapon with this Special Rule inflicts D6 Hits instead of D3.</description>
+    </rule>
+    <rule name="Wrecker" id="c660-1529-06f4-2477" hidden="false" page="149" publicationId="a179-8e8f-4601-987c">
+      <description>Penetrating Hits caused by attacks made with weapons or models with this special rule add +1 to the result of any rolls on the Vehicle or Building Damage tables.</description>
+    </rule>
+    <rule name=" Crack Shot" id="bd8b-5629-8963-22b1" hidden="false" page="141" publicationId="a179-8e8f-4601-987c">
+      <description>A model with this Special Rule may re-roll a single failed To-Hit, To-Wound, or Armour Penetration roll per turn.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Aspect Armour" hidden="false" id="7c09-bc4e-e8a9-4a75" publicationId="a179-8e8f-4601-987c" page="160">
@@ -147,6 +156,10 @@ Whenever a unit with this Tactic makes a Shooting Attack, each weapon they are 
           </characteristics>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d618-7f54-235e-3267-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d618-7f54-235e-3267-max" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Phoenix Armour" hidden="false" id="6e43-6b37-3f19-04d5" publicationId="a179-8e8f-4601-987c" page="160">
       <profiles>
@@ -838,6 +851,102 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
         <infoLink name="Sanctic" id="1ca7-0d1d-872e-06d7" hidden="false" type="rule" targetId="d1c9-ee74-4e4f-8830"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Firepike" hidden="false" id="b243-c708-3654-13d6">
+      <profiles>
+        <profile name="Firepike" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="928f-fd06-232e-7cf6">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Melta)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Armourbane (X)" id="a1e2-c28c-cdeb-aba9" hidden="false" type="rule" targetId="cb59-f920-f071-7cd4">
+          <modifiers>
+            <modifier type="set" value="Armourbane (Melta)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fusion Pistol" hidden="false" id="4373-b3bc-24cf-32fd">
+      <profiles>
+        <profile name="Fusion Pistol" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ff16-7fd5-fa6e-bb92">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">8</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Armourbane (Melta)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Armourbane (X)" id="2162-af7b-337e-c67e" hidden="false" type="rule" targetId="cb59-f920-f071-7cd4">
+          <modifiers>
+            <modifier type="set" value="Armourbane (Melta)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fusion Gun" hidden="false" id="37f0-8676-e522-1da2">
+      <profiles>
+        <profile name="Fusion Gun" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="1e8d-22f0-e2aa-59eb">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Melta)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Armourbane (X)" id="5f3b-beb8-8dfd-5a15" hidden="false" type="rule" targetId="cb59-f920-f071-7cd4">
+          <modifiers>
+            <modifier type="set" value="Armourbane (Melta)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Inferno Lance" hidden="false" id="19f3-f5ec-d6f2-7354">
+      <profiles>
+        <profile name="Inferno Lance" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ce32-7d92-069d-b304">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 5, Armourbane (Melta)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Armourbane (X)" id="3e6e-8594-5e40-b0bb" hidden="false" type="rule" targetId="cb59-f920-f071-7cd4">
+          <modifiers>
+            <modifier type="set" value="Armourbane (Melta)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Khaine’s Fury" hidden="false" id="80b0-9b50-4322-51a3">
+      <profiles>
+        <profile name="Khaine’s Fury" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="cdfd-2e94-3e58-d7d8">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Breaching (6+), Breath of Khaine</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="e136-1c28-cc6d-d67c" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Breath of Khaine" id="52dc-901a-f98f-afbf" hidden="false" type="rule" targetId="ffdd-69e3-b217-0443"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Dedicated Transport" id="2143-410c-0690-5d43" hidden="false">
@@ -892,9 +1001,6 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
             <infoLink name="Fast Shot" id="c6b0-935f-b094-f95f" hidden="false" type="rule" targetId="b028-056f-fd40-61b7"/>
             <infoLink name="Inescapable Accuracy" id="2858-7744-a2ba-6051" hidden="false" type="rule" targetId="9294-1bd2-347f-64a8"/>
           </infoLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9bb6-f745-6eb0-933e" includeChildSelections="false"/>
-          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Dire Avenger" hidden="false" id="ccce-3cc1-d725-abca">
           <infoLinks>
@@ -993,6 +1099,49 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Fire Dragon" hidden="false" id="3fe8-31f2-9164-c54f">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="Aspect Shrine (Fire Dragon)" field="name"/>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Aspect Armour" hidden="false" id="5caf-2bfa-16c4-d284" type="selectionEntry" targetId="c81b-3334-7a37-1473">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c8d3-7f4e-91a1-9f99-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8d3-7f4e-91a1-9f99-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Meltabombs" hidden="false" id="e585-38fb-32fe-cbd3" type="selectionEntry" targetId="b9dd-3b21-f3f8-78e3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0880-f7a8-9b5b-f610-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0880-f7a8-9b5b-f610-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Can Exchange Fusion Gun for:" id="6b88-d5f5-e6f3-c47e" hidden="false" defaultSelectionEntryId="1065-d18d-48d0-46b6">
+              <entryLinks>
+                <entryLink import="true" name="Fusion Gun" hidden="false" id="1065-d18d-48d0-46b6" type="selectionEntry" targetId="37f0-8676-e522-1da2" sortIndex="1"/>
+                <entryLink import="true" name="Khaine’s Fury" hidden="false" id="bace-f190-106a-95fd" type="selectionEntry" targetId="80b0-9b50-4322-51a3" sortIndex="2"/>
+                <entryLink import="true" name="Firepike" hidden="false" id="93d5-f121-d9d4-d9dd" type="selectionEntry" targetId="b243-c708-3654-13d6" sortIndex="3">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe70-85bb-64af-6d37-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe70-85bb-64af-6d37-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <infoLinks>
+            <infoLink name=" Crack Shot" id="f704-8cd5-e2de-3788" hidden="false" type="rule" targetId="bd8b-5629-8963-22b1"/>
+            <infoLink name="Wrecker" id="54a4-3e49-285d-d909" hidden="false" type="rule" targetId="c660-1529-06f4-2477"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <constraints>
