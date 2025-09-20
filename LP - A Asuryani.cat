@@ -5,6 +5,14 @@
   </catalogueLinks>
   <entryLinks>
     <entryLink import="true" name="Howling Banshees" hidden="false" id="75b5-2c30-d24e-e511" type="selectionEntry" targetId="cef9-7428-bebc-312e"/>
+    <entryLink import="true" name="Autarch" hidden="false" id="99a5-f2a5-9db4-57d7" type="selectionEntry" targetId="96f7-6641-95a9-979f">
+      <categoryLinks>
+        <categoryLink targetId="4f85-eb33-30c9-8f51" id="9a34-9f60-fdb6-a9e2" primary="true" name="HQ:"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="c35a-5385-0a3e-e7b2" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="6447-9fe3-74da-222a" primary="false" name="Infantry Unit Type"/>
+        <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="9ac7-275a-a4d7-a710" primary="false" name="Character"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Howling Banshees" hidden="false" id="cef9-7428-bebc-312e" publicationId="a179-8e8f-4601-987c" page="41">
@@ -185,6 +193,7 @@
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="242c-5c02-f4a9-ef42" primary="true" name="HQ:"/>
         <categoryLink targetId="cf01-e0e7-4567-a4b9" id="2db1-e1aa-91ed-672b" primary="false" name="Asuryani Unit Sub-Type:"/>
         <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="e420-3f50-fc51-4dd4" primary="false" name="Character"/>
+        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="8947-4875-b6a7-39aa" primary="false" name="Infantry Unit Type"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Heavy Aspect Armour" hidden="false" id="252e-3a0b-25f3-cb12" type="selectionEntry" targetId="c81b-3334-7a37-1473">
@@ -201,6 +210,7 @@
         </entryLink>
         <entryLink import="true" name="Plasma Grenades" hidden="false" id="28d7-ae4f-897b-49f4" type="selectionEntry" targetId="0a4e-f69a-2e83-cb4c"/>
         <entryLink import="true" name="Close Combat Weapon" hidden="false" id="7b65-9e40-4a2c-5fd9" type="selectionEntry" targetId="3d50-2f85-06ff-6aee"/>
+        <entryLink import="true" name="Aspect Shrine (x)" hidden="false" id="1b54-b79c-8d5e-3b54" type="selectionEntryGroup" targetId="cdd4-9cae-6a32-bbf0"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="80"/>

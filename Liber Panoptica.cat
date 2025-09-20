@@ -109,6 +109,12 @@ Each Exarch or Autarch may only select a single Aspect Shrine upgrade, unless th
 
 Whilst each Aspect Shrine upgrade notes the amount of times an Exarch from a Detachment may select it (usually only one), an Autarch may select any Aspect Shrine upgrade and does not count toward the amount of times it may be selected by Exarchs in the same Detachment.</description>
     </rule>
+    <rule name="Inescapable Accuracy" id="9294-1bd2-347f-64a8" hidden="false" publicationId="a179-8e8f-4601-987c" page="144">
+      <description>Successful Shrouded Damage Mitigation Rolls and Countermeasures Saves made against Shooting Attacks by a model with this Special Rule must be re-rolled.</description>
+    </rule>
+    <rule name="Fast Shot" id="b028-056f-fd40-61b7" hidden="false" publicationId="a179-8e8f-4601-987c">
+      <description>A model with this Special Rule may add one to the number of shots fired when making a Shooting Attack with a weapon which has the Heavy type.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Aspect Armour" hidden="false" id="7c09-bc4e-e8a9-4a75" publicationId="a179-8e8f-4601-987c" page="160">
@@ -657,14 +663,14 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="A Wave Serpent may exchange its Turret Mounted Gravis Shuriken Cannon for one of the following:" id="a91d-f118-9de7-1295" hidden="false" page="" defaultSelectionEntryId="0829-7517-0ea7-61bc">
+        <selectionEntryGroup name="A Wave Serpent may exchange its Turret Mounted Gravis Shuriken Cannon for one of the following:" id="a91d-f118-9de7-1295" hidden="false" defaultSelectionEntryId="0829-7517-0ea7-61bc">
           <entryLinks>
-            <entryLink import="true" name="Gravis Shuriken Cannon" hidden="false" id="eb67-9ce7-06b6-e603" type="selectionEntry" targetId="4197-9e5c-412b-b13c" sortIndex="">
+            <entryLink import="true" name="Gravis Shuriken Cannon" hidden="false" id="eb67-9ce7-06b6-e603" type="selectionEntry" targetId="4197-9e5c-412b-b13c">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Gravis Scatter Laser" hidden="false" id="3854-685d-b15b-4723" type="selectionEntry" targetId="788d-07ea-6d03-ed67" sortIndex="">
+            <entryLink import="true" name="Gravis Scatter Laser" hidden="false" id="3854-685d-b15b-4723" type="selectionEntry" targetId="788d-07ea-6d03-ed67">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
               </costs>
@@ -807,6 +813,24 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Aspect Armour" hidden="false" id="8545-50ee-fe40-4ed5" type="selectionEntry" targetId="c81b-3334-7a37-1473"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="add" value="9231-183c-b97b-63f9" field="category"/>
+            <modifier type="set" value="Aspect Shrine (Dark Reaper)" field="name" scope="parent"/>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Relentless" id="f3e7-7265-5318-dc1c" hidden="false" type="rule" targetId="7adf-ac9a-5035-522d"/>
+            <infoLink name="Fast Shot" id="c6b0-935f-b094-f95f" hidden="false" type="rule" targetId="b028-056f-fd40-61b7"/>
+            <infoLink name="Inescapable Accuracy" id="2858-7744-a2ba-6051" hidden="false" type="rule" targetId="9294-1bd2-347f-64a8"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9bb6-f745-6eb0-933e" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
