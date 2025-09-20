@@ -780,7 +780,7 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
         </selectionEntryGroup>
         <selectionEntryGroup name="A Wave Serpent may exchange its Hull (Front) Mounted Twin-Linked Shuriken Catapult for a:" id="717d-e780-4cf7-9f66" hidden="false" defaultSelectionEntryId="bd4f-cf8a-9af6-54a1">
           <entryLinks>
-            <entryLink import="true" name=" Twin-Linked Shuriken Catapult" hidden="false" id="064f-fb75-e144-ca79" type="selectionEntry" targetId="9ec7-cc82-393e-0a78"/>
+            <entryLink import="true" name="Twin-Linked Shuriken Catapult" hidden="false" id="064f-fb75-e144-ca79" type="selectionEntry" targetId="9ec7-cc82-393e-0a78"/>
             <entryLink import="true" name="Shuriken Cannon " hidden="false" id="c1a0-98aa-57ff-3b23" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14">
               <modifiers>
                 <modifier type="set" value="Hull (Front) Mounted Shuriken Cannon" field="name"/>
@@ -1299,7 +1299,7 @@ Any model with Swooping Hawk Wings also gains the Bulky (2) and Deep Strike Spe
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17c3-f104-a319-9767-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Scorpion Chainsword" hidden="false" id="6dea-bcfd-2382-5b02" page="">
+    <selectionEntry type="upgrade" import="true" name="Scorpion Chainsword" hidden="false" id="6dea-bcfd-2382-5b02">
       <profiles>
         <profile name="Scorpion Chainsword" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="7c64-9980-587b-9028">
           <characteristics>
@@ -1683,7 +1683,7 @@ In addition to the bonus move during the Movement phase, a unit composed entire
                     </entryLink>
                   </entryLinks>
                   <selectionEntryGroups>
-                    <selectionEntryGroup name="Dire Avenger Aspect Shrine upgrade may choose to replace their Twin-Linked Avenger Catapult for one of the following options" id="3bee-b9cc-b154-98e2" hidden="false" defaultSelectionEntryId="44c6-97d2-28ad-2fc7" sortIndex="">
+                    <selectionEntryGroup name="Dire Avenger Aspect Shrine upgrade may choose to replace their Twin-Linked Avenger Catapult for one of the following options" id="3bee-b9cc-b154-98e2" hidden="false" defaultSelectionEntryId="44c6-97d2-28ad-2fc7">
                       <entryLinks>
                         <entryLink import="true" name="Twin-Linked Avenger Catapult" hidden="false" id="44c6-97d2-28ad-2fc7" type="selectionEntry" targetId="e588-35fa-80f9-9ca2" sortIndex="1"/>
                         <entryLink import="true" name="Power Weapon" hidden="false" id="0df2-1f41-7282-e330" type="selectionEntry" targetId="d2db-7598-f55f-86fe" sortIndex="2">
@@ -1769,7 +1769,7 @@ In addition to the bonus move during the Movement phase, a unit composed entire
             </selectionEntryGroup>
           </selectionEntryGroups>
           <infoLinks>
-            <infoLink name=" Crack Shot" id="f704-8cd5-e2de-3788" hidden="false" type="rule" targetId="bd8b-5629-8963-22b1"/>
+            <infoLink name="Crack Shot" id="f704-8cd5-e2de-3788" hidden="false" type="rule" targetId="bd8b-5629-8963-22b1"/>
             <infoLink name="Wrecker" id="54a4-3e49-285d-d909" hidden="false" type="rule" targetId="c660-1529-06f4-2477"/>
           </infoLinks>
         </selectionEntry>
@@ -1845,7 +1845,7 @@ In addition to the bonus move during the Movement phase, a unit composed entire
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Heavy Aspect Armour" hidden="false" id="aa1e-5f4f-d0b0-9479" type="selectionEntry" targetId="c81b-3334-7a37-1473"/>
-            <entryLink import="true" name="Spectre Jet Pack" hidden="false" id="76e0-6010-6c90-8be3" type="selectionEntry" targetId="2249-9be3-08fa-f818">
+            <entryLink import="true" name="Swooping Hawk Wings" hidden="false" id="76e0-6010-6c90-8be3" type="selectionEntry" targetId="2249-9be3-08fa-f818">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="87d5-ae69-9cac-09ca-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87d5-ae69-9cac-09ca-max" includeChildSelections="false"/>
@@ -2113,8 +2113,8 @@ In addition to the bonus move during the Movement phase, a unit composed entire
               <entryLinks>
                 <entryLink import="true" name="Power Sword" hidden="false" id="d8d4-87a2-8c24-ed20" type="selectionEntry" targetId="226f-96da-94c9-35c8">
                   <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4c8e-10fe-d2e5-cc43-min" includeChildSelections="false"/>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4c8e-10fe-d2e5-cc43-max" includeChildSelections="false"/>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="dd2c-b710-1b92-9fd6-min" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="dd2c-b710-1b92-9fd6-max" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -2123,7 +2123,7 @@ In addition to the bonus move during the Movement phase, a unit composed entire
           <selectionEntryGroups>
             <selectionEntryGroup name="Warp Spider Aspect Shrine upgrade may exchange their Death Spinner for one of the following options:" id="ca07-f64b-25b5-df3a" hidden="false" defaultSelectionEntryId="8cf8-4a21-9f40-689c">
               <entryLinks>
-                <entryLink import="true" name="Death Spinner" hidden="false" id="8cf8-4a21-9f40-689c" type="selectionEntry" targetId="510f-e692-c652-3df0" sortIndex="1">
+                <entryLink import="true" name="Deathspinner" hidden="false" id="8cf8-4a21-9f40-689c" type="selectionEntry" targetId="510f-e692-c652-3df0" sortIndex="1">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d05a-6da9-e3b9-fb3c-min" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d05a-6da9-e3b9-fb3c-max" includeChildSelections="false"/>
