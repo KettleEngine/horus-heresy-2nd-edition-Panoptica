@@ -1995,8 +1995,8 @@ In addition to the bonus move during the Movement phase, a unit composed entire
                     </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="be84-538a-ba43-ae0d-min" includeChildSelections="false"/>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="be84-538a-ba43-ae0d-max" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="be84-538a-ba43-ae0d-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be84-538a-ba43-ae0d-max" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
