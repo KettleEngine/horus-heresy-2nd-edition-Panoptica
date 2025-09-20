@@ -115,6 +115,15 @@ Whilst each Aspect Shrine upgrade notes the amount of times an Exarch from a Det
     <rule name="Fast Shot" id="b028-056f-fd40-61b7" hidden="false" publicationId="a179-8e8f-4601-987c">
       <description>A model with this Special Rule may add one to the number of shots fired when making a Shooting Attack with a weapon which has the Heavy type.</description>
     </rule>
+    <rule name="Flexible Tactics" id="25c0-5b51-3f9a-f5a1" hidden="false" publicationId="a179-8e8f-4601-987c" page="142">
+      <description>At the beginning of the Controlling Player’s turn, a unit containing any models with this Special Rule must select one of the following Tactics. Note that only models with the Flexible Tactics Special Rule may benefit from its effects.
+
+Defensive Posture
+If a unit with this Tactic has at least half of its models within 6&quot; of an Objective, then all models in the unit gain the Feel No Pain (5+), Battle-Hardened (1), and Stubborn Special Rules.
+
+Offensive Rush
+Whenever a unit with this Tactic makes a Shooting Attack, each weapon they are equipped with makes one additional shot - a weapon with Assault 2 becoming Assault 3, and so on.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Aspect Armour" hidden="false" id="7c09-bc4e-e8a9-4a75" publicationId="a179-8e8f-4601-987c" page="160">
@@ -308,13 +317,14 @@ gains all of the following benefits:
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Avenger Catapult" hidden="false" id="e588-35fa-80f9-9ca2">
+    <selectionEntry type="upgrade" import="true" name="Twin-Linked Avenger Catapult" hidden="false" id="e588-35fa-80f9-9ca2">
       <infoLinks>
         <infoLink name="Breaching (X)" id="1e6d-2a29-ae3a-487d" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
           <modifiers>
             <modifier type="set" value="Breaching (5+)" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Twin-linked" id="d774-ec7b-a4ba-5eb7" hidden="false" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
       </infoLinks>
       <profiles>
         <profile name="Avenger Catapult" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="9e04-8f33-db9c-997a">
@@ -782,6 +792,55 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
         <infoLink name="Blast" id="184c-0671-b826-13ab" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Avenger Catapult" hidden="false" id="3ab7-bb3f-541b-322f">
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="2491-0778-9bf1-54eb" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
+          <modifiers>
+            <modifier type="set" value="Breaching (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile name="Avenger Catapult" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="f707-380f-f5c6-f059">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Breaching (5+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Diresword" hidden="false" id="b018-d38c-24b1-7b1c">
+      <profiles>
+        <profile name="Diresword" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5d3a-d868-124f-e3f3">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (2), Rending (5+), Murderous Strike (6+), Sanctic</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Brutal (X)" id="7c4f-4f42-a762-94c4" hidden="false" type="rule" targetId="5079-1fec-d32b-8b84">
+          <modifiers>
+            <modifier type="set" value="Brutal (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Rending (X)" id="5129-e9e2-6e1a-6ade" hidden="false" type="rule" targetId="0ac9-fab7-aef3-de1d">
+          <modifiers>
+            <modifier type="set" value="Rending (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Murderous Strike (X)" id="4145-6f50-38ac-3dcb" hidden="false" type="rule" targetId="93b9-1454-0e7c-42ae">
+          <modifiers>
+            <modifier type="set" value="Murderous Strike (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Sanctic" id="1ca7-0d1d-872e-06d7" hidden="false" type="rule" targetId="d1c9-ee74-4e4f-8830"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Dedicated Transport" id="2143-410c-0690-5d43" hidden="false">
@@ -839,6 +898,79 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9bb6-f745-6eb0-933e" includeChildSelections="false"/>
           </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Dire Avenger" hidden="false" id="ccce-3cc1-d725-abca">
+          <infoLinks>
+            <infoLink name="Feel No Pain (X)" id="02d6-7564-4a22-3ba2" hidden="false" type="rule" targetId="ec46-ff29-32e0-c2aa">
+              <modifiers>
+                <modifier type="set" value="Feel No Pain (5+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Flexible Tactics" id="7e75-10d5-96bf-a108" hidden="false" type="rule" targetId="25c0-5b51-3f9a-f5a1"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="Aspect Shrine (Dire Avenger)" field="name"/>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Augury Scanner" hidden="false" id="8567-69e5-3a83-01b8" type="selectionEntry" targetId="5bd4-bd5a-25da-3d8b"/>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapons Choice:" id="7d72-4a9a-7bd4-6cc2" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a87f-cfde-0dea-3057"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7983-a7e2-b3e8-5dc0"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Power Weapon and Improved Forceshield" hidden="false" id="c7d4-7b67-e911-b8f8" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Power Weapon" hidden="false" id="c779-1d0d-0f25-d259" type="selectionEntryGroup" targetId="5ff5-48c0-b9f1-5a05"/>
+                    <entryLink import="true" name="Improved Forceshield" hidden="false" id="28ee-d292-7a36-fb85" type="selectionEntry" targetId="13d7-d8b3-b4c7-47ae"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Shuriken Pistol &amp; Twin-Linked Avenger Catapult" hidden="false" id="516a-6922-c1e5-a3ee" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Shuriken Pistol" hidden="false" id="7a6a-c403-e91c-da7d" type="selectionEntry" targetId="c1af-d7e7-d404-7a33"/>
+                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Dire Avenger Aspect Shrine upgrade may choose to replace their Twin-Linked Avenger Catapult for one of the following options" id="3bee-b9cc-b154-98e2" hidden="false" defaultSelectionEntryId="44c6-97d2-28ad-2fc7" sortIndex="">
+                      <entryLinks>
+                        <entryLink import="true" name="Twin-Linked Avenger Catapult" hidden="false" id="44c6-97d2-28ad-2fc7" type="selectionEntry" targetId="e588-35fa-80f9-9ca2" sortIndex="1"/>
+                        <entryLink import="true" name="Power Weapon" hidden="false" id="0df2-1f41-7282-e330" type="selectionEntry" targetId="d2db-7598-f55f-86fe" sortIndex="2">
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Diresword" hidden="false" id="7bd0-ea1a-cd6c-74ac" type="selectionEntry" targetId="b018-d38c-24b1-7b1c" sortIndex="3">
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="707b-608b-276a-c484-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="707b-608b-276a-c484-max" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Diresword and Improved Forceshield" hidden="false" id="96ed-6047-6407-d7c9" sortIndex="3">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Diresword" hidden="false" id="aafb-2826-b45a-c141" type="selectionEntry" targetId="b018-d38c-24b1-7b1c"/>
+                    <entryLink import="true" name="Improved Forceshield" hidden="false" id="6e10-1cda-3edf-4f43" type="selectionEntry" targetId="13d7-d8b3-b4c7-47ae"/>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <constraints>
