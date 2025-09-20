@@ -2027,14 +2027,8 @@ In addition to the bonus move during the Movement phase, a unit composed entire
                   <entryLinks>
                     <entryLink import="true" name="Chainsabre" hidden="false" id="d0c2-0564-1f44-b582" type="selectionEntry" targetId="3362-ad9a-901b-a5d8">
                       <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4932-7866-058c-dce9-min" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4932-7866-058c-dce9-max" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Chainsabre" hidden="false" id="6e41-0cb6-bebc-f91e" type="selectionEntry" targetId="3362-ad9a-901b-a5d8">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="423e-b2a3-bc75-1fd7-min" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="423e-b2a3-bc75-1fd7-max" includeChildSelections="false"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3ef1-6e05-5bcb-9bc3-min"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3ef1-6e05-5bcb-9bc3-max"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
