@@ -833,6 +833,9 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f97e-c71a-bf9d-d780" includeChildSelections="false"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>
