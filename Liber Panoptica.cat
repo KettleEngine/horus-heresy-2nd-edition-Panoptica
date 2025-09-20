@@ -1986,8 +1986,8 @@ In addition to the bonus move during the Movement phase, a unit composed entire
                     </entryLink>
                     <entryLink import="true" name="Scorpion Chainsword" hidden="false" id="749e-89db-a595-8e01" type="selectionEntry" targetId="6dea-bcfd-2382-5b02">
                       <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0aa3-faa2-136a-19f6-min" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0aa3-faa2-136a-19f6-max" includeChildSelections="false"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0aa3-faa2-136a-19f6-min" includeChildSelections="false"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0aa3-faa2-136a-19f6-max" includeChildSelections="false"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
