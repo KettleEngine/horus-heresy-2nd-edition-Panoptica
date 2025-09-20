@@ -136,6 +136,27 @@ Whenever a unit with this Tactic makes a Shooting Attack, each weapon they are 
     <rule name="War Shout" id="1f39-46db-49da-e2d9" hidden="false" publicationId="a179-8e8f-4601-987c" page="148">
       <description>On a turn in which a unit containing a model with this Special Rule charges or is successfully charged, any enemy models locked in the combat suffer a Penalty of -1 to their Weapon Skill, to a minimum of 1.</description>
     </rule>
+    <rule name="Shadow of Death" id="7b05-d9ab-ae6d-3ca4" hidden="false">
+      <description>An enemy unit with at least one model within 12&quot; of a model with this Special Rule must roll an additional D6 when making a Leadership Characteristic Check for any reason, discarding the lowest die. Models with the Fearless Special Rule are not affected by this Special Rule.</description>
+    </rule>
+    <rule name="Ghostlight" id="1cda-9f02-7548-2cb5" hidden="false">
+      <description>Whenever a unit containing more than one model armed with weapons with this Special Rule is elected to make a shooting attack in the Controlling Player’s Shooting Phase, the unit may declare it is combining its fire rather than attacking normally. If you do so, select one model in the unit. No other models in the unit may make Shooting Attacks with a weapon with this Special Rule during the Controlling Player’s Shooting Phase.
+
+The selected model may then make a shooting attack with a weapon it is equipped with which has the Ghostlight Special Rule. If the weapon has multiple profiles with the Ghostlight Special Rule, you must select one of them to use. If only one of multiple profiles has the Ghostlight Special Rule, only that profile may be used for the combined fire attack.
+
+In addition, for each two additional models in the unit equipped with a weapon with the Ghostlight Special Rule, you may apply one of the below bonuses to the attack. Note that these bonuses may only be claimed if the friendly models in the unit can see the selected model which is making the shooting attack, and you may select the same bonus multiple times:
+
+• Increase the Range of the Profile by 6”
+• Increase the Strength of the Profile by +1 (to a maximum of 10)
+• Decrease the AP of the Profile by -1 (to a minimum of 1)
+• Increase the number of shots by 1</description>
+    </rule>
+    <rule name="Brutal Ambush" id="d641-f91d-ca24-0a72" hidden="false" page="141" publicationId="a179-8e8f-4601-987c">
+      <description>A unit with this Special Rule has the Shrouded (5+) Special Rule until the first time the unit is locked in combat, at which point it loses the Shrouded (5+) Special Rule and gains the Rage (2) and Counter-Attack (1) Special Rules instead.</description>
+    </rule>
+    <rule name="Stalker" id="7966-ee0d-42a1-5ec7" hidden="false">
+      <description>During the first round of a Challenge, a model with this Special Rule gains a number of bonus attacks equal to the amount its Initiative Characteristic is higher than that of the opposing model. If the Initiative Characteristics are equal, or the model with this Special Rule has a lower Initiative Characteristic, this rule has no effect.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Aspect Armour" hidden="false" id="7c09-bc4e-e8a9-4a75" publicationId="a179-8e8f-4601-987c" page="160">
@@ -195,6 +216,10 @@ Whenever a unit with this Tactic makes a Shooting Attack, each weapon they are 
           </modifiers>
         </infoLink>
       </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="03c8-19be-c61f-279f-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03c8-19be-c61f-279f-max" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Power Sword" hidden="false" id="226f-96da-94c9-35c8" publicationId="a179-8e8f-4601-987c" page="155">
       <profiles>
@@ -240,7 +265,7 @@ In addition, the Controlling Player may choose to have a model with Plasma Gren
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eafa-a567-d3e7-e425-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name=" Craftworld Standard" hidden="false" id="34a8-ff38-f64d-4b34">
+    <selectionEntry type="upgrade" import="true" name="Craftworld Standard" hidden="false" id="34a8-ff38-f64d-4b34">
       <profiles>
         <profile name=" Craftworld Standard" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="58c2-81b8-dec7-6ebe" publicationId="a179-8e8f-4601-987c" page="162">
           <characteristics>
@@ -280,7 +305,7 @@ gains all of the following benefits:
       <profiles>
         <profile name="Gravis Shuriken Cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="2661-319c-70f0-ae73">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 8, Breaching (6+)</characteristic>
@@ -306,7 +331,7 @@ gains all of the following benefits:
       <profiles>
         <profile name="Shuriken Cannon " typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="3483-b300-65f1-08a6">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 4, Breaching (6+)</characteristic>
@@ -325,7 +350,7 @@ gains all of the following benefits:
       <profiles>
         <profile name="Shuriken Catapult" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="9823-67b2-652d-8e82">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Breaching (6+)</characteristic>
@@ -345,7 +370,7 @@ gains all of the following benefits:
       <profiles>
         <profile name="Avenger Catapult" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="9e04-8f33-db9c-997a">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Breaching (5+)</characteristic>
@@ -361,7 +386,7 @@ gains all of the following benefits:
       <profiles>
         <profile name="Gravis Scatter Laser" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a2a8-4325-a1ba-aedb">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 6, Pinning, Twin-Linked</characteristic>
@@ -376,7 +401,7 @@ gains all of the following benefits:
       <profiles>
         <profile name="Scatter Laser" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5dc0-f978-22ec-950e">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Pinning</characteristic>
@@ -384,7 +409,7 @@ gains all of the following benefits:
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name=" Twin-Linked Shuriken Catapult" hidden="false" id="9ec7-cc82-393e-0a78">
+    <selectionEntry type="upgrade" import="true" name="Twin-Linked Shuriken Catapult" hidden="false" id="9ec7-cc82-393e-0a78">
       <infoLinks>
         <infoLink name="Breaching (X)" id="0b4e-3ac7-482d-89bc" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
           <modifiers>
@@ -396,7 +421,7 @@ gains all of the following benefits:
       <profiles>
         <profile name=" Twin-Linked Shuriken Catapult" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a67c-0764-da61-167c">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Breaching (6+), Twin-Linked</characteristic>
@@ -408,7 +433,7 @@ gains all of the following benefits:
       <profiles>
         <profile name="Aeldari Missile Launcher (Sunburst)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a098-9c7b-f5d8-bedd">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3”), Blind</characteristic>
@@ -416,7 +441,7 @@ gains all of the following benefits:
         </profile>
         <profile name="Aeldari Missile Launcher (Starhawk)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="676b-2c41-7e6d-f51a">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Skyfire</characteristic>
@@ -424,7 +449,7 @@ gains all of the following benefits:
         </profile>
         <profile name="Aeldari Missile Launcher (Starshot)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="6d2d-6b19-cb6e-79ce">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1</characteristic>
@@ -441,7 +466,7 @@ gains all of the following benefits:
       <profiles>
         <profile name="Aeldari Missile Launcher (Sunburst)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="4059-e79c-d2e9-239a">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3”), Blind</characteristic>
@@ -449,7 +474,7 @@ gains all of the following benefits:
         </profile>
         <profile name="Aeldari Missile Launcher (Starhawk)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="c632-8e94-c3e5-596b">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Skyfire</characteristic>
@@ -457,7 +482,7 @@ gains all of the following benefits:
         </profile>
         <profile name="Aeldari Missile Launcher (Starshot)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="487e-a2f6-c38f-4d0a">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1</characteristic>
@@ -473,7 +498,7 @@ gains all of the following benefits:
       <profiles>
         <profile name="Bright Lance" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="7054-7fc5-866d-94bc">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Lance, Sunder</characteristic>
@@ -489,7 +514,7 @@ gains all of the following benefits:
       <profiles>
         <profile name="Gravis Bright Lance" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="dfd4-7faf-b0df-0cde">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Lance, Sunder</characteristic>
@@ -505,7 +530,7 @@ gains all of the following benefits:
       <profiles>
         <profile name="Gravis Starcannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="9d49-9934-91ab-e190">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 6, Breaching (4+)</characteristic>
@@ -792,7 +817,7 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
       <profiles>
         <profile name="Tempest Launcher" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5130-9348-7035-c9a5">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Barrage, Blast (3”), Pinning</characteristic>
@@ -816,7 +841,7 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
       <profiles>
         <profile name="Avenger Catapult" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="f707-380f-f5c6-f059">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Breaching (5+)</characteristic>
@@ -858,7 +883,7 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
       <profiles>
         <profile name="Firepike" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="928f-fd06-232e-7cf6">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Melta)</characteristic>
@@ -877,7 +902,7 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
       <profiles>
         <profile name="Fusion Pistol" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ff16-7fd5-fa6e-bb92">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">8</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">8&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Armourbane (Melta)</characteristic>
@@ -896,7 +921,7 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
       <profiles>
         <profile name="Fusion Gun" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="1e8d-22f0-e2aa-59eb">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Melta)</characteristic>
@@ -915,7 +940,7 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
       <profiles>
         <profile name="Inferno Lance" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ce32-7d92-069d-b304">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 5, Armourbane (Melta)</characteristic>
@@ -962,7 +987,7 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
         </profile>
         <profile name="Triskele (Ranged)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="416d-4aad-e185-5b6d">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3</characteristic>
@@ -1012,6 +1037,218 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
           </modifiers>
         </infoLink>
         <infoLink name="Shred" id="c19a-b42d-ce30-3de2" hidden="false" type="rule" targetId="5e7e-1628-8174-6f2c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Spectre Jet Pack" hidden="false" id="2249-9be3-08fa-f818">
+      <profiles>
+        <profile name="Spectre Jet Pack" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="715a-3ce0-d994-2a2e" publicationId="a179-8e8f-4601-987c" page="164">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit composed entirely of models equipped with Spectre Jet Packs may choose to increase its Move Characteristic by +7 and ignore terrain while Moving during the Movement phase. A unit that ends or begins its movement in Dangerous Terrain will still need to take Dangerous Terrain tests as normal, even when employing Spectre Jet Packs, and treats Difficult Terrain as Dangerous Terrain.
+
+
+In addition to the bonus move during the Movement phase, a unit composed entirely of models with Spectre Jet Packs may make an additional Move of 7” during the Shooting phase. This Move must be taken after the unit has completed any Shooting Attacks, is not limited by the weapons fired by the unit during that Shooting phase and ignores terrain in the same manner as moves made using a Spectre Jet Pack in the Movement phase. During any Reaction that allows a unit to Move, a unit composed entirely of models with Spectre Jump Pack increases the distance of that Move by 7 and allows it to ignore terrain in the same manner as other Spectre Jet Pack moves.
+
+
+Any model with a Spectre Jet Pack also gains the Bulky (2) and Deep Strike Special Rules. If the model already has the Bulky (2) Special Rule, it gains the Bulky (3) Special Rule instead.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Bulky (X)" id="327c-4f2d-c11f-8f91" hidden="false" type="rule" targetId="676c-7b75-4b6f-9405">
+          <modifiers>
+            <modifier type="set" value="Bulky (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Deep Strike" id="f652-53df-7590-e14a" hidden="false" type="rule" targetId="f1e1-986f-c783-ca9e"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Haywire Grenade" hidden="false" id="a712-5d45-1cef-cc73">
+      <profiles>
+        <profile name="Haywire Grenade" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="6ab1-6adb-16ab-6b79">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">-</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Haywire, Detonation</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Detonation" id="700a-1045-98b0-0b86" hidden="false" type="rule" targetId="8a47-9fc5-16fb-b46e"/>
+        <infoLink name="Haywire" id="fa0f-2586-35e0-c260" hidden="false" type="rule" targetId="1dd4-7a75-5c59-8425"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Prism Blaster" hidden="false" id="be9b-6514-face-eaab">
+      <profiles>
+        <profile name="Prism Blaster" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5bb4-d494-7d57-1b8d">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy , Lance, Ghostlight</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ghostlight" id="5bfd-f33c-b639-866e" hidden="false" type="rule" targetId="1cda-9f02-7548-2cb5"/>
+        <infoLink name="Lance" id="a1fe-b25e-ec53-32ec" hidden="false" type="rule" targetId="3d6b-9e0b-56f0-8a1e"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Prism Rifle" hidden="false" id="8b4b-f372-8adc-900e">
+      <profiles>
+        <profile name="- Dispersed" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ba58-e5eb-28c0-6116">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3“), Ghostlight</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="- Focused " typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="7040-b1e7-8b2b-498f">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Lance, Ghostlight</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ghostlight" id="0c60-ef0b-7300-7297" hidden="false" type="rule" targetId="1cda-9f02-7548-2cb5"/>
+        <infoLink name="Blast" id="1844-c166-dabf-f6e5" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
+        <infoLink name="Lance" id="f6a1-c949-b8ce-4d2a" hidden="false" type="rule" targetId="3d6b-9e0b-56f0-8a1e"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Haywire Launcher" hidden="false" id="821c-cf19-01c0-bd77">
+      <profiles>
+        <profile name="Haywire Launcher" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="46f1-4e9e-eff2-fbb4">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Haywire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Haywire" id="100f-69a1-2bd8-f1d2" hidden="false" type="rule" targetId="1dd4-7a75-5c59-8425"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Skyrunner Jetbike" hidden="false" id="7867-42f2-b894-df5f">
+      <profiles>
+        <profile name="Skyrunner Jetbike" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="eb5c-d323-7db4-d04f">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">a model with a Skyrunner Jetbike may choose to move up to their unmodified Initiative Characteristic at the start of the Controlling Player’s Charge Sub-Phase. A model that chooses to do so may not declare a Charge</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="18" field="893e-2d76-8f04-44e5" affects="profiles.Unit" scope="parent"/>
+        <modifier type="add" value="6d79-a3e4-381f-7b0f" field="category" scope="parent"/>
+        <modifier type="add" value="4303-1348-cce4-9501" field="category" scope="parent"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Fleet (X)" id="546a-b31c-ad8d-7b43" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+          <modifiers>
+            <modifier type="set" value="Fleet (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Firing Protocols (X)" id="dbe5-0352-e2af-be8d" hidden="false" type="rule" targetId="32a3-f599-5c92-2945">
+          <modifiers>
+            <modifier type="set" value="Firing Protocols (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Hit &amp; Run" id="7820-186a-ed8d-c503" hidden="false" type="rule" targetId="5986-e960-d432-affd"/>
+        <infoLink name="Hammer of Wrath (X)" id="1a2c-d48b-baab-7cac" hidden="false" type="rule" targetId="aec0-c3aa-1e4e-1779">
+          <modifiers>
+            <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Relentless" id="0906-4bf4-3863-45ef" hidden="false" type="rule" targetId="7adf-ac9a-5035-522d"/>
+        <infoLink name="Battle-Hardened (X)" id="c6df-486d-9813-3f46" hidden="false" type="rule" targetId="5c3b-ed0b-4ad0-d547">
+          <modifiers>
+            <modifier type="set" value="Battle-Hardened (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Shrouded (X)" id="f505-bdd3-ce2f-00f0" hidden="false" type="rule" targetId="10c3-fdb0-089f-ca65">
+          <modifiers>
+            <modifier type="set" value="Shrouded (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Deep Strike" id="aa39-e213-ac33-15ab" hidden="false" type="rule" targetId="f1e1-986f-c783-ca9e"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Twin-Linked Shuriken Catapult" hidden="false" id="0438-43a4-2269-4505" type="selectionEntry" targetId="9ec7-cc82-393e-0a78"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="074e-6b9b-c4e6-1f33-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="074e-6b9b-c4e6-1f33-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Star Lance" hidden="false" id="18fb-e4d0-9cec-0cd9">
+      <profiles>
+        <profile name="Star Lance (Ranged)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="e639-d6ac-75d9-fe6c">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Lance, Breaching (5+)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Star Lance (Melee)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="210e-f921-7480-13ba">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Lance, Reach (1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="7e52-90d4-467e-01f0" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
+          <modifiers>
+            <modifier type="set" value="Breaching 5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Lance" id="78c7-a03b-6937-c0b8" hidden="false" type="rule" targetId="3d6b-9e0b-56f0-8a1e"/>
+        <infoLink name="Reach (X)" id="8c0a-b4a8-62a9-fc98" hidden="false" type="rule" targetId="19bf-62a2-5737-890b">
+          <modifiers>
+            <modifier type="set" value="Reach (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Laser Lance" hidden="false" id="48d7-0971-2fa2-a534">
+      <profiles>
+        <profile name="Laser Lance (Ranged)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="3129-a417-b381-bf34">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Lance</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Laser Lance (Melee)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="410a-4db3-3d33-a922">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Lance, Reach (1), Breaching (5+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="9e9b-a210-64b2-7b47" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
+          <modifiers>
+            <modifier type="set" value="Breaching 5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Lance" id="070f-833a-4366-8dde" hidden="false" type="rule" targetId="3d6b-9e0b-56f0-8a1e"/>
+        <infoLink name="Reach (X)" id="632b-5705-7299-ba56" hidden="false" type="rule" targetId="19bf-62a2-5737-890b">
+          <modifiers>
+            <modifier type="set" value="Reach (1)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -1261,6 +1498,141 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Shadow Spectre" hidden="false" id="4423-77cd-2886-95e3" sortIndex="5">
+          <modifiers>
+            <modifier type="set" value="Aspect Shrine (Shadow Spectre)" field="name"/>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Fear (X)" id="9741-e861-2ebb-83d1" hidden="false" type="rule" targetId="21f6-7842-df5c-d2e7">
+              <modifiers>
+                <modifier type="set" value="Fear (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Relentless" id="79b0-824d-c4a5-c48a" hidden="false" type="rule" targetId="7adf-ac9a-5035-522d"/>
+            <infoLink name="Shrouded (X)" id="9a41-666a-a45f-f78b" hidden="false" type="rule" targetId="10c3-fdb0-089f-ca65">
+              <modifiers>
+                <modifier type="set" value="Shrouded (4+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Shadow of Death" id="e0c2-e022-d55c-8625" hidden="false" type="rule" targetId="7b05-d9ab-ae6d-3ca4"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Aspect Armour" hidden="false" id="aa1e-5f4f-d0b0-9479" type="selectionEntry" targetId="c81b-3334-7a37-1473"/>
+            <entryLink import="true" name="Spectre Jet Pack" hidden="false" id="76e0-6010-6c90-8be3" type="selectionEntry" targetId="2249-9be3-08fa-f818">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="87d5-ae69-9cac-09ca-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87d5-ae69-9cac-09ca-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Haywire Grenade" hidden="false" id="e82b-e86c-cf49-9aae" type="selectionEntry" targetId="a712-5d45-1cef-cc73">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c699-e2a1-b7f5-e36d-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c699-e2a1-b7f5-e36d-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Shadow Spectre Aspect Shrine upgrade may exchange their Prism Rifle for one of the following options:" id="9c86-9464-48f1-19ca" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Prism Rifle" hidden="false" id="0d2a-2a09-95bd-ef95" type="selectionEntry" targetId="8b4b-f372-8adc-900e" sortIndex="1"/>
+                <entryLink import="true" name="Haywire Launcher" hidden="false" id="2d58-3125-a6ba-ca6b" type="selectionEntry" targetId="821c-cf19-01c0-bd77" sortIndex="2">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Prism Blaster" hidden="false" id="d8b0-afa0-1101-0419" type="selectionEntry" targetId="be9b-6514-face-eaab" sortIndex="3">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b86f-5128-e53a-e7f5-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b86f-5128-e53a-e7f5-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Shining Spear" hidden="false" id="b4fe-1b8b-4dcf-b3e4" sortIndex="6">
+          <modifiers>
+            <modifier type="set" value="Aspect Shrine (Shining Spear)" field="name"/>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Shrouded (X)" id="6888-ebfd-87cc-7e62" hidden="false" type="rule" targetId="10c3-fdb0-089f-ca65">
+              <modifiers>
+                <modifier type="set" value="Shrouded (4+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Relentless" id="e05d-9dd3-e70b-b173" hidden="false" type="rule" targetId="7adf-ac9a-5035-522d"/>
+            <infoLink name="Outflank" id="20c9-7fe8-9f74-a950" hidden="false" type="rule" targetId="bfbf-e75c-49a2-0285"/>
+            <infoLink name="Firing Protocols (X)" id="1c23-a0a6-a0d6-193e" hidden="false" type="rule" targetId="32a3-f599-5c92-2945">
+              <modifiers>
+                <modifier type="set" value="Firing Protocols (3)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Monster Hunter" id="1dd4-4d22-953a-4782" hidden="false" type="rule" targetId="118d-58ce-8611-ab15"/>
+            <infoLink name="Pathfinder" id="b8fb-64f0-9ce7-ad3b" hidden="false" type="rule" targetId="ec97-7aa8-49f5-b298"/>
+            <infoLink name="Outflank" id="91c3-a17f-b834-44a1" hidden="false" type="rule" targetId="bfbf-e75c-49a2-0285"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Aspect Armour" hidden="false" id="3c91-10cd-2874-b55b" type="selectionEntry" targetId="c81b-3334-7a37-1473"/>
+            <entryLink import="true" name="Skyrunner Jetbike" hidden="false" id="579b-a030-2b6d-6071" type="selectionEntry" targetId="7867-42f2-b894-df5f"/>
+            <entryLink import="true" name="Shuriken Pistol" hidden="false" id="7bd9-7bd4-e6a2-1769" type="selectionEntry" targetId="c1af-d7e7-d404-7a33"/>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Shining Spear Aspect Shrine upgrade may choose to replace their Laser Lance for one of the following options:" id="f211-861d-c24d-4864" hidden="false" defaultSelectionEntryId="e0f9-518c-5d8b-40eb">
+              <entryLinks>
+                <entryLink import="true" name="Laser Lance" hidden="false" id="e0f9-518c-5d8b-40eb" type="selectionEntry" targetId="48d7-0971-2fa2-a534" sortIndex="1"/>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="d4d6-a00d-17dc-1d31" type="selectionEntry" targetId="d2db-7598-f55f-86fe" sortIndex="2"/>
+                <entryLink import="true" name="Star Lance" hidden="false" id="48fe-cc34-d63b-15c1" type="selectionEntry" targetId="18fb-e4d0-9cec-0cd9" sortIndex="3">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e231-34f0-88af-322a-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e231-34f0-88af-322a-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Striking Scorpion" hidden="false" id="39ed-de2e-7154-0f73" sortIndex="7">
+          <modifiers>
+            <modifier type="set" value="Aspect Shrine (Striking Scorpion)" field="name"/>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Brutal Ambush" id="345d-6986-b641-78c1" hidden="false" type="rule" targetId="d641-f91d-ca24-0a72"/>
+            <infoLink name="Infiltrate" id="7d23-db85-e5c2-7c7b" hidden="false" type="rule" targetId="0e32-5b92-a95a-8464"/>
+            <infoLink name="Move Through Cover" id="5b23-61ae-1d47-c93a" hidden="false" type="rule" targetId="2b6f-bfec-759e-1746"/>
+            <infoLink name="Stalker" id="380f-642e-a618-ffc8" hidden="false" type="rule" targetId="7966-ee0d-42a1-5ec7"/>
+            <infoLink name="Fleet (X)" id="0cff-8272-b560-b314" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+              <modifiers>
+                <modifier type="set" value="Fleet (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Aspect Armour" hidden="false" id="087f-4a96-4423-e0f1" type="selectionEntry" targetId="c81b-3334-7a37-1473"/>
+            <entryLink import="true" name="Shuriken Pistol" hidden="false" id="7340-5472-58c3-951b" type="selectionEntry" targetId="c1af-d7e7-d404-7a33"/>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Swooping Hawk" hidden="false" id="8887-60f3-b3e2-1811" sortIndex="8">
+          <modifiers>
+            <modifier type="set" value="Aspect Shrine (Swooping Hawk)" field="name"/>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Warp Spider" hidden="false" id="bb55-c448-6df3-d1a5" sortIndex="9">
+          <modifiers>
+            <modifier type="set" value="Aspect Shrine (Warp Spider)" field="name"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <constraints>
