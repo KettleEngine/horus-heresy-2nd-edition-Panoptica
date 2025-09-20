@@ -1989,10 +1989,6 @@ In addition to the bonus move during the Movement phase, a unit composed entire
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0aa3-faa2-136a-19f6-min" includeChildSelections="false"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0aa3-faa2-136a-19f6-max" includeChildSelections="false"/>
                       </constraints>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden"/>
-                      </modifiers>
-                      <comment>needed for this profile setup, but not taken with the sabres</comment>
                     </entryLink>
                   </entryLinks>
                   <constraints>
