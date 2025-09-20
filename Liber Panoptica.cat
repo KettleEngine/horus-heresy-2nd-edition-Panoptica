@@ -811,13 +811,21 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
                   </costs>
                 </entryLink>
               </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8370-5832-f4d2-49f1" includeChildSelections="false"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
           </costs>
           <entryLinks>
-            <entryLink import="true" name="Heavy Aspect Armour" hidden="false" id="8545-50ee-fe40-4ed5" type="selectionEntry" targetId="c81b-3334-7a37-1473"/>
+            <entryLink import="true" name="Heavy Aspect Armour" hidden="false" id="8545-50ee-fe40-4ed5" type="selectionEntry" targetId="c81b-3334-7a37-1473">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d297-5aeb-945d-81d9-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d297-5aeb-945d-81d9-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <modifiers>
             <modifier type="add" value="9231-183c-b97b-63f9" field="category"/>
