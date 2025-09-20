@@ -157,6 +157,39 @@ In addition, for each two additional models in the unit equipped with a weapon 
     <rule name="Stalker" id="7966-ee0d-42a1-5ec7" hidden="false">
       <description>During the first round of a Challenge, a model with this Special Rule gains a number of bonus attacks equal to the amount its Initiative Characteristic is higher than that of the opposing model. If the Initiative Characteristics are equal, or the model with this Special Rule has a lower Initiative Characteristic, this rule has no effect.</description>
     </rule>
+    <rule name="Scorpion’s Sting (X)" id="f214-aee1-c9ab-ca76" hidden="false" page="146" publicationId="a179-8e8f-4601-987c">
+      <description>A model equipped with a weapon with this Special Rule causes a number of immediate Hits equal to the number indicated in brackets at Initiative step 10 with it, but may not assign any further attacks to the weapon with this Special Rule. Note this attack does not grant an additional Pile In move.</description>
+    </rule>
+    <rule name="Herald of Victory" id="eec7-93f5-b4ee-771b" hidden="false">
+      <description>A unit which contains at least one model with this Special Rule counts as always rolling a hit on the scatter die when performing a Deep Strike Assault.</description>
+    </rule>
+    <rule name="Skyleap" id="c3f4-67c3-794f-2dc8" hidden="false">
+      <description>At the beginning of the Controlling Player’s Movement phase, if a unit composed entirely of models with this Special Rule is not currently locked in combat, you may place the unit back into your ongoing reserves. If you do, it can be assigned to a Deep Strike Assault as normal on your Next Player Turn</description>
+    </rule>
+    <rule name="Skystrike" id="7927-d926-0f24-f49f" hidden="false">
+      <description>At the end of the Movement Phase, a unit with this Special Rule can make a single Attack for each model in the unit against an enemy unit with the Flyer Sub-type the unit moved over this turn. This Attack hits automatically on a 4+ and is resolved at Strength 4 AP4 with the Haywire Special Rule. Vehicles are hit on their Side Armour Value. Attacks made with this Special Rule may only ever be made against a single target per turn.</description>
+    </rule>
+    <rule name="Precise Throw" id="934f-94e1-105d-b5a7" hidden="false">
+      <description>A unit that contains at least one model equipped with a weapon with this Special Rule may nominate a single model to make a shooting attack with it immediately after they complete a Deep Strike Assault. Only a single model may use a weapon with this Special Rule per unit, and this attack is treated as a Shooting Attack made in the Movement Phase. A unit that uses a weapon with this Special Rule in the Movement phase can still shoot in the subsequent Shooting phase; however, it must target the same unit, and if no viable targets remain in that unit it cannot shoot any other target. A weapon with this Special Rule cannot be used to make Shooting Attacks in any other situation.</description>
+    </rule>
+    <rule name="Iron Resolve" id="1e79-edc3-d36e-d4b0" hidden="false">
+      <description>A unit containing one or more models with the Iron Resolve Special Rule automatically passes Pinning tests, Regroup tests, and Morale checks. In addition, a unit containing one or more models with the Iron Resolve Special Rule ignores the effects of the Fear Special Rule.</description>
+    </rule>
+    <rule name="Flickerjump" id="5e7b-68e7-d09f-da23" hidden="false">
+      <description>A unit with this Special Rule may make a Flickerjump Advanced Reaction:
+
+Flickerjump - Advanced Reaction
+This Advanced Reaction may be made during the Opposing Player’s Shooting Phase when any enemy unit declares a Shooting Attack targeting a friendly unit composed entirely of models with the Flickerjump Special Rule.
+
+Before resolving the Shooting Attack, the unit targeted by the Shooting Attack may make an immediate Move 2D6&apos;&apos; in any direction. This distance is not affected by any modifiers, whether positive or negative. If the result of the 2D6” roll is a double 1, one model from the Reaction unit is immediately removed as a casualty.
+
+Once the move is resolved, if the Shooting Attack is no longer valid (due to the enemy unit no longer having line of sight to the target or being out of range, for example) then the Active player may not select a different target and no attacks are made or dice rolled for that unit.</description>
+    </rule>
+    <rule name="Monofilament" id="568e-21b3-67c8-de50" hidden="false">
+      <description>When rolling To Wound normally with this weapon, any nonVehicle model that suffers a Hit from a weapon with this special rule uses the target’s Initiative Characteristic instead of its Toughness - this is rolled as per the normal to-Wound roll rules otherwise. The target unit’s Toughness characteristic is still used to determine whether the attack causes Instant Death.
+
+In addition, any unit successfully hit by one or more models or weapons with this Special Rule must take an Initiative test once the attack is fully resolved. If failed, the unit must reduce its Initiative and Movement Characteristics by -2 until the end of their Controlling Player’s next turn. Note that the effects of this Special Rule are cumulative, and a unit can be affected by multiple sources, with the penalties to their Characteristics being applied to any further Initiative Characteristic tests they are called to make - though models with a starting Wounds Characteristic of 6 or more cannot have their Characteristics reduced as a result of this Special Rule.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Aspect Armour" hidden="false" id="7c09-bc4e-e8a9-4a75" publicationId="a179-8e8f-4601-987c" page="160">
@@ -216,10 +249,6 @@ In addition, for each two additional models in the unit equipped with a weapon 
           </modifiers>
         </infoLink>
       </infoLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="03c8-19be-c61f-279f-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03c8-19be-c61f-279f-max" includeChildSelections="false"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Power Sword" hidden="false" id="226f-96da-94c9-35c8" publicationId="a179-8e8f-4601-987c" page="155">
       <profiles>
@@ -298,7 +327,8 @@ gains all of the following benefits:
         </profile>
       </profiles>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="cef9-7428-bebc-312e" shared="true" id="38ea-6c7f-2e89-05b1" includeChildSelections="true"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae56-83e1-5ad8-901a-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae56-83e1-5ad8-901a-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Gravis Shuriken Cannon" hidden="false" id="4197-9e5c-412b-b13c" publicationId="a179-8e8f-4601-987c" page="154">
@@ -428,6 +458,10 @@ gains all of the following benefits:
           </characteristics>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c9ed-9212-b91f-3440-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9ed-9212-b91f-3440-max" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Twin-Linked Aeldari Missile Launcher" hidden="false" id="eac7-14c2-095e-abba">
       <profiles>
@@ -1039,17 +1073,15 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
         <infoLink name="Shred" id="c19a-b42d-ce30-3de2" hidden="false" type="rule" targetId="5e7e-1628-8174-6f2c"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Spectre Jet Pack" hidden="false" id="2249-9be3-08fa-f818">
+    <selectionEntry type="upgrade" import="true" name="Swooping Hawk Wings" hidden="false" id="2249-9be3-08fa-f818">
       <profiles>
-        <profile name="Spectre Jet Pack" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="715a-3ce0-d994-2a2e" publicationId="a179-8e8f-4601-987c" page="164">
+        <profile name="Swooping Hawk Wings" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="715a-3ce0-d994-2a2e" publicationId="a179-8e8f-4601-987c" page="164">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit composed entirely of models equipped with Spectre Jet Packs may choose to increase its Move Characteristic by +7 and ignore terrain while Moving during the Movement phase. A unit that ends or begins its movement in Dangerous Terrain will still need to take Dangerous Terrain tests as normal, even when employing Spectre Jet Packs, and treats Difficult Terrain as Dangerous Terrain.
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">At the start of the Controlling Player’s Movement phase, or when deployed as part of a Deep Strike Assault, a model with Swooping Hawk Wings may set its Move Characteristic to a value of 16” for the duration of the Controlling Player’s turn. This allows a model with Swooping Hawk Wings to move up to 16” regardless of the Movement Characteristic shown on its profile and gain any other benefits of a Movement Characteristic of 16 (including the bonus to Charge distance).
 
+In addition, all models with a Swooping Hawk Wings that have been activated ignore terrain while Moving and Charging, but must take Dangerous Terrain tests as normal when beginning or ending their Movement in Dangerous Terrain. A model with an activated Swooping Hawk Wings may move over both friendly and enemy models or units without penalty - but must end its Movement at least 1” away from any model from another unit.
 
-In addition to the bonus move during the Movement phase, a unit composed entirely of models with Spectre Jet Packs may make an additional Move of 7” during the Shooting phase. This Move must be taken after the unit has completed any Shooting Attacks, is not limited by the weapons fired by the unit during that Shooting phase and ignores terrain in the same manner as moves made using a Spectre Jet Pack in the Movement phase. During any Reaction that allows a unit to Move, a unit composed entirely of models with Spectre Jump Pack increases the distance of that Move by 7 and allows it to ignore terrain in the same manner as other Spectre Jet Pack moves.
-
-
-Any model with a Spectre Jet Pack also gains the Bulky (2) and Deep Strike Special Rules. If the model already has the Bulky (2) Special Rule, it gains the Bulky (3) Special Rule instead.</characteristic>
+Any model with Swooping Hawk Wings also gains the Bulky (2) and Deep Strike Special Rules. If the model already has the Bulky (2) Special Rule, it gains the Bulky (3) Special Rule instead.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1060,7 +1092,11 @@ Any model with a Spectre Jet Pack also gains the Bulky (2) and Deep Strike Spec
           </modifiers>
         </infoLink>
         <infoLink name="Deep Strike" id="f652-53df-7590-e14a" hidden="false" type="rule" targetId="f1e1-986f-c783-ca9e"/>
+        <infoLink name="Deep Strike" id="b48b-1112-d0c7-bb62" hidden="false" type="rule" targetId="f1e1-986f-c783-ca9e"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="16" field="893e-2d76-8f04-44e5" affects="profiles.Unit" scope="parent"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Haywire Grenade" hidden="false" id="a712-5d45-1cef-cc73">
       <profiles>
@@ -1077,6 +1113,10 @@ Any model with a Spectre Jet Pack also gains the Bulky (2) and Deep Strike Spec
         <infoLink name="Detonation" id="700a-1045-98b0-0b86" hidden="false" type="rule" targetId="8a47-9fc5-16fb-b46e"/>
         <infoLink name="Haywire" id="fa0f-2586-35e0-c260" hidden="false" type="rule" targetId="1dd4-7a75-5c59-8425"/>
       </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="48cd-ecf2-09ed-e409-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48cd-ecf2-09ed-e409-max" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Prism Blaster" hidden="false" id="be9b-6514-face-eaab">
       <profiles>
@@ -1247,6 +1287,296 @@ Any model with a Spectre Jet Pack also gains the Bulky (2) and Deep Strike Spec
         <infoLink name="Reach (X)" id="632b-5705-7299-ba56" hidden="false" type="rule" targetId="19bf-62a2-5737-890b">
           <modifiers>
             <modifier type="set" value="Reach (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="17c3-f104-a319-9767-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17c3-f104-a319-9767-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Scorpion Chainsword" hidden="false" id="6dea-bcfd-2382-5b02" page="">
+      <profiles>
+        <profile name="Scorpion Chainsword" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="7c64-9980-587b-9028">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred, Breaching (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shred" id="42eb-de7d-6704-9a74" hidden="false" type="rule" targetId="5e7e-1628-8174-6f2c"/>
+        <infoLink name="Breaching (X)" id="c87d-23f6-936c-761f" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chainsabre" hidden="false" id="3362-ad9a-901b-a5d8">
+      <profiles>
+        <profile name="- Melee" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ccf7-fa29-3880-0f47">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred, Breaching (5+)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="- Ranged" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="63e9-2bc9-1a5b-611d">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Breaching (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shred" id="4710-4ee5-2a7c-2327" hidden="false" type="rule" targetId="5e7e-1628-8174-6f2c"/>
+        <infoLink name="Breaching (X)" id="246d-d0d9-68f1-0ec9" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
+          <modifiers>
+            <modifier type="set" value="Breaching (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Scorpion’s Claw" hidden="false" id="d500-9c3f-6f6d-94a8">
+      <profiles>
+        <profile name="- Ranged" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="53eb-b29f-3931-7671">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Breaching (6+)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="- Melee" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="f073-7812-55a8-83c9">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Specialist Weapon, Murderous Strike (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="3f6d-8f16-724b-e592" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Specialist Weapon" id="c633-b639-f3ed-9529" hidden="false" type="rule" targetId="1a1f-3c9b-b097-5886"/>
+        <infoLink name="Murderous Strike (X)" id="0b95-9ce8-6a6f-4784" hidden="false" type="rule" targetId="93b9-1454-0e7c-42ae">
+          <modifiers>
+            <modifier type="set" value="Murderous Strike (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Biting Blade" hidden="false" id="a51f-8c9b-bdff-d7df">
+      <profiles>
+        <profile name="Biting Blade" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="7184-174d-02d0-c779">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-Handed, Shred, Rending (5+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Two-handed" id="0242-d110-4fd6-ab24" hidden="false" type="rule" targetId="4c23-e863-a569-7617"/>
+        <infoLink name="Shred" id="a01a-b073-e31f-fb67" hidden="false" type="rule" targetId="5e7e-1628-8174-6f2c"/>
+        <infoLink name="Rending (X)" id="1476-4475-6fb1-aa09" hidden="false" type="rule" targetId="0ac9-fab7-aef3-de1d">
+          <modifiers>
+            <modifier type="set" value="Rending (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mandiblaster" hidden="false" id="e58b-9809-4a8d-0c07">
+      <profiles>
+        <profile name="Mandiblaster" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="20d6-2286-ce0d-0909">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Poisoned (4+), Scorpion’s Sting (1), Specialist Weapon</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Poisoned (X)" id="5810-b738-ad59-3499" hidden="false" type="rule" targetId="e70e-23ea-3251-0edb">
+          <modifiers>
+            <modifier type="set" value="Poisoned (4+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Specialist Weapon" id="1ca3-aecc-096d-0617" hidden="false" type="rule" targetId="1a1f-3c9b-b097-5886"/>
+        <infoLink name="Scorpion’s Sting (X)" id="2d2f-37a9-e7d0-0026" hidden="false" type="rule" targetId="f214-aee1-c9ab-ca76">
+          <modifiers>
+            <modifier type="set" value="Scorpion’s Sting (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c765-b02a-70ff-2ac3-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c765-b02a-70ff-2ac3-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Spectre Jet Pack" hidden="false" id="5e11-3be6-6b8f-75a6">
+      <profiles>
+        <profile name="Spectre Jet Pack" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="cce7-35ab-ad5a-1b64" publicationId="a179-8e8f-4601-987c" page="164">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit composed entirely of models equipped with Spectre Jet Packs may choose to increase its Move Characteristic by +7 and ignore terrain while Moving during the Movement phase. A unit that ends or begins its movement in Dangerous Terrain will still need to take Dangerous Terrain tests as normal, even when employing Spectre Jet Packs, and treats Difficult Terrain as Dangerous Terrain.
+
+
+In addition to the bonus move during the Movement phase, a unit composed entirely of models with Spectre Jet Packs may make an additional Move of 7” during the Shooting phase. This Move must be taken after the unit has completed any Shooting Attacks, is not limited by the weapons fired by the unit during that Shooting phase and ignores terrain in the same manner as moves made using a Spectre Jet Pack in the Movement phase. During any Reaction that allows a unit to Move, a unit composed entirely of models with Spectre Jump Pack increases the distance of that Move by 7 and allows it to ignore terrain in the same manner as other Spectre Jet Pack moves.
+
+
+Any model with a Spectre Jet Pack also gains the Bulky (2) and Deep Strike Special Rules. If the model already has the Bulky (2) Special Rule, it gains the Bulky (3) Special Rule instead.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Bulky (X)" id="557b-b42a-f6e7-5cc5" hidden="false" type="rule" targetId="676c-7b75-4b6f-9405">
+          <modifiers>
+            <modifier type="set" value="Bulky (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Deep Strike" id="3526-35da-7d05-6d5a" hidden="false" type="rule" targetId="f1e1-986f-c783-ca9e"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hawk’s Talon" hidden="false" id="f6eb-2447-a2f3-e741">
+      <profiles>
+        <profile name="Hawk’s Talon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="9399-b7c8-be8c-e5c0">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f15-f0ae-9a14-21d3-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f15-f0ae-9a14-21d3-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Grenade Pack " hidden="false" id="973c-dd56-0ffd-178c">
+      <profiles>
+        <profile name="Grenade Pack " typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="1b89-1818-afc8-97b9">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Barrage, Large Blast (5”), Ignores Cover, Precise Throw</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Barrage" id="d596-a882-c119-4744" hidden="false" type="rule" targetId="7255-b5ee-c3f4-3037"/>
+        <infoLink name="Blast" id="f92c-3878-5c27-b620" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
+        <infoLink name="Ignores Cover" id="8c66-689c-25fd-6a17" hidden="false" type="rule" targetId="fdb5-59e2-c446-1cbc"/>
+        <infoLink name="Precise Throw" id="a3e8-9d32-944e-7d47" hidden="false" type="rule" targetId="934f-94e1-105d-b5a7"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="58cc-a29e-1354-b138-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="58cc-a29e-1354-b138-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hawk Lasblaster" hidden="false" id="e020-9504-e148-2178">
+      <profiles>
+        <profile name="Hawk Lasblaster" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="c2e3-705b-8147-27a6">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3, Pinning, Shell Shock (1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Pinning" id="1cf1-e638-3822-5459" hidden="false" type="rule" targetId="1c96-205c-59a0-3cf2"/>
+        <infoLink name="Shell Shock (X)" id="99d5-255a-9cc7-d482" hidden="false" type="rule" targetId="46b7-63a1-941c-96a5">
+          <modifiers>
+            <modifier type="set" value="Shell Shock (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb5c-573f-ba64-4634-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb5c-573f-ba64-4634-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sunrifle" hidden="false" id="8f2e-2fa7-ada8-85c8">
+      <profiles>
+        <profile name="Sunrifle" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="009c-c676-f5c0-26cb">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3, Blind</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2bbd-55f6-87ee-828b-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bbd-55f6-87ee-828b-max" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Blind" id="9d28-8a9a-4659-c97c" hidden="false" type="rule" targetId="d836-747d-07d6-2b63"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warp Jump Generator " hidden="false" id="17fa-dfd3-62c8-4f49">
+      <profiles>
+        <profile name="Warp Jump Generator " typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="ca20-8f59-d130-b94c">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit composed entirely of models with Warp Jump Generators may choose to set its Move Characteristic to 14” instead of moving normally. If they choose to do so, they may move in any direction ignoring Difficult, Dangerous and Impassable Terrain as though it were not present. However a unit that ends or begins its movement in Dangerous Terrain will still need to take Dangerous Terrain tests as normal, even when employing Warp Jump Generators and treats Difficult Terrain as Dangerous Terrain.
+
+In addition to the bonus move during the Movement phase, a unit composed entirely of models with Warp jump generators may make an additional Move of 7” during the Shooting phase. This Move must be taken after the unit has completed any Shooting Attacks, is not limited by the weapons fired by the unit during that Shooting phase and ignores terrain in the same manner as moves made using a Warp Jump Generator in the Movement phase. During any Reaction that allows a unit to Move (except the Flickerjump Advanced Reaction), a unit composed entirely of models with Warp Jump Generators increases the distance of that Move by 7 and allows it to ignore terrain in the same manner as other Warp Jump Generator moves.
+
+In addition to the bonus move during the Movement phase, a unit composed entirely of models with Warp jump generators may make an additional Move of 7” during the Shooting phase. This Move must be taken after the unit has completed any Shooting Attacks, is not limited by the weapons fired by the unit during that Shooting phase and ignores terrain in the same manner as moves made using a Warp Jump Generator in the Movement phase. During any Reaction that allows a unit to Move (except the Flickerjump Advanced Reaction), a unit composed entirely of models with Warp Jump Generators increases the distance of that Move by 7 and allows it to ignore terrain in the same manner as other Warp Jump Generator moves.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Flickerjump" id="d376-f872-a246-b859" hidden="false" type="rule" targetId="5e7b-68e7-d09f-da23"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Spinneret Rifle" hidden="false" id="96c4-4f57-e675-aadd">
+      <profiles>
+        <profile name="Spinneret Rifle" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="39af-374d-3def-21f7">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Monofilamentt</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Monofilament" id="89db-1e77-c325-4946" hidden="false" type="rule" targetId="568e-21b3-67c8-de50"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Deathspinner" hidden="false" id="510f-e692-c652-3df0">
+      <profiles>
+        <profile name="Deathspinner" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="6274-4f89-2aed-2410">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Rending (5+), Monofilament</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Monofilament" id="0dc4-728e-850b-7762" hidden="false" type="rule" targetId="568e-21b3-67c8-de50"/>
+        <infoLink name="Rending (X)" id="f8aa-7bf5-d0b7-3a2f" hidden="false" type="rule" targetId="0ac9-fab7-aef3-de1d">
+          <modifiers>
+            <modifier type="set" value="Rending (5+)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -1621,18 +1951,199 @@ Any model with a Spectre Jet Pack also gains the Bulky (2) and Deep Strike Spec
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Heavy Aspect Armour" hidden="false" id="087f-4a96-4423-e0f1" type="selectionEntry" targetId="c81b-3334-7a37-1473"/>
-            <entryLink import="true" name="Shuriken Pistol" hidden="false" id="7340-5472-58c3-951b" type="selectionEntry" targetId="c1af-d7e7-d404-7a33"/>
+            <entryLink import="true" name="Mandiblaster" hidden="false" id="01db-e0c3-84ec-b50f" type="selectionEntry" targetId="e58b-9809-4a8d-0c07">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="82b6-00f8-61da-47ac-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82b6-00f8-61da-47ac-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Striking Scorpion Aspect Shrine upgrade may choose to replace their Scorpion Chainsword and Shuriken Pistol for:" id="da17-22a2-cb9d-87f6" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Striking Scorpion Aspect Shrine upgrade may choose to replace their Shuriken Pistol for one of the following options:" id="87bc-61f8-fceb-9cfd" hidden="false" sortIndex="1" defaultSelectionEntryId="d56a-3585-a894-d9b7">
+                  <entryLinks>
+                    <entryLink import="true" name="Shuriken Pistol" hidden="false" id="d56a-3585-a894-d9b7" type="selectionEntry" targetId="c1af-d7e7-d404-7a33" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab9c-cf6d-a4c5-ed9c" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Biting Blade" hidden="false" id="3f1b-8c8e-96d6-b0c2" type="selectionEntry" targetId="a51f-8c9b-bdff-d7df" sortIndex="2">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9303-6f1a-ee29-5968" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Scorpion’s Claw" hidden="false" id="abb6-d53d-f20a-4249" type="selectionEntry" targetId="d500-9c3f-6f6d-94a8" sortIndex="3">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f5e-da6d-a9bc-29f1" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Scorpion Chainsword" hidden="false" id="749e-89db-a595-8e01" type="selectionEntry" targetId="6dea-bcfd-2382-5b02">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0aa3-faa2-136a-19f6-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0aa3-faa2-136a-19f6-max" includeChildSelections="false"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden"/>
+                      </modifiers>
+                      <comment>needed for this profile setup, but not taken with the sabres</comment>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="be84-538a-ba43-ae0d-min" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="be84-538a-ba43-ae0d-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18b6-6c93-1685-23ab-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18b6-6c93-1685-23ab-max" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Two Chainsabres" hidden="false" id="bc33-1caa-f067-aeb4">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Chainsabre" hidden="false" id="d0c2-0564-1f44-b582" type="selectionEntry" targetId="3362-ad9a-901b-a5d8">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4932-7866-058c-dce9-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4932-7866-058c-dce9-max" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Chainsabre" hidden="false" id="6e41-0cb6-bebc-f91e" type="selectionEntry" targetId="3362-ad9a-901b-a5d8">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="423e-b2a3-bc75-1fd7-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="423e-b2a3-bc75-1fd7-max" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+          </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Swooping Hawk" hidden="false" id="8887-60f3-b3e2-1811" sortIndex="8">
-          <modifiers>
-            <modifier type="set" value="Aspect Shrine (Swooping Hawk)" field="name"/>
-          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Haywire Grenade" hidden="false" id="4cf0-d217-79dc-c3dd" type="selectionEntry" targetId="a712-5d45-1cef-cc73">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a22-2c62-0579-4809-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a22-2c62-0579-4809-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Grenade Pack " hidden="false" id="a407-6fb9-15f8-3e1a" type="selectionEntry" targetId="973c-dd56-0ffd-178c"/>
+            <entryLink import="true" name="Swooping Hawk Wings" hidden="false" id="d97c-84e8-b2db-4483" type="selectionEntry" targetId="2249-9be3-08fa-f818"/>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Swooping Hawk Aspect Shrine upgrade may exchange their Hawk Lasblaster for one of the following options:" id="fe68-9eef-4aab-eb2f" hidden="false" defaultSelectionEntryId="6e80-6a66-4ed6-9c0b">
+              <entryLinks>
+                <entryLink import="true" name="Hawk Lasblaster" hidden="false" id="6e80-6a66-4ed6-9c0b" type="selectionEntry" targetId="e020-9504-e148-2178" sortIndex="1"/>
+                <entryLink import="true" name="Hawk’s Talon" hidden="false" id="fbdf-86e0-335f-d81c" type="selectionEntry" targetId="f6eb-2447-a2f3-e741" sortIndex="2">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Sunrifle" hidden="false" id="dc5f-e91d-cd23-ce7c" type="selectionEntry" targetId="8f2e-2fa7-ada8-85c8" sortIndex="3">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2224-a16c-2916-4abc-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2224-a16c-2916-4abc-max" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Herald of Victory" id="0890-f04f-cabd-e3ad" hidden="false" type="rule" targetId="eec7-93f5-b4ee-771b"/>
+                <infoLink name="Skyleap" id="fffd-1e92-328c-0e1b" hidden="false" type="rule" targetId="c3f4-67c3-794f-2dc8"/>
+                <infoLink name="Skystrike" id="125a-05c8-0505-602c" hidden="false" type="rule" targetId="7927-d926-0f24-f49f"/>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" value="Aspect Shrine (Swooping Hawk)" field="name"/>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Warp Spider" hidden="false" id="bb55-c448-6df3-d1a5" sortIndex="9">
           <modifiers>
             <modifier type="set" value="Aspect Shrine (Warp Spider)" field="name"/>
           </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Hit &amp; Run" id="17fd-258c-3758-e94c" hidden="false" type="rule" targetId="5986-e960-d432-affd"/>
+            <infoLink name="Firing Protocols (X)" id="d21a-9099-3dfc-91b5" hidden="false" type="rule" targetId="32a3-f599-5c92-2945">
+              <modifiers>
+                <modifier type="set" value="Firing Protocols (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Iron Resolve" id="f7cd-dc81-a0aa-e628" hidden="false" type="rule" targetId="1e79-edc3-d36e-d4b0"/>
+            <infoLink name="Flickerjump" id="f18b-fd4b-be9c-3acb" hidden="false" type="rule" targetId="5e7b-68e7-d09f-da23"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Aspect Armour" hidden="false" id="86e9-bd2e-cc7f-7f06" type="selectionEntry" targetId="c81b-3334-7a37-1473"/>
+            <entryLink import="true" name="Warp Jump Generator " hidden="false" id="d978-6fad-6b07-9368" type="selectionEntry" targetId="17fa-dfd3-62c8-4f49"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Two Power Swords" hidden="false" id="3bff-9f41-3551-1c95">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Power Sword" hidden="false" id="d8d4-87a2-8c24-ed20" type="selectionEntry" targetId="226f-96da-94c9-35c8">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c8e-10fe-d2e5-cc43-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c8e-10fe-d2e5-cc43-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Power Sword" hidden="false" id="2fa1-f684-1fc4-bb4e" type="selectionEntry" targetId="226f-96da-94c9-35c8">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5422-5130-ca77-e388-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5422-5130-ca77-e388-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c271-5d60-35ad-3f16" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Warp Spider Aspect Shrine upgrade may exchange their Death Spinner for one of the following options:" id="ca07-f64b-25b5-df3a" hidden="false" defaultSelectionEntryId="8cf8-4a21-9f40-689c">
+              <entryLinks>
+                <entryLink import="true" name="Death Spinner" hidden="false" id="8cf8-4a21-9f40-689c" type="selectionEntry" targetId="510f-e692-c652-3df0" sortIndex="1"/>
+                <entryLink import="true" name="Spinneret Rifle" hidden="false" id="6e17-0192-3b00-d67d" type="selectionEntry" targetId="96c4-4f57-e675-aadd" sortIndex="3">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Two Death Spinners" hidden="false" id="ed4e-052c-19e4-4185" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Deathspinner" hidden="false" id="b59a-e951-e513-28d7" type="selectionEntry" targetId="510f-e692-c652-3df0"/>
+                    <entryLink import="true" name="Deathspinner" hidden="false" id="807a-0cd9-efe0-1289" type="selectionEntry" targetId="510f-e692-c652-3df0"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <constraints>
