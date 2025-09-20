@@ -130,8 +130,11 @@ Whenever a unit with this Tactic makes a Shooting Attack, each weapon they are 
     <rule name="Wrecker" id="c660-1529-06f4-2477" hidden="false" page="149" publicationId="a179-8e8f-4601-987c">
       <description>Penetrating Hits caused by attacks made with weapons or models with this special rule add +1 to the result of any rolls on the Vehicle or Building Damage tables.</description>
     </rule>
-    <rule name=" Crack Shot" id="bd8b-5629-8963-22b1" hidden="false" page="141" publicationId="a179-8e8f-4601-987c">
+    <rule name="Crack Shot" id="bd8b-5629-8963-22b1" hidden="false" page="141" publicationId="a179-8e8f-4601-987c">
       <description>A model with this Special Rule may re-roll a single failed To-Hit, To-Wound, or Armour Penetration roll per turn.</description>
+    </rule>
+    <rule name="War Shout" id="1f39-46db-49da-e2d9" hidden="false" publicationId="a179-8e8f-4601-987c" page="148">
+      <description>On a turn in which a unit containing a model with this Special Rule charges or is successfully charged, any enemy models locked in the combat suffer a Penalty of -1 to their Weapon Skill, to a minimum of 1.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
@@ -947,6 +950,70 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
         <infoLink name="Breath of Khaine" id="52dc-901a-f98f-afbf" hidden="false" type="rule" targetId="ffdd-69e3-b217-0443"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Triskele" hidden="false" id="064c-d2ec-2d44-281a">
+      <profiles>
+        <profile name="Triskele (Melee)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="adcb-1fa7-a3c1-32d1">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Triskele (Ranged)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="416d-4aad-e185-5b6d">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Executioner" hidden="false" id="4c11-0d57-e93c-6f63">
+      <profiles>
+        <profile name="Executioner" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="81d8-9397-aae2-1133">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-Handed</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Two-handed" id="fbf1-741b-af26-b4bf" hidden="false" type="rule" targetId="4c23-e863-a569-7617"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Two Mirrorswords" hidden="false" id="cbde-d9ad-dd56-c3a1">
+      <profiles>
+        <profile name="Mirrorsword" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="99b1-8e18-86fa-7444">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Master-Crafted, Rampage (2), Shred</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mirrorsword" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="e952-a243-6cf1-c17c">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Master-Crafted, Rampage (2), Shred</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Master-crafted" id="a075-eb30-a8ac-8058" hidden="false" type="rule" targetId="6de0-55b0-bf21-48b9"/>
+        <infoLink name="Rampage (X)" id="0997-20d0-5135-a5a9" hidden="false" type="rule" targetId="3efb-2a2c-2d0b-92fc">
+          <modifiers>
+            <modifier type="set" value="Rampage (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Shred" id="c19a-b42d-ce30-3de2" hidden="false" type="rule" targetId="5e7e-1628-8174-6f2c"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Dedicated Transport" id="2143-410c-0690-5d43" hidden="false">
@@ -960,7 +1027,7 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
     <selectionEntryGroup name="Aspect Shrine (x)" id="cdd4-9cae-6a32-bbf0" hidden="false">
       <comment>Selection for Autarchs and Exarchs</comment>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Dark Reaper" hidden="false" id="5278-de23-57c7-8e6c">
+        <selectionEntry type="upgrade" import="true" name="Dark Reaper" hidden="false" id="5278-de23-57c7-8e6c" sortIndex="1">
           <selectionEntryGroups>
             <selectionEntryGroup name="an Autarch or Exarch which selects the Dark Reaper Aspect Shrine upgrade may choose to replace their Reaper Launcher  for one of the following options below:" id="58bf-6c5f-3075-c2c9" hidden="false">
               <entryLinks>
@@ -1002,7 +1069,7 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
             <infoLink name="Inescapable Accuracy" id="2858-7744-a2ba-6051" hidden="false" type="rule" targetId="9294-1bd2-347f-64a8"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Dire Avenger" hidden="false" id="ccce-3cc1-d725-abca">
+        <selectionEntry type="upgrade" import="true" name="Dire Avenger" hidden="false" id="ccce-3cc1-d725-abca" sortIndex="2">
           <infoLinks>
             <infoLink name="Feel No Pain (X)" id="02d6-7564-4a22-3ba2" hidden="false" type="rule" targetId="ec46-ff29-32e0-c2aa">
               <modifiers>
@@ -1100,7 +1167,7 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Fire Dragon" hidden="false" id="3fe8-31f2-9164-c54f">
+        <selectionEntry type="upgrade" import="true" name="Fire Dragon" hidden="false" id="3fe8-31f2-9164-c54f" sortIndex="3">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
           </costs>
@@ -1142,6 +1209,58 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
             <infoLink name=" Crack Shot" id="f704-8cd5-e2de-3788" hidden="false" type="rule" targetId="bd8b-5629-8963-22b1"/>
             <infoLink name="Wrecker" id="54a4-3e49-285d-d909" hidden="false" type="rule" targetId="c660-1529-06f4-2477"/>
           </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Howling Banshee" hidden="false" id="017a-f425-9693-c807" sortIndex="4">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Fleet (X)" id="3780-4640-8c67-b317" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+              <modifiers>
+                <modifier type="set" value="Fleet (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Fear (X)" id="07f6-bc0c-0513-b7c2" hidden="false" type="rule" targetId="21f6-7842-df5c-d2e7">
+              <modifiers>
+                <modifier type="set" value="Fear (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Acrobatic" id="ccd9-1fae-af46-d1ef" hidden="false" type="rule" targetId="4ab6-2b25-0eb9-f964"/>
+            <infoLink name="War Shout" id="56f0-7afd-c0d6-f790" hidden="false" type="rule" targetId="1f39-46db-49da-e2d9"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="Aspect Shrine (Howling Banshee)" field="name"/>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Shuriken Pistol" hidden="false" id="8c86-fb93-2500-e6d3" type="selectionEntry" targetId="c1af-d7e7-d404-7a33">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="449e-5609-3a57-aa1e-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="449e-5609-3a57-aa1e-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="g Banshee Aspect Shrine upgrade may exchange their Power Sword for one of the following options:" id="3d2f-4322-d21f-aae5" hidden="false" defaultSelectionEntryId="20c4-7c35-8434-7a2b">
+              <entryLinks>
+                <entryLink import="true" name="Power Sword" hidden="false" id="20c4-7c35-8434-7a2b" type="selectionEntry" targetId="226f-96da-94c9-35c8" sortIndex="1"/>
+                <entryLink import="true" name="Triskele" hidden="false" id="c5f9-ea46-6796-9f63" type="selectionEntry" targetId="064c-d2ec-2d44-281a" sortIndex="2"/>
+                <entryLink import="true" name="Executioner" hidden="false" id="bdc8-0377-fa1c-1737" type="selectionEntry" targetId="4c11-0d57-e93c-6f63" sortIndex="3">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Two Mirrorswords" hidden="false" id="e5a3-3b3f-d127-107a" type="selectionEntry" targetId="cbde-d9ad-dd56-c3a1" sortIndex="4">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d5ff-ae76-45b4-02d7-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5ff-ae76-45b4-02d7-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <constraints>
