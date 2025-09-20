@@ -1097,6 +1097,10 @@ Any model with Swooping Hawk Wings also gains the Bulky (2) and Deep Strike Spe
       <modifiers>
         <modifier type="set" value="16" field="893e-2d76-8f04-44e5" affects="profiles.Unit" scope="parent"/>
       </modifiers>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="718d-4234-8271-f8b2-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="718d-4234-8271-f8b2-max" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Haywire Grenade" hidden="false" id="a712-5d45-1cef-cc73">
       <profiles>
@@ -2040,9 +2044,17 @@ In addition to the bonus move during the Movement phase, a unit composed entire
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Swooping Hawk" hidden="false" id="8887-60f3-b3e2-1811" sortIndex="8">
+          <modifiers>
+            <modifier type="set" value="Aspect Shrine (Swooping Hawk)" field="name"/>
+          </modifiers>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Skystrike" id="125a-05c8-0505-602c" hidden="false" type="rule" targetId="7927-d926-0f24-f49f"/>
+            <infoLink name="Skyleap" id="fffd-1e92-328c-0e1b" hidden="false" type="rule" targetId="c3f4-67c3-794f-2dc8"/>
+            <infoLink name="Herald of Victory" id="0890-f04f-cabd-e3ad" hidden="false" type="rule" targetId="eec7-93f5-b4ee-771b"/>
+          </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Haywire Grenade" hidden="false" id="4cf0-d217-79dc-c3dd" type="selectionEntry" targetId="a712-5d45-1cef-cc73">
               <constraints>
@@ -2051,7 +2063,12 @@ In addition to the bonus move during the Movement phase, a unit composed entire
               </constraints>
             </entryLink>
             <entryLink import="true" name="Grenade Pack " hidden="false" id="a407-6fb9-15f8-3e1a" type="selectionEntry" targetId="973c-dd56-0ffd-178c"/>
-            <entryLink import="true" name="Swooping Hawk Wings" hidden="false" id="d97c-84e8-b2db-4483" type="selectionEntry" targetId="2249-9be3-08fa-f818"/>
+            <entryLink import="true" name="Swooping Hawk Wings" hidden="false" id="d97c-84e8-b2db-4483" type="selectionEntry" targetId="2249-9be3-08fa-f818">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8701-d1dd-6580-51c3-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8701-d1dd-6580-51c3-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Swooping Hawk Aspect Shrine upgrade may exchange their Hawk Lasblaster for one of the following options:" id="fe68-9eef-4aab-eb2f" hidden="false" defaultSelectionEntryId="6e80-6a66-4ed6-9c0b">
@@ -2072,14 +2089,6 @@ In addition to the bonus move during the Movement phase, a unit composed entire
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2224-a16c-2916-4abc-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2224-a16c-2916-4abc-max" includeChildSelections="false"/>
               </constraints>
-              <infoLinks>
-                <infoLink name="Herald of Victory" id="0890-f04f-cabd-e3ad" hidden="false" type="rule" targetId="eec7-93f5-b4ee-771b"/>
-                <infoLink name="Skyleap" id="fffd-1e92-328c-0e1b" hidden="false" type="rule" targetId="c3f4-67c3-794f-2dc8"/>
-                <infoLink name="Skystrike" id="125a-05c8-0505-602c" hidden="false" type="rule" targetId="7927-d926-0f24-f49f"/>
-              </infoLinks>
-              <modifiers>
-                <modifier type="set" value="Aspect Shrine (Swooping Hawk)" field="name"/>
-              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
