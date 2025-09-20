@@ -2106,6 +2106,21 @@ In addition to the bonus move during the Movement phase, a unit composed entire
               </constraints>
             </entryLink>
           </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Two Power Swords" hidden="false" id="c2fa-874d-371c-e36b">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Power Sword" hidden="false" id="a700-c424-5f71-4790" type="selectionEntry" targetId="a3cd-aa97-a148-2309">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9ed8-68b5-b8d8-28fb-min" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9ed8-68b5-b8d8-28fb-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup name="Warp Spider Aspect Shrine upgrade may exchange their Death Spinner for one of the following options:" id="ca07-f64b-25b5-df3a" hidden="false" defaultSelectionEntryId="8cf8-4a21-9f40-689c">
               <entryLinks>
