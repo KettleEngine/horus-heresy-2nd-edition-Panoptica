@@ -821,7 +821,7 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
           </entryLinks>
           <modifiers>
             <modifier type="add" value="9231-183c-b97b-63f9" field="category"/>
-            <modifier type="set" value="Aspect Shrine (Dark Reaper)" field="name" scope="parent"/>
+            <modifier type="set" value="Aspect Shrine (Dark Reaper)" field="name"/>
           </modifiers>
           <infoLinks>
             <infoLink name="Relentless" id="f3e7-7265-5318-dc1c" hidden="false" type="rule" targetId="7adf-ac9a-5035-522d"/>
