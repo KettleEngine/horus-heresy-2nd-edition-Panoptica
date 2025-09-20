@@ -1537,6 +1537,10 @@ In addition to the bonus move during the Movement phase, a unit composed entire
       <infoLinks>
         <infoLink name="Flickerjump" id="d376-f872-a246-b859" hidden="false" type="rule" targetId="5e7b-68e7-d09f-da23"/>
       </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="712d-5827-b800-afc2-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="712d-5827-b800-afc2-max" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Spinneret Rifle" hidden="false" id="96c4-4f57-e675-aadd">
       <profiles>
@@ -2109,43 +2113,51 @@ In addition to the bonus move during the Movement phase, a unit composed entire
               <entryLinks>
                 <entryLink import="true" name="Power Sword" hidden="false" id="d8d4-87a2-8c24-ed20" type="selectionEntry" targetId="226f-96da-94c9-35c8">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c8e-10fe-d2e5-cc43-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c8e-10fe-d2e5-cc43-max" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Power Sword" hidden="false" id="2fa1-f684-1fc4-bb4e" type="selectionEntry" targetId="226f-96da-94c9-35c8">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5422-5130-ca77-e388-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5422-5130-ca77-e388-max" includeChildSelections="false"/>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4c8e-10fe-d2e5-cc43-min" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4c8e-10fe-d2e5-cc43-max" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c271-5d60-35ad-3f16" includeChildSelections="false"/>
-              </constraints>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup name="Warp Spider Aspect Shrine upgrade may exchange their Death Spinner for one of the following options:" id="ca07-f64b-25b5-df3a" hidden="false" defaultSelectionEntryId="8cf8-4a21-9f40-689c">
               <entryLinks>
-                <entryLink import="true" name="Death Spinner" hidden="false" id="8cf8-4a21-9f40-689c" type="selectionEntry" targetId="510f-e692-c652-3df0" sortIndex="1"/>
+                <entryLink import="true" name="Death Spinner" hidden="false" id="8cf8-4a21-9f40-689c" type="selectionEntry" targetId="510f-e692-c652-3df0" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d05a-6da9-e3b9-fb3c-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d05a-6da9-e3b9-fb3c-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
                 <entryLink import="true" name="Spinneret Rifle" hidden="false" id="6e17-0192-3b00-d67d" type="selectionEntry" targetId="96c4-4f57-e675-aadd" sortIndex="3">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9cd5-fe52-0d1b-511a-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9cd5-fe52-0d1b-511a-max" includeChildSelections="false"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Two Death Spinners" hidden="false" id="ed4e-052c-19e4-4185" sortIndex="2">
                   <entryLinks>
-                    <entryLink import="true" name="Deathspinner" hidden="false" id="b59a-e951-e513-28d7" type="selectionEntry" targetId="510f-e692-c652-3df0"/>
-                    <entryLink import="true" name="Deathspinner" hidden="false" id="807a-0cd9-efe0-1289" type="selectionEntry" targetId="510f-e692-c652-3df0"/>
+                    <entryLink import="true" name="Deathspinner" hidden="false" id="b59a-e951-e513-28d7" type="selectionEntry" targetId="510f-e692-c652-3df0">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5506-1455-a5bc-7a28-min" includeChildSelections="false"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5506-1455-a5bc-7a28-max" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a3c4-f9e6-8c3e-1c57-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3c4-f9e6-8c3e-1c57-max" includeChildSelections="false"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
