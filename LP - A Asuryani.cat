@@ -209,7 +209,12 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Plasma Grenades" hidden="false" id="28d7-ae4f-897b-49f4" type="selectionEntry" targetId="0a4e-f69a-2e83-cb4c"/>
-        <entryLink import="true" name="Close Combat Weapon" hidden="false" id="7b65-9e40-4a2c-5fd9" type="selectionEntry" targetId="3d50-2f85-06ff-6aee"/>
+        <entryLink import="true" name="Close Combat Weapon" hidden="false" id="7b65-9e40-4a2c-5fd9" type="selectionEntry" targetId="3d50-2f85-06ff-6aee">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="09e9-5e82-7d1d-6a4f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09e9-5e82-7d1d-6a4f-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
         <entryLink import="true" name="Aspect Shrine (x)" hidden="false" id="1b54-b79c-8d5e-3b54" type="selectionEntryGroup" targetId="cdd4-9cae-6a32-bbf0"/>
       </entryLinks>
       <costs>
