@@ -1464,10 +1464,6 @@ Any model with a Spectre Jet Pack also gains the Bulky (2) and Deep Strike Spec
           </characteristics>
         </profile>
       </profiles>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f15-f0ae-9a14-21d3-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f15-f0ae-9a14-21d3-max" includeChildSelections="false"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Grenade Pack " hidden="false" id="973c-dd56-0ffd-178c">
       <profiles>
@@ -1510,10 +1506,6 @@ Any model with a Spectre Jet Pack also gains the Bulky (2) and Deep Strike Spec
           </modifiers>
         </infoLink>
       </infoLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb5c-573f-ba64-4634-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb5c-573f-ba64-4634-max" includeChildSelections="false"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sunrifle" hidden="false" id="8f2e-2fa7-ada8-85c8">
       <profiles>
@@ -1526,10 +1518,6 @@ Any model with a Spectre Jet Pack also gains the Bulky (2) and Deep Strike Spec
           </characteristics>
         </profile>
       </profiles>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2bbd-55f6-87ee-828b-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bbd-55f6-87ee-828b-max" includeChildSelections="false"/>
-      </constraints>
       <infoLinks>
         <infoLink name="Blind" id="9d28-8a9a-4659-c97c" hidden="false" type="rule" targetId="d836-747d-07d6-2b63"/>
       </infoLinks>
