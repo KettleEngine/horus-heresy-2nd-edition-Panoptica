@@ -799,13 +799,13 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
           <selectionEntryGroups>
             <selectionEntryGroup name="an Autarch or Exarch which selects the Dark Reaper Aspect Shrine upgrade may choose to replace their Reaper Launcher  for one of the following options below:" id="58bf-6c5f-3075-c2c9" hidden="false">
               <entryLinks>
-                <entryLink import="true" name="Shuriken Cannon " hidden="false" id="5e38-c7b5-b84d-5b0d" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14"/>
-                <entryLink import="true" name="Aeldari Missile Launcher" hidden="false" id="95ec-93fb-f807-f558" type="selectionEntry" targetId="21d6-c4ce-1a4e-6cd4">
+                <entryLink import="true" name="Shuriken Cannon " hidden="false" id="5e38-c7b5-b84d-5b0d" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14" sortIndex="1"/>
+                <entryLink import="true" name="Aeldari Missile Launcher" hidden="false" id="95ec-93fb-f807-f558" type="selectionEntry" targetId="21d6-c4ce-1a4e-6cd4" sortIndex="2">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Tempest Launcher" hidden="false" id="f2ed-66e9-5706-4b69" type="selectionEntry" targetId="564b-6e50-6aef-df7b">
+                <entryLink import="true" name="Tempest Launcher" hidden="false" id="f2ed-66e9-5706-4b69" type="selectionEntry" targetId="564b-6e50-6aef-df7b" sortIndex="3">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
                   </costs>
