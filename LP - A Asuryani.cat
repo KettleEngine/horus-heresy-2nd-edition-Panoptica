@@ -159,7 +159,7 @@
               <selectionEntryGroups>
                 <selectionEntryGroup name="One Banshee may take: " id="6b6a-6777-b762-7ef9" hidden="false">
                   <entryLinks>
-                    <entryLink import="true" name=" Craftworld Standard" hidden="false" id="a29a-bb1f-3942-468e" type="selectionEntry" targetId="34a8-ff38-f64d-4b34">
+                    <entryLink import="true" name="Craftworld Standard" hidden="false" id="a29a-bb1f-3942-468e" type="selectionEntry" targetId="34a8-ff38-f64d-4b34">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="cef9-7428-bebc-312e" shared="true" id="fc68-273f-2f69-081c" includeChildSelections="true"/>
                       </constraints>
@@ -220,6 +220,81 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="80"/>
       </costs>
+      <profiles>
+        <profile name="Autarch" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="8c57-4d3d-979e-3ccf">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Asuryani, Character)</characteristic>
+            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
+            <characteristic name="BS" typeId="74ae-c840-0036-d244">6</characteristic>
+            <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
+            <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">6</characteristic>
+            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Stubborn" id="c789-7434-975f-c5b8" hidden="false" type="rule" targetId="7989-1f2c-a43d-82ae"/>
+        <infoLink name="Battle-Hardened (X)" id="c46c-3301-ea97-d260" hidden="false" type="rule" targetId="5c3b-ed0b-4ad0-d547">
+          <modifiers>
+            <modifier type="set" value="Battle-Hardened (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Fleet (X)" id="dc31-e4d0-44d5-8207" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+          <modifiers>
+            <modifier type="set" value="Fleet (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Path of Command" id="a66f-9f49-463a-595c" hidden="false" type="rule" targetId="6c1f-f159-33de-9ad2"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="An Autarch may select up to two of the following options, in any combination:" id="7ce0-daac-fec1-0fc0" hidden="false">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a1c1-6c61-f944-fc06" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Chainsword" hidden="false" id="cd18-176a-0eec-4fc0" type="selectionEntry" targetId="161c-cd6c-65ce-070e" sortIndex="1">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Shuriken Pistol" hidden="false" id="0e1f-7135-936d-662b" type="selectionEntry" targetId="c1af-d7e7-d404-7a33" sortIndex="2">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Shuriken Catapult" hidden="false" id="3f6e-ddc0-6a81-96d6" type="selectionEntry" targetId="e2d4-d214-4b5c-de85" sortIndex="3">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Power Weapon" hidden="false" id="a6a6-ef4f-9cbf-71d4" type="selectionEntry" targetId="d2db-7598-f55f-86fe" sortIndex="4">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Charnabal Weapon" hidden="false" id="42f4-40b6-fc29-ed23" type="selectionEntry" targetId="e749-ba9b-bb76-a7d9" sortIndex="5">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Fusion Pistol" hidden="false" id="a81f-0f15-e8aa-bbab" type="selectionEntry" targetId="4373-b3bc-24cf-32fd" sortIndex="6">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Star Glaive" hidden="false" id="8b23-bff9-de3a-dc92" type="selectionEntry" targetId="a949-7399-c709-2a5c" sortIndex="7">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>

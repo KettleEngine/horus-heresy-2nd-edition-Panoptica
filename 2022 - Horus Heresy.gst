@@ -9983,9 +9983,6 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
       </costs>
     </selectionEntry>
     <selectionEntry id="d2db-7598-f55f-86fe" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdd9-c0b0-fde1-c145" type="max"/>
-      </constraints>
       <entryLinks>
         <entryLink id="cf56-2470-b3af-54ab" name="Power Weapon" hidden="false" collective="false" import="true" targetId="5ff5-48c0-b9f1-5a05" type="selectionEntryGroup"/>
       </entryLinks>
@@ -10030,9 +10027,6 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
       </costs>
     </selectionEntry>
     <selectionEntry id="e749-ba9b-bb76-a7d9" name="Charnabal Weapon" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="775c-071a-1024-8be0" type="max"/>
-      </constraints>
       <entryLinks>
         <entryLink id="a311-a007-7439-9227" name="Charnabal Glaive" hidden="false" collective="false" import="true" targetId="c07c-35e6-4616-ef25" type="selectionEntry">
           <constraints>
