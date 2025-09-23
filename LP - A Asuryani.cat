@@ -13,6 +13,8 @@
         <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="9ac7-275a-a4d7-a710" primary="false" name="Character"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Aspect Exarchs" hidden="false" id="1d2f-b6f2-2853-b1e8" type="selectionEntry" targetId="c19e-3e75-89ce-ba7f"/>
+    <entryLink import="true" name="Farseer" hidden="false" id="24c0-e450-d428-8cdf" type="selectionEntry" targetId="76cd-d1df-6938-d937"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Howling Banshees" hidden="false" id="cef9-7428-bebc-312e" publicationId="a179-8e8f-4601-987c" page="41">
@@ -215,7 +217,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09e9-5e82-7d1d-6a4f-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Aspect Shrine (x)" hidden="false" id="1b54-b79c-8d5e-3b54" type="selectionEntryGroup" targetId="cdd4-9cae-6a32-bbf0"/>
+        <entryLink import="true" name="Aspect Shrine (x)" hidden="false" id="c578-2bba-804b-2250" type="selectionEntryGroup" targetId="aa75-d619-0292-ff9a"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="80"/>
@@ -293,6 +295,123 @@
               </costs>
             </entryLink>
           </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Aspect Exarchs" hidden="false" id="c19e-3e75-89ce-ba7f">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Exarch" hidden="false" id="f31f-fdbb-95e8-4213">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="d14e-0d52-8a8c-9ca4"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a4cd-aadb-5525-32f5" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Aspect Shrine (x)" hidden="false" id="63d2-655d-42db-1612" type="selectionEntryGroup" targetId="cdd4-9cae-6a32-bbf0"/>
+            <entryLink import="true" name="Aspect Armour" hidden="false" id="1208-b1bf-1d0f-1802" type="selectionEntry" targetId="7c09-bc4e-e8a9-4a75"/>
+            <entryLink import="true" name="Plasma Grenades" hidden="false" id="888e-36b7-4834-c109" type="selectionEntry" targetId="0a4e-f69a-2e83-cb4c"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Exarch" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="4349-e5d1-ea5a-e18e">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Asuryani, Character)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">6</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Fleet (X)" id="7e02-4a58-8537-b35f" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+              <modifiers>
+                <modifier type="set" value="Fleet (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Aspect Ascendant" id="7b35-0d47-f791-ef3e" hidden="false" type="rule" targetId="3f79-6cb6-ef6e-39b7"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="4f85-eb33-30c9-8f51" id="61e9-5310-b6df-e898" primary="true" name="HQ:"/>
+        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="861c-bf9d-5146-7843" primary="false" name="Infantry Unit Type"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="7d8f-aea3-fbbe-29ba" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="c6af-0a45-db35-544a" primary="false" name="Character"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Farseer" hidden="false" id="76cd-d1df-6938-d937">
+      <entryLinks>
+        <entryLink import="true" name="Skyrunner Jetbike" hidden="false" id="4372-89da-c40a-433d" type="selectionEntry" targetId="7867-42f2-b894-df5f">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Path of the Farseer" hidden="false" id="1e0f-b1f4-0d94-ab34" type="selectionEntry" targetId="73ba-7f16-6d48-4a99"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="150"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="4f85-eb33-30c9-8f51" id="2997-c15c-c81c-5718" primary="true" name="HQ:"/>
+        <categoryLink targetId="6e0c-29ba-a445-8321" id="4198-e1f6-6eaf-b6c0" primary="false" name="Psyker:"/>
+        <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="9a9c-b36f-2789-fb06" primary="false" name="Character"/>
+        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="9b21-4614-bfe9-3abc" primary="false" name="Infantry Unit Type"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="31b2-045e-c1dc-388f" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="4f07-3d45-4f28-a0c6" id="6b0d-20e8-7a99-caf4" primary="false" name="Independent Character"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Psychic Mastery (X)" id="f4d7-efef-7409-4174" hidden="false" type="rule" targetId="a634-83b3-55bb-06fb">
+          <modifiers>
+            <modifier type="set" value="Psychic Mastery (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Adamantium Will (X+)" id="c228-904c-f70a-92fd" hidden="false" type="rule" targetId="4380-44a5-f01a-d964">
+          <modifiers>
+            <modifier type="set" value="Adamantium Will (3+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Runes of Warding" id="bdf5-1674-b41f-71fe" hidden="false" type="rule" targetId="4864-30b9-e7b0-9555"/>
+        <infoLink name="Runes of Witnessing" id="a19f-d67f-d846-4fa9" hidden="false" type="rule" targetId="ffc1-26eb-7e2e-f137"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Farseer" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="140c-e8ac-5f3f-9ec9">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Asuryani, Character, Psyker)</characteristic>
+            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+            <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
+            <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="A Farseer may exchange their Witch Weapon for the following:" id="1c27-80c2-8d62-ce50" hidden="false" defaultSelectionEntryId="none">
+          <entryLinks>
+            <entryLink import="true" name="Singing Spear" hidden="false" id="b0c8-19f5-002b-eabd" type="selectionEntry" targetId="103e-211b-7562-8c02">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Witch Weapon" hidden="false" id="8599-d70f-2313-11b0" type="selectionEntryGroup" targetId="db21-ea7a-c1bc-192b"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="56b1-cb05-9031-7b6f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56b1-cb05-9031-7b6f-max" includeChildSelections="false"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
