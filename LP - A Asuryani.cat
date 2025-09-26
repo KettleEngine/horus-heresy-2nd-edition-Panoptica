@@ -27,6 +27,31 @@
     <entryLink import="true" name="War Walker Squadron" hidden="false" id="1961-624b-d31c-f37a" type="selectionEntry" targetId="b44e-0cc3-6145-b315"/>
     <entryLink import="true" name="Guardian Defenders" hidden="false" id="e0f1-df39-fa2d-8f14" type="selectionEntry" targetId="e43f-6df3-3575-c76e"/>
     <entryLink import="true" name="Storm Guardians" hidden="false" id="2a88-7cdf-55da-4626" type="selectionEntry" targetId="8f22-7c41-31a7-9971"/>
+    <entryLink import="true" name="Windriders" hidden="false" id="f9cb-c692-ae40-e9db" type="selectionEntry" targetId="c326-a3ca-7063-9cb6"/>
+    <entryLink import="true" name="Dire Avengers" hidden="false" id="779d-c8a2-7829-e756" type="selectionEntry" targetId="991f-ad92-e006-ab56"/>
+    <entryLink import="true" name="Rangers" hidden="false" id="6aba-98df-e08e-6b71" type="selectionEntry" targetId="914b-09d1-1ecd-e681"/>
+    <entryLink import="true" name="Shadow Spectre" hidden="false" id="dda9-c8f9-2544-a89c" type="selectionEntry" targetId="88f5-93c8-7ba7-d234"/>
+    <entryLink import="true" name="Swooping Hawks" hidden="false" id="4e05-31ed-a042-5a40" type="selectionEntry" targetId="fe93-242e-ee58-795c"/>
+    <entryLink import="true" name="Warp Spiders" hidden="false" id="06a9-6d14-bc6a-8e98" type="selectionEntry" targetId="b69f-901b-b73d-5a5a"/>
+    <entryLink import="true" name="Shroud Runners" hidden="false" id="c4db-feda-bc34-e257" type="selectionEntry" targetId="76a0-2998-bb98-9bea"/>
+    <entryLink import="true" name="Vyper Squadron" hidden="false" id="bfba-9151-2e1c-6b36" type="selectionEntry" targetId="36f7-fbfe-16a0-a131"/>
+    <entryLink import="true" name="Nightshade Interceptor Squadron" hidden="false" id="9b93-007d-7595-b386" type="selectionEntry" targetId="1f87-8cb3-3bee-772b"/>
+    <entryLink import="true" name="Vaul&apos;s wrath support battery" hidden="false" id="0f3b-2137-338e-51bb" type="selectionEntry" targetId="6cb7-1eba-f0ed-6310"/>
+    <entryLink import="true" name="Dark Reapers" hidden="false" id="ee08-c79d-01f6-0b59" type="selectionEntry" targetId="b38d-2c89-d1a3-84b3"/>
+    <entryLink import="true" name="Falcon Squadron" hidden="false" id="e7ad-18db-ab7a-32f0" type="selectionEntry" targetId="028a-a615-843b-9ed4"/>
+    <entryLink import="true" name="Fire Prism Squadron" hidden="false" id="7289-3a6b-6389-f494" type="selectionEntry" targetId="0bd4-2e64-aeae-05ce"/>
+    <entryLink import="true" name="Doomweaver" hidden="false" id="c469-7c29-2c51-f5ad" type="selectionEntry" targetId="d570-60a2-4879-6a0d">
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Firestorm Squadron" hidden="false" id="3c58-26ed-81cc-b415">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Firestorm" hidden="false" id="cfc0-6e2b-58d1-f0ef"/>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+    </entryLink>
+    <entryLink import="true" name="Firestorm Squadron" hidden="false" id="4b3f-3df1-9f8c-eb0d" type="selectionEntry" targetId="d924-caa3-c3f3-9ed1"/>
+    <entryLink import="true" name="Wraithlord Conclave" hidden="false" id="80c4-251b-7fd0-5c01" type="selectionEntry" targetId="032b-9c50-8031-e906"/>
+    <entryLink import="true" name="Wraithseer" hidden="false" id="254a-5560-44fc-1d51" type="selectionEntry" targetId="b985-8286-5681-3401"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Howling Banshees" hidden="false" id="cef9-7428-bebc-312e" publicationId="a179-8e8f-4601-987c" page="41">
@@ -1017,7 +1042,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <entryLink import="true" name="Dedicated Transport" hidden="false" id="3375-7a7e-aaa9-b0b1" type="selectionEntryGroup" targetId="2143-410c-0690-5d43"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Wraithblades" hidden="false" id="8dc4-ed84-432d-795d" page="">
+    <selectionEntry type="unit" import="true" name="Wraithblades" hidden="false" id="8dc4-ed84-432d-795d">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Wraithblade" hidden="false" id="6bb6-50d6-13e1-534a">
           <costs>
@@ -1092,7 +1117,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink targetId="cf01-e0e7-4567-a4b9" id="c5eb-c73d-acbe-b8fd" primary="false" name="Asuryani Unit Sub-Type:"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Wraithguard" hidden="false" id="30ca-66b3-005b-f5cf" page="">
+    <selectionEntry type="unit" import="true" name="Wraithguard" hidden="false" id="30ca-66b3-005b-f5cf">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Wraithguard" hidden="false" id="c2b3-ba81-6717-37d8">
           <costs>
@@ -1230,6 +1255,25 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
                   </costs>
                 </entryLink>
               </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Any War Walker may take any of the following (all models in the unit must select the same upgrades):" id="cc3c-06ab-51aa-65bf" hidden="false" collective="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Ghostwalker Matrix" hidden="false" id="5616-df2d-a5da-d96f" type="selectionEntry" targetId="0517-087e-3a1e-a216">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b28-1ca6-081b-5a05" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Star Engines" hidden="false" id="4037-4ed4-b652-601c" type="selectionEntry" targetId="3391-adc6-766d-c959">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
@@ -1273,10 +1317,9 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             </profile>
           </profiles>
           <categoryLinks>
-            <categoryLink targetId="9b5d-fac7-799b-d7e7" id="5bcd-b925-12a0-6d65" primary="true" name="Troops:"/>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="fdcf-275c-7edc-0144" primary="false" name="Infantry Unit Type"/>
             <categoryLink targetId="cf01-e0e7-4567-a4b9" id="8c97-b4e9-f1ce-57d8" primary="false" name="Asuryani Unit Sub-Type:"/>
-            <categoryLink targetId="6399-5c65-7833-1025" id="12b2-f8ed-3c74-c335" primary="false" name="Line Sub-type"/>
+            <categoryLink targetId="6399-5c65-7833-1025" id="efb6-7e5e-8bcc-f402" primary="false" name="Line Sub-type"/>
           </categoryLinks>
           <entryLinks>
             <entryLink import="true" name="Shuriken Catapult" hidden="false" id="4d80-f2c8-bbb8-c763" type="selectionEntry" targetId="e2d4-d214-4b5c-de85">
@@ -1417,7 +1460,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             </profile>
           </profiles>
           <categoryLinks>
-            <categoryLink targetId="9b5d-fac7-799b-d7e7" id="7814-5348-40a0-d918" primary="true" name="Troops:"/>
+            <categoryLink targetId="9b5d-fac7-799b-d7e7" id="7814-5348-40a0-d918" primary="false" name="Troops:"/>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="96ea-22ca-8e27-8401" primary="false" name="Infantry Unit Type"/>
             <categoryLink targetId="cf01-e0e7-4567-a4b9" id="98ee-ecdd-74ed-7a2c" primary="false" name="Asuryani Unit Sub-Type:"/>
             <categoryLink targetId="6399-5c65-7833-1025" id="c4f4-4d7a-c639-9794" primary="false" name="Line Sub-type"/>
@@ -1426,7 +1469,6 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             <entryLink import="true" name="Plasma Grenades" hidden="false" id="5746-5d67-3aff-78dc" type="selectionEntry" targetId="0a4e-f69a-2e83-cb4c"/>
             <entryLink import="true" name="Mesh Armour" hidden="false" id="df7b-7457-54b0-dd77" type="selectionEntry" targetId="6248-6348-e862-e540"/>
             <entryLink import="true" name="One Model may take:" hidden="false" id="f37f-0a95-b59c-315c" type="selectionEntryGroup" targetId="2314-1de8-8c22-e311"/>
-            <entryLink import="true" name="Shuriken Pistol" hidden="false" id="1dcc-82e5-9585-40cc" type="selectionEntry" targetId="c1af-d7e7-d404-7a33"/>
           </entryLinks>
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="42c7-fd77-73d4-2e90" includeChildSelections="false"/>
@@ -1440,11 +1482,83 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             </infoLink>
           </infoLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="For every five Storm Guardians in the unit, one Storm Guardian may exchange their Chainsword for the following:" id="5e9d-16e3-58ad-846d" hidden="false">
+            <selectionEntryGroup name="For every five Storm Guardians in the unit, one Storm Guardian may exchange their Chainsword for the following:" id="5e9d-16e3-58ad-846d" hidden="false" defaultSelectionEntryId="45cd-844d-ec2e-08c1">
               <entryLinks>
                 <entryLink import="true" name="Chainsword" hidden="false" id="45cd-844d-ec2e-08c1" type="selectionEntry" targetId="161c-cd6c-65ce-070e"/>
-                <entryLink import="true" name="Power Weapon" hidden="false" id="d45e-1558-8a63-7f6d" type="selectionEntry" targetId="d2db-7598-f55f-86fe"/>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="d45e-1558-8a63-7f6d" type="selectionEntry" targetId="d2db-7598-f55f-86fe">
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="unit" shared="false" id="fd09-4acd-be79-567a" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="fd09-4acd-be79-567a">
+                      <repeats>
+                        <repeat value="5" repeats="1" field="selections" scope="8f22-7c41-31a7-9971" childId="8f81-a7ec-be02-96da" shared="true" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e4b-d91d-e99d-c88a" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="For every five Storm Guardians in the unit, one Storm Guardian may exchange their Chainsword and Shuriken Pistol for one of the following:" id="e479-bb7c-98fe-f5ab" hidden="false" defaultSelectionEntryId="45cd-844d-ec2e-08c1">
+              <entryLinks>
+                <entryLink import="true" name="Flamer" hidden="false" id="017a-485c-1280-6f9a" type="selectionEntry" targetId="9f41-82e2-90f6-973a">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="c7b6-eb36-886a-588f">
+                      <repeats>
+                        <repeat value="5" repeats="1" field="selections" scope="8f22-7c41-31a7-9971" childId="8f81-a7ec-be02-96da" shared="true" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="unit" shared="false" id="c7b6-eb36-886a-588f" includeChildSelections="true"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Fusion Gun" hidden="false" id="7184-93d4-2a90-1099" type="selectionEntry" targetId="37f0-8676-e522-1da2">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="f85b-3e4d-de83-ce71">
+                      <repeats>
+                        <repeat value="5" repeats="1" field="selections" scope="8f22-7c41-31a7-9971" childId="8f81-a7ec-be02-96da" shared="true" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="unit" shared="false" id="f85b-3e4d-de83-ce71" includeChildSelections="true"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d3d-f0df-0851-7b20" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Chainsword and Shuriken Pistol " hidden="false" id="5289-8cc0-fef8-11cb">
+                  <entryLinks>
+                    <entryLink import="true" name="Shuriken Pistol" hidden="false" id="1dcc-82e5-9585-40cc" type="selectionEntry" targetId="c1af-d7e7-d404-7a33">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7dbd-a64a-7839-5725-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7dbd-a64a-7839-5725-max" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Chainsword" hidden="false" id="0e0e-246b-21e2-102b" type="selectionEntry" targetId="161c-cd6c-65ce-070e">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf4c-a9d5-0465-3874-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf4c-a9d5-0465-3874-max" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
@@ -1531,7 +1645,6 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="9b5d-fac7-799b-d7e7" id="7cf4-ef82-d0c9-7d7b" primary="true" name="Troops:"/>
         <categoryLink targetId="cf01-e0e7-4567-a4b9" id="c84b-4a27-ed06-9643" primary="false" name="Asuryani Unit Sub-Type:"/>
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="f5c8-bad7-bd7e-0ef7" primary="false" name="Infantry Unit Type"/>
         <categoryLink targetId="6399-5c65-7833-1025" id="37c8-cfc6-c860-b58d" primary="false" name="Line Sub-type"/>
@@ -1539,6 +1652,2145 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
       <entryLinks>
         <entryLink import="true" name="Dedicated Transport" hidden="false" id="69fc-db65-5ef3-80ed" type="selectionEntryGroup" targetId="2143-410c-0690-5d43"/>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Windriders" hidden="false" id="c326-a3ca-7063-9cb6">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Windrider" hidden="false" id="54cd-604e-6e73-d572">
+          <profiles>
+            <profile name="Windrider" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="e410-db01-a9e3-9fa3">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Asuryani, Antigrav)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">18</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="525e-8cf0-b315-1d64" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="f11f-c85b-eb12-c26b" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Mesh Armour" hidden="false" id="86ac-eb84-7192-b112" type="selectionEntry" targetId="a95d-2870-d12c-eeff"/>
+            <entryLink import="true" name="Plasma Grenades" hidden="false" id="96bc-13b1-d0b5-b75d" type="selectionEntry" targetId="0a4e-f69a-2e83-cb4c"/>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="One Model may take:" id="6a63-ceb0-fcdf-9ad6" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Comm-Bead" hidden="false" id="3ec0-39c8-a94e-98d6" type="selectionEntry" targetId="465c-227f-babe-1b73">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b076-36ef-ff34-28c7" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="bc43-db1c-bf00-7eb5" includeChildSelections="true"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Craftworld Standard" hidden="false" id="840c-ed2d-2a2c-8b32" type="selectionEntry" targetId="34a8-ff38-f64d-4b34">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad0c-4fc1-3d1f-dfb7" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="e63b-9e9d-f4c6-f65a" includeChildSelections="true"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="model" shared="true" id="f27f-8cdf-31f8-af30"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Skyrunner Jetbike" hidden="false" id="3bbc-9c76-ecde-d38e">
+              <profiles>
+                <profile name="Skyrunner Jetbike" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="ec89-45a5-2dc7-75ce">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">a model with a Skyrunner Jetbike may choose to move up to their unmodified Initiative Characteristic at the start of the Controlling Player’s Charge Sub-Phase. A model that chooses to do so may not declare a Charge</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="add" value="6d79-a3e4-381f-7b0f" field="category" scope="parent"/>
+                <modifier type="add" value="4303-1348-cce4-9501" field="category" scope="parent"/>
+                <modifier type="set" value="18" field="893e-2d76-8f04-44e5" scope="parent" affects="profiles.Unit"/>
+                <modifier type="set" value="4" field="57ee-1126-32a9-5672" scope="parent" affects="profiles.Unit"/>
+              </modifiers>
+              <infoLinks>
+                <infoLink name="Fleet (X)" id="3814-f6b6-f27f-5562" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+                  <modifiers>
+                    <modifier type="set" value="Fleet (2)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Firing Protocols (X)" id="4dcf-8ec1-abe0-743e" hidden="false" type="rule" targetId="32a3-f599-5c92-2945">
+                  <modifiers>
+                    <modifier type="set" value="Firing Protocols (2)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Hit &amp; Run" id="7958-bb04-9558-3b82" hidden="false" type="rule" targetId="5986-e960-d432-affd"/>
+                <infoLink name="Hammer of Wrath (X)" id="5dc4-489e-bce1-55b9" hidden="false" type="rule" targetId="aec0-c3aa-1e4e-1779">
+                  <modifiers>
+                    <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Relentless" id="cf69-d5b0-7e9d-c2ef" hidden="false" type="rule" targetId="7adf-ac9a-5035-522d"/>
+                <infoLink name="Battle-Hardened (X)" id="eea0-4899-9482-f906" hidden="false" type="rule" targetId="5c3b-ed0b-4ad0-d547">
+                  <modifiers>
+                    <modifier type="set" value="Battle-Hardened (1)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Shrouded (X)" id="8c92-dcbc-06a9-e3fc" hidden="false" type="rule" targetId="10c3-fdb0-089f-ca65">
+                  <modifiers>
+                    <modifier type="set" value="Shrouded (5+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Deep Strike" id="ca14-4b2a-06d0-3ecc" hidden="false" type="rule" targetId="f1e1-986f-c783-ca9e"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9231-f9bb-50e7-473d-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9231-f9bb-50e7-473d-max" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Any model in the unit may replace its Skyrunner Jetbike’s Twin-Linked Shuriken Catapult with one of the following:" id="bf98-0e27-59ad-91ed" hidden="false" defaultSelectionEntryId="262c-6475-161f-8228">
+                  <entryLinks>
+                    <entryLink import="true" name="Twin-Linked Shuriken Catapult" hidden="false" id="262c-6475-161f-8228" type="selectionEntry" targetId="9ec7-cc82-393e-0a78" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="116b-902b-a4f7-0684" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Shuriken Cannon " hidden="false" id="b64a-525f-64ca-8654" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14" sortIndex="2">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Scatter Laser" hidden="false" id="551f-f4a0-35d9-1924" type="selectionEntry" targetId="cae5-d08d-3659-7cc7" sortIndex="3">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="079a-8e40-50fd-3d72-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="079a-8e40-50fd-3d72-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Support Squad" id="8486-69a3-4700-efcd" hidden="false" type="rule" targetId="768e-56d6-ca52-24ae"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="9b5d-fac7-799b-d7e7" id="e08a-0ea7-aedb-4687" primary="true" name="Troops:"/>
+        <categoryLink targetId="6d79-a3e4-381f-7b0f" id="e6fd-f50c-409a-7af2" primary="false" name="Cavalry Unit Type"/>
+        <categoryLink targetId="4303-1348-cce4-9501" id="6db9-f1e1-f2f6-4fa7" primary="false" name="Antigrav Sub-type"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="c9f9-3e2f-123c-99dc" primary="false" name="Asuryani Unit Sub-Type:"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Dire Avengers" hidden="false" id="991f-ad92-e006-ab56">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="8"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Dire Avenger" hidden="false" id="df95-0822-7812-5a9c">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="18"/>
+          </costs>
+          <profiles>
+            <profile name="Dire Avenger" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="376a-2e4e-55d7-8081">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Asuryani, Line)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Augury Scanner" hidden="false" id="ad0a-a67d-b0a7-5558" type="selectionEntry" targetId="67ee-7338-3b74-04b4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="49c3-6ae7-6bcb-14b0-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49c3-6ae7-6bcb-14b0-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Aspect Armour" hidden="false" id="336d-f3d9-91ed-c43f" type="selectionEntry" targetId="7c09-bc4e-e8a9-4a75"/>
+            <entryLink import="true" name="Avenger Catapult" hidden="false" id="5916-38f8-01ff-6cd1" type="selectionEntry" targetId="3ab7-bb3f-541b-322f">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="56a8-702e-aacf-0b4c-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56a8-702e-aacf-0b4c-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Plasma Grenades" hidden="false" id="ac69-92e2-df09-9985" type="selectionEntry" targetId="0a4e-f69a-2e83-cb4c"/>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="One Model may take:" id="6a1d-5d54-c25e-a5d0" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Comm-Bead" hidden="false" id="fdb9-6af4-a115-6132" type="selectionEntry" targetId="465c-227f-babe-1b73">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea0c-8bfd-0fd5-0a39" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="2f9f-d71f-eb88-180c" includeChildSelections="true"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Craftworld Standard" hidden="false" id="d3b9-2762-24e1-8f40" type="selectionEntry" targetId="34a8-ff38-f64d-4b34">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bffc-4b01-f6ca-4c18" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="54ba-39d2-f65b-845e" includeChildSelections="true"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="model" shared="true" id="ddca-446f-b8b8-1c42"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="547a-f758-1332-9532" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="d260-a17a-ff72-b1d7" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Aspect Shrine (X)" id="7241-bed0-ca26-fb8f" hidden="false" type="rule" targetId="e1cb-87c6-8282-ba6e">
+              <modifiers>
+                <modifier type="set" value="Aspect Shrine (Dire Avenger)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Fleet (X)" id="2958-e233-8855-1f39" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+              <modifiers>
+                <modifier type="set" value="Fleet (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Flexible Tactics" id="4bfb-8861-7a1f-e9b8" hidden="false" type="rule" targetId="25c0-5b51-3f9a-f5a1"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Dedicated Transport" hidden="false" id="31ae-7f53-9398-27ad" type="selectionEntryGroup" targetId="2143-410c-0690-5d43"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="9b5d-fac7-799b-d7e7" id="2c1a-c47e-f548-29a4" primary="true" name="Troops:"/>
+        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="5a7b-1eda-703b-e5f7" primary="false" name="Infantry Unit Type"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="b842-212e-7113-3954" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="6399-5c65-7833-1025" id="21e0-c519-a37b-5ae5" primary="false" name="Line Sub-type"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Rangers" hidden="false" id="914b-09d1-1ecd-e681">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Ranger" hidden="false" id="fd47-75fa-edae-3032">
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="031f-30f3-208e-65d4" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="735c-f848-c60d-6adb" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Ranger" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="601c-e5b5-7955-2a68">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Asuryani, Skirmish, Line)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Mesh Armour" hidden="false" id="9c52-6c79-d7e7-d0ac" type="selectionEntry" targetId="6248-6348-e862-e540"/>
+            <entryLink import="true" name="Shuriken Pistol" hidden="false" id="7c51-f4fd-a33d-2eeb" type="selectionEntry" targetId="c1af-d7e7-d404-7a33">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b63-f985-68b5-a7f3-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b63-f985-68b5-a7f3-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Plasma Grenades" hidden="false" id="08d8-1357-7ca6-8a1f" type="selectionEntry" targetId="0a4e-f69a-2e83-cb4c"/>
+            <entryLink import="true" name="Outcast Cloak" hidden="false" id="8fdb-080d-1c90-a04d" type="selectionEntry" targetId="6e82-bb03-3403-eb76">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="47be-6320-21f8-c0a1-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47be-6320-21f8-c0a1-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Ranger Long-Rifle" hidden="false" id="19bc-0794-f2dc-6346" type="selectionEntry" targetId="1e0c-960f-aa4f-a8f1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c735-4ebf-e281-d678-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c735-4ebf-e281-d678-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Scout" id="598b-802e-d26a-315a" hidden="false" type="rule" targetId="aacf-9a7e-982d-b793"/>
+            <infoLink name="Fleet (X)" id="6a70-141e-d150-1321" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+              <modifiers>
+                <modifier type="set" value="Fleet (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Infiltrate" id="9a63-0b4f-b05a-c7d2" hidden="false" type="rule" targetId="0e32-5b92-a95a-8464"/>
+            <infoLink name="Move Through Cover" id="a720-f84b-9b69-1912" hidden="false" type="rule" targetId="2b6f-bfec-759e-1746"/>
+            <infoLink name="Support Squad" id="7bd2-95b4-05cc-ef8c" hidden="false" type="rule" targetId="768e-56d6-ca52-24ae"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options:" id="ac0f-8fad-606c-5b32" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Gloom Field" hidden="false" id="e4f4-53f0-2891-086f" type="selectionEntry" targetId="eaa6-5d3b-cc30-2cd1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="unit" shared="true" id="cf03-f106-841d-a9c3-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="cf03-f106-841d-a9c3-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Wireweave Net" hidden="false" id="66f8-8ecb-1aa4-4ba6" type="selectionEntry" targetId="19c4-15b8-8bcc-68f4">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="unit" shared="true" id="455d-35b5-0c86-86c4-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="455d-35b5-0c86-86c4-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="9b5d-fac7-799b-d7e7" id="de3e-f4b8-e4ec-d47c" primary="true" name="Troops:"/>
+        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="7a2d-4041-7b50-121a" primary="false" name="Infantry Unit Type"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="80cd-f6f4-7965-0757" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="59a4-7b61-600a-c457" id="88bd-d7fe-04e8-7721" primary="false" name="Skirmish Sub-type"/>
+        <categoryLink targetId="6399-5c65-7833-1025" id="4cd3-bc03-0bca-2ff9" primary="false" name="Line Sub-type"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Shadow Spectre" hidden="false" id="88f5-93c8-7ba7-d234">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Shadow Spectre" hidden="false" id="4518-7543-dfea-ff06">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+          </costs>
+          <profiles>
+            <profile name="Shadow Spectre" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="1578-437b-e555-8e77">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Asuryani)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a51a-33e4-52a8-1b0a" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="83e8-bbe4-8d23-0cf8" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Aspect Shrine (X)" id="6652-f20b-b87b-96e6" hidden="false" type="rule" targetId="e1cb-87c6-8282-ba6e">
+              <modifiers>
+                <modifier type="set" value="Aspect Shrine (Shadow Spectre)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Shadow of Death" id="81c2-3dfa-ced7-2253" hidden="false" type="rule" targetId="7b05-d9ab-ae6d-3ca4"/>
+            <infoLink name="Fleet (X)" id="e1c1-e97b-73d2-4789" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+              <modifiers>
+                <modifier type="set" value="Fleet (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Fear (X)" id="d2cd-4d7f-6979-d62f" hidden="false" type="rule" targetId="21f6-7842-df5c-d2e7">
+              <modifiers>
+                <modifier type="set" value="Fear (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Shrouded (X)" id="2504-1a96-268b-e270" hidden="false" type="rule" targetId="10c3-fdb0-089f-ca65">
+              <modifiers>
+                <modifier type="set" value="Shrouded (4+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Relentless" id="5981-2932-6a4c-5fb4" hidden="false" type="rule" targetId="7adf-ac9a-5035-522d"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Aspect Armour" hidden="false" id="8178-105c-5337-e6c4" type="selectionEntry" targetId="c81b-3334-7a37-1473"/>
+            <entryLink import="true" name="Spectre Jet Pack" hidden="false" id="b908-270f-6bf8-a942" type="selectionEntry" targetId="5e11-3be6-6b8f-75a6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c07-e285-68b7-1347-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c07-e285-68b7-1347-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Prism Rifle" hidden="false" id="1464-fa4e-ec4a-1bfa" type="selectionEntry" targetId="8b4b-f372-8adc-900e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d454-3c34-6a9f-a9b7-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d454-3c34-6a9f-a9b7-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Plasma Grenades" hidden="false" id="0d1c-f077-6999-d1e2" type="selectionEntry" targetId="0a4e-f69a-2e83-cb4c"/>
+            <entryLink import="true" name="Haywire Grenade" hidden="false" id="827b-4b23-7107-f36f" type="selectionEntry" targetId="a712-5d45-1cef-cc73"/>
+            <entryLink import="true" name="One Model may take:" hidden="false" id="9cf1-045b-f9ac-9288" type="selectionEntryGroup" targetId="2314-1de8-8c22-e311"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="20ef-cd01-a8da-376e" id="dcb7-2191-0503-786b" primary="true" name="Fast Attack:"/>
+        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="f6e1-6e70-a889-a892" primary="false" name="Infantry Unit Type"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="5c97-4063-2f9d-bdf9" primary="false" name="Asuryani Unit Sub-Type:"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Swooping Hawks" hidden="false" id="fe93-242e-ee58-795c">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Swooping Hawk" hidden="false" id="daca-3cd1-f74e-d79b">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+          </costs>
+          <profiles>
+            <profile name="Swooping Hawk" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="f249-cb32-2ff1-1488">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Asuryani)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Skystrike" id="c264-b3eb-5bed-062e" hidden="false" type="rule" targetId="7927-d926-0f24-f49f"/>
+            <infoLink name="Skyleap" id="b6b1-bf6b-25ff-6fb4" hidden="false" type="rule" targetId="c3f4-67c3-794f-2dc8"/>
+            <infoLink name="Fleet (X)" id="3292-c371-9ba5-8c43" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+              <modifiers>
+                <modifier type="set" value="Fleet (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Aspect Shrine (X)" id="8716-15f2-69f2-2c79" hidden="false" type="rule" targetId="e1cb-87c6-8282-ba6e">
+              <modifiers>
+                <modifier type="set" value="Aspect Shrine (Swooping Hawk)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Hawk Lasblaster" hidden="false" id="0a65-63c1-65ea-4bb1" type="selectionEntry" targetId="e020-9504-e148-2178">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf76-f680-03b8-feef-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf76-f680-03b8-feef-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Swooping Hawk Wings" hidden="false" id="0371-ca40-ebd3-38b3" type="selectionEntry" targetId="2249-9be3-08fa-f818"/>
+            <entryLink import="true" name="Aspect Armour" hidden="false" id="a2b8-a8b5-81af-53bd" type="selectionEntry" targetId="7c09-bc4e-e8a9-4a75"/>
+            <entryLink import="true" name="Grenade Pack " hidden="false" id="0d1d-56b2-1793-d845" type="selectionEntry" targetId="973c-dd56-0ffd-178c"/>
+            <entryLink import="true" name="Plasma Grenades" hidden="false" id="734f-4fee-86d4-268f" type="selectionEntry" targetId="0a4e-f69a-2e83-cb4c"/>
+            <entryLink import="true" name="Haywire Grenade" hidden="false" id="e310-bc36-e7f8-131a" type="selectionEntry" targetId="a712-5d45-1cef-cc73"/>
+            <entryLink import="true" name="One Model may take:" hidden="false" id="83ac-12ac-4a79-6e23" type="selectionEntryGroup" targetId="2314-1de8-8c22-e311"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="c03f-90a6-0a25-0a4c" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="2b1f-d04d-df2c-479e" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="20ef-cd01-a8da-376e" id="99ac-e3fd-6235-c15c" primary="true" name="Fast Attack:"/>
+        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="96d9-b555-6c2d-ae95" primary="false" name="Infantry Unit Type"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="93f2-1ba5-59cd-a492" primary="false" name="Asuryani Unit Sub-Type:"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Shining Spears" hidden="false" id="983b-1285-bed0-c1e3">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Shining Spear" hidden="false" id="f7f7-f1ba-2e25-881c">
+          <profiles>
+            <profile name="Shining Spear" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="ee12-c10b-fab4-8406">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Asuryani, Antigrav)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">18</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="One Model may take:" hidden="false" id="9d6b-068a-5f82-73eb" type="selectionEntryGroup" targetId="2314-1de8-8c22-e311"/>
+            <entryLink import="true" name="Heavy Aspect Armour" hidden="false" id="7291-538a-a3f4-01c0" type="selectionEntry" targetId="c81b-3334-7a37-1473"/>
+            <entryLink import="true" name="Laser Lance" hidden="false" id="552a-7d0f-7814-6d8c" type="selectionEntry" targetId="48d7-0971-2fa2-a534">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="39cd-a4af-3fe4-cd6b-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39cd-a4af-3fe4-cd6b-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shuriken Pistol" hidden="false" id="beaa-98fa-d9f1-487c" type="selectionEntry" targetId="c1af-d7e7-d404-7a33">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e430-2443-5b36-a221-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e430-2443-5b36-a221-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Plasma Grenades" hidden="false" id="82fb-4efc-7fb2-04b1" type="selectionEntry" targetId="0a4e-f69a-2e83-cb4c"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Skyrunner Jetbike" hidden="false" id="f5b9-db43-ac8f-1d63">
+              <profiles>
+                <profile name="Skyrunner Jetbike" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="5e21-c477-5989-ca87">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">a model with a Skyrunner Jetbike may choose to move up to their unmodified Initiative Characteristic at the start of the Controlling Player’s Charge Sub-Phase. A model that chooses to do so may not declare a Charge</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="add" value="6d79-a3e4-381f-7b0f" field="category" scope="parent"/>
+                <modifier type="add" value="4303-1348-cce4-9501" field="category" scope="parent"/>
+                <modifier type="set" value="18" field="893e-2d76-8f04-44e5" scope="parent" affects="profiles.Unit"/>
+                <modifier type="set" value="4" field="57ee-1126-32a9-5672" scope="parent" affects="profiles.Unit"/>
+              </modifiers>
+              <infoLinks>
+                <infoLink name="Fleet (X)" id="29ee-a028-bd8f-ac0d" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+                  <modifiers>
+                    <modifier type="set" value="Fleet (2)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Firing Protocols (X)" id="3020-0c1e-2c53-7c06" hidden="false" type="rule" targetId="32a3-f599-5c92-2945">
+                  <modifiers>
+                    <modifier type="set" value="Firing Protocols (2)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Hit &amp; Run" id="635c-cc3c-0ede-a27b" hidden="false" type="rule" targetId="5986-e960-d432-affd"/>
+                <infoLink name="Hammer of Wrath (X)" id="dea6-f14f-c26b-e7fb" hidden="false" type="rule" targetId="aec0-c3aa-1e4e-1779">
+                  <modifiers>
+                    <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Relentless" id="6fc4-4490-6db0-075c" hidden="false" type="rule" targetId="7adf-ac9a-5035-522d"/>
+                <infoLink name="Battle-Hardened (X)" id="ab88-5f0a-eda7-e95b" hidden="false" type="rule" targetId="5c3b-ed0b-4ad0-d547">
+                  <modifiers>
+                    <modifier type="set" value="Battle-Hardened (1)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Shrouded (X)" id="1e73-9c3e-88f5-957e" hidden="false" type="rule" targetId="10c3-fdb0-089f-ca65">
+                  <modifiers>
+                    <modifier type="set" value="Shrouded (5+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Deep Strike" id="7190-04c6-e7b0-2e29" hidden="false" type="rule" targetId="f1e1-986f-c783-ca9e"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a0f2-1a2b-05d4-1a8e-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0f2-1a2b-05d4-1a8e-max" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Any model in the unit may replace its Skyrunner Jetbike’s Twin-Linked Shuriken Catapult with one of the following:" id="b520-cefc-30c8-4059" hidden="false" defaultSelectionEntryId="262c-6475-161f-8228">
+                  <entryLinks>
+                    <entryLink import="true" name="Twin-Linked Shuriken Catapult" hidden="false" id="0e20-5784-5508-440c" type="selectionEntry" targetId="9ec7-cc82-393e-0a78" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0549-fac1-23d2-86dc" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Shuriken Cannon " hidden="false" id="85fd-3c50-2b09-a741" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14" sortIndex="2">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Scatter Laser" hidden="false" id="d04d-5daf-f50e-64be" type="selectionEntry" targetId="cae5-d08d-3659-7cc7" sortIndex="3">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="42f9-6303-ff42-67b9-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42f9-6303-ff42-67b9-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Outflank" id="65fb-27ac-e430-e0fb" hidden="false" type="rule" targetId="bfbf-e75c-49a2-0285"/>
+            <infoLink name="Aspect Shrine (X)" id="1009-33d8-54f1-5b69" hidden="false" type="rule" targetId="e1cb-87c6-8282-ba6e">
+              <modifiers>
+                <modifier type="set" value="Aspect Shrine (Shining Spear)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Pathfinder" id="ff62-23b0-795d-c53d" hidden="false" type="rule" targetId="ec97-7aa8-49f5-b298"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b15d-70e8-32ed-3750" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="ee74-d2fa-f9da-1212" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="20ef-cd01-a8da-376e" id="ee37-3bfd-b022-9bd8" primary="true" name="Fast Attack:"/>
+        <categoryLink targetId="6d79-a3e4-381f-7b0f" id="d111-27ab-0217-acba" primary="false" name="Cavalry Unit Type"/>
+        <categoryLink targetId="4303-1348-cce4-9501" id="9aef-6c4e-6491-ad50" primary="false" name="Antigrav Sub-type"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="984c-e6cc-e0e4-10e2" primary="false" name="Asuryani Unit Sub-Type:"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Warp Spiders" hidden="false" id="b69f-901b-b73d-5a5a">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="8"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="20ef-cd01-a8da-376e" id="aa28-6678-92a1-df5f" primary="true" name="Fast Attack:"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="b7d4-7ebe-5d18-d4f4" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="e451-8f9b-7f8f-5dce" primary="false" name="Infantry Unit Type"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Warp Spider" hidden="false" id="7e4b-cc1e-55be-683b">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="23"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="9213-954d-dcab-ad0b" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="b13c-f696-0a8c-37ba" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Warp Spider" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="ea05-069e-8b25-dd9b">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Asuryani)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="One Model may take:" hidden="false" id="d18f-1771-56c0-a7c3" type="selectionEntryGroup" targetId="2314-1de8-8c22-e311"/>
+            <entryLink import="true" name="Warp Jump Generator " hidden="false" id="0888-cf8f-abcf-ddd2" type="selectionEntry" targetId="17fa-dfd3-62c8-4f49">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a3c3-5d45-56ae-e87d-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3c3-5d45-56ae-e87d-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Plasma Grenades" hidden="false" id="fbcc-d307-0d68-a401" type="selectionEntry" targetId="0a4e-f69a-2e83-cb4c"/>
+            <entryLink import="true" name="Heavy Aspect Armour" hidden="false" id="68cc-d870-8775-defb" type="selectionEntry" targetId="c81b-3334-7a37-1473"/>
+            <entryLink import="true" name="Deathspinner" hidden="false" id="fa74-13a3-2efd-5476" type="selectionEntry" targetId="510f-e692-c652-3df0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a3ab-e620-7749-754f-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3ab-e620-7749-754f-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Aspect Shrine (X)" id="92b4-2910-5f0b-c9f3" hidden="false" type="rule" targetId="e1cb-87c6-8282-ba6e">
+              <modifiers>
+                <modifier type="set" value="Aspect Shrine (Warp Spider)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Fleet (X)" id="c763-74ac-6aa9-56fb" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+              <modifiers>
+                <modifier type="set" value="Fleet (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Hit &amp; Run" id="2f94-2fef-5d48-ca64" hidden="false" type="rule" targetId="5986-e960-d432-affd"/>
+            <infoLink name="Deep Strike" id="5c3a-0e6f-c1fd-7d0e" hidden="false" type="rule" targetId="f1e1-986f-c783-ca9e"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Shroud Runners" hidden="false" id="76a0-2998-bb98-9bea">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Shroud Runner" hidden="false" id="50a5-d4e6-7a72-0ef1">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="One Model may take:" hidden="false" id="a067-4eb9-ae6b-92a4" type="selectionEntryGroup" targetId="2314-1de8-8c22-e311"/>
+            <entryLink import="true" name="Wireweave Net" hidden="false" id="b273-26d5-3bfd-5dfa" type="selectionEntry" targetId="19c4-15b8-8bcc-68f4">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="74aa-2447-1f5c-fd20" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Raptor Jetbike" hidden="false" id="daac-6662-702a-8dea" type="selectionEntry" targetId="aa22-bc8d-17d1-a2e7"/>
+            <entryLink import="true" name="Shuriken Pistol" hidden="false" id="1abb-6aad-f895-3e7f" type="selectionEntry" targetId="c1af-d7e7-d404-7a33">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b7a2-8ca2-3270-1cdb-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7a2-8ca2-3270-1cdb-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Plasma Grenades" hidden="false" id="8903-d1d2-470a-f9e7" type="selectionEntry" targetId="0a4e-f69a-2e83-cb4c"/>
+            <entryLink import="true" name="Ranger Long-Rifle" hidden="false" id="8efd-c8e0-c152-0740" type="selectionEntry" targetId="1e0c-960f-aa4f-a8f1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3aa1-e923-4c8b-363a-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3aa1-e923-4c8b-363a-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Outcast Cloak" hidden="false" id="779a-d494-2b8c-682e" type="selectionEntry" targetId="6e82-bb03-3403-eb76">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5d8d-1943-bc64-6487-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d8d-1943-bc64-6487-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Heavy Mesh Armour" hidden="false" id="8ac6-ad91-c37e-2bc5" type="selectionEntry" targetId="a95d-2870-d12c-eeff"/>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Any Shroud Runner may take any of the following (all models in the unit must select the same upgrades):" id="6567-bc5b-c33f-c2b7" hidden="false" collective="true">
+              <entryLinks>
+                <entryLink import="true" name="Ghostwalker Matrix" hidden="false" id="2dcd-a7b2-8fe6-1c63" type="selectionEntry" targetId="0517-087e-3a1e-a216">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8bc-df41-9d2a-21cc" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Star Engines" hidden="false" id="fbb6-6f3c-cde2-d2a2" type="selectionEntry" targetId="3391-adc6-766d-c959">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="a6ae-ea49-530b-3fa4" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="8db5-4678-2a35-2440" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Shroud Runner" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="2874-122a-2b4e-a054">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Asuryani, Antigrav, Skirmish)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">18</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84"/>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244"/>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8"/>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f"/>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672"/>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc"/>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0"/>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727"/>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Mark of Kurnous" id="e4c9-8f22-4cf1-660d" hidden="false" type="rule" targetId="f9b6-6569-9022-cda2"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="20ef-cd01-a8da-376e" id="9c44-87be-fe07-8581" primary="true" name="Fast Attack:"/>
+        <categoryLink targetId="6d79-a3e4-381f-7b0f" id="d19b-94cf-49b6-e158" primary="false" name="Cavalry Unit Type"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="fa25-f3d1-87ed-94bf" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="4303-1348-cce4-9501" id="356a-9e29-d89a-4a03" primary="false" name="Antigrav Sub-type"/>
+        <categoryLink targetId="59a4-7b61-600a-c457" id="0ab5-170f-2623-33de" primary="false" name="Skirmish Sub-type"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Vyper Squadron" hidden="false" id="36f7-fbfe-16a0-a131">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Vyper" hidden="false" id="aa88-a83b-c99e-3371">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Vyper Jetbike" hidden="false" id="9ec7-3934-dff0-3085" type="selectionEntry" targetId="2e96-7d85-db04-6e91">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Any Vyper may exchange their Vyper Jetbike’s Shuriken Cannon for one of the following:" id="3145-25d5-a7c5-6c74" hidden="false" defaultSelectionEntryId="dd14-aad9-824a-2c80">
+                  <entryLinks>
+                    <entryLink import="true" name="Twin-Linked Shuriken Catapult" hidden="false" id="dd14-aad9-824a-2c80" type="selectionEntry" targetId="9ec7-cc82-393e-0a78">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ada-ebc6-334b-211f" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Shuriken Cannon " hidden="false" id="fd24-46dd-95c0-e534" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b65e-3716-5c66-1997-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b65e-3716-5c66-1997-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </entryLink>
+            <entryLink import="true" name="Heavy Mesh Armour" hidden="false" id="2227-41d3-dd93-22df" type="selectionEntry" targetId="a95d-2870-d12c-eeff"/>
+            <entryLink import="true" name="Plasma Grenades" hidden="false" id="e900-456c-b4c5-62d7" type="selectionEntry" targetId="0a4e-f69a-2e83-cb4c"/>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Any Vyper may exchange their Vyper Jetbike’s Shuriken Cannon for one of the following:" id="b517-40fa-5a3e-3e88" hidden="false" defaultSelectionEntryId="a8f5-1934-e73f-a3df">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc31-0bf1-69bd-89d2" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5db6-02d8-5570-4143" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Shuriken Cannon " hidden="false" id="37ef-0b5d-ec32-411b" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14" sortIndex="1"/>
+                <entryLink import="true" name="Scatter Laser" hidden="false" id="591d-2064-2e97-dcc3" type="selectionEntry" targetId="cae5-d08d-3659-7cc7" sortIndex="2">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Starcannon" hidden="false" id="0d85-dbc9-ff22-25dc" type="selectionEntry" targetId="cef9-67ab-7179-e737" sortIndex="3">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Aeldari Missile Launcher" hidden="false" id="e4f3-30b7-1d1a-073d" type="selectionEntry" targetId="21d6-c4ce-1a4e-6cd4" sortIndex="4">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Bright Lance" hidden="false" id="8d91-63e5-56f0-1b6c" type="selectionEntry" targetId="7728-c3bd-f061-bf9e" sortIndex="5">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="The entire unit may take any of the following (all models must select the same upgrades):" id="f57f-d356-05fe-9865" hidden="false" collective="true">
+              <entryLinks>
+                <entryLink import="true" name="Ghostwalker Matrix" hidden="false" id="b385-32aa-7354-6767" type="selectionEntry" targetId="0517-087e-3a1e-a216" sortIndex="1">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2faf-e1c0-029b-12f6" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Star Engines" hidden="false" id="a5b2-036d-48a4-a511" type="selectionEntry" targetId="3391-adc6-766d-c959" sortIndex="2">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Holo-Fields" hidden="false" id="08b8-599b-509b-dbc8" type="selectionEntry" targetId="be3f-6e6d-fc9e-37a4" sortIndex="3">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d6b2-2ad8-a01d-a46e-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6b2-2ad8-a01d-a46e-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5fbb-ace1-9ca3-9469" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="71aa-d7c5-e0ca-f268" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Vyper" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="3c89-2cc1-cdf3-7a21">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Asuryani, Antigrav, Skirmish)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">16</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="20ef-cd01-a8da-376e" id="4dee-157b-4218-c176" primary="true" name="Fast Attack:"/>
+        <categoryLink targetId="6d79-a3e4-381f-7b0f" id="9d7a-e7ab-53a1-f950" primary="false" name="Cavalry Unit Type"/>
+        <categoryLink targetId="4303-1348-cce4-9501" id="3610-54e6-1089-686f" primary="false" name="Antigrav Sub-type"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="57a6-2ac4-d69c-cdf2" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="59a4-7b61-600a-c457" id="bb01-ff2e-09ef-495d" primary="false" name="Skirmish Sub-type"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Dark Reapers" hidden="false" id="b38d-2c89-d1a3-84b3">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Dark Reaper" hidden="false" id="2de9-dd9c-6ddb-ce70">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
+          </costs>
+          <profiles>
+            <profile name="Dark Reaper" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="1c6b-88cd-d8d4-e229">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Asuryani, Heavy)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Inescapable Accuracy" id="dd24-7466-6418-4cfe" hidden="false" type="rule" targetId="9294-1bd2-347f-64a8"/>
+            <infoLink name="Relentless" id="66cf-e770-9fec-4629" hidden="false" type="rule" targetId="7adf-ac9a-5035-522d"/>
+            <infoLink name="Aspect Shrine (X)" id="86c4-83ff-53a0-f0fe" hidden="false" type="rule" targetId="e1cb-87c6-8282-ba6e">
+              <modifiers>
+                <modifier type="set" value="Aspect Shrine (Dark Reaper)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Reaper Missile Launcher" hidden="false" id="082c-8fc1-a405-2d3a" type="selectionEntry" targetId="b619-367d-b987-2554">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c6aa-8c7c-51db-8af8-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c6aa-8c7c-51db-8af8-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Heavy Aspect Armour" hidden="false" id="7b99-0811-9827-04a5" type="selectionEntry" targetId="c81b-3334-7a37-1473"/>
+            <entryLink import="true" name="Plasma Grenades" hidden="false" id="d745-4c41-7cce-8daa" type="selectionEntry" targetId="0a4e-f69a-2e83-cb4c"/>
+            <entryLink import="true" name="One Model may take:" hidden="false" id="d023-7a4d-099d-ac9a" type="selectionEntryGroup" targetId="2314-1de8-8c22-e311"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="4ff2-379a-e04f-3bfe" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="1098-90da-9a06-4fc0" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="7031-469a-1aeb-eab0" id="3e2e-1f0f-7c2e-a5f7" primary="true" name="Heavy Support:"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="a824-a1b2-3fa5-0143" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="9231-183c-b97b-63f9" id="05b7-704d-4041-6700" primary="false" name="Heavy Sub-type"/>
+        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="02dc-1221-ef7b-b2ca" primary="false" name="Infantry Unit Type"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Dedicated Transport" hidden="false" id="6a05-7105-9d78-0ecc" type="selectionEntryGroup" targetId="2143-410c-0690-5d43"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Nightshade Interceptor Squadron" hidden="false" id="1f87-8cb3-3bee-772b">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Nightshade Interceptor" hidden="false" id="7c94-9a2f-9df2-b3cc">
+          <profiles>
+            <profile name="Nightshade Interceptor" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="465f-4381-08b6-da9d">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Asuryani, Flyer, Fast)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">18</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="115"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Vector Dancer" id="33fb-2060-5318-2d34" hidden="false" type="rule" targetId="7979-e290-3b47-5964"/>
+            <infoLink name="Agile" id="2a13-8fba-9c2e-100d" hidden="false" type="rule" targetId="fddd-fbda-83b5-4a13"/>
+            <infoLink name="Shrouded (X)" id="11bb-1964-b6f0-a4e6" hidden="false" type="rule" targetId="10c3-fdb0-089f-ca65">
+              <modifiers>
+                <modifier type="set" value="Shrouded (5+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Deep Strike" id="2dbc-80c4-fd2b-a66d" hidden="false" type="rule" targetId="f1e1-986f-c783-ca9e"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="The entire unit may take the following (all models must select the same upgrades):" id="b0dd-725c-0312-f8c7" hidden="false" collective="true">
+              <entryLinks>
+                <entryLink import="true" name="Holo-Fields" hidden="false" id="19d1-07a4-2a44-08f2" type="selectionEntry" targetId="be3f-6e6d-fc9e-37a4">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8273-8c51-508f-3e01" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e9a5-d22b-92ab-2714" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8587-71bb-39db-b227" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Pulse Laser" hidden="false" id="3366-6423-6bde-50ce" type="selectionEntry" targetId="ff1d-aac6-3fa3-774b">
+              <modifiers>
+                <modifier type="set" value="Hull (Front) Mounted Pulse Laser" field="name"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1769-d62d-12cc-cd88-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1769-d62d-12cc-cd88-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Gravis Bright Lance" hidden="false" id="95ba-5bea-b877-ede0" type="selectionEntry" targetId="1806-b2f1-2da1-7938">
+              <modifiers>
+                <modifier type="set" value="Hull (Front) Mounted Gravis Bright Lance" field="name"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ebea-72a2-6b58-7f18-min" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ebea-72a2-6b58-7f18-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="20ef-cd01-a8da-376e" id="8bc8-ae0b-411d-22af" primary="true" name="Fast Attack:"/>
+        <categoryLink targetId="e2b6-b770-784c-9e95" id="535b-3f08-9005-e0c4" primary="false" name="Vehicle:"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="e20e-346d-d949-ea4d" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="0ea2-efb5-b7af-226e" id="daa9-bda6-beab-5688" primary="false" name="Fast Sub-type"/>
+        <categoryLink targetId="4e84-2d57-4986-2b23" id="60ec-f109-0d2f-5466" primary="false" name="Flyer Sub-type"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Nightwing Interceptor Squadron" hidden="false" id="55de-c69c-e96c-006e">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Nightwing Interceptor" hidden="false" id="3362-9eca-0344-c34d">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="130"/>
+          </costs>
+          <profiles>
+            <profile name="Nightwing Interceptor" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="a16f-fa82-8ad9-24d7">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Asuryani, Flyer, Fast)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">22</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Agile" id="256d-425f-a574-e6bf" hidden="false" type="rule" targetId="fddd-fbda-83b5-4a13"/>
+            <infoLink name="Deep Strike" id="a63f-a124-1aaa-75b1" hidden="false" type="rule" targetId="f1e1-986f-c783-ca9e"/>
+            <infoLink name="Vector Dancer" id="097d-4c3e-27a7-06c1" hidden="false" type="rule" targetId="7979-e290-3b47-5964"/>
+            <infoLink name="Shrouded (X)" id="f5bc-6b1a-1fca-5f32" hidden="false" type="rule" targetId="10c3-fdb0-089f-ca65">
+              <modifiers>
+                <modifier type="set" value="Shrouded (6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f70-bb06-1a44-14f0" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9bd0-7969-2b8b-dbd1" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Any Nightwing Interceptor may exchange their Two Hull (Front) Mounted Scatter Lasers for one of the following options:" id="3f01-e533-ee6e-c76b" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Two Hull (Front) Mounted Scatter Lasers" hidden="false" id="7e15-c496-8f2f-b27f" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Scatter Laser" hidden="false" id="76f0-d495-4e3b-0f9b" type="selectionEntry" targetId="cae5-d08d-3659-7cc7">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7319-e7a4-c651-8cc6-min" includeChildSelections="false"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7319-e7a4-c651-8cc6-max" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two Hull (Front) Mounted Starcannons" hidden="false" id="a8f1-6932-ba01-26b1" sortIndex="2">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Starcannon" hidden="false" id="05a0-9b08-689b-9504" type="selectionEntry" targetId="cef9-67ab-7179-e737">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7299-bae5-2563-d46f-min" includeChildSelections="false"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7299-bae5-2563-d46f-max" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two Hull (Front) Mounted Aeldari Missile Launchers" hidden="false" id="152d-8ef8-6004-c9db" sortIndex="3">
+                  <entryLinks>
+                    <entryLink import="true" name="Aeldari Missile Launcher" hidden="false" id="6c71-ed3c-0654-4063" type="selectionEntry" targetId="21d6-c4ce-1a4e-6cd4">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="867d-692b-decb-2d47-min" includeChildSelections="false"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="867d-692b-decb-2d47-max" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two Hull (Front) Mounted Bright Lances" hidden="false" id="0a10-1b2b-142b-7cdf" sortIndex="4">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Bright Lance" hidden="false" id="56c3-447c-83b6-7b52" type="selectionEntry" targetId="7728-c3bd-f061-bf9e">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="cc5f-b372-f437-1ec8-min" includeChildSelections="false"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cc5f-b372-f437-1ec8-max" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="86d4-3771-9e41-b928-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86d4-3771-9e41-b928-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Two Hull (Front) Mounted Shuriken Cannons" hidden="false" id="4f25-1962-ad9c-e488">
+              <entryLinks>
+                <entryLink import="true" name="Shuriken Cannon " hidden="false" id="bf86-53e1-15e3-5e66" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6dac-4c97-577d-855c-min" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6dac-4c97-577d-855c-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="27b1-e45f-5678-e9fa-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27b1-e45f-5678-e9fa-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Holo-Fields" hidden="false" id="3d27-d102-86ca-4db7" type="selectionEntry" targetId="be3f-6e6d-fc9e-37a4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cab6-b780-46fc-3675-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cab6-b780-46fc-3675-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="20ef-cd01-a8da-376e" id="a975-3a33-4caf-93ee" primary="true" name="Fast Attack:"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="f829-1965-c6b8-5936" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="0ea2-efb5-b7af-226e" id="584d-c0c1-9c3f-2685" primary="false" name="Fast Sub-type"/>
+        <categoryLink targetId="4e84-2d57-4986-2b23" id="c30f-29e5-557a-1f18" primary="false" name="Flyer Sub-type"/>
+        <categoryLink targetId="e2b6-b770-784c-9e95" id="3021-d482-ea41-ee43" primary="false" name="Vehicle:"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Phoenix Bomber Squadron" hidden="false" id="03d9-a1c1-d559-89b9">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Phoenix Bomber" hidden="false" id="772d-f114-9f3a-da25">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200"/>
+          </costs>
+          <profiles>
+            <profile name="Phoenix Bomber" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="7023-ac14-eb58-1997">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Asuryani, Flyer, Fast)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">16</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Agile" id="a2ca-cfb2-8a8b-0afa" hidden="false" type="rule" targetId="fddd-fbda-83b5-4a13"/>
+            <infoLink name="Deep Strike" id="8f13-6193-a722-8129" hidden="false" type="rule" targetId="f1e1-986f-c783-ca9e"/>
+            <infoLink name="Vector Dancer" id="3bce-a95b-0917-0d77" hidden="false" type="rule" targetId="7979-e290-3b47-5964"/>
+            <infoLink name="Shrouded (X)" id="80dc-d39d-05a3-df67" hidden="false" type="rule" targetId="10c3-fdb0-089f-ca65">
+              <modifiers>
+                <modifier type="set" value="Shrouded (6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Strafing Run (X)" id="6428-1d14-8de1-1842" hidden="false" type="rule" targetId="6b78-4ec2-3604-78a3"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7ba2-84b3-9ee7-3f9d" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ff15-69af-2a42-bba0" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Any Phoenix Bomber may exchange their Hull (Front) Mounted Pulse Laser for one of the following:" id="a1d9-8a47-17e0-6a40" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c2c4-514a-eaf8-3e1d-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2c4-514a-eaf8-3e1d-max" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Gravis Starcannon" hidden="false" id="1645-a37f-1683-8e76" type="selectionEntry" targetId="99ae-090e-9d2c-c498" sortIndex="2">
+                  <modifiers>
+                    <modifier type="set" value="Hull (Front) Mounted Gravis Starcannon" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Gravis Bright Lance" hidden="false" id="a9c1-ad9a-2742-7564" type="selectionEntry" targetId="1806-b2f1-2da1-7938" sortIndex="3">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="Hull (Front) Mounted Gravis Bright Lance" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Pulse Laser" hidden="false" id="13c2-9ee9-7868-aa5e" type="selectionEntry" targetId="ff1d-aac6-3fa3-774b" sortIndex="1">
+                  <modifiers>
+                    <modifier type="set" value="Hull (Front) Mounted Pulse Laser" field="name"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Any Phoenix Bomber may exchange both of their two Hull (Front) Mounted Phoenix Missile Launchers for the following:" id="894a-dcf2-2f78-a9ab" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Two Hull (Front) Mounted Phoenix Missile Launchers" hidden="false" id="0932-3310-e960-3243">
+                  <entryLinks>
+                    <entryLink import="true" name="Phoenix Missile Launchers" hidden="false" id="806c-ee69-a5a6-9b0a" type="selectionEntry" targetId="9286-15a5-8826-0e2b" sortIndex="1">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4988-f5f2-8bdb-5f3c-min" includeChildSelections="false"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4988-f5f2-8bdb-5f3c-max" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Nightfire Missile Launcher" hidden="false" id="afea-7555-3f76-305b" type="selectionEntry" targetId="b5bb-f72b-60fa-c19e" sortIndex="2">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="95be-f77d-d91e-6ef6-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95be-f77d-d91e-6ef6-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Two Hull (Front) Mounted Shuriken Cannons" hidden="false" id="6cf5-d42a-724e-42df">
+              <entryLinks>
+                <entryLink import="true" name="Shuriken Cannon " hidden="false" id="3560-7606-89a6-0859" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e910-0ad9-6341-496c-min" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e910-0ad9-6341-496c-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ee0-a77f-02cc-6814-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ee0-a77f-02cc-6814-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Holo-Fields" hidden="false" id="d12b-647e-3c2b-bb18" type="selectionEntry" targetId="be3f-6e6d-fc9e-37a4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9be5-7ecc-8c1e-4933-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9be5-7ecc-8c1e-4933-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="20ef-cd01-a8da-376e" id="8671-7ca7-a600-4ff7" primary="true" name="Fast Attack:"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="8af2-22b1-ca75-9196" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="0ea2-efb5-b7af-226e" id="6045-124c-a423-c904" primary="false" name="Fast Sub-type"/>
+        <categoryLink targetId="4e84-2d57-4986-2b23" id="e0bd-016d-86ea-ce07" primary="false" name="Flyer Sub-type"/>
+        <categoryLink targetId="e2b6-b770-784c-9e95" id="5b3a-8422-096d-329c" primary="false" name="Vehicle:"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Vaul&apos;s wrath support battery" hidden="false" id="6cb7-1eba-f0ed-6310">
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Support Battery" hidden="false" id="3b45-b563-3ff8-be23">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Support Weapon" hidden="false" id="c097-57d3-dc6c-62e3">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink targetId="4303-1348-cce4-9501" id="b1b1-7ff0-a218-08d1" primary="false" name="Antigrav Sub-type"/>
+                <categoryLink targetId="a322-3d81-74c2-1452" id="5364-f7d4-1bdd-1c26" primary="false" name="Grav-Platform Unit Sub-Type:"/>
+              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Every Support Weapon in the unit may exchange its Shadow Weaver for one of the following (all Support Weapons in the unit must take the same upgrade):" id="a169-3780-3f9f-1626" hidden="false" defaultSelectionEntryId="93f1-a520-bcfd-c2ec">
+                  <entryLinks>
+                    <entryLink import="true" name="Shadow Weaver" hidden="false" id="93f1-a520-bcfd-c2ec" type="selectionEntry" targetId="18df-0bea-7bcd-bebd" sortIndex="1"/>
+                    <entryLink import="true" name="Vibro Cannon" hidden="false" id="7df3-891f-0f82-04c3" type="selectionEntry" targetId="c0c6-7f28-20b1-8a3c" sortIndex="2">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="D-Cannon" hidden="false" id="0685-2e34-0f8f-a09f" type="selectionEntry" targetId="7111-2a7d-1769-d138" sortIndex="3">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a38c-a5d8-02a4-8b11-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a38c-a5d8-02a4-8b11-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <profiles>
+                <profile name="Support Weapon" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="5312-8c6d-d8b3-b95b">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Asuryani, Grav-Platform, Heavy)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">5</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">1</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">1</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">1</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">-</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Relentless" id="2222-c999-012c-f97e" hidden="false" type="rule" targetId="7adf-ac9a-5035-522d"/>
+                <infoLink name="Bulky (X)" id="8ffc-0ebd-c999-5910" hidden="false" type="rule" targetId="676c-7b75-4b6f-9405">
+                  <modifiers>
+                    <modifier type="set" value="Bulky (4)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Guardian Artillerists" id="6269-362d-c606-03f1" hidden="false" type="rule" targetId="c1b1-0651-329d-ee6b"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba06-2cc7-bf90-b290-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba06-2cc7-bf90-b290-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Guardian Crew" hidden="false" id="f6ae-5b00-45de-4a93">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d9d7-53c1-cc6a-d3ae-min" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d9d7-53c1-cc6a-d3ae-max" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Mesh Armour" hidden="false" id="21ef-6655-c70a-69af" type="selectionEntry" targetId="6248-6348-e862-e540"/>
+                <entryLink import="true" name="Shuriken Catapult" hidden="false" id="3fc8-d817-e26f-f060" type="selectionEntry" targetId="e2d4-d214-4b5c-de85">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c99b-e59e-c990-b592-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c99b-e59e-c990-b592-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="One Model may take:" hidden="false" id="f1c2-0dc2-94b6-cbf9" type="selectionEntryGroup" targetId="2314-1de8-8c22-e311"/>
+                <entryLink import="true" name="Plasma Grenades" hidden="false" id="7ca5-5883-5fa4-a049" type="selectionEntry" targetId="0a4e-f69a-2e83-cb4c"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Fleet (X)" id="73f6-669a-0c4c-22fa" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+                  <modifiers>
+                    <modifier type="set" value="Fleet (1)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <profiles>
+                <profile name="Guardian Crew" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="c512-f181-bbe6-4f2d">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Asuryani, Heavy)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e71e-ae15-fdab-031f" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c71c-ff00-3bbe-8a70" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="7031-469a-1aeb-eab0" id="3186-0dd0-3c89-97dc" primary="true" name="Heavy Support:"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="079d-af27-aac2-7eb6" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="9231-183c-b97b-63f9" id="3728-313b-d926-8772" primary="false" name="Heavy Sub-type"/>
+        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="d2e8-3f24-548c-29f5" primary="false" name="Infantry Unit Type"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Falcon Squadron" hidden="false" id="028a-a615-843b-9ed4">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Falcon" hidden="false" id="9438-1c9c-9d15-b550">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="125"/>
+          </costs>
+          <profiles>
+            <profile name="Falcon" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="d667-7e1d-9947-d34d">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Asuryani, Skimmer, Transport, Fast)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">12</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">7</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">A Falcon has one access point on its rear.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7045-3642-580c-662f" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="f45a-7c6c-2e13-6bf0" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="A Falcon may take one of the following:" id="baac-8f2c-ad0f-2529" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="770a-f4d7-16b5-0864" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Vectored Engines" hidden="false" id="4618-db5f-0e16-08cb" type="selectionEntry" targetId="a939-89d5-5a69-1ffc" sortIndex="2">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Star Engines" hidden="false" id="cd3e-5af4-dec5-14f1" type="selectionEntry" targetId="3391-adc6-766d-c959" sortIndex="1">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="A Falcon may take any of the following:" id="5ec7-3fb7-6ae9-805e" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Searchlights" hidden="false" id="27d8-3ea9-87f6-24ba" type="selectionEntry" targetId="18d4-67b4-5392-8db0" sortIndex="1">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e814-c55d-5052-377f" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Spirit Stones" hidden="false" id="f3bc-d59e-4c54-0d2d" type="selectionEntry" targetId="f1a5-b497-5a54-71fd" sortIndex="2">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8e8-2d1f-c039-c04a" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Holo-Fields" hidden="false" id="b069-3c5a-c232-75d8" type="selectionEntry" targetId="be3f-6e6d-fc9e-37a4" sortIndex="3">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="175d-1e19-6942-8040" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Crystal Targeting Matrix" hidden="false" id="75ed-117c-10c3-0ad8" type="selectionEntry" targetId="e17f-bc6d-78b0-3ae6" sortIndex="4">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="A Falcon may exchange its Hull (Front) Mounted Twin-Linked Shuriken Catapult for a:" id="c70f-e287-90d1-2fd4" hidden="false" defaultSelectionEntryId="3428-9b24-4eef-7338">
+              <entryLinks>
+                <entryLink import="true" name="Twin-Linked Shuriken Catapult" hidden="false" id="3428-9b24-4eef-7338" type="selectionEntry" targetId="9ec7-cc82-393e-0a78" sortIndex="1">
+                  <modifiers>
+                    <modifier type="set" value="Hull (Front) Mounted Twin-Linked Shuriken Catapult" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Shuriken Cannon " hidden="false" id="b9fa-b1d7-a5f2-6a60" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14" sortIndex="2">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="Hull (Front) Mounted Shuriken Cannon" field="name"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fbdb-9d93-6ec5-cbda-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbdb-9d93-6ec5-cbda-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="A Falcon may exchange its Turret Mounted Gravis Shuriken Cannon for one of the following:" id="99da-0402-5f34-23b5" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Gravis Shuriken Cannon" hidden="false" id="222f-7db7-8ac3-a5b0" type="selectionEntry" targetId="4197-9e5c-412b-b13c" sortIndex="1">
+                  <modifiers>
+                    <modifier type="prepend" value="Turret Mounted " field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Gravis Scatter Laser" hidden="false" id="2340-532a-51f3-b1bc" type="selectionEntry" targetId="788d-07ea-6d03-ed67" sortIndex="2">
+                  <modifiers>
+                    <modifier type="prepend" value="Turret Mounted " field="name"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Gravis Starcannon" hidden="false" id="8005-397a-25aa-0db3" type="selectionEntry" targetId="99ae-090e-9d2c-c498" sortIndex="3">
+                  <modifiers>
+                    <modifier type="prepend" value="Turret Mounted " field="name"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin-Linked Aeldari Missile Launcher" hidden="false" id="73d4-b6f4-5217-e78c" type="selectionEntry" targetId="eac7-14c2-095e-abba" sortIndex="4">
+                  <modifiers>
+                    <modifier type="prepend" value="Turret Mounted " field="name"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Gravis Bright Lance" hidden="false" id="5c62-e219-7e37-88a4" type="selectionEntry" targetId="1806-b2f1-2da1-7938" sortIndex="5">
+                  <modifiers>
+                    <modifier type="prepend" value="Turret Mounted " field="name"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ca1-488c-c281-5c24-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ca1-488c-c281-5c24-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="e2b6-b770-784c-9e95" id="e4f7-3867-76c2-67b1" primary="false" name="Vehicle:"/>
+        <categoryLink targetId="6a28-17c5-8117-d99c" id="ddb8-f3dd-a760-f3c2" primary="false" name="Skimmer"/>
+        <categoryLink targetId="7b0a-a743-a8da-3a39" id="fd93-814b-1065-6d58" primary="false" name="Transport Sub-type"/>
+        <categoryLink targetId="0ea2-efb5-b7af-226e" id="fdf7-8354-3e16-b2c1" primary="false" name="Fast Sub-type"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="bcc3-b624-9943-c75a" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="7031-469a-1aeb-eab0" id="7500-8654-e59a-02cd" primary="true" name="Heavy Support:"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Fire Prism Squadron" hidden="false" id="0bd4-2e64-aeae-05ce">
+      <categoryLinks>
+        <categoryLink targetId="7031-469a-1aeb-eab0" id="1721-dfcb-91e3-f5bb" primary="true" name="Heavy Support:"/>
+        <categoryLink targetId="e2b6-b770-784c-9e95" id="d342-3864-50a5-2f04" primary="false" name="Vehicle:"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="26b5-bdc7-03ff-0cf5" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="6a28-17c5-8117-d99c" id="a2c8-6705-64c4-8fa0" primary="false" name="Skimmer"/>
+        <categoryLink targetId="0ea2-efb5-b7af-226e" id="7d57-4b2b-b9b8-1a31" primary="false" name="Fast Sub-type"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Fire Prism" hidden="false" id="3444-d19e-bc39-836c">
+          <profiles>
+            <profile name="Fire Prism" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="b99a-82ef-e5be-a9a1">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Asuryani, Skimmer, Fast)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">12</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="A Fire Prism may take any of the following:" id="f52a-0698-8129-c769" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Searchlights" hidden="false" id="db24-53d7-3939-ce40" type="selectionEntry" targetId="18d4-67b4-5392-8db0" sortIndex="1">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99e1-237d-b3f7-8f09" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Spirit Stones" hidden="false" id="6eb7-aa58-2589-ee81" type="selectionEntry" targetId="f1a5-b497-5a54-71fd" sortIndex="2">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30ef-d48c-db89-8fd7" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Holo-Fields" hidden="false" id="d2a7-1223-e1c2-b32c" type="selectionEntry" targetId="be3f-6e6d-fc9e-37a4" sortIndex="3">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0958-1c0d-beb3-d86e" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Crystal Targeting Matrix" hidden="false" id="32dd-50cc-2ca7-42b9" type="selectionEntry" targetId="e17f-bc6d-78b0-3ae6" sortIndex="4">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="A Fire Prism may take one of the following:" id="1042-5ffa-3c9f-b1f0" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4496-e6fe-2234-402d" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Vectored Engines" hidden="false" id="40f2-3680-2b7d-98b7" type="selectionEntry" targetId="a939-89d5-5a69-1ffc" sortIndex="2">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Star Engines" hidden="false" id="b3a1-193f-26c3-3eee" type="selectionEntry" targetId="3391-adc6-766d-c959" sortIndex="1">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="A Fire Prism may exchange its Hull (Front) Mounted Twin-Linked Shuriken Catapult for a:" id="1221-514d-7098-8eeb" hidden="false" defaultSelectionEntryId="3428-9b24-4eef-7338">
+              <entryLinks>
+                <entryLink import="true" name="Twin-Linked Shuriken Catapult" hidden="false" id="3008-7e05-34e9-cd0d" type="selectionEntry" targetId="9ec7-cc82-393e-0a78" sortIndex="1">
+                  <modifiers>
+                    <modifier type="set" value="Hull (Front) Mounted Twin-Linked Shuriken Catapult" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Shuriken Cannon " hidden="false" id="a3da-a451-0249-a767" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14" sortIndex="2">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="Hull (Front) Mounted Shuriken Cannon" field="name"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f45f-f806-e7e6-a170-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f45f-f806-e7e6-a170-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c05-cc64-edab-8d0d" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="3e00-4340-9455-0031" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Prism Cannon" hidden="false" id="ac0f-7c15-d74b-13ae" type="selectionEntry" targetId="8a6d-ae5c-4d88-5d1e">
+              <modifiers>
+                <modifier type="prepend" value="Turret Mounted " field="name"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3cce-c23d-9803-3798-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cce-c23d-9803-3798-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="150"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Night Spinner Squadron" hidden="false" id="7c8e-c9b2-3ea2-2e9f">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Night Spinner" hidden="false" id="48b6-0c66-d47e-70e2">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="160"/>
+          </costs>
+          <profiles>
+            <profile name="Night Spinner" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="0696-764f-6a3e-7423">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Asuryani, Skimmer, Fast)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">12</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e9ea-0f15-b203-249b" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="00f1-8f75-18b4-3e7e" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="A Night Spinner may exchange its Hull (Front) Mounted Twin-Linked Shuriken Catapult for a:" id="af2e-544e-f983-f3af" hidden="false" defaultSelectionEntryId="3428-9b24-4eef-7338">
+              <entryLinks>
+                <entryLink import="true" name="Twin-Linked Shuriken Catapult" hidden="false" id="4ae1-f51a-d9da-8a02" type="selectionEntry" targetId="9ec7-cc82-393e-0a78" sortIndex="1">
+                  <modifiers>
+                    <modifier type="set" value="Hull (Front) Mounted Twin-Linked Shuriken Catapult" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Shuriken Cannon " hidden="false" id="b1dd-c437-2ff0-58bd" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14" sortIndex="2">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="Hull (Front) Mounted Shuriken Cannon" field="name"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a5a7-9f1d-073b-4012-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5a7-9f1d-073b-4012-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="A Night Spinner may take any of the following:" id="8536-6b5f-9c44-772c" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Searchlights" hidden="false" id="5eeb-fed8-f36b-a6ba" type="selectionEntry" targetId="18d4-67b4-5392-8db0" sortIndex="1">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bfaf-5653-98ae-e790" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Spirit Stones" hidden="false" id="832d-39f6-9ed2-2393" type="selectionEntry" targetId="f1a5-b497-5a54-71fd" sortIndex="2">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf76-2a97-c79f-0102" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Holo-Fields" hidden="false" id="5fc4-7a57-d7e7-64ce" type="selectionEntry" targetId="be3f-6e6d-fc9e-37a4" sortIndex="3">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="180f-26a9-dd58-5bd8" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Crystal Targeting Matrix" hidden="false" id="1f36-f324-8b6a-80e8" type="selectionEntry" targetId="e17f-bc6d-78b0-3ae6" sortIndex="4">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="A Night Spinner may take one of the following:" id="e04b-9ed9-a4a0-3c46" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8dbe-3182-790f-6a0f" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Vectored Engines" hidden="false" id="6ad0-3d6c-9e17-a7e5" type="selectionEntry" targetId="a939-89d5-5a69-1ffc" sortIndex="2">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Star Engines" hidden="false" id="2eb4-b453-e875-7d87" type="selectionEntry" targetId="3391-adc6-766d-c959" sortIndex="1">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Doomweaver" hidden="false" id="f9dc-a589-ba57-f1b6" type="selectionEntry" targetId="d570-60a2-4879-6a0d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="21af-d27b-f595-24a9-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21af-d27b-f595-24a9-max" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="prepend" value="Turret Mounted " field="name"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Firestorm Squadron" hidden="false" id="d924-caa3-c3f3-9ed1">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Firestorm" hidden="false" id="8822-3145-1a3a-1033">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="A Firestorm may exchange its Hull (Front) Mounted Twin-Linked Shuriken Catapult for a:" id="6068-35d2-5424-42a2" hidden="false" defaultSelectionEntryId="3428-9b24-4eef-7338">
+              <entryLinks>
+                <entryLink import="true" name="Twin-Linked Shuriken Catapult" hidden="false" id="40e1-9119-6aa2-f7c7" type="selectionEntry" targetId="9ec7-cc82-393e-0a78" sortIndex="1">
+                  <modifiers>
+                    <modifier type="set" value="Hull (Front) Mounted Twin-Linked Shuriken Catapult" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Shuriken Cannon " hidden="false" id="75bd-fd8f-dd47-aa17" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14" sortIndex="2">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="Hull (Front) Mounted Shuriken Cannon" field="name"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e76d-8aa7-5316-0bf4-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e76d-8aa7-5316-0bf4-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="A Firestorm may take any of the following:" id="9df4-3982-d891-7bf6" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Searchlights" hidden="false" id="d991-dafd-3c14-6c10" type="selectionEntry" targetId="18d4-67b4-5392-8db0" sortIndex="1">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d97d-2906-d5de-cbe4" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Spirit Stones" hidden="false" id="4edf-8df2-b82d-3c19" type="selectionEntry" targetId="f1a5-b497-5a54-71fd" sortIndex="2">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70be-b944-c9cd-8331" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Holo-Fields" hidden="false" id="773a-0d22-70cd-8b0f" type="selectionEntry" targetId="be3f-6e6d-fc9e-37a4" sortIndex="3">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f0d-1e41-8554-a5f1" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Crystal Targeting Matrix" hidden="false" id="9b98-5b8d-108a-ee2c" type="selectionEntry" targetId="e17f-bc6d-78b0-3ae6" sortIndex="4">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="A Firestorm may take one of the following:" id="76bd-f800-20d7-0d4d" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57ae-6d2d-45af-ae6e" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Vectored Engines" hidden="false" id="80aa-6fd0-187e-c674" type="selectionEntry" targetId="a939-89d5-5a69-1ffc" sortIndex="2">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Star Engines" hidden="false" id="c861-52c7-c007-7086" type="selectionEntry" targetId="3391-adc6-766d-c959" sortIndex="1">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="100"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Firestorm Scatter Array" hidden="false" id="7d51-6a57-805f-ccdf" type="selectionEntry" targetId="ecae-9911-f87f-a312">
+              <modifiers>
+                <modifier type="prepend" value="Turret Mounted " field="name"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f270-509f-a7e9-8e75-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f270-509f-a7e9-8e75-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Helical Targeting Array" hidden="false" id="b7b7-1b52-b20f-a303" type="selectionEntry" targetId="b5c5-924a-8857-70bb">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f13-713c-bc18-6a92-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f13-713c-bc18-6a92-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae63-af47-883b-b744" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d932-3253-3bd0-014a" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="7031-469a-1aeb-eab0" id="a490-b5c2-0aad-4776" primary="true" name="Heavy Support:"/>
+        <categoryLink targetId="20ef-cd01-a8da-376e" id="2b90-6f43-b0d8-09d6" primary="false" name="Fast Attack:"/>
+        <categoryLink targetId="e2b6-b770-784c-9e95" id="3e80-6ea0-ccb1-18fa" primary="false" name="Vehicle:"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="b679-f835-3ea7-eb78" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="6a28-17c5-8117-d99c" id="b893-5d29-8b4a-2b53" primary="false" name="Skimmer"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Wraithlord Conclave" hidden="false" id="032b-9c50-8031-e906">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Wraithlord" hidden="false" id="aef3-b48a-08da-0174">
+          <profiles>
+            <profile name="Wraithlord" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="da31-4bc5-91f5-a9fe">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Automata (Asuryani, Wraith)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">8</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">8</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">5</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4917-1a84-df06-ae65" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1442-337a-b27e-79f0" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Any Wraithlord may select up to two of the following options in any combination:" id="3cd8-f30d-4f3e-4386" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Shuriken Cannon " hidden="false" id="0cc2-ee0b-dd81-ae0e" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14" sortIndex="1">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Scatter Laser" hidden="false" id="f887-a0cf-a0ef-c615" type="selectionEntry" targetId="cae5-d08d-3659-7cc7" sortIndex="2">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Starcannon" hidden="false" id="1817-b471-883b-4e90" type="selectionEntry" targetId="cef9-67ab-7179-e737" sortIndex="3">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Aeldari Missile Launcher" hidden="false" id="d321-98d5-9d08-3032" type="selectionEntry" targetId="21d6-c4ce-1a4e-6cd4" sortIndex="4">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Bright Lance" hidden="false" id="2bf7-0227-3e66-c17f" type="selectionEntry" targetId="7728-c3bd-f061-bf9e" sortIndex="5">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b547-5a25-d619-7abd" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Any Wraithlord may replace a single Wraith Gauntlet (with in-built Shuriken Catapult) for:" id="ac67-507a-d370-f1de" hidden="false" defaultSelectionEntryId="8893-63c1-a481-dd6b">
+              <entryLinks>
+                <entryLink import="true" name="Wraith Gauntlet" hidden="false" id="8893-63c1-a481-dd6b" type="selectionEntry" targetId="68c5-9893-3b68-f5b5">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0f9-0c47-e1a9-7532-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0f9-0c47-e1a9-7532-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Wraithsword" hidden="false" id="57a7-79dc-e6bf-8253" type="selectionEntry" targetId="2682-4056-0388-7269">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a98-2280-c97c-0a68-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a98-2280-c97c-0a68-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Wraith Gauntlet" hidden="false" id="53ed-2a3d-e4ed-ec8d" type="selectionEntry" targetId="68c5-9893-3b68-f5b5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d69e-e3be-b0b6-229c-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d69e-e3be-b0b6-229c-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Power Field" hidden="false" id="2e53-a6be-459b-081e" type="selectionEntry" targetId="97e4-e925-d6a4-3463"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="It Will Not Die (X)" id="9f09-3fe2-dc08-368e" hidden="false" type="rule" targetId="2784-d0be-a4e2-890f">
+              <modifiers>
+                <modifier type="set" value="It Will Not Die (6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Wraith Conclave" id="c550-b80e-0b18-a148" hidden="false" type="rule" targetId="452c-7f58-3960-b763"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="180"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="7031-469a-1aeb-eab0" id="ea07-2664-c19f-8fb8" primary="true" name="Heavy Support:"/>
+        <categoryLink targetId="40ca-4bd8-55cd-e550" id="d7c3-a82f-755a-07c5" primary="false" name="Wraith Unit Sub-Type:"/>
+        <categoryLink targetId="d8ab-8e21-e193-63ba" id="aa80-8059-9030-4c8d" primary="false" name="Automata Unit Type"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="ade4-532a-af14-8f32" primary="false" name="Asuryani Unit Sub-Type:"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Wraithseer" hidden="false" id="b985-8286-5681-3401">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Wraithseer" hidden="false" id="40e7-6ef6-53dd-f671">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="A Wraithseer may select one of the following options:" id="f398-9e60-4d29-754a" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Shuriken Cannon " hidden="false" id="15de-09be-3db1-8704" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14" sortIndex="1">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Scatter Laser" hidden="false" id="27a1-afdc-2211-a4be" type="selectionEntry" targetId="cae5-d08d-3659-7cc7" sortIndex="2">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Starcannon" hidden="false" id="7f5c-2ade-0e2d-3102" type="selectionEntry" targetId="cef9-67ab-7179-e737" sortIndex="3">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Aeldari Missile Launcher" hidden="false" id="36dc-4cea-280b-86b4" type="selectionEntry" targetId="21d6-c4ce-1a4e-6cd4" sortIndex="4">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Bright Lance" hidden="false" id="3fa7-b1d7-34eb-06ea" type="selectionEntry" targetId="7728-c3bd-f061-bf9e" sortIndex="5">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="D-Cannon" hidden="false" id="9720-c0e2-e0fb-3bbd" type="selectionEntry" targetId="7111-2a7d-1769-d138" sortIndex="6">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d736-c20d-af50-0caa" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <profiles>
+            <profile name="Wraithseer" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="df1a-d527-8207-3d99">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Automata (Asuryani, Wraith, Psyker, Character)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">8</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">8</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">5</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Guide Stones" hidden="false" id="742c-1515-c123-f75f" type="selectionEntry" targetId="6bd6-ddb0-f6ce-59c6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a5d1-9a94-36ec-45c9-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5d1-9a94-36ec-45c9-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Ghostspear" hidden="false" id="e00d-8e0b-d297-a18a" type="selectionEntry" targetId="595a-ab9a-52f1-10b5"/>
+            <entryLink import="true" name="Wraithshield" hidden="false" id="33ee-ad78-9baf-76db" type="selectionEntry" targetId="9ace-d970-a479-2ae4"/>
+            <entryLink import="true" name="Psychic Discipline: The Runes of Twilight" hidden="false" id="43f5-aa6c-b1d8-5890" type="selectionEntry" targetId="d2b7-97db-99e3-72ef"/>
+            <entryLink import="true" name="Psychic Discipline: Thaumaturgy" hidden="false" id="cf46-e0ca-3ace-ce8e" type="selectionEntry" targetId="f7ab-1fb2-91b0-028d"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b2e6-3685-1eda-ea82-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2e6-3685-1eda-ea82-max" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Path of the Dead" id="f39c-e525-7cbb-3b38" hidden="false" type="rule" targetId="d7a9-cb5d-da3f-ce27"/>
+            <infoLink name="It Will Not Die (X)" id="b240-2bc0-239f-dcbd" hidden="false" type="rule" targetId="2784-d0be-a4e2-890f">
+              <modifiers>
+                <modifier type="set" value="It Will Not Die (5+)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="250"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3903-fc33-6b18-b316" includeChildSelections="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="7031-469a-1aeb-eab0" id="67ad-892b-584b-c6fe" primary="true" name="Heavy Support:"/>
+        <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="e25c-1efe-81c2-d9c9" primary="false" name="Character"/>
+        <categoryLink targetId="4f07-3d45-4f28-a0c6" id="b719-a862-ee3f-1978" primary="false" name="Independent Character"/>
+        <categoryLink targetId="40ca-4bd8-55cd-e550" id="84c2-cade-0d5f-0982" primary="false" name="Wraith Unit Sub-Type:"/>
+        <categoryLink targetId="d8ab-8e21-e193-63ba" id="0e42-ae70-920a-b483" primary="false" name="Automata Unit Type"/>
+        <categoryLink targetId="6e0c-29ba-a445-8321" id="8f2d-4109-fcfe-9326" primary="false" name="Psyker:"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>

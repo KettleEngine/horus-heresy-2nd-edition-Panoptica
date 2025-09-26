@@ -272,6 +272,39 @@ Once assigned to a unit, the Bonesinger is considered part of that unit and may
     <rule name="Blade Spirit" id="384b-1505-bad8-0bde" hidden="false">
       <description>Whenever a model makes attacks with a weapon with this Special Rule, the Controlling Player may re-roll all failed To-Hit rolls of ‘1’ made for those attacks.</description>
     </rule>
+    <rule name="Mark of Kurnous" id="f9b6-6569-9022-cda2" hidden="false">
+      <description>At the start of the controlling player’s Shooting Phase, a unit with this Special Rule may select an enemy unit within 12” of any model in the unit.
+
+
+The unit making the Shooting Attack loses any variant of the Firing Protocols (X) Special Rule it possesses, instead gaining the Ignores Cover Special Rule for all Shooting Attacks made against the selected unit, until the end of the Controlling Player’s Shooting Phase.</description>
+    </rule>
+    <rule name="Vector Dancer" id="7979-e290-3b47-5964" hidden="false">
+      <description>A flyer with this Special Rule may make an additional 90 degree pivot at the end of its Movement in the Controlling Player’s Movement Phase.</description>
+    </rule>
+    <rule name="Agile" id="fddd-fbda-83b5-4a13" hidden="false">
+      <description>A model with this Special Rule may re-roll failed Shrouded Damage Mitigation rolls.</description>
+    </rule>
+    <rule name="Guardian Artillerists" id="c1b1-0651-329d-ee6b" hidden="false">
+      <description>A Vaul’s Wrath Support Battery must have one Guardian Crew per Support Weapon in order for all Support Weapons to make Shooting Attacks in the Shooting phase. If, at the start of any of the controlling player’s Shooting phases, the Vaul’s Wrath Support Battery contains fewer Guardian Crew than Support Weapons, then only a number of Support Weapons equal to the number of Guardian Crew may make Shooting Attacks in that Shooting phase. In addition, as long as there are at least as many Guardian Crew in the unit as there are Support Weapons, then the unit cannot be Pinned, automatically passing any Pinning test it is called upon to take without any dice being rolled (this benefit is immediately lost once the number of Guardian Crew is reduced to less than the number of Support Weapons in the unit).</description>
+    </rule>
+    <rule name="Linked Fire" id="dbce-755d-2721-5ae8" hidden="false">
+      <description>Whenever a unit composed entirely of models armed with weapons with this Special Rule (and that includes more than one model) is elected to make a shooting attack in the Controlling Player’s Shooting Phase, the unit may declare it is making a Linked Fire attack rather than attacking normally. If you do so, select one model in the unit. No other models in the unit may make shooting attacks with a weapon with this Special Rule during the Controlling Player’s Shooting Phase.
+
+
+If the weapon has multiple profiles with the Linked Fire Special Rule, you must select one of them to use. If only one of multiple profiles has the Linked Fire Special Rule, only that profile may be used for the Linked Fire attack.
+
+
+In addition, for each additional model in the unit equipped with a weapon with the Linked Fire Special Rule, you may apply one of the below bonuses to the attack. Note that these bonuses may only be claimed if the friendly models in the unit can see the selected model which is making the Shooting Attack, and you may select the same bonus multiple times:
+
+
+• Increase the Strength of the Profile by +2
+• Increase rolls made on the Vehicle Damage table by +1
+• Increase the number of shots by +1
+• Give the Shooting Attack the Brutal (2) Special Rule (or increase an existing Brutal (X) value by +2)</description>
+    </rule>
+    <rule name="Wraith Conclave" id="452c-7f58-3960-b763" hidden="false">
+      <description>When deployed onto the battlefield (either at the start of the battle or when arriving from Reserves), all models with this Special Rule in a unit must be placed within unit coherency, but afterwards operate independently and are not treated as a unit. Once a unit with this Special Rule has separated, each model counts as its own unit for the purposes of Victory Points, Units Destroyed, and similar rules.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Aspect Armour" hidden="false" id="7c09-bc4e-e8a9-4a75" publicationId="a179-8e8f-4601-987c" page="160">
@@ -1305,7 +1338,8 @@ Any model with Swooping Hawk Wings also gains the Bulky (2) and Deep Strike Spe
         </entryLink>
       </entryLinks>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="074e-6b9b-c4e6-1f33-max" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="074e-6b9b-c4e6-1f33-max-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="074e-6b9b-c4e6-1f33-max-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Star Lance" hidden="false" id="18fb-e4d0-9cec-0cd9">
@@ -2181,6 +2215,582 @@ If the model that selected a Ghostwalker Matrix has the Antigrav Unit Sub-type,
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Outcast Cloak" hidden="false" id="6e82-bb03-3403-eb76">
+      <profiles>
+        <profile name="Outcast Cloak" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="275d-85c9-abfa-6c63">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Whenever a unit composed entirely of models equipped with Outcast Cloaks is targeted by a Shooting Attack, the range between an attacking unit and the targeted unit is considered to be 6&quot; further than the actual range between the two units – enemy models with the Night Vision Special Rule and models with the Primarch Unit Type ignore this effect. In addition, when attacked by a weapon with the Barrage special rule, a unit that is composed only of models equipped with Outcast Cloaks is always treated as though it was out of line of sight when scattering any attacks.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ranger Long-Rifle" hidden="false" id="1e0c-960f-aa4f-a8f1">
+      <profiles>
+        <profile name="Ranger Long-Rifle" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="4812-633e-65fd-c1b5">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Sniper, Rending (5+), Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Sniper" id="21d7-dbdb-8f2f-d771" hidden="false" type="rule" targetId="9cd8-e726-5dbe-b106"/>
+        <infoLink name="Rending (X)" id="0780-bbfe-9bcb-814f" hidden="false" type="rule" targetId="0ac9-fab7-aef3-de1d">
+          <modifiers>
+            <modifier type="set" value="Rending (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Pinning" id="f648-abe5-35c6-6a5a" hidden="false" type="rule" targetId="1c96-205c-59a0-3cf2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Wireweave Net" hidden="false" id="19c4-15b8-8bcc-68f4">
+      <profiles>
+        <profile name="Wireweave Net" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="ac7a-5a32-bf19-de08">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">When a unit with at least one model equipped with a Wireweave Net is charged for the first time in a game, the Opposing Player suffers a -3” penalty to the distance rolled for the Charge move.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gloom Field" hidden="false" id="eaa6-5d3b-cc30-2cd1">
+      <profiles>
+        <profile name="Gloom Field" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="7baf-2444-d705-cb73">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit containing at least one model equipped with a Gloom Field has the Shrouded (5+) Special Rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Raptor Jetbike" hidden="false" id="aa22-bc8d-17d1-a2e7">
+      <profiles>
+        <profile name="Raptor Jetbike" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="0370-d3dd-1d41-8337">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">In addition, a model with a Raptor Jetbike may choose to move up to their unmodified Initiative Characteristic at the start of the Controlling Player’s Charge Sub-Phase. A model that chooses to do so may not declare a Charge.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="add" value="6d79-a3e4-381f-7b0f" field="category" scope="parent"/>
+        <modifier type="add" value="4303-1348-cce4-9501" field="category" scope="parent"/>
+        <modifier type="set" value="18" field="893e-2d76-8f04-44e5" scope="parent" affects="profiles.Unit"/>
+        <modifier type="set" value="4" field="57ee-1126-32a9-5672" scope="parent" affects="profiles.Unit"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Fleet (X)" id="03a3-b0a1-89c1-e91b" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+          <modifiers>
+            <modifier type="set" value="Fleet (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Firing Protocols (X)" id="31b0-5fe2-b3cb-7890" hidden="false" type="rule" targetId="32a3-f599-5c92-2945">
+          <modifiers>
+            <modifier type="set" value="Firing Protocols (3)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Hit &amp; Run" id="71e0-978c-38c3-3c14" hidden="false" type="rule" targetId="5986-e960-d432-affd"/>
+        <infoLink name="Hammer of Wrath (X)" id="bba7-bb10-6f95-cba8" hidden="false" type="rule" targetId="aec0-c3aa-1e4e-1779">
+          <modifiers>
+            <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Relentless" id="007f-871a-78a6-365c" hidden="false" type="rule" targetId="7adf-ac9a-5035-522d"/>
+        <infoLink name="Battle-Hardened (X)" id="ff89-8d53-3e89-f71a" hidden="false" type="rule" targetId="5c3b-ed0b-4ad0-d547">
+          <modifiers>
+            <modifier type="set" value="Battle-Hardened (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Shrouded (X)" id="4e3c-424d-da69-a82b" hidden="false" type="rule" targetId="10c3-fdb0-089f-ca65">
+          <modifiers>
+            <modifier type="set" value="Shrouded (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Deep Strike" id="e1d3-15d1-3bc3-01b7" hidden="false" type="rule" targetId="f1e1-986f-c783-ca9e"/>
+        <infoLink name="Scout" id="2f9d-92d0-46e6-17b9" hidden="false" type="rule" targetId="aacf-9a7e-982d-b793"/>
+        <infoLink name="Infiltrate" id="1b79-39ba-1ea9-22d0" hidden="false" type="rule" targetId="0e32-5b92-a95a-8464"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Scatter Laser" hidden="false" id="aabf-d309-39a3-b030" type="selectionEntry" targetId="cae5-d08d-3659-7cc7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="af03-2681-9771-d7e4" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="602d-f4d4-25c7-3bcd" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="06f5-5c13-38e4-ed01-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="06f5-5c13-38e4-ed01-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Vyper Jetbike" hidden="false" id="2e96-7d85-db04-6e91">
+      <profiles>
+        <profile name="Vyper Jetbike" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3e13-356d-8805-8ce4">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">a model with a Vyper Jetbike may choose to move up to their unmodified Initiative Characteristic at the start of the Controlling Player’s Charge Sub-Phase. A model that chooses to do so may not declare a Charge.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="add" value="6d79-a3e4-381f-7b0f" field="category" scope="parent"/>
+        <modifier type="add" value="4303-1348-cce4-9501" field="category" scope="parent"/>
+        <modifier type="set" value="16" field="893e-2d76-8f04-44e5" scope="parent" affects="profiles.Unit"/>
+        <modifier type="set" value="4" field="57ee-1126-32a9-5672" scope="parent" affects="profiles.Unit"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Fleet (X)" id="072b-5fbd-899f-1e09" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+          <modifiers>
+            <modifier type="set" value="Fleet (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Firing Protocols (X)" id="7657-0072-1cf0-be22" hidden="false" type="rule" targetId="32a3-f599-5c92-2945">
+          <modifiers>
+            <modifier type="set" value="Firing Protocols (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Hit &amp; Run" id="0de7-f5b9-afe8-5c5c" hidden="false" type="rule" targetId="5986-e960-d432-affd"/>
+        <infoLink name="Hammer of Wrath (X)" id="a2cb-0451-88c2-50fe" hidden="false" type="rule" targetId="aec0-c3aa-1e4e-1779">
+          <modifiers>
+            <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Relentless" id="8872-6e5a-0ad0-edef" hidden="false" type="rule" targetId="7adf-ac9a-5035-522d"/>
+        <infoLink name="Battle-Hardened (X)" id="dcd8-b3f6-8f71-1c18" hidden="false" type="rule" targetId="5c3b-ed0b-4ad0-d547">
+          <modifiers>
+            <modifier type="set" value="Battle-Hardened (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Shrouded (X)" id="35b7-ec08-5fc9-8751" hidden="false" type="rule" targetId="10c3-fdb0-089f-ca65">
+          <modifiers>
+            <modifier type="set" value="Shrouded (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Deep Strike" id="2e36-76e3-bdc0-977d" hidden="false" type="rule" targetId="f1e1-986f-c783-ca9e"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Shuriken Cannon " hidden="false" id="0751-1855-5309-9371" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="35e5-cfad-67e8-69b1-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35e5-cfad-67e8-69b1-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f69c-dd90-2102-ed42-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f69c-dd90-2102-ed42-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reaper Missile Launcher" hidden="false" id="b619-367d-b987-2554">
+      <profiles>
+        <profile name="Reaper Missile Launcher - Starswarm " typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="76ac-1056-c458-8149">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Reaper Missile Launcher - Starhawk" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="38cf-f10b-876d-2d3e">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Skyfire</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Reaper Missile Launcher - Starshot " typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="dffd-3774-7ee0-e435">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Rending (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blind" id="9f61-7a66-dd84-bc19" hidden="false" type="rule" targetId="d836-747d-07d6-2b63"/>
+        <infoLink name="Skyfire" id="7cf6-9bc8-df3b-b8ce" hidden="false" type="rule" targetId="f2bf-5daa-9f93-0b01"/>
+        <infoLink name="Rending (X)" id="3c4a-bd4c-36a0-2406" hidden="false" type="rule" targetId="0ac9-fab7-aef3-de1d">
+          <modifiers>
+            <modifier type="set" value="Rending (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="World-Rune" hidden="false" id="30e5-7cb0-96f8-08ef"/>
+    <selectionEntry type="upgrade" import="true" name="Pulse Laser" hidden="false" id="ff1d-aac6-3fa3-774b">
+      <profiles>
+        <profile name="Pulse Laser" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="e9b5-5492-f300-0da3">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Exoshock (5+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Exoshock (X)" id="90cf-0acc-62f0-08b0" hidden="false" type="rule" targetId="69ca-318a-b47a-7a3c">
+          <modifiers>
+            <modifier type="set" value="Exoshock (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Phoenix Missile Launchers" hidden="false" id="9286-15a5-8826-0e2b">
+      <profiles>
+        <profile name="Phoenix Missile Launchers" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="14d7-07a5-e736-fe32">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Blast (3”), Ignores Cover</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="be11-4cd4-11e2-7aea" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
+        <infoLink name="Ignores Cover" id="9e00-25a8-5dec-7e70" hidden="false" type="rule" targetId="fdb5-59e2-c446-1cbc"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Nightfire Missile Launcher" hidden="false" id="b5bb-f72b-60fa-c19e">
+      <profiles>
+        <profile name="Nightfire Missile Launcher" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="29a5-a85c-73f0-8f58">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Sunder</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Sunder" id="436a-0351-0e3e-dd16" hidden="false" type="rule" targetId="20e2-75cf-bc16-cd8f"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Shadow Weaver" hidden="false" id="18df-0bea-7bcd-bebd">
+      <profiles>
+        <profile name="Shadow Weaver" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="c0e2-64b2-b9e4-a3b6">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3”), Rending (5+), Blind, Monofilament</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Monofilament" id="2611-76d7-275e-ba3a" hidden="false" type="rule" targetId="568e-21b3-67c8-de50"/>
+        <infoLink name="Blast" id="ddcc-797d-c167-6357" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
+        <infoLink name="Rending (X)" id="a361-e08c-1170-f77a" hidden="false" type="rule" targetId="0ac9-fab7-aef3-de1d">
+          <modifiers>
+            <modifier type="set" value=" Rending (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Blind" id="043a-f894-1d2f-6917" hidden="false" type="rule" targetId="d836-747d-07d6-2b63"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Vibro Cannon" hidden="false" id="c0c6-7f28-20b1-8a3c">
+      <profiles>
+        <profile name="Vibro Cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="08f7-767a-c72c-0a93">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Heavy Beam, Rending (5+), Pinning, Shell Shock (1), Ignores Cover</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ignores Cover" id="506d-d4bd-1be7-bea3" hidden="false" type="rule" targetId="fdb5-59e2-c446-1cbc"/>
+        <infoLink name="Heavy Beam" id="159c-6c56-15be-e0d7" hidden="false" type="rule" targetId="24e7-27da-9bf7-f096"/>
+        <infoLink name="Rending (X)" id="a441-f25f-1673-5afb" hidden="false" type="rule" targetId="0ac9-fab7-aef3-de1d">
+          <modifiers>
+            <modifier type="set" value="Rending (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Pinning" id="0c0b-84d9-29ee-863a" hidden="false" type="rule" targetId="1c96-205c-59a0-3cf2"/>
+        <infoLink name="Shell Shock (X)" id="9f08-5c53-99c9-a36d" hidden="false" type="rule" targetId="46b7-63a1-941c-96a5">
+          <modifiers>
+            <modifier type="set" value="Shell Shock (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="D-Cannon" hidden="false" id="7111-2a7d-1769-d138">
+      <profiles>
+        <profile name="D-Cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="c4c2-4de9-6903-789f">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Murderous Strike (5+), Barrage, Blast (3”)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Murderous Strike (X)" id="f73f-e8e1-50ad-badd" hidden="false" type="rule" targetId="93b9-1454-0e7c-42ae">
+          <modifiers>
+            <modifier type="set" value="Murderous Strike (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Barrage" id="9847-5de3-d70e-79b7" hidden="false" type="rule" targetId="7255-b5ee-c3f4-3037"/>
+        <infoLink name="Blast" id="7212-22c9-2886-81f4" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Prism Cannon" hidden="false" id="8a6d-ae5c-4d88-5d1e">
+      <profiles>
+        <profile name="Prism Cannon - Dispersed" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="0bc9-7472-c776-d696">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">60&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5“)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Prism Cannon - Focused" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="3292-4a70-0305-d4cf">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">60&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3“)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Prism Cannon - Lance" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="8002-ce2e-c05f-1086">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">60&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Lance, Linked Fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="a766-0c07-6085-4a06" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
+        <infoLink name="Linked Fire" id="975d-93a7-6eb7-fb23" hidden="false" type="rule" targetId="dbce-755d-2721-5ae8"/>
+        <infoLink name="Lance" id="8221-81da-d51b-00ff" hidden="false" type="rule" targetId="3d6b-9e0b-56f0-8a1e"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Doomweaver" hidden="false" id="d570-60a2-4879-6a0d">
+      <profiles>
+        <profile name="Doomweaver - Dispersed" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="4cfe-b46c-f51e-17d7">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5”), Barrage, Pinning, Rending (5+), Monofilament</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Doomweaver - Focused" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="18d1-8e9c-78db-345d">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Pinning, Rending (4+), Torrent (12”), Monofilament</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rending (X)" id="ab0b-2ce3-c9a8-4f0f" hidden="false" type="rule" targetId="0ac9-fab7-aef3-de1d">
+          <modifiers>
+            <modifier type="set" value="Rending (4+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Pinning" id="d49d-4aeb-44a0-94e7" hidden="false" type="rule" targetId="1c96-205c-59a0-3cf2">
+          <modifiers>
+            <modifier type="set" value="Torrent (12&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Pinning" id="fbe2-a3f8-3dc0-b3f7" hidden="false" type="rule" targetId="1c96-205c-59a0-3cf2"/>
+        <infoLink name="Monofilament" id="c9a2-5bfc-acf5-781e" hidden="false" type="rule" targetId="568e-21b3-67c8-de50">
+          <modifiers>
+            <modifier type="set" value="Torrent (12&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Torrent (X)" id="0102-2d83-05e0-58a1" hidden="false" type="rule" targetId="5cfb-fc94-e6db-43b8">
+          <modifiers>
+            <modifier type="set" value="Torrent (12&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Blast" id="3b47-ee7c-cfda-7811" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="7031-469a-1aeb-eab0" id="1c15-259e-cebf-65fc" primary="true" name="Heavy Support:"/>
+        <categoryLink targetId="0ea2-efb5-b7af-226e" id="ec4c-f3be-67e1-18ff" primary="false" name="Fast Sub-type"/>
+        <categoryLink targetId="e2b6-b770-784c-9e95" id="43ed-3445-dc1a-54b9" primary="false" name="Vehicle:"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="9006-3f51-4e22-a0ee" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="59a4-7b61-600a-c457" id="684e-30d0-db2b-5a37" primary="false" name="Skirmish Sub-type"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Firestorm Scatter Array" hidden="false" id="ecae-9911-f87f-a312">
+      <profiles>
+        <profile name="Firestorm Scatter Array" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a3a8-1450-dcec-e40c">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 12, Pinning, Twin-Linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Pinning" id="41fd-b330-403f-3a6f" hidden="false" type="rule" targetId="1c96-205c-59a0-3cf2"/>
+        <infoLink name="Twin-linked" id="dd29-a35f-1321-865a" hidden="false" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Helical Targeting Array" hidden="false" id="b5c5-924a-8857-70bb">
+      <profiles>
+        <profile name="Helical Targeting Array" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="5403-cfa5-eca4-1e55">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Controlling Player of a model with a Helical Targeting Array may activate it at the start of any of their own turns, or, if the Controlling Player is not taking the first turn of the battle, at the start of the battle, before the beginning of the Opposing Player’s first turn. Once the Helical Targeting Array is activated, the model is affected by the following conditions until the beginning of the Controlling Player’s next turn:
+
+
+• The model may not move, Run or declare or make any Reactions other than the Interceptor or Overwatch Reaction.
+• The Controlling Player may choose to use the Skyfire Special Rule when making any Shooting Attacks with the model.
+• No model may make a Damage Mitigation roll provided by the Shrouded Special Rule against an attack made by a model
+with a Helical Targeting Array while it is active.
+• When the model makes a Shooting Attack as part of the Interceptor Reaction, the Reaction does not cost the Controlling Player a point from their Reaction Allotment. This does not allow the unit to make more than one Reaction per Phase, but does allow the controlling player to exceed the normal three Reactions limit in a given Phase.
+• When a model with the Vehicle Unit Type and a Helical Targeting Array makes a Shooting Attack as part of the Interceptor Reaction, that model may fire all of its weapons, not just Defensive Weapons, as part of the Shooting Attack.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Wraithsword" hidden="false" id="2682-4056-0388-7269">
+      <profiles>
+        <profile name="Wraithsword - Piercing Blow" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5cb5-08dd-dd85-53b7">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-Handed, Unwieldy, Murderous Strike (5+)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Wraithsword - Sweeping Strike" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="2653-6a1e-0b24-e3b5">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Reaping Blow (3), Breaching (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Reaping Blow (X)" id="892c-6813-8fa8-ab35" hidden="false" type="rule" targetId="bd8c-4f52-d682-1b40">
+          <modifiers>
+            <modifier type="set" value="Reaping Blow (3)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Breaching (X)" id="e77b-ad92-d5fa-7f04" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Unwieldy" id="323e-9ec8-dafc-66f2" hidden="false" type="rule" targetId="1570-c21a-881f-8b8a"/>
+        <infoLink name="Murderous Strike (X)" id="fe9f-8efa-a2a0-73ac" hidden="false" type="rule" targetId="93b9-1454-0e7c-42ae">
+          <modifiers>
+            <modifier type="set" value="Murderous Strike (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Two-handed" id="197e-6890-1617-317d" hidden="false" type="rule" targetId="4c23-e863-a569-7617"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Any Wraithlord may replace an in-built Shuriken Catapult on either a Wraith Gauntlet or Wraithsword with one of the following:" id="fe0d-d382-594c-a576" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Shuriken Catapult" hidden="false" id="e7f9-c448-c0f3-27f0" type="selectionEntry" targetId="e2d4-d214-4b5c-de85" sortIndex="1"/>
+            <entryLink import="true" name="Flamer" hidden="false" id="1c1d-c52d-0c52-befb" type="selectionEntry" targetId="9f41-82e2-90f6-973a" sortIndex="2">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Fusion Gun" hidden="false" id="e2bd-b83c-6cb6-fb46" type="selectionEntry" targetId="37f0-8676-e522-1da2" sortIndex="3">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3c22-baf7-5870-0780-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c22-baf7-5870-0780-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Wraith Gauntlet" hidden="false" id="68c5-9893-3b68-f5b5">
+      <profiles>
+        <profile name="Wraith Gauntlet" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="d78e-1881-39ce-5df8">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Brutal (X)" id="1c72-b0f1-44f6-1621" hidden="false" type="rule" targetId="5079-1fec-d32b-8b84">
+          <modifiers>
+            <modifier type="set" value="Brutal (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Any Wraithlord may replace an in-built Shuriken Catapult on either a Wraith Gauntlet or Wraithsword with one of the following:" id="54fe-0796-f6c4-d3d9" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Shuriken Catapult" hidden="false" id="82a2-fb36-8f79-79bd" type="selectionEntry" targetId="e2d4-d214-4b5c-de85" sortIndex="1"/>
+            <entryLink import="true" name="Flamer" hidden="false" id="e832-2475-5202-3af6" type="selectionEntry" targetId="9f41-82e2-90f6-973a" sortIndex="2">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Fusion Gun" hidden="false" id="d21f-872d-5be8-902a" type="selectionEntry" targetId="37f0-8676-e522-1da2" sortIndex="3">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8647-6815-cb54-bf16-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8647-6815-cb54-bf16-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Wraithshield" hidden="false" id="9ace-d970-a479-2ae4">
+      <profiles>
+        <profile name="Wraithshield" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3ac5-c747-4bef-cbc6">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Wraithshield confers a 4+ Invulnerable Save, and any model with a Wraithshield and a Wounds Characteristic that suffers an unsaved Wound with the Instant Death special rule is not immediately removed as a casualty, but instead loses D3 Wounds instead of one for each unsaved Wound with the Instant Death special rule inflicted on it. In addition, when a model with a Wraithshield loses its last Wound or Hull Point, but before it is removed as a casualty or replaced with a Wreck, all models both friendly and enemy within D6&quot; suffer an automatic Hit at Str 8, AP -.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9006-b4ff-ca1d-84dd-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9006-b4ff-ca1d-84dd-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ghostspear" hidden="false" id="595a-ab9a-52f1-10b5">
+      <profiles>
+        <profile name="Ghostspear" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="9cb4-eeb1-945c-7dee">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Force, Brutal (2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Force" id="b941-a697-5829-8586" hidden="false" type="rule" targetId="f39e-4c3b-38e0-0050"/>
+        <infoLink name="Brutal (X)" id="f449-ba6a-c285-35ae" hidden="false" type="rule" targetId="5079-1fec-d32b-8b84">
+          <modifiers>
+            <modifier type="set" value="Brutal (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b885-8426-a278-8faf-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b885-8426-a278-8faf-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Dedicated Transport" id="2143-410c-0690-5d43" hidden="false">
@@ -2196,19 +2806,20 @@ If the model that selected a Ghostwalker Matrix has the Antigrav Unit Sub-type,
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Dark Reaper" hidden="false" id="5278-de23-57c7-8e6c" sortIndex="1">
           <selectionEntryGroups>
-            <selectionEntryGroup name="an Autarch or Exarch which selects the Dark Reaper Aspect Shrine upgrade may choose to replace their Reaper Launcher  for one of the following options below:" id="58bf-6c5f-3075-c2c9" hidden="false">
+            <selectionEntryGroup name="an Autarch or Exarch which selects the Dark Reaper Aspect Shrine upgrade may choose to replace their Reaper Launcher  for one of the following options below:" id="58bf-6c5f-3075-c2c9" hidden="false" defaultSelectionEntryId="2c49-4a7d-38c7-580b">
               <entryLinks>
-                <entryLink import="true" name="Shuriken Cannon " hidden="false" id="5e38-c7b5-b84d-5b0d" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14" sortIndex="1"/>
-                <entryLink import="true" name="Aeldari Missile Launcher" hidden="false" id="95ec-93fb-f807-f558" type="selectionEntry" targetId="21d6-c4ce-1a4e-6cd4" sortIndex="2">
+                <entryLink import="true" name="Shuriken Cannon " hidden="false" id="5e38-c7b5-b84d-5b0d" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14" sortIndex="2"/>
+                <entryLink import="true" name="Aeldari Missile Launcher" hidden="false" id="95ec-93fb-f807-f558" type="selectionEntry" targetId="21d6-c4ce-1a4e-6cd4" sortIndex="3">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Tempest Launcher" hidden="false" id="f2ed-66e9-5706-4b69" type="selectionEntry" targetId="564b-6e50-6aef-df7b" sortIndex="3">
+                <entryLink import="true" name="Tempest Launcher" hidden="false" id="f2ed-66e9-5706-4b69" type="selectionEntry" targetId="564b-6e50-6aef-df7b" sortIndex="4">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
                   </costs>
                 </entryLink>
+                <entryLink import="true" name="Reaper Missile Launcher" hidden="false" id="2c49-4a7d-38c7-580b" type="selectionEntry" targetId="b619-367d-b987-2554" sortIndex="1"/>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8370-5832-f4d2-49f1" includeChildSelections="false"/>
@@ -2814,22 +3425,23 @@ If the model that selected a Ghostwalker Matrix has the Antigrav Unit Sub-type,
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Dark Reaper" hidden="false" id="f84a-657e-388d-22b9" sortIndex="1">
           <selectionEntryGroups>
-            <selectionEntryGroup name="an Autarch or Exarch which selects the Dark Reaper Aspect Shrine upgrade may choose to replace their Reaper Launcher  for one of the following options below:" id="5a03-416e-e5ed-3eb7" hidden="false">
+            <selectionEntryGroup name="an Autarch or Exarch which selects the Dark Reaper Aspect Shrine upgrade may choose to replace their Reaper Launcher  for one of the following options below:" id="8f92-c66a-12f9-edfc" hidden="false" defaultSelectionEntryId="2c49-4a7d-38c7-580b">
               <entryLinks>
-                <entryLink import="true" name="Shuriken Cannon " hidden="false" id="e830-53c9-8fc6-0a28" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14" sortIndex="1"/>
-                <entryLink import="true" name="Aeldari Missile Launcher" hidden="false" id="422e-d5ba-1655-b53b" type="selectionEntry" targetId="21d6-c4ce-1a4e-6cd4" sortIndex="2">
+                <entryLink import="true" name="Shuriken Cannon " hidden="false" id="0f21-41d9-ebe4-041a" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14" sortIndex="2"/>
+                <entryLink import="true" name="Aeldari Missile Launcher" hidden="false" id="822f-5532-637c-1060" type="selectionEntry" targetId="21d6-c4ce-1a4e-6cd4" sortIndex="3">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Tempest Launcher" hidden="false" id="3718-a25f-fb83-a85d" type="selectionEntry" targetId="564b-6e50-6aef-df7b" sortIndex="3">
+                <entryLink import="true" name="Tempest Launcher" hidden="false" id="9092-9d01-8a60-9f00" type="selectionEntry" targetId="564b-6e50-6aef-df7b" sortIndex="4">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
                   </costs>
                 </entryLink>
+                <entryLink import="true" name="Reaper Missile Launcher" hidden="false" id="f7fe-947d-7f6f-1a76" type="selectionEntry" targetId="b619-367d-b987-2554" sortIndex="1"/>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68fe-06c2-ba89-d66e" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5700-2ac2-91cc-8805" includeChildSelections="false"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -3443,5 +4055,333 @@ If the model that selected a Ghostwalker Matrix has the Antigrav Unit Sub-type,
         <constraint type="max" value="1" field="selections" scope="model" shared="true" id="0401-e443-96b5-cde4"/>
       </constraints>
     </selectionEntryGroup>
+    <selectionEntryGroup name="World-Runes" id="97fa-abe0-b034-0244" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="WORLD-RUNE:THE SERPENT HOST" hidden="false" id="5465-6e0a-fa4b-8297">
+          <rules>
+            <rule name="THE SERPENT HOST" id="fab4-2ac4-b86c-29c9" hidden="false">
+              <description>Effects:
+● Windrider Squads in a Detachment with this World-Rune do not have the Support Squad Special Rule.
+● Windrider Squads taken as Compulsory Troops in a Detachment with this World-Rune gain the Line Sub-type.
+● Vyper Squadrons may be taken as non-Compulsory Troops in a Detachment with this World-Rune.
+● Shining Spears units may be taken as Elites choices in a Detachment with this World-Rune.
+● When selecting an army using this World-Rune, a single unit made up entirely of models with the Aspect Shrine (Shining Spear) Special Rule may be selected, without restriction regardless of which Aspect Shrine Upgrades are selected for the army. A unit selected in this way still occupies a Force Organisation Chart slot as normal.
+
+
+Limitations:
+● A Detachment with this World-Rune must select more units equipped with Skyrunner Jetbikes, Vyper Jetbikes, or Raptor Jetbikes than units without.
+● Compulsory HQ choices in a Detachment with this World-Rune must be made up entirely of models with Skyrunner Jetbikes.
+● Any unit made up entirely of models without the Cavalry Unit Type in a Detachment with this World Rune that does not begin play Embarked on a model with the Transport Sub-type, or any model with the Vehicle Unit Type without either the Transport or Fast Sub-types, must begin play in Reserve if the mission allows it. If the mission does not allow any units to be placed into Reserves then the unit is instead deployed as normal.
+● A Detachment using this World-Rune may not select any Fortification choices.</description>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <forceEntries>
+    <forceEntry name="1. Crusade Force Organisation Chart" id="41fe-9289-1062-f819" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Expanded Army Lists" hidden="false" id="d822-4279-b2b1-3cc6" targetId="e8ed-ca49-ad6d-5688" primary="false"/>
+        <categoryLink name="HQ:" hidden="false" id="c41d-11f9-e08e-abca" targetId="4f85-eb33-30c9-8f51" primary="false">
+          <modifiers>
+            <modifier type="set" value="5" field="4da6-1341-aedb-2f99">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="9a27-97d3-a06-ef35" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="64a2-0d7a-e716-e67f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" value="1" field="4da6-1341-aedb-2f99">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="41b5-73f0-cdc9-1f83" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" value="1" field="496e-85c1-c4e9-0c15">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="b23c-e41d-1ffe-1a38" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" value="1" field="4da6-1341-aedb-2f99">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="bf10-c83b-b8ed-aaf1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="4da6-1341-aedb-2f99">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="496e-85c1-c4e9-0c15">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="4da6-1341-aedb-2f99" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="496e-85c1-c4e9-0c15" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Elites:" hidden="false" id="591f-78d4-2bcb-f0fc" targetId="7aee-565f-b0ae-294e" primary="false">
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="591c-31d6-dfca-d1ad" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="99ca-ea2e-ef5a-db35" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="99ca-ea2e-ef5a-db35">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="591c-31d6-dfca-d1ad">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Troops:" hidden="false" id="61d3-8b12-4b6f-5055" targetId="9b5d-fac7-799b-d7e7" primary="false">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="5c19-94b2-d016-0bbb" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="6" field="selections" scope="force" shared="true" id="0526-c72f-4028-bfe7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="5c19-94b2-d016-0bbb">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="0526-c72f-4028-bfe7">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Fast Attack:" hidden="false" id="a020-0b5b-5674-e1e2" targetId="20ef-cd01-a8da-376e" primary="false">
+          <modifiers>
+            <modifier type="set" value="1" field="d783-1fa9-211c-ee1d">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4ca1-b02c-e2c7-5f09" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="296a-89a3-2269-2093" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" value="1" field="2b17-32b4-198f-3cf1">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="e6ec-f3e6-760c-f9bb" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4342-923b-e0dd-9e87" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" value="1" field="2b17-32b4-198f-3cf1">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="7031-469a-1aeb-eab0" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="e6ec-f3e6-760c-f9bb" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4342-923b-e0dd-9e87" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" value="1" field="d783-1fa9-211c-ee1d">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="d3bb-bdf9-4478-9553" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="d783-1fa9-211c-ee1d">
+              <conditions>
+                <condition type="equalTo" value="2" field="selections" scope="force" childId="d3bb-bdf9-4478-9553" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="3" field="d783-1fa9-211c-ee1d">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="force" childId="d3bb-bdf9-4478-9553" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="4" field="d783-1fa9-211c-ee1d">
+              <conditions>
+                <condition type="atLeast" value="4" field="selections" scope="force" childId="d3bb-bdf9-4478-9553" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="d783-1fa9-211c-ee1d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="2b17-32b4-198f-3cf1" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Heavy Support:" hidden="false" id="391a-c5b3-bfdd-5fed" targetId="7031-469a-1aeb-eab0" primary="false">
+          <modifiers>
+            <modifier type="set" value="1" field="c1f3-0a88-6162-e874">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="e20d-6f02-d7d5-395f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="20d9-ae98-5324-6bb3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4ca1-b02c-e2c7-5f09" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="7f55-5d02-ba77-243d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="c030-15b8-323b-f17b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="9c83-69fb-8066-a773" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" value="1" field="c1f3-0a88-6162-e874">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="76cd-5c38-ceac-a2b4" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="c1f3-0a88-6162-e874">
+              <conditions>
+                <condition type="atLeast" value="2" field="selections" scope="force" childId="76cd-5c38-ceac-a2b4" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="c1f3-0a88-6162-e874">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="dfbc-8edd-e14f-fd80" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="c1f3-0a88-6162-e874">
+              <conditions>
+                <condition type="equalTo" value="2" field="selections" scope="force" childId="dfbc-8edd-e14f-fd80" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="3" field="c1f3-0a88-6162-e874">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="force" childId="dfbc-8edd-e14f-fd80" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="c1f3-0a88-6162-e874" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Fortification:" hidden="false" id="27d3-d239-5a73-2a3f" targetId="a24f-12d8-36c1-f477" primary="false">
+          <modifiers>
+            <modifier type="set" value="0" field="4d6f-7f5f-0aa9-51e4">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1977-49f2-7910-f177" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="dbde-0e4f-0b5a-43d2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="a621-2c8c-3df0-89d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="ed1f-9473-df70-4544" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4ca1-b02c-e2c7-5f09" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="b5b7-3410-a8e5-95a6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="ccb7-6c5c-76ce-5b77" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="ce40-b353-8eb4-ab42" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false">
+                      <comment>node_id_b932-667a-4b43-8331</comment>
+                    </condition>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="2c36-fde3-14ed-4db4" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="c030-15b8-323b-f17b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="e5ae-fd1c-729d-d855" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1977-49f2-7910-f177" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="dbde-0e4f-0b5a-43d2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="a621-2c8c-3df0-89d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="ed1f-9473-df70-4544" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4ca1-b02c-e2c7-5f09" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="c030-15b8-323b-f17b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="b5b7-3410-a8e5-95a6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="ccb7-6c5c-76ce-5b77" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="ce40-b353-8eb4-ab42" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false">
+                      <comment>node_id_b932-667a-4b43-8331</comment>
+                    </condition>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="2c36-fde3-14ed-4db4" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="e5ae-fd1c-729d-d855" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4d6f-7f5f-0aa9-51e4" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Primarch:" hidden="false" id="9646-316e-dcef-6797" targetId="e031-3c2-e3f8-d40a" primary="false">
+          <modifiers>
+            <modifier type="set" value="0" field="c52b-5de2-c888-0a25">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="force" childId="41b5-73f0-cdc9-1f83" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="greaterThan" value="0" field="selections" scope="force" childId="7a71-011d-fcdb-82dd" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c52b-5de2-c888-0a25" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Infantry Unit Type" hidden="false" id="759b-73e6-6aec-2566" targetId="8b4f-bfe2-ce7b-f1b1" primary="false">
+          <infoLinks>
+            <infoLink name="Stubborn" id="0a6e-c66d-0fdb-8556" hidden="false" type="rule" targetId="7989-1f2c-a43d-82ae">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d8e9-ff9b-f862-b065" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Stubborn (if one model is within 6&quot; of an objective)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </categoryLink>
+        <categoryLink name="LoW &amp; Primarchs (25% Limit)" hidden="false" id="c15f-8692-80fe-8067" targetId="2eaf-32d6-9d1d-d906" primary="false">
+          <modifiers>
+            <modifier type="increment" value="1" field="8735-c0e2-fa8d-2531">
+              <repeats>
+                <repeat value="4" repeats="1" field="d2ee-04cb-5f8a-2642" scope="roster" childId="any" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="d2ee-04cb-5f8a-2642" scope="roster" shared="true" id="8735-c0e2-fa8d-2531" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;" hidden="false" id="75c3-d220-572c-0758" targetId="ed41-7006-3494-4c24"/>
+        <categoryLink name="World-Rune" hidden="false" id="d13f-163b-551c-fd77" targetId="3d8e-57b9-a24d-dd4c"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="443b-6d98-af6a-c8b9"/>
+      </constraints>
+    </forceEntry>
+  </forceEntries>
 </catalogue>

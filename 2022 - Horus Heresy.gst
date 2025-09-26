@@ -1480,6 +1480,7 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
       </rules>
     </categoryEntry>
     <categoryEntry name="Shattered Legion Primary Detachment" id="c248-15b0-d8ed-8990" hidden="false"/>
+    <categoryEntry name="World-Rune" id="3d8e-57b9-a24d-dd4c" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="1. Crusade Force Organisation Chart" hidden="false">
