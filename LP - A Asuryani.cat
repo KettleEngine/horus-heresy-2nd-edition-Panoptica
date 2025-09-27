@@ -63,6 +63,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba2b-6f8c-2565-170c-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Dedicated Transport" hidden="false" id="d6ee-1572-99f9-71f4" type="selectionEntryGroup" targetId="2143-410c-0690-5d43"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Howling Banshees" id="f81d-7699-4783-691c" hidden="false" defaultSelectionEntryId="8e9e-7e5b-a24a-658f">
@@ -132,9 +133,6 @@
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="9ebb-c0fc-44b5-e892" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="391e-e93e-3018-3620" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Dedicated Transport" hidden="false" id="d6ee-1572-99f9-71f4" type="selectionEntryGroup" targetId="2143-410c-0690-5d43"/>
-          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -615,12 +613,6 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="74f7-3605-37b8-ac2c" includeChildSelections="false"/>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="5448-c5ba-b540-c960" includeChildSelections="false"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink name="Elites:" hidden="false" id="5936-812c-77c7-367b" targetId="7aee-565f-b0ae-294e" primary="true"/>
-            <categoryLink name="Infantry Unit Type" hidden="false" id="85e0-64be-37dd-efe3" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
-            <categoryLink name="Asuryani Unit Sub-Type:" hidden="false" id="697b-40df-1dd9-6a50" targetId="cf01-e0e7-4567-a4b9" primary="false"/>
-            <categoryLink name="Character" hidden="false" id="a4cc-5593-3d80-a3c4" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
-          </categoryLinks>
           <profiles>
             <profile name="Guardian Officer Cadre" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="b739-7c55-6c18-9d21">
               <characteristics>
@@ -679,7 +671,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink import="true" name="Skyrunner Jetbike" hidden="false" id="67e5-7adb-06f4-8df2" type="selectionEntry" targetId="7867-42f2-b894-df5f">
+            <entryLink import="true" name="Skyrunner Jetbike" hidden="false" id="67e5-7adb-06f4-8df2" type="selectionEntry" targetId="aa98-f5e1-5d62-3f46">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
