@@ -246,6 +246,9 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3363-8bd5-6b62-ae4b" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Aspect Exarchs" hidden="false" id="c19e-3e75-89ce-ba7f">
       <selectionEntries>
