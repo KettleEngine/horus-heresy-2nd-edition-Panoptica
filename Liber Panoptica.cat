@@ -4085,6 +4085,61 @@ Limitations:
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Warlord Trait" id="dcdf-9c62-41d0-6155" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="FALCON’S SWIFTNESS" hidden="false" id="c974-b15c-30d5-032a" sortIndex="1">
+          <profiles>
+            <profile name="FALCON’S SWIFTNESS" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="30c8-5b7d-dc2e-7c95">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord, and any unit they have joined, increase the value of the Fleet (X) Special Rule by +1, if they already possess it, If the Warlord, or any unit they have joined, does not have the Fleet (X) Special Rule, they gain they gain the Fleet (1) Special Rule instead. In addition, the Warlord gains the Pathfinder Special Rule.
+
+
+In addition, an army whose Warlord has this Trait may make an additional Reaction during the Opposing Player’s Movement phase so long as the Warlord has not been removed as a casualty.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="ffb9-667e-5243-4869-min" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ffb9-667e-5243-4869-max" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="SEER OF THE SHIFTING VECTOR" hidden="false" id="5421-ae08-b47d-965f" sortIndex="2">
+          <profiles>
+            <profile name="SEER OF THE SHIFTING VECTOR" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="f1ff-5c88-d871-5bf3">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">While a Warlord with this Trait is in reserves, or deployed on the battlefield, the Controlling Player may choose to re-roll failed Reserves rolls.
+
+
+In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Shooting phase so long as the Warlord has not been removed as a casualty.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="01cd-f8c2-76d2-f5d0-min" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="01cd-f8c2-76d2-f5d0-max" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="AMBUSH OFBLADES" hidden="false" id="bf5b-3e7e-b4aa-7350" sortIndex="3">
+          <profiles>
+            <profile name="AMBUSH OFBLADES" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="6f26-d46b-51a2-8d5c">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Once per battle, the Controlling Player of a Warlord of this Trait may declare the use of this Trait at the start of any phase. For the duration of that phase only, the Warlord and any unit they have joined gain the Preferred Enemy (Everything!) Special Rule.
+
+
+In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Assault phase so long as the Warlord has not been removed as a casualty.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="9470-bfd0-952f-6566-min" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9470-bfd0-952f-6566-max" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9451-f7e5-9464-5695" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <forceEntries>
     <forceEntry name="1. Crusade Force Organisation Chart" id="41fe-9289-1062-f819" hidden="false">
