@@ -1635,6 +1635,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink targetId="cf01-e0e7-4567-a4b9" id="c84b-4a27-ed06-9643" primary="false" name="Asuryani Unit Sub-Type:"/>
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="f5c8-bad7-bd7e-0ef7" primary="false" name="Infantry Unit Type"/>
         <categoryLink targetId="6399-5c65-7833-1025" id="37c8-cfc6-c860-b58d" primary="false" name="Line Sub-type"/>
+        <categoryLink targetId="9b5d-fac7-799b-d7e7" id="5d27-1076-532c-b2d5" primary="true" name="Troops:"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Dedicated Transport" hidden="false" id="69fc-db65-5ef3-80ed" type="selectionEntryGroup" targetId="2143-410c-0690-5d43"/>
