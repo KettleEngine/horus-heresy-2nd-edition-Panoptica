@@ -44,6 +44,7 @@
     <entryLink import="true" name="Wraithlord Conclave" hidden="false" id="80c4-251b-7fd0-5c01" type="selectionEntry" targetId="032b-9c50-8031-e906"/>
     <entryLink import="true" name="Wraithseer" hidden="false" id="254a-5560-44fc-1d51" type="selectionEntry" targetId="b985-8286-5681-3401"/>
     <entryLink import="true" name="Night Spinner Squadron" hidden="false" id="93a1-787f-089a-0683" type="selectionEntry" targetId="7c8e-c9b2-3ea2-2e9f"/>
+    <entryLink import="true" name="Shining Spears" hidden="false" id="4542-850e-27aa-58d3" type="selectionEntry" targetId="983b-1285-bed0-c1e3"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Howling Banshees" hidden="false" id="cef9-7428-bebc-312e" publicationId="a179-8e8f-4601-987c" page="41">
