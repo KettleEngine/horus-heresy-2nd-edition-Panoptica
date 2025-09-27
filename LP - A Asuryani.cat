@@ -1441,7 +1441,6 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             </profile>
           </profiles>
           <categoryLinks>
-            <categoryLink targetId="9b5d-fac7-799b-d7e7" id="7814-5348-40a0-d918" primary="false" name="Troops:"/>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="96ea-22ca-8e27-8401" primary="false" name="Infantry Unit Type"/>
             <categoryLink targetId="cf01-e0e7-4567-a4b9" id="98ee-ecdd-74ed-7a2c" primary="false" name="Asuryani Unit Sub-Type:"/>
             <categoryLink targetId="6399-5c65-7833-1025" id="c4f4-4d7a-c639-9794" primary="false" name="Line Sub-type"/>
@@ -1706,7 +1705,6 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
                 <modifier type="add" value="6d79-a3e4-381f-7b0f" field="category" scope="parent"/>
                 <modifier type="add" value="4303-1348-cce4-9501" field="category" scope="parent"/>
                 <modifier type="set" value="18" field="893e-2d76-8f04-44e5" scope="parent" affects="profiles.Unit"/>
-                <modifier type="set" value="4" field="57ee-1126-32a9-5672" scope="parent" affects="profiles.Unit"/>
               </modifiers>
               <infoLinks>
                 <infoLink name="Fleet (X)" id="3814-f6b6-f27f-5562" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
@@ -1927,6 +1925,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c735-4ebf-e281-d678-max" includeChildSelections="false"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="One Model may take:" hidden="false" id="7719-4d24-5fa3-747c" type="selectionEntryGroup" targetId="2314-1de8-8c22-e311"/>
           </entryLinks>
           <infoLinks>
             <infoLink name="Scout" id="598b-802e-d26a-315a" hidden="false" type="rule" targetId="aacf-9a7e-982d-b793"/>
@@ -1944,13 +1943,11 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
               <entryLinks>
                 <entryLink import="true" name="Gloom Field" hidden="false" id="e4f4-53f0-2891-086f" type="selectionEntry" targetId="eaa6-5d3b-cc30-2cd1">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="unit" shared="true" id="cf03-f106-841d-a9c3-min" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="cf03-f106-841d-a9c3-max" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Wireweave Net" hidden="false" id="66f8-8ecb-1aa4-4ba6" type="selectionEntry" targetId="19c4-15b8-8bcc-68f4">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="unit" shared="true" id="455d-35b5-0c86-86c4-min" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="455d-35b5-0c86-86c4-max" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
