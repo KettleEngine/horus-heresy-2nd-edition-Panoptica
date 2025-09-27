@@ -2848,6 +2848,15 @@ with a Helical Targeting Array while it is active.
       </constraints>
       <comment>for HQ units like the Farseer</comment>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warlord" hidden="false" id="f3fc-199a-332c-a001">
+      <entryLinks>
+        <entryLink import="true" name="Warlord Trait" hidden="false" id="93f6-c35d-e688-52a8" type="selectionEntryGroup" targetId="dcdf-9c62-41d0-6155"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="ffd0-d802-3702-5c74-min" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ffd0-d802-3702-5c74-max" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Dedicated Transport" id="2143-410c-0690-5d43" hidden="false">
