@@ -519,7 +519,6 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         </infoLink>
       </infoLinks>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="ae28-1a6e-439c-dedb-min" includeChildSelections="true" includeChildForces="true"/>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ae28-1a6e-439c-dedb-max" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
