@@ -4349,7 +4349,6 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
   <forceEntries>
     <forceEntry name="4. Asuryani Force Organisation Chart" id="41fe-9289-1062-f819" hidden="false">
       <categoryLinks>
-        <categoryLink name="Expanded Army Lists" hidden="false" id="d822-4279-b2b1-3cc6" targetId="e8ed-ca49-ad6d-5688" primary="false"/>
         <categoryLink name="HQ:" hidden="false" id="c41d-11f9-e08e-abca" targetId="4f85-eb33-30c9-8f51" primary="false">
           <modifiers>
             <modifier type="set" value="5" field="4da6-1341-aedb-2f99">
