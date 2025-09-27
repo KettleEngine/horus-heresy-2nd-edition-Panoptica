@@ -167,6 +167,7 @@
         </entryLink>
         <entryLink import="true" name="Aspect Shrine (x)" hidden="false" id="c578-2bba-804b-2250" type="selectionEntryGroup" targetId="aa75-d619-0292-ff9a"/>
         <entryLink import="true" name="Warlord Trait" hidden="false" id="a027-e769-0361-8ad1" type="selectionEntryGroup" targetId="dcdf-9c62-41d0-6155"/>
+        <entryLink import="true" name="Warlord" hidden="false" id="363f-b07b-6953-b481" type="selectionEntry" targetId="f3fc-199a-332c-a001"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="80"/>
@@ -309,6 +310,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1188-062f-0726-3ce1" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Warlord" hidden="false" id="a5c3-8883-d0fe-5df1" type="selectionEntry" targetId="f3fc-199a-332c-a001"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="150"/>
@@ -765,7 +767,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink import="true" name="Skyrunner Jetbike" hidden="false" id="e170-071b-5e38-d389" type="selectionEntry" targetId="7867-42f2-b894-df5f">
+            <entryLink import="true" name="Skyrunner Jetbike" hidden="false" id="e170-071b-5e38-d389" type="selectionEntry" targetId="aa98-f5e1-5d62-3f46">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
