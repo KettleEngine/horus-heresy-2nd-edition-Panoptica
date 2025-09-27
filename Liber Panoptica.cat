@@ -852,29 +852,29 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="A Wave Serpent may exchange its Turret Mounted Gravis Shuriken Cannon for one of the following:" id="a91d-f118-9de7-1295" hidden="false" defaultSelectionEntryId="0829-7517-0ea7-61bc">
+        <selectionEntryGroup name="A Wave Serpent may exchange its Turret Mounted Gravis Shuriken Cannon for one of the following:" id="a91d-f118-9de7-1295" hidden="false" defaultSelectionEntryId="eb67-9ce7-06b6-e603">
           <entryLinks>
-            <entryLink import="true" name="Gravis Shuriken Cannon" hidden="false" id="eb67-9ce7-06b6-e603" type="selectionEntry" targetId="4197-9e5c-412b-b13c">
+            <entryLink import="true" name="Gravis Shuriken Cannon" hidden="false" id="eb67-9ce7-06b6-e603" type="selectionEntry" targetId="4197-9e5c-412b-b13c" sortIndex="1">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Gravis Scatter Laser" hidden="false" id="3854-685d-b15b-4723" type="selectionEntry" targetId="788d-07ea-6d03-ed67">
+            <entryLink import="true" name="Gravis Scatter Laser" hidden="false" id="3854-685d-b15b-4723" type="selectionEntry" targetId="788d-07ea-6d03-ed67" sortIndex="2">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Gravis Bright Lance" hidden="false" id="ee4f-0bb1-50f4-d0b3" type="selectionEntry" targetId="1806-b2f1-2da1-7938">
+            <entryLink import="true" name="Gravis Bright Lance" hidden="false" id="ee4f-0bb1-50f4-d0b3" type="selectionEntry" targetId="1806-b2f1-2da1-7938" sortIndex="5">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Twin-Linked Aeldari Missile Launcher" hidden="false" id="6267-8522-0ab2-715a" type="selectionEntry" targetId="eac7-14c2-095e-abba">
+            <entryLink import="true" name="Twin-Linked Aeldari Missile Launcher" hidden="false" id="6267-8522-0ab2-715a" type="selectionEntry" targetId="eac7-14c2-095e-abba" sortIndex="4">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Gravis Starcannon" hidden="false" id="7c39-9e6c-b38a-76ce" type="selectionEntry" targetId="99ae-090e-9d2c-c498">
+            <entryLink import="true" name="Gravis Starcannon" hidden="false" id="7c39-9e6c-b38a-76ce" type="selectionEntry" targetId="99ae-090e-9d2c-c498" sortIndex="3">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
@@ -885,10 +885,10 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fa2-3fcd-b1b0-cb04-max" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="A Wave Serpent may exchange its Hull (Front) Mounted Twin-Linked Shuriken Catapult for a:" id="717d-e780-4cf7-9f66" hidden="false" defaultSelectionEntryId="bd4f-cf8a-9af6-54a1">
+        <selectionEntryGroup name="A Wave Serpent may exchange its Hull (Front) Mounted Twin-Linked Shuriken Catapult for a:" id="717d-e780-4cf7-9f66" hidden="false" defaultSelectionEntryId="064f-fb75-e144-ca79">
           <entryLinks>
-            <entryLink import="true" name="Twin-Linked Shuriken Catapult" hidden="false" id="064f-fb75-e144-ca79" type="selectionEntry" targetId="9ec7-cc82-393e-0a78"/>
-            <entryLink import="true" name="Shuriken Cannon " hidden="false" id="c1a0-98aa-57ff-3b23" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14">
+            <entryLink import="true" name="Twin-Linked Shuriken Catapult" hidden="false" id="064f-fb75-e144-ca79" type="selectionEntry" targetId="9ec7-cc82-393e-0a78" sortIndex="1"/>
+            <entryLink import="true" name="Shuriken Cannon " hidden="false" id="c1a0-98aa-57ff-3b23" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14" sortIndex="2">
               <modifiers>
                 <modifier type="set" value="Hull (Front) Mounted Shuriken Cannon" field="name"/>
               </modifiers>
@@ -921,12 +921,12 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
         </selectionEntryGroup>
         <selectionEntryGroup name=" A Wave Serpent may take any of the following:" id="9fd4-9215-2c64-266d" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="Searchlights" hidden="false" id="9c01-5f83-b003-7959" type="selectionEntry" targetId="18d4-67b4-5392-8db0">
+            <entryLink import="true" name="Searchlights" hidden="false" id="9c01-5f83-b003-7959" type="selectionEntry" targetId="18d4-67b4-5392-8db0" sortIndex="1">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bdf8-486c-4c17-69ae" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Spirit Stones" hidden="false" id="b5cf-1220-0444-304f" type="selectionEntry" targetId="f1a5-b497-5a54-71fd">
+            <entryLink import="true" name="Spirit Stones" hidden="false" id="b5cf-1220-0444-304f" type="selectionEntry" targetId="f1a5-b497-5a54-71fd" sortIndex="2">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
@@ -934,7 +934,7 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ee6-6ff2-851a-fa5f" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Holo-Fields" hidden="false" id="80be-a6b7-c140-65bc" type="selectionEntry" targetId="be3f-6e6d-fc9e-37a4">
+            <entryLink import="true" name="Holo-Fields" hidden="false" id="80be-a6b7-c140-65bc" type="selectionEntry" targetId="be3f-6e6d-fc9e-37a4" sortIndex="3">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba68-1776-53cf-408c" includeChildSelections="false"/>
               </constraints>
@@ -942,7 +942,7 @@ For the remainder of the battle after the Shield Blast has been resolved, the m
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Crystal Targeting Matrix" hidden="false" id="473a-3640-b3e2-9a7e" type="selectionEntry" targetId="e17f-bc6d-78b0-3ae6">
+            <entryLink import="true" name="Crystal Targeting Matrix" hidden="false" id="473a-3640-b3e2-9a7e" type="selectionEntry" targetId="e17f-bc6d-78b0-3ae6" sortIndex="4">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
               </costs>
