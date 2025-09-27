@@ -731,7 +731,6 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Seer Council" hidden="false" id="1b8d-b59c-5324-f092">
       <categoryLinks>
-        <categoryLink targetId="7aee-565f-b0ae-294e" id="cb59-b49f-358d-9422" primary="true" name="Elites:"/>
         <categoryLink targetId="cf01-e0e7-4567-a4b9" id="76ae-4d6c-cb57-8b8c" primary="false" name="Asuryani Unit Sub-Type:"/>
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="49b5-6626-497b-1a99" primary="false" name="Infantry Unit Type"/>
         <categoryLink targetId="6e0c-29ba-a445-8321" id="7a9d-b605-1b18-3d81" primary="false" name="Psyker:"/>
