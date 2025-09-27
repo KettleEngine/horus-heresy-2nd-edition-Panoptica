@@ -2416,7 +2416,150 @@ If the model that selected a Ghostwalker Matrix has the Antigrav Unit Sub-type,
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="World-Rune" hidden="false" id="30e5-7cb0-96f8-08ef"/>
+    <selectionEntry type="upgrade" import="true" name="World-Rune" hidden="false" id="30e5-7cb0-96f8-08ef">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="World-Rune" id="88b1-ee0f-5b3d-751c" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="World-Rune: The Serpent Host" hidden="false" id="83a5-90d9-d374-94c4" sortIndex="1">
+              <rules>
+                <rule name="The Serpent Host" id="2963-5023-e137-ef97" hidden="false">
+                  <description>Effects
+● Windrider Squads in a Detachment with this World-Rune do not have the Support Squad Special Rule.
+● Windrider Squads taken as Compulsory Troops in a Detachment with this World-Rune gain the Line Sub-type.
+● Vyper Squadrons may be taken as non-Compulsory Troops in a Detachment with this World-Rune.
+● Shining Spears units may be taken as Elites choices in a Detachment with this World-Rune.
+● When selecting an army using this World-Rune, a single unit made up entirely of models with the Aspect Shrine (Shining Spear) Special Rule may be selected, without restriction regardless of which Aspect Shrine Upgrades are selected for the army. A unit selected in this way still occupies a Force Organisation Chart slot as normal.
+
+
+Limitations
+● A Detachment with this World-Rune must select more units equipped with Skyrunner Jetbikes, Vyper Jetbikes, or Raptor Jetbikes than units without.
+● Compulsory HQ choices in a Detachment with this World-Rune must be made up entirely of models with Skyrunner Jetbikes.
+● Any unit made up entirely of models without the Cavalry Unit Type in a Detachment with this World Rune that does not begin play Embarked on a model with the Transport Sub-type, or any model with the Vehicle Unit Type without either the Transport or Fast Sub-types, must begin play in Reserve if the mission allows it. If the mission does not allow any units to be placed into Reserves then the unit is instead deployed as normal.
+● A Detachment using this World-Rune may not select any Fortification choices.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="World-Rune: The Sword Wind" hidden="false" id="be82-c30b-c41e-ef10" sortIndex="2">
+              <rules>
+                <rule name="The Sword Wind" id="ae07-282a-9678-262d" hidden="false">
+                  <description>Effects
+● A Detachment with this World-Rune may include up to two Aspect Exarch units, instead of the one normally permitted.
+● An Autarch in a Detachment with this World-Rune may select a second Aspect Shrine Upgrade. This upgrade must be different to the first, and they must pay the points cost for it respectively, gaining all Unit Types, Sub-types, Special Rules, and Wargear associated with the upgrades.
+
+
+Limitations
+● A Detachment with this World-Rune must include an Autarch, and they must be selected to be the Warlord, unless a model with the Phoenix Lord Unit Type is present - in which case, that model must be your Warlord instead.
+● An Allied Detachment may not use this World-Rune.
+● An Detachment with this World-Rune may not include more non-Infantry units than it does Infantry units. Units of Aspect Exarchs, Bonesingers Conclaves, Guardian Officer Cadres, Guardian Defenders, and Storm Guardians are not counted for the purposes of this Limitation.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="World-Rune: Echoes Of The Fallen" hidden="false" id="be6a-87fc-fb4e-3daa" sortIndex="3">
+              <rules>
+                <rule name="Echoes Of The Fallen" id="5048-f9d6-c836-20e0" hidden="false">
+                  <description>Effects
+● A single Wraith Guide, Wraithseer, or Wraithlord Conclave unit composed of a single model in a Detachment with this World-Rune may be taken as a Compulsory HQ choice - if taken in this way, the unit gains the Path of Command Special Rule, as well as the Character Sub-type if they do not already possess it. A model selected in this way must be selected to be your Warlord. In addition, if the model selected in this way is not already equipped with Guide Stones, they may select them at a cost of +15 points. A Wraithseer selected in this fashion does not count towards the 0-1 limitation normally present on this unit.
+● Units of Wraithblades and Wraithguard may be taken as Troops in a Detachment with this World-Rune.
+● Units of Wraithblades and Wraithguard taken as Compulsory Troops in a Detachment with this World-Rune gain the Line Sub-type.
+● A Detachment using this World-Rune does not count units of Wraithblades or Wraithguard toward the number of units with the Wraith Sub-type they are allowed to select by the Wraith Guide Special Rule.
+
+
+Limitations
+● A Detachment with this World-Rune must include a Wraith Guide.
+● A Detachment with this World-Rune must include at least as many units with the Wraith Sub-type as without. Units of Guardian Officer Cadres, Guardian Defenders, and Storm Guardians are not counted for the purposes of this Limitation.
+● An Allied Detachment may not use this World-Rune.
+● A Detachment using this World-Rune may only select a single Fast Attack Choice.
+● An army containing a Detachment using this World-Rune may never roll to Seize the Initiative.
+● A Detachment using this World-Rune is counted as Distrusted Allies to all other Aeldari Sub-Factions.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="World-Rune: The Hunter&apos;s Moon" hidden="false" id="326f-61c2-ce32-945a" sortIndex="4">
+              <rules>
+                <rule name="The Hunter&apos;s Moon" id="5330-97c0-24ed-8840" hidden="false">
+                  <description>Effects
+● Any model chosen as part of a Detachment with this World-Rune with the Independent Character special rule may be given an Outcast Cloak at a cost of +10 points each. An Independent Character that does so may choose to also gain the Skirmish Sub-type, as well as the Scout special rule, at no additional cost in points.
+● Any model chosen as part of a Detachment with this World-Rune with the Character Sub-type may be equipped with a Ranger Long-Rifle at a cost of +10 points each.
+● A single model within every unit chosen as part of a Detachment with this World-Rune with the Infantry Unit Type that does not have the Character Sub-type may be given a Gloom-Field at a cost of +15 points each.
+● All models in a Detachment with this World-Rune that have the Infantry Unit type gain the Move Through Cover special rule.
+● Units of Shroud Runners in a Detachment with this World-Rune gain the Line Unit Sub-type.
+● Units of Rangers in a Detachment with this World-Rune gain the Pathfinder Special Rule, and lose the Support Squad Special Rule.
+
+
+Limitations
+● All models with the Vehicle Unit Type in a detachment using this World-Rune must begin play in Reserves.
+● A Detachment using this World-Rune cannot include more Heavy Support choices than Fast Attack choices.
+● All Compulsory Troops Choices in a Detachment using this World-Rune must be Rangers.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="World-Rune: The Tears Of Lileath" hidden="false" id="b55a-c145-f7be-cb62" sortIndex="5">
+              <rules>
+                <rule name="The Tears Of Lileath" id="bed7-30d2-f395-4e1c" hidden="false">
+                  <description>Effects
+● A single Farseer in a Detachment with this World-Rune gains the Path of Command Special Rule.
+● A Detachment with this World-Rune may ignore the 0-1 limit on Seer Council units.
+● All non-Vehicle models in a detachment with this World-Rune gain the Adamantium Will (6+) Special Rule. If a model has the Psyker Unit Subtype, that model gains Adamantium Will (3+) Special Rule instead.
+● Guardian Defenders, Storm Guardians, and Vaul’s Wrath Support Batteries in a Detachment with this World-Rune may add a single Warlock to the unit, at a cost of +35 points (see Seer Council unit profile). A Warlock selected in this way may not be upgraded to a Warlock Skyrunner.
+● Windrider squads in a Detachment with this World-Rune may add a single Warlock Skyrunner to the unit, at a cost of +50 points (see Seer Council unit profile).
+● A player whose army includes a Primary Detachment using this World-Rune may re-roll any dice they roll to see which player takes the first turn, or when attempting to Seize the Initiative.
+
+
+Limitations
+● A detachment with this World-Rune must have a Farseer, or Eldrad Ulthran, as its Warlord.
+● An Allied Detachment may not use this World-Rune.
+● A detachment with this World-Rune must include at least one Seer Council selected as an Elites Choice.
+● A detachment using this World-Rune cannot include more units with the Psyker Sub-type than units without.
+● Any unit from a Detachment using this World-Rune that suffers Perils of the Warp as the result of making a Psychic Check is immediately Pinned - this overrides any effect of Unit Types which would normally allow a unit to ignore being Pinned (such as the Cavalry Unit Type, or a Unit Type granting the Fearless Special Rule), though this cannot affect any unit which does not have a Leadership Characteristic.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="World-Rune: The Shattered Chains" hidden="false" id="14d1-827b-0b06-c65a" sortIndex="6">
+              <rules>
+                <rule name="The Shattered Chains" id="8f82-f438-87b1-890e" hidden="false">
+                  <description>Effects
+● Independent Characters which were not selected as a Primarch Choice in a Detachment with this World-Rune may select a Guardian Officer Cadre as part of the same Force Organisation Slot choice. A unit selected in this manner is considered a “Retinue Squad” and must have a minimum of 2 models. The Retinue Squad does not use up a Force Organisation Slot and is considered a part of the same unit as the Independent Character. The Retinue Squad must be deployed with the Independent Character as part of the unit and the Independent Character may not voluntarily leave the Guardian Officer Cadre during play. All models in a Guardian Officer Cadre unit taken as a Retinue Squad lose the Guardian Officers Special Rule and the Character Sub-type, and gain the Chosen Warriors Special Rule. If an Independent Character has a Skyrunner Jetbike, their Retinue Squad must all have Skyrunner Jetbikes. If an Independent Character does not have a Skyrunner Jetbike, their Retinue Squad must not have Skyrunner Jetbikes.
+● A Detachment with this World-Rune may ignore the 0-1 limit on Guardian Officer Cadre units, and may take them as HQ choices; Guardian Officer Cadre units taken as HQ Choices lose the Guardian Officers Special Rule and the Character Sub-type, and gain the Chosen Warriors Special Rule.
+● Guardian Defenders may be selected as Elites choices. When Guardian Defenders are taken in this manner, increase the Ballistic Skill Characteristic of all Guardian Defender and Defender Platform models in that unit to 5.
+● Storm Guardians may be selected as Elites choices. When Storm Guardians are taken in this manner, increase the Weapon Skill Characteristic of all Storm Guardian and Defender Platform models in that unit to 5.
+● All models without the Aspect Shrine (X) Special Rule or the Wraith Unit Sub-Type gain the Stubborn Special Rule. If a model does not have a Leadership Characteristic, they instead ignore the effects of any Crew Shaken result on the Vehicle Damage table. Limitations
+● A Detachment using this World-Rune is counted as Distrusted Allies to all other Eldar Sub-Factions.
+● All Compulsory Troops choices taken in a Detachment using this World-Rune must be Guardian Defenders or Storm Guardians.
+● All Compulsory Troops choices taken in a Detachment using this World-Rune must take the maximum number of models possible for that unit (though note that this does not include Defender Platforms, where applicable).</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="World-Rune: The Crucible of Blood" hidden="false" id="33ab-f672-d2b3-a09e" sortIndex="7">
+              <rules>
+                <rule name="The Crucible of Blood" id="7e53-4535-c6b5-91bb" hidden="false">
+                  <description>Effects
+● All units using this World-Rune eligible to take a Wave Serpent as a Dedicated Transport may instead take a single Falcon as a Dedicated Transport if the unit numbers 5 models or less.
+● Falcon Squadrons in a Detachment using this World-Rune may be selected as Non-Compulsory Troops Choices.
+● Firestorm Squadrons and Night Spinner Squadrons in a Detachment using this World-Rune may be selected as Elites choices.
+● Models with the Bonesinger Companions Special Rule may ignore the restrictions applied to units they are permitted to join, and may instead join any with the Infantry Unit Type and the Asuryani Sub-type.
+● A Detachment with this World-Rune may ignore the 0-1 limit on Bonesinger Conclaves, and may take them as Non-Compulsory Troops choices.
+● If the Warlord of this army does not have the Unique Sub-type, the Warlord of this army gains the Path of the Shaper Special Rule.
+
+
+Limitations
+● All units in a Detachment using this World-Rune with the Infantry Unit Type must begin the battle Embarked upon a model with the Transport Sub-Type; any Infantry models in a Detachment using this using this World-Rune, both those deployed on the battlefield and in Reserves, that are not Embarked upon a model with the Transport Sub-type at the beginning of the first Game Turn must be removed as casualties.
+● At least one Bonesinger Conclave must be selected in a Detachment with this World-Rune.
+● An Allied Detachment may not use this World-Rune.
+● A Detachment with this World-Rune may not select any units with the Wraith Sub-type.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="e677-6b4c-889c-239d-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e677-6b4c-889c-239d-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="3d8e-57b9-a24d-dd4c" id="5775-889d-b6ad-dda6" primary="true" name="World-Rune"/>
+      </categoryLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Pulse Laser" hidden="false" id="ff1d-aac6-3fa3-774b">
       <profiles>
         <profile name="Pulse Laser" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="e9b5-5492-f300-0da3">
