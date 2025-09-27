@@ -40,18 +40,10 @@
     <entryLink import="true" name="Dark Reapers" hidden="false" id="ee08-c79d-01f6-0b59" type="selectionEntry" targetId="b38d-2c89-d1a3-84b3"/>
     <entryLink import="true" name="Falcon Squadron" hidden="false" id="e7ad-18db-ab7a-32f0" type="selectionEntry" targetId="028a-a615-843b-9ed4"/>
     <entryLink import="true" name="Fire Prism Squadron" hidden="false" id="7289-3a6b-6389-f494" type="selectionEntry" targetId="0bd4-2e64-aeae-05ce"/>
-    <entryLink import="true" name="Doomweaver" hidden="false" id="c469-7c29-2c51-f5ad" type="selectionEntry" targetId="d570-60a2-4879-6a0d">
-      <selectionEntries>
-        <selectionEntry type="unit" import="true" name="Firestorm Squadron" hidden="false" id="3c58-26ed-81cc-b415">
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Firestorm" hidden="false" id="cfc0-6e2b-58d1-f0ef"/>
-          </selectionEntries>
-        </selectionEntry>
-      </selectionEntries>
-    </entryLink>
     <entryLink import="true" name="Firestorm Squadron" hidden="false" id="4b3f-3df1-9f8c-eb0d" type="selectionEntry" targetId="d924-caa3-c3f3-9ed1"/>
     <entryLink import="true" name="Wraithlord Conclave" hidden="false" id="80c4-251b-7fd0-5c01" type="selectionEntry" targetId="032b-9c50-8031-e906"/>
     <entryLink import="true" name="Wraithseer" hidden="false" id="254a-5560-44fc-1d51" type="selectionEntry" targetId="b985-8286-5681-3401"/>
+    <entryLink import="true" name="Night Spinner Squadron" hidden="false" id="93a1-787f-089a-0683" type="selectionEntry" targetId="7c8e-c9b2-3ea2-2e9f"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Howling Banshees" hidden="false" id="cef9-7428-bebc-312e" publicationId="a179-8e8f-4601-987c" page="41">
@@ -312,6 +304,11 @@
           </costs>
         </entryLink>
         <entryLink import="true" name="Path of the Farseer" hidden="false" id="1e0f-b1f4-0d94-ab34" type="selectionEntry" targetId="73ba-7f16-6d48-4a99"/>
+        <entryLink import="true" name="Retinue: Seer Council" hidden="false" id="2a87-7b77-4467-280e" type="selectionEntry" targetId="1b8d-b59c-5324-f092">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1188-062f-0726-3ce1" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="150"/>
@@ -371,16 +368,6 @@
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Retinue" hidden="false" id="68dc-9bc7-d9c1-f60d">
-          <entryLinks>
-            <entryLink import="true" name="Seer Council" hidden="false" id="2a87-7b77-4467-280e" type="selectionEntry" targetId="1b8d-b59c-5324-f092"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2633-5f69-ee5e-e393" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Wraith Guide" hidden="false" id="f713-0f5c-7afa-68f4">
       <costs>
@@ -3473,6 +3460,13 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="7031-469a-1aeb-eab0" id="d05b-00d5-44c0-7a06" primary="true" name="Heavy Support:"/>
+        <categoryLink targetId="e2b6-b770-784c-9e95" id="4579-4e9a-3c54-61cf" primary="false" name="Vehicle:"/>
+        <categoryLink targetId="0ea2-efb5-b7af-226e" id="c82c-8165-2e52-d03f" primary="false" name="Fast Sub-type"/>
+        <categoryLink targetId="6a28-17c5-8117-d99c" id="9f90-4b33-12bb-cd39" primary="false" name="Skimmer"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="1d16-8940-4312-64e2" primary="false" name="Asuryani Unit Sub-Type:"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Firestorm Squadron" hidden="false" id="d924-caa3-c3f3-9ed1">
       <selectionEntries>
@@ -3791,6 +3785,128 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink targetId="40ca-4bd8-55cd-e550" id="84c2-cade-0d5f-0982" primary="false" name="Wraith Unit Sub-Type:"/>
         <categoryLink targetId="d8ab-8e21-e193-63ba" id="0e42-ae70-920a-b483" primary="false" name="Automata Unit Type"/>
         <categoryLink targetId="6e0c-29ba-a445-8321" id="8f2d-4109-fcfe-9326" primary="false" name="Psyker:"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Night Spinner Squadron" hidden="false" id="b8e4-2202-a1cb-4d36">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Night Spinner" hidden="false" id="f113-41f2-2596-86be">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="160"/>
+          </costs>
+          <profiles>
+            <profile name="Night Spinner" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="e100-db6d-9a4a-7212">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Asuryani, Skimmer, Fast)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">12</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="42f8-d22e-dad2-0da0" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="ac7b-74ab-ac48-f801" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="A Night Spinner may exchange its Hull (Front) Mounted Twin-Linked Shuriken Catapult for a:" id="b94c-79c3-45c9-6b38" hidden="false" defaultSelectionEntryId="3428-9b24-4eef-7338">
+              <entryLinks>
+                <entryLink import="true" name="Twin-Linked Shuriken Catapult" hidden="false" id="d416-8ff0-daca-16bf" type="selectionEntry" targetId="9ec7-cc82-393e-0a78" sortIndex="1">
+                  <modifiers>
+                    <modifier type="set" value="Hull (Front) Mounted Twin-Linked Shuriken Catapult" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Shuriken Cannon " hidden="false" id="1d23-1a2b-ee50-be42" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14" sortIndex="2">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="Hull (Front) Mounted Shuriken Cannon" field="name"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9603-6579-6ad6-fd1a-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9603-6579-6ad6-fd1a-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="A Night Spinner may take any of the following:" id="0fdf-64e2-441c-628c" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Searchlights" hidden="false" id="8b3d-5faa-41dc-1f35" type="selectionEntry" targetId="18d4-67b4-5392-8db0" sortIndex="1">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b60-808d-b672-1361" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Spirit Stones" hidden="false" id="e6e2-ad0f-abda-0096" type="selectionEntry" targetId="f1a5-b497-5a54-71fd" sortIndex="2">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa11-9bb4-3bff-0d03" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Holo-Fields" hidden="false" id="a34f-8954-061a-5fc6" type="selectionEntry" targetId="be3f-6e6d-fc9e-37a4" sortIndex="3">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="120c-ed45-a268-72c5" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Crystal Targeting Matrix" hidden="false" id="6037-df90-dec8-cc83" type="selectionEntry" targetId="e17f-bc6d-78b0-3ae6" sortIndex="4">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="A Night Spinner may take one of the following:" id="0e28-78bf-df2d-f453" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2676-751f-9b8a-0cff" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Vectored Engines" hidden="false" id="5ed1-6c4f-6388-5ed5" type="selectionEntry" targetId="a939-89d5-5a69-1ffc" sortIndex="2">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Star Engines" hidden="false" id="1136-db9a-1ead-fad4" type="selectionEntry" targetId="3391-adc6-766d-c959" sortIndex="1">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Doomweaver" hidden="false" id="4f9a-1186-8cb6-f150" type="selectionEntry" targetId="d570-60a2-4879-6a0d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b50a-9b52-3feb-ffc7-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b50a-9b52-3feb-ffc7-max" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="prepend" value="Turret Mounted " field="name"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="7031-469a-1aeb-eab0" id="234a-7ebd-b037-b45c" primary="true" name="Heavy Support:"/>
+        <categoryLink targetId="e2b6-b770-784c-9e95" id="427e-88c9-1ac6-b5de" primary="false" name="Vehicle:"/>
+        <categoryLink targetId="0ea2-efb5-b7af-226e" id="0ffb-9655-46c0-e112" primary="false" name="Fast Sub-type"/>
+        <categoryLink targetId="6a28-17c5-8117-d99c" id="ea90-4e8b-009d-59f1" primary="false" name="Skimmer"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="f9b1-a9da-2375-9a49" primary="false" name="Asuryani Unit Sub-Type:"/>
       </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
