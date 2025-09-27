@@ -3758,7 +3758,12 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             <entryLink import="true" name="Ghostspear" hidden="false" id="e00d-8e0b-d297-a18a" type="selectionEntry" targetId="595a-ab9a-52f1-10b5"/>
             <entryLink import="true" name="Wraithshield" hidden="false" id="33ee-ad78-9baf-76db" type="selectionEntry" targetId="9ace-d970-a479-2ae4"/>
             <entryLink import="true" name="Psychic Discipline: The Runes of Twilight" hidden="false" id="43f5-aa6c-b1d8-5890" type="selectionEntry" targetId="d2b7-97db-99e3-72ef"/>
-            <entryLink import="true" name="Psychic Discipline: Thaumaturgy" hidden="false" id="cf46-e0ca-3ace-ce8e" type="selectionEntry" targetId="f7ab-1fb2-91b0-028d"/>
+            <entryLink import="true" name="Psychic Discipline: Thaumaturgy" hidden="false" id="cf46-e0ca-3ace-ce8e" type="selectionEntry" targetId="f7ab-1fb2-91b0-028d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="619b-9473-6b5d-de4f-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="619b-9473-6b5d-de4f-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b2e6-3685-1eda-ea82-min" includeChildSelections="false"/>
