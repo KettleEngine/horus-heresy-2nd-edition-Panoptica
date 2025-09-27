@@ -1338,8 +1338,8 @@ Any model with Swooping Hawk Wings also gains the Bulky (2) and Deep Strike Spe
         </entryLink>
       </entryLinks>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="074e-6b9b-c4e6-1f33-max-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="074e-6b9b-c4e6-1f33-max-max" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="074e-6b9b-c4e6-1f33-max-max-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="074e-6b9b-c4e6-1f33-max-max-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Star Lance" hidden="false" id="18fb-e4d0-9cec-0cd9">
@@ -2791,6 +2791,63 @@ with a Helical Targeting Array while it is active.
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b885-8426-a278-8faf-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Skyrunner Jetbike" hidden="false" id="aa98-f5e1-5d62-3f46">
+      <profiles>
+        <profile name="Skyrunner Jetbike" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="4a94-31a4-8687-2117">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">a model with a Skyrunner Jetbike may choose to move up to their unmodified Initiative Characteristic at the start of the Controlling Player’s Charge Sub-Phase. A model that chooses to do so may not declare a Charge</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="add" value="6d79-a3e4-381f-7b0f" field="category" scope="parent"/>
+        <modifier type="add" value="4303-1348-cce4-9501" field="category" scope="parent"/>
+        <modifier type="set" value="18" field="893e-2d76-8f04-44e5" scope="parent" affects="profiles.Unit"/>
+        <modifier type="set" value="4" field="57ee-1126-32a9-5672" scope="parent" affects="profiles.Unit"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Fleet (X)" id="3407-f395-de4e-7e2d" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+          <modifiers>
+            <modifier type="set" value="Fleet (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Firing Protocols (X)" id="7a98-921a-decc-e23c" hidden="false" type="rule" targetId="32a3-f599-5c92-2945">
+          <modifiers>
+            <modifier type="set" value="Firing Protocols (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Hit &amp; Run" id="eb3d-6e29-0b26-c2ea" hidden="false" type="rule" targetId="5986-e960-d432-affd"/>
+        <infoLink name="Hammer of Wrath (X)" id="b948-5397-c5b4-9dda" hidden="false" type="rule" targetId="aec0-c3aa-1e4e-1779">
+          <modifiers>
+            <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Relentless" id="8996-b800-7284-15e3" hidden="false" type="rule" targetId="7adf-ac9a-5035-522d"/>
+        <infoLink name="Battle-Hardened (X)" id="2c10-37a5-f50c-5086" hidden="false" type="rule" targetId="5c3b-ed0b-4ad0-d547">
+          <modifiers>
+            <modifier type="set" value="Battle-Hardened (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Shrouded (X)" id="888b-ec66-5328-e55f" hidden="false" type="rule" targetId="10c3-fdb0-089f-ca65">
+          <modifiers>
+            <modifier type="set" value="Shrouded (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Deep Strike" id="c461-ad77-8ced-080a" hidden="false" type="rule" targetId="f1e1-986f-c783-ca9e"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Twin-Linked Shuriken Catapult" hidden="false" id="2780-f2e1-f042-b342" type="selectionEntry" targetId="9ec7-cc82-393e-0a78">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="76b1-d0ad-af1e-d090" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39e3-35f7-3a12-7dd4" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14fd-0d2b-0c66-07d6" includeChildSelections="false"/>
+      </constraints>
+      <comment>for HQ units like the Farseer</comment>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Dedicated Transport" id="2143-410c-0690-5d43" hidden="false">
@@ -4099,7 +4156,6 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             </profile>
           </profiles>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="ffb9-667e-5243-4869-min" includeChildSelections="true"/>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ffb9-667e-5243-4869-max" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
@@ -4115,7 +4171,6 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             </profile>
           </profiles>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="01cd-f8c2-76d2-f5d0-min" includeChildSelections="true"/>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="01cd-f8c2-76d2-f5d0-max" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
@@ -4131,7 +4186,6 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             </profile>
           </profiles>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="9470-bfd0-952f-6566-min" includeChildSelections="true"/>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9470-bfd0-952f-6566-max" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>

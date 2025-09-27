@@ -298,13 +298,13 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Farseer" hidden="false" id="76cd-d1df-6938-d937">
       <entryLinks>
-        <entryLink import="true" name="Skyrunner Jetbike" hidden="false" id="4372-89da-c40a-433d" type="selectionEntry" targetId="7867-42f2-b894-df5f">
+        <entryLink import="true" name="Skyrunner Jetbike" hidden="false" id="4372-89da-c40a-433d" type="selectionEntry" targetId="aa98-f5e1-5d62-3f46">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
           </costs>
         </entryLink>
         <entryLink import="true" name="Path of the Farseer" hidden="false" id="1e0f-b1f4-0d94-ab34" type="selectionEntry" targetId="73ba-7f16-6d48-4a99"/>
-        <entryLink import="true" name="Retinue: Seer Council" hidden="false" id="2a87-7b77-4467-280e" type="selectionEntry" targetId="1b8d-b59c-5324-f092">
+        <entryLink import="true" name="Seer Council" hidden="false" id="2a87-7b77-4467-280e" type="selectionEntry" targetId="1b8d-b59c-5324-f092">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1188-062f-0726-3ce1" includeChildSelections="false"/>
           </constraints>
