@@ -2548,6 +2548,13 @@ Limitations
 ● A Detachment with this World-Rune may not select any units with the Wraith Sub-type.</description>
                 </rule>
               </rules>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="40ca-4bd8-55cd-e550" childId="force" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
