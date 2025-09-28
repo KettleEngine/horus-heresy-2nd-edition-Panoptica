@@ -50,7 +50,7 @@
     <entryLink import="true" name="Phoenix Bomber Squadron" hidden="false" id="eca5-2b40-0f40-8a96" type="selectionEntry" targetId="03d9-a1c1-d559-89b9"/>
     <entryLink import="true" name="Avatar of Khaine" hidden="false" id="4b3f-bc6d-061f-b7ba" type="selectionEntry" targetId="bedf-3eca-fa37-044e">
       <categoryLinks>
-        <categoryLink targetId="ad5f-31db-8bc7-5c46" id="24f4-9db6-f637-dd23" primary="true" name="Primarch Unit Type"/>
+        <categoryLink targetId="ad5f-31db-8bc7-5c46" id="24f4-9db6-f637-dd23" primary="false" name="Primarch Unit Type"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -3921,11 +3921,11 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="750"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="ad5f-31db-8bc7-5c46" id="b38b-d114-ccd8-f8fa" primary="true" name="Primarch Unit Type"/>
         <categoryLink targetId="7f27-689f-9f07-7b44" id="53fd-4ca6-4372-16a9" primary="false" name="Daemon Primarch Unit Type:"/>
         <categoryLink targetId="cf01-e0e7-4567-a4b9" id="651d-189d-6ae9-f49d" primary="false" name="Asuryani Unit Sub-Type:"/>
         <categoryLink targetId="f479-3c81-1e42-1b3a" id="a0fa-8861-c86d-e7fd" primary="false" name="Gargantuan Unit Sub-type"/>
         <categoryLink targetId="aa94-5c65-d1f1-46a4" id="0beb-1491-18d9-dc89" primary="false" name="Unique Sub-type"/>
+        <categoryLink targetId="e031-3c2-e3f8-d40a" id="72e9-42a6-64bd-55c8" primary="true" name="Primarch:"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Avatar of Khaine" hidden="false" id="757a-db98-af7d-70f9">
