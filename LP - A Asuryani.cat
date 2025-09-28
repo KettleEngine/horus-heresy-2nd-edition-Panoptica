@@ -46,6 +46,8 @@
     <entryLink import="true" name="Night Spinner Squadron" hidden="false" id="93a1-787f-089a-0683" type="selectionEntry" targetId="7c8e-c9b2-3ea2-2e9f"/>
     <entryLink import="true" name="Shining Spears" hidden="false" id="4542-850e-27aa-58d3" type="selectionEntry" targetId="983b-1285-bed0-c1e3"/>
     <entryLink import="true" name="World-Rune" hidden="false" id="2502-1474-c082-08b7" type="selectionEntry" targetId="30e5-7cb0-96f8-08ef"/>
+    <entryLink import="true" name="Nightwing Interceptor Squadron" hidden="false" id="a854-0530-2e46-7b96" type="selectionEntry" targetId="55de-c69c-e96c-006e"/>
+    <entryLink import="true" name="Phoenix Bomber Squadron" hidden="false" id="eca5-2b40-0f40-8a96" type="selectionEntry" targetId="03d9-a1c1-d559-89b9"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Howling Banshees" hidden="false" id="cef9-7428-bebc-312e" publicationId="a179-8e8f-4601-987c" page="41">
@@ -2170,7 +2172,6 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
                 <modifier type="add" value="6d79-a3e4-381f-7b0f" field="category" scope="parent"/>
                 <modifier type="add" value="4303-1348-cce4-9501" field="category" scope="parent"/>
                 <modifier type="set" value="18" field="893e-2d76-8f04-44e5" scope="parent" affects="profiles.Unit"/>
-                <modifier type="set" value="4" field="57ee-1126-32a9-5672" scope="parent" affects="profiles.Unit"/>
               </modifiers>
               <infoLinks>
                 <infoLink name="Fleet (X)" id="29ee-a028-bd8f-ac0d" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
@@ -2343,7 +2344,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="74aa-2447-1f5c-fd20" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="74aa-2447-1f5c-fd20" includeChildSelections="true"/>
               </constraints>
             </entryLink>
             <entryLink import="true" name="Raptor Jetbike" hidden="false" id="daac-6662-702a-8dea" type="selectionEntry" targetId="aa22-bc8d-17d1-a2e7"/>
@@ -2396,15 +2397,15 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Asuryani, Antigrav, Skirmish)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">18</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84"/>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244"/>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8"/>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f"/>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672"/>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc"/>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0"/>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727"/>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0"/>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">4+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2435,12 +2436,12 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
               <selectionEntryGroups>
                 <selectionEntryGroup name="Any Vyper may exchange their Vyper Jetbike’s Shuriken Cannon for one of the following:" id="3145-25d5-a7c5-6c74" hidden="false" defaultSelectionEntryId="dd14-aad9-824a-2c80">
                   <entryLinks>
-                    <entryLink import="true" name="Twin-Linked Shuriken Catapult" hidden="false" id="dd14-aad9-824a-2c80" type="selectionEntry" targetId="9ec7-cc82-393e-0a78">
+                    <entryLink import="true" name="Twin-Linked Shuriken Catapult" hidden="false" id="dd14-aad9-824a-2c80" type="selectionEntry" targetId="9ec7-cc82-393e-0a78" sortIndex="1">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ada-ebc6-334b-211f" includeChildSelections="false"/>
                       </constraints>
                     </entryLink>
-                    <entryLink import="true" name="Shuriken Cannon " hidden="false" id="fd24-46dd-95c0-e534" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14">
+                    <entryLink import="true" name="Shuriken Cannon " hidden="false" id="fd24-46dd-95c0-e534" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14" sortIndex="2">
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                       </costs>
@@ -2506,8 +2507,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
                   </costs>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d6b2-2ad8-a01d-a46e-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6b2-2ad8-a01d-a46e-max" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2c0-1462-77c3-5b21" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -2882,9 +2882,9 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Any Phoenix Bomber may exchange both of their two Hull (Front) Mounted Phoenix Missile Launchers for the following:" id="894a-dcf2-2f78-a9ab" hidden="false">
+            <selectionEntryGroup name="Any Phoenix Bomber may exchange both of their two Hull (Front) Mounted Phoenix Missile Launchers for the following:" id="894a-dcf2-2f78-a9ab" hidden="false" defaultSelectionEntryId="0932-3310-e960-3243">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Two Hull (Front) Mounted Phoenix Missile Launchers" hidden="false" id="0932-3310-e960-3243">
+                <selectionEntry type="upgrade" import="true" name="Two Hull (Front) Mounted Phoenix Missile Launchers" hidden="false" id="0932-3310-e960-3243" sortIndex="1">
                   <entryLinks>
                     <entryLink import="true" name="Phoenix Missile Launchers" hidden="false" id="806c-ee69-a5a6-9b0a" type="selectionEntry" targetId="9286-15a5-8826-0e2b" sortIndex="1">
                       <constraints>
@@ -2892,18 +2892,20 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
                         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4988-f5f2-8bdb-5f3c-max" includeChildSelections="false"/>
                       </constraints>
                     </entryLink>
-                    <entryLink import="true" name="Nightfire Missile Launcher" hidden="false" id="afea-7555-3f76-305b" type="selectionEntry" targetId="b5bb-f72b-60fa-c19e" sortIndex="2">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
-                      </costs>
-                    </entryLink>
                   </entryLinks>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="95be-f77d-d91e-6ef6-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95be-f77d-d91e-6ef6-max" includeChildSelections="false"/>
-                  </constraints>
                 </selectionEntry>
               </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Nightfire Missile Launcher" hidden="false" id="afea-7555-3f76-305b" type="selectionEntry" targetId="b5bb-f72b-60fa-c19e" sortIndex="2">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="95be-f77d-d91e-6ef6-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95be-f77d-d91e-6ef6-max" includeChildSelections="false"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <selectionEntries>

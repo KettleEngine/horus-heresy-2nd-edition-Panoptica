@@ -1201,9 +1201,6 @@ Any model with Swooping Hawk Wings also gains the Bulky (2) and Deep Strike Spe
         <infoLink name="Deep Strike" id="f652-53df-7590-e14a" hidden="false" type="rule" targetId="f1e1-986f-c783-ca9e"/>
         <infoLink name="Deep Strike" id="b48b-1112-d0c7-bb62" hidden="false" type="rule" targetId="f1e1-986f-c783-ca9e"/>
       </infoLinks>
-      <modifiers>
-        <modifier type="set" value="16" field="893e-2d76-8f04-44e5" affects="profiles.Unit" scope="parent"/>
-      </modifiers>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="718d-4234-8271-f8b2-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="718d-4234-8271-f8b2-max" includeChildSelections="false"/>
@@ -1247,7 +1244,7 @@ Any model with Swooping Hawk Wings also gains the Bulky (2) and Deep Strike Spe
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Prism Rifle" hidden="false" id="8b4b-f372-8adc-900e">
       <profiles>
-        <profile name="- Dispersed" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ba58-e5eb-28c0-6116">
+        <profile name="Prism Rifle - Dispersed" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ba58-e5eb-28c0-6116">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -1255,11 +1252,11 @@ Any model with Swooping Hawk Wings also gains the Bulky (2) and Deep Strike Spe
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3“), Ghostlight</characteristic>
           </characteristics>
         </profile>
-        <profile name="- Focused " typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="7040-b1e7-8b2b-498f">
+        <profile name="Prism Rifle - Focused " typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="7040-b1e7-8b2b-498f">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Lance, Ghostlight</characteristic>
           </characteristics>
         </profile>
@@ -2275,7 +2272,6 @@ If the model that selected a Ghostwalker Matrix has the Antigrav Unit Sub-type,
         <modifier type="add" value="6d79-a3e4-381f-7b0f" field="category" scope="parent"/>
         <modifier type="add" value="4303-1348-cce4-9501" field="category" scope="parent"/>
         <modifier type="set" value="18" field="893e-2d76-8f04-44e5" scope="parent" affects="profiles.Unit"/>
-        <modifier type="set" value="4" field="57ee-1126-32a9-5672" scope="parent" affects="profiles.Unit"/>
       </modifiers>
       <infoLinks>
         <infoLink name="Fleet (X)" id="03a3-b0a1-89c1-e91b" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
@@ -2334,7 +2330,6 @@ If the model that selected a Ghostwalker Matrix has the Antigrav Unit Sub-type,
         <modifier type="add" value="6d79-a3e4-381f-7b0f" field="category" scope="parent"/>
         <modifier type="add" value="4303-1348-cce4-9501" field="category" scope="parent"/>
         <modifier type="set" value="16" field="893e-2d76-8f04-44e5" scope="parent" affects="profiles.Unit"/>
-        <modifier type="set" value="4" field="57ee-1126-32a9-5672" scope="parent" affects="profiles.Unit"/>
       </modifiers>
       <infoLinks>
         <infoLink name="Fleet (X)" id="072b-5fbd-899f-1e09" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
@@ -2366,14 +2361,6 @@ If the model that selected a Ghostwalker Matrix has the Antigrav Unit Sub-type,
         </infoLink>
         <infoLink name="Deep Strike" id="2e36-76e3-bdc0-977d" hidden="false" type="rule" targetId="f1e1-986f-c783-ca9e"/>
       </infoLinks>
-      <entryLinks>
-        <entryLink import="true" name="Shuriken Cannon " hidden="false" id="0751-1855-5309-9371" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="35e5-cfad-67e8-69b1-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35e5-cfad-67e8-69b1-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f69c-dd90-2102-ed42-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f69c-dd90-2102-ed42-max" includeChildSelections="false"/>
