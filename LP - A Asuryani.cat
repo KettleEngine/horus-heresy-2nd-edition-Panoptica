@@ -48,7 +48,11 @@
     <entryLink import="true" name="World-Rune" hidden="false" id="2502-1474-c082-08b7" type="selectionEntry" targetId="30e5-7cb0-96f8-08ef"/>
     <entryLink import="true" name="Nightwing Interceptor Squadron" hidden="false" id="a854-0530-2e46-7b96" type="selectionEntry" targetId="55de-c69c-e96c-006e"/>
     <entryLink import="true" name="Phoenix Bomber Squadron" hidden="false" id="eca5-2b40-0f40-8a96" type="selectionEntry" targetId="03d9-a1c1-d559-89b9"/>
-    <entryLink import="true" name="Avatar of Khaine" hidden="false" id="3829-2395-c6ab-2c86" type="selectionEntry" targetId="bedf-3eca-fa37-044e"/>
+    <entryLink import="true" name="Avatar of Khaine" hidden="false" id="4b3f-bc6d-061f-b7ba" type="selectionEntry" targetId="bedf-3eca-fa37-044e">
+      <categoryLinks>
+        <categoryLink targetId="ad5f-31db-8bc7-5c46" id="24f4-9db6-f637-dd23" primary="true" name="Primarch Unit Type"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Howling Banshees" hidden="false" id="cef9-7428-bebc-312e" publicationId="a179-8e8f-4601-987c" page="41">
