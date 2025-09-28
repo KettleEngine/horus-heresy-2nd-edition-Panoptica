@@ -48,6 +48,7 @@
     <entryLink import="true" name="World-Rune" hidden="false" id="2502-1474-c082-08b7" type="selectionEntry" targetId="30e5-7cb0-96f8-08ef"/>
     <entryLink import="true" name="Nightwing Interceptor Squadron" hidden="false" id="a854-0530-2e46-7b96" type="selectionEntry" targetId="55de-c69c-e96c-006e"/>
     <entryLink import="true" name="Phoenix Bomber Squadron" hidden="false" id="eca5-2b40-0f40-8a96" type="selectionEntry" targetId="03d9-a1c1-d559-89b9"/>
+    <entryLink import="true" name="Avatar of Khaine" hidden="false" id="3829-2395-c6ab-2c86" type="selectionEntry" targetId="bedf-3eca-fa37-044e"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Howling Banshees" hidden="false" id="cef9-7428-bebc-312e" publicationId="a179-8e8f-4601-987c" page="41">
@@ -3910,6 +3911,155 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink targetId="6a28-17c5-8117-d99c" id="ea90-4e8b-009d-59f1" primary="false" name="Skimmer"/>
         <categoryLink targetId="cf01-e0e7-4567-a4b9" id="f9b1-a9da-2375-9a49" primary="false" name="Asuryani Unit Sub-Type:"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Avatar of Khaine" hidden="false" id="bedf-3eca-fa37-044e">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="750"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="ad5f-31db-8bc7-5c46" id="b38b-d114-ccd8-f8fa" primary="true" name="Primarch Unit Type"/>
+        <categoryLink targetId="7f27-689f-9f07-7b44" id="53fd-4ca6-4372-16a9" primary="false" name="Daemon Primarch Unit Type:"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="651d-189d-6ae9-f49d" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="f479-3c81-1e42-1b3a" id="a0fa-8861-c86d-e7fd" primary="false" name="Gargantuan Unit Sub-type"/>
+        <categoryLink targetId="aa94-5c65-d1f1-46a4" id="0beb-1491-18d9-dc89" primary="false" name="Unique Sub-type"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Avatar of Khaine" hidden="false" id="757a-db98-af7d-70f9">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b399-d42b-3113-9227-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b399-d42b-3113-9227-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Avatar of Khaine" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="d574-71d2-6454-a2a4">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Daemon Primarch (Asuryani, Gargantuan, Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">10</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">8</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">8</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">8</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">8</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">6</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">6</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Fleet (X)" id="1456-e86f-59fe-56f8" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+              <modifiers>
+                <modifier type="set" value="Fleet (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Hammer of Wrath (X)" id="395d-3023-2dff-85af" hidden="false" type="rule" targetId="aec0-c3aa-1e4e-1779">
+              <modifiers>
+                <modifier type="set" value="Hammer of Wrath (3)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Fear (X)" id="b657-3477-1a47-6397" hidden="false" type="rule" targetId="21f6-7842-df5c-d2e7">
+              <modifiers>
+                <modifier type="set" value="Fear (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Fearless" id="5abb-60ba-777f-335a" hidden="false" type="rule" targetId="b48c-d7e1-2a83-2f5b"/>
+          </infoLinks>
+          <rules>
+            <rule name="A Bloody-Handed God" id="9352-e93d-dd7d-4dff" hidden="false">
+              <description>Unlike other models with the Daemon Primarch Unit Type, an Avatar of Khaine may never be selected to be your Warlord, and may not select a Warlord Trait – you must select another eligible model from your army instead. In addition, the Avatar of Khaine may never join or be joined by any other model or unit, and may not be given any manner of Retinue during army selection.</description>
+            </rule>
+            <rule name="Khaine Awakened" id="a61b-a2c7-01ff-1c1d" hidden="false">
+              <description>All friendly units within 12” of the Avatar of Khaine which can draw line of sight to it and have the Asuryani Unit Sub-type gain the Stubborn and Rage (2) Special Rules.</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Molten Body" hidden="false" id="a1f3-d509-cd6d-8928">
+              <profiles>
+                <profile name="Molten Body" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="8528-a70d-5490-e2e2">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Molten Body of an Avatar of Khaine flows like wax to seal even the most grievous wounds. A Molten Body provides a 3+ Invulnerable Save. Weapons of the Flame, Melta, and Volkite types can never cause Wounds to a model with a Molten Body, and any allocated to a model with a Molten Body are immediately discarded.
+
+
+In addition, when a model with a Molten Body and a Wounds Characteristic loses its last Wound, but before it is removed as a casualty, all models both friendly and enemy within D6+6&quot; suffer an automatic Hit at Str 8, AP -.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a007-ed8b-634c-974a-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a007-ed8b-634c-974a-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="The Wailing Doom" hidden="false" id="6d38-a718-386d-4d6b">
+              <profiles>
+                <profile name="The Wailing Doom (Ranged)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="885c-d715-3aa2-7541">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066"/>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458"/>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d"/>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9"/>
+                  </characteristics>
+                </profile>
+                <profile name="The Wailing Doom (Melee) - Scything Slash " typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="f369-7069-3ab2-f8cd">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Reaping Blow (3), Breaching (6+)</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="The Wailing Doom (Melee) - Speartip Strike " typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="0e7d-1e8f-f51d-0d4f">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Exoshock (5+), Brutal (2)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Reaping Blow (X)" id="4fbd-45f0-87f3-31ca" hidden="false" type="rule" targetId="bd8c-4f52-d682-1b40">
+                  <modifiers>
+                    <modifier type="set" value="Reaping Blow (X)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Breaching (X)" id="943c-7a2e-060e-e688" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
+                  <modifiers>
+                    <modifier type="set" value="Breaching (6+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Exoshock (X)" id="2b03-de7d-fe1b-3397" hidden="false" type="rule" targetId="69ca-318a-b47a-7a3c">
+                  <modifiers>
+                    <modifier type="set" value="Exoshock (5+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Armourbane (X)" id="96d6-2e48-28a3-0d1e" hidden="false" type="rule" targetId="cb59-f920-f071-7cd4">
+                  <modifiers>
+                    <modifier type="set" value="Armourbane (Melee)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Brutal (X)" id="3ea8-f43e-6833-ed46" hidden="false" type="rule" targetId="5079-1fec-d32b-8b84">
+                  <modifiers>
+                    <modifier type="set" value="Brutal (2)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Armourbane (X)" id="d955-ecf3-7898-feeb" hidden="false" type="rule" targetId="cb59-f920-f071-7cd4">
+                  <modifiers>
+                    <modifier type="set" value="Armourbane (Ranged)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Heavy Beam" id="a44f-3190-6078-cc46" hidden="false" type="rule" targetId="24e7-27da-9bf7-f096"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="305d-f0fe-e4bf-f1a1-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="305d-f0fe-e4bf-f1a1-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9d8b-4d4f-85d7-a892" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>
