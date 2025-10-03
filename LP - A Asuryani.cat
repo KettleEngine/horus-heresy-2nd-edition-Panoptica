@@ -174,7 +174,7 @@
         </entryLink>
         <entryLink import="true" name="Aspect Shrine (x)" hidden="false" id="c578-2bba-804b-2250" type="selectionEntryGroup" targetId="aa75-d619-0292-ff9a"/>
         <entryLink import="true" name="Warlord Trait" hidden="false" id="a027-e769-0361-8ad1" type="selectionEntryGroup" targetId="dcdf-9c62-41d0-6155"/>
-        <entryLink import="true" name="Warlord" hidden="false" id="363f-b07b-6953-b481" type="selectionEntry" targetId="f3fc-199a-332c-a001"/>
+        <entryLink import="true" name="Warlord" hidden="false" id="363f-b07b-6953-b481" type="selectionEntry" targetId="f3fc-199a-332c-a001" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="80"/>
@@ -320,7 +320,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1188-062f-0726-3ce1" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Warlord" hidden="false" id="a5c3-8883-d0fe-5df1" type="selectionEntry" targetId="f3fc-199a-332c-a001"/>
+        <entryLink import="true" name="Warlord" hidden="false" id="a5c3-8883-d0fe-5df1" type="selectionEntry" targetId="f3fc-199a-332c-a001" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="150"/>
@@ -546,25 +546,6 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
           <entryLinks>
             <entryLink import="true" name="Heavy Mesh Armour" hidden="false" id="e6cd-bed2-d904-0a0f" type="selectionEntry" targetId="a95d-2870-d12c-eeff"/>
             <entryLink import="true" name="Plasma Grenades" hidden="false" id="4fea-1aeb-19b7-abbd" type="selectionEntry" targetId="0a4e-f69a-2e83-cb4c"/>
-            <entryLink import="true" name="Skyrunner Jetbike" hidden="false" id="6049-ff92-d045-6199" type="selectionEntry" targetId="7867-42f2-b894-df5f">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-              </costs>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Any Guardian Officer or Skyrunner Officer may take a:" id="d207-06fe-e5cd-8f4a" hidden="false" defaultSelectionEntryId="none">
-                  <entryLinks>
-                    <entryLink import="true" name="Forceshield" hidden="false" id="06c5-a2f6-093f-b84e" type="selectionEntry" targetId="9cc3-aadd-5496-a9f9">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="768e-e586-50f7-c56c" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
@@ -650,6 +631,63 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             </infoLink>
             <infoLink name="Stubborn" id="664a-cc8d-405d-48e8" hidden="false" type="rule" targetId="7989-1f2c-a43d-82ae"/>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Skyrunner Jetbike" hidden="false" id="85dc-d4ed-bc86-d4d9">
+              <profiles>
+                <profile name="Skyrunner Jetbike" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="299d-a5f9-b510-e622">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">a model with a Skyrunner Jetbike may choose to move up to their unmodified Initiative Characteristic at the start of the Controlling Player’s Charge Sub-Phase. A model that chooses to do so may not declare a Charge</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="add" value="6d79-a3e4-381f-7b0f" field="category" scope="parent"/>
+                <modifier type="add" value="4303-1348-cce4-9501" field="category" scope="parent"/>
+                <modifier type="set" value="18" field="893e-2d76-8f04-44e5" scope="parent" affects="profiles.Unit"/>
+              </modifiers>
+              <infoLinks>
+                <infoLink name="Fleet (X)" id="dbf1-a9ec-bf70-b858" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+                  <modifiers>
+                    <modifier type="set" value="Fleet (2)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Firing Protocols (X)" id="cc5b-0646-2f67-a770" hidden="false" type="rule" targetId="32a3-f599-5c92-2945">
+                  <modifiers>
+                    <modifier type="set" value="Firing Protocols (2)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Hit &amp; Run" id="b5a6-e11a-3cb9-6a79" hidden="false" type="rule" targetId="5986-e960-d432-affd"/>
+                <infoLink name="Hammer of Wrath (X)" id="6b0c-cbaf-d7fe-21fd" hidden="false" type="rule" targetId="aec0-c3aa-1e4e-1779">
+                  <modifiers>
+                    <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Relentless" id="a1da-ee54-9a6d-dceb" hidden="false" type="rule" targetId="7adf-ac9a-5035-522d"/>
+                <infoLink name="Battle-Hardened (X)" id="532d-fb0d-39c0-f07f" hidden="false" type="rule" targetId="5c3b-ed0b-4ad0-d547">
+                  <modifiers>
+                    <modifier type="set" value="Battle-Hardened (1)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Shrouded (X)" id="84ca-78bf-f293-9335" hidden="false" type="rule" targetId="10c3-fdb0-089f-ca65">
+                  <modifiers>
+                    <modifier type="set" value="Shrouded (5+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Deep Strike" id="51b9-e622-dd57-2aec" hidden="false" type="rule" targetId="f1e1-986f-c783-ca9e"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Twin-Linked Shuriken Catapult" hidden="false" id="f96b-1af6-3f41-1edb" type="selectionEntry" targetId="9ec7-cc82-393e-0a78">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="24d0-2157-05f3-8af5" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72e9-25ee-9131-8232" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b117-d0a3-21ea-275c" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -1272,6 +1310,23 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3cd7-36ba-c3f8-8a97" includeChildSelections="false"/>
             <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="6ff6-e7bc-9ff4-be86" includeChildSelections="false"/>
           </constraints>
+          <profiles>
+            <profile name="War Walker" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="975c-c72b-a344-6d9b">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Asuryani, Skirmish, Mechanised)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">6</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -1413,6 +1468,82 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Warlock" hidden="false" id="91c7-c062-4bce-14ef">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+          </costs>
+          <profiles>
+            <profile name="Warlock" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="c8f9-8ed2-0ddd-56ec">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Warlock: Infantry (Asuryani, Psyker)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Psychic Discipline: Thaumaturgy" hidden="false" id="09b5-f1cb-f7b2-c818" type="selectionEntry" targetId="f7ab-1fb2-91b0-028d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d8ee-fd1d-9339-7eb0" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d725-f256-a0a7-c0cd" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Psychic Discipline: The Runes of Battle" hidden="false" id="f8af-cbec-7df8-244d" type="selectionEntry" targetId="7fae-93ca-385d-6657"/>
+            <entryLink import="true" name="Rune Armour" hidden="false" id="b2bb-78a4-629b-05f4" type="selectionEntry" targetId="5fca-2feb-2f5b-3b07"/>
+            <entryLink import="true" name="Shuriken Pistol" hidden="false" id="9685-568b-dfa2-a1e3" type="selectionEntry" targetId="c1af-d7e7-d404-7a33">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e90c-015a-14e7-386b" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c837-9816-314f-0049" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Plasma Grenades" hidden="false" id="a91c-121c-1501-44f4" type="selectionEntry" targetId="0a4e-f69a-2e83-cb4c"/>
+            <entryLink import="true" name="One Model may take:" hidden="false" id="5891-4cb0-1a28-b715" type="selectionEntryGroup" targetId="2314-1de8-8c22-e311"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e37f-3e22-0d56-49ed" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Fleet (X)" id="0dc6-f8e5-c0f6-812a" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+              <modifiers>
+                <modifier type="set" value="Fleet (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Communion of Minds" id="3198-c90e-e503-5b80" hidden="false" type="rule" targetId="fde8-b535-0100-95a7"/>
+            <infoLink name="Seer Council Retinue" id="b473-d02e-4caf-52ba" hidden="false" type="rule" targetId="cdcd-c5cc-9f87-30ba"/>
+            <infoLink name="The Runes of War" id="d3ec-1763-7e29-032b" hidden="false" type="rule" targetId="9850-b040-b193-f187"/>
+            <infoLink name="Chosen Warriors" id="1c85-20ce-a960-40aa" hidden="false" type="rule" targetId="13d1-9270-6539-08ed"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Any Warlock may exchange their Witch Weapon for a:" id="6f84-0971-e8d0-be1a" hidden="false" defaultSelectionEntryId="none">
+              <entryLinks>
+                <entryLink import="true" name="Witch Weapon" hidden="false" id="311c-ebac-9de4-646a" type="selectionEntryGroup" targetId="db21-ea7a-c1bc-192b"/>
+                <entryLink import="true" name="Singing Spear" hidden="false" id="bc6b-b018-122c-3186" type="selectionEntry" targetId="103e-211b-7562-8c02">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f00-1844-a1ad-d401" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b55a-c145-f7be-cb62" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -1779,7 +1910,15 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             </selectionEntry>
           </selectionEntries>
           <infoLinks>
-            <infoLink name="Support Squad" id="8486-69a3-4700-efcd" hidden="false" type="rule" targetId="768e-56d6-ca52-24ae"/>
+            <infoLink name="Support Squad" id="8486-69a3-4700-efcd" hidden="false" type="rule" targetId="768e-56d6-ca52-24ae">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="83a5-90d9-d374-94c4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1792,6 +1931,13 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink targetId="4303-1348-cce4-9501" id="6db9-f1e1-f2f6-4fa7" primary="false" name="Antigrav Sub-type"/>
         <categoryLink targetId="cf01-e0e7-4567-a4b9" id="c9f9-3e2f-123c-99dc" primary="false" name="Asuryani Unit Sub-Type:"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="8f42-a824-fb5f-8fea" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="83a5-90d9-d374-94c4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dire Avengers" hidden="false" id="991f-ad92-e006-ab56">
       <costs>
@@ -3640,33 +3786,45 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b547-5a25-d619-7abd" includeChildSelections="false"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Any Wraithlord may replace a single Wraith Gauntlet (with in-built Shuriken Catapult) for:" id="ac67-507a-d370-f1de" hidden="false" defaultSelectionEntryId="8893-63c1-a481-dd6b">
-              <entryLinks>
-                <entryLink import="true" name="Wraith Gauntlet" hidden="false" id="8893-63c1-a481-dd6b" type="selectionEntry" targetId="68c5-9893-3b68-f5b5">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0f9-0c47-e1a9-7532-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0f9-0c47-e1a9-7532-max" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Wraithsword" hidden="false" id="57a7-79dc-e6bf-8253" type="selectionEntry" targetId="2682-4056-0388-7269">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
+            <selectionEntryGroup name="Any Wraithlord may replace a single Wraith Gauntlet (with in-built Shuriken Catapult) for:" id="ac67-507a-d370-f1de" hidden="false" defaultSelectionEntryId="e31c-355a-34cd-f12c">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a98-2280-c97c-0a68-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a98-2280-c97c-0a68-max" includeChildSelections="false"/>
               </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Gauntlet + Sword" hidden="false" id="5c59-edf4-9b78-e02c">
+                  <entryLinks>
+                    <entryLink import="true" name="Wraith Gauntlet" hidden="false" id="8893-63c1-a481-dd6b" type="selectionEntry" targetId="68c5-9893-3b68-f5b5">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0f9-0c47-e1a9-7532-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0f9-0c47-e1a9-7532-max" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Wraithsword" hidden="false" id="57a7-79dc-e6bf-8253" type="selectionEntry" targetId="2682-4056-0388-7269">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="646f-5075-0ead-62ae-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="646f-5075-0ead-62ae-max" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Gauntlet x2" hidden="false" id="e31c-355a-34cd-f12c">
+                  <entryLinks>
+                    <entryLink import="true" name="Wraith Gauntlet" hidden="false" id="b915-8182-5ac4-2073" type="selectionEntry" targetId="68c5-9893-3b68-f5b5">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4fb4-3043-0733-4e2d-min" includeChildSelections="false"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4fb4-3043-0733-4e2d-max" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Wraith Gauntlet" hidden="false" id="53ed-2a3d-e4ed-ec8d" type="selectionEntry" targetId="68c5-9893-3b68-f5b5">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d69e-e3be-b0b6-229c-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d69e-e3be-b0b6-229c-max" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
             <entryLink import="true" name="Power Field" hidden="false" id="2e53-a6be-459b-081e" type="selectionEntry" targetId="97e4-e925-d6a4-3463"/>
           </entryLinks>
           <infoLinks>
@@ -4000,7 +4158,7 @@ In addition, when a model with a Molten Body and a Wounds Characteristic loses i
                     <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
                     <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
                     <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9"> Heavy 1, Armourbane (Ranged), Exoshock (5+), Heavy Beam</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Armourbane (Ranged), Exoshock (5+), Heavy Beam</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="The Wailing Doom (Melee) - Scything Slash " typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="f369-7069-3ab2-f8cd">
@@ -4064,6 +4222,127 @@ In addition, when a model with a Molten Body and a Wounds Characteristic loses i
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9d8b-4d4f-85d7-a892" includeChildSelections="true"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Asurmen" hidden="false" id="795e-c396-017e-062d">
+      <categoryLinks>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="9a88-a205-8671-f994" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="a7b4-47c6-acba-5c47" id="6068-9a6a-7325-e230" primary="false" name="Phoenix Lord Unit Type:"/>
+        <categoryLink targetId="e031-3c2-e3f8-d40a" id="dffa-c9e5-4d0c-9805" primary="true" name="Primarch:"/>
+        <categoryLink targetId="aa94-5c65-d1f1-46a4" id="f554-3f7d-8247-348a" primary="false" name="Unique Sub-type"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="325"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Asurmen" hidden="false" id="a996-85fa-f8bc-fa01">
+          <profiles>
+            <profile name="Asurmen" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="5f30-7bb3-8d50-2f09">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Phoenix Lord (Asuryani, Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">7</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">7</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">4</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">7</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">5</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Phoenix Armour" hidden="false" id="0123-8a7f-06a4-a7f2" type="selectionEntry" targetId="6e43-6b37-3f19-04d5"/>
+            <entryLink import="true" name="Plasma Grenades" hidden="false" id="ef07-58bb-c7cc-79a5" type="selectionEntry" targetId="0a4e-f69a-2e83-cb4c"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Flexible Tactics" id="71d6-ba41-038a-b589" hidden="false" type="rule" targetId="25c0-5b51-3f9a-f5a1"/>
+            <infoLink name="Aspect Shrine (X)" id="43f2-3f82-a3a1-0939" hidden="false" type="rule" targetId="e1cb-87c6-8282-ba6e">
+              <modifiers>
+                <modifier type="set" value="Aspect Shrine (Dire Avenger)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Counter-Attack (X)" id="5f5b-bba7-6eb8-1039" hidden="false" type="rule" targetId="fd6d-2a76-10e0-936a">
+              <modifiers>
+                <modifier type="set" value="Counter-Attack (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Crusader" id="dcb1-94e8-5a39-43d3" hidden="false" type="rule" targetId="c705-0829-75f6-a785"/>
+            <infoLink name="Fleet (X)" id="4119-84f7-ec5e-3351" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+              <modifiers>
+                <modifier type="set" value="Fleet (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Furious Charge (X)" id="7c53-997f-7d2c-efce" hidden="false" type="rule" targetId="2821-9269-862f-0554">
+              <modifiers>
+                <modifier type="set" value="Furious Charge (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <rules>
+            <rule name="Shield of Grace" id="419f-fa15-2b26-f6e3" hidden="false">
+              <description>Whenever Asurmen fights in a Challenge, his Invulnerable Save is increased to a 3+.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="New Entry" hidden="false" id="9252-efa7-a044-651f">
+      <categoryLinks>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="fce3-dea4-eb08-749d" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="a7b4-47c6-acba-5c47" id="84d2-f8dd-2f78-c1ac" primary="false" name="Phoenix Lord Unit Type:"/>
+        <categoryLink targetId="e031-3c2-e3f8-d40a" id="98c8-22ff-4e24-4e33" primary="true" name="Primarch:"/>
+        <categoryLink targetId="aa94-5c65-d1f1-46a4" id="62f8-241b-75b7-7a67" primary="false" name="Unique Sub-type"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="New Entry" hidden="false" id="3479-96b2-0c52-a8d8">
+      <categoryLinks>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="95b1-120d-7b98-ae1a" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="a7b4-47c6-acba-5c47" id="b25a-3d27-f25c-b877" primary="false" name="Phoenix Lord Unit Type:"/>
+        <categoryLink targetId="e031-3c2-e3f8-d40a" id="d276-1cdf-19ba-37b9" primary="true" name="Primarch:"/>
+        <categoryLink targetId="aa94-5c65-d1f1-46a4" id="a00b-54b4-c33f-957b" primary="false" name="Unique Sub-type"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="New Entry" hidden="false" id="7cd4-58a7-1eaa-920e">
+      <categoryLinks>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="23d6-06d1-388e-6f02" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="a7b4-47c6-acba-5c47" id="9f1e-e82f-68b8-a9ee" primary="false" name="Phoenix Lord Unit Type:"/>
+        <categoryLink targetId="e031-3c2-e3f8-d40a" id="08bd-9db5-685d-85cf" primary="true" name="Primarch:"/>
+        <categoryLink targetId="aa94-5c65-d1f1-46a4" id="7257-e9fe-70d2-7852" primary="false" name="Unique Sub-type"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="New Entry" hidden="false" id="c9f5-21a6-0057-ec56">
+      <categoryLinks>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="933d-09e1-e54c-1b55" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="a7b4-47c6-acba-5c47" id="c726-cf38-593a-22e9" primary="false" name="Phoenix Lord Unit Type:"/>
+        <categoryLink targetId="e031-3c2-e3f8-d40a" id="5e89-504c-97e9-2fa0" primary="true" name="Primarch:"/>
+        <categoryLink targetId="aa94-5c65-d1f1-46a4" id="dd45-75a1-ca06-b424" primary="false" name="Unique Sub-type"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="New Entry" hidden="false" id="8034-070a-61af-64a2">
+      <categoryLinks>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="7045-3623-fd92-6219" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="a7b4-47c6-acba-5c47" id="65f7-c50a-63d8-50b7" primary="false" name="Phoenix Lord Unit Type:"/>
+        <categoryLink targetId="e031-3c2-e3f8-d40a" id="e130-0373-cb3f-a3a7" primary="true" name="Primarch:"/>
+        <categoryLink targetId="aa94-5c65-d1f1-46a4" id="c833-b057-d750-fa86" primary="false" name="Unique Sub-type"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="New Entry" hidden="false" id="dd23-191b-6a69-d013">
+      <categoryLinks>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="7846-c701-1a38-b33f" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="a7b4-47c6-acba-5c47" id="92d8-b3b1-291f-7bf1" primary="false" name="Phoenix Lord Unit Type:"/>
+        <categoryLink targetId="e031-3c2-e3f8-d40a" id="7494-8cf4-b4ff-396a" primary="true" name="Primarch:"/>
+        <categoryLink targetId="aa94-5c65-d1f1-46a4" id="c19e-49f0-7b11-3271" primary="false" name="Unique Sub-type"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="New Entry" hidden="false" id="832c-4f4c-9f67-6558">
+      <categoryLinks>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="4ffb-db8a-6d50-3d66" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="a7b4-47c6-acba-5c47" id="638a-8e49-a4e2-07c9" primary="false" name="Phoenix Lord Unit Type:"/>
+        <categoryLink targetId="e031-3c2-e3f8-d40a" id="027f-c8b6-fa08-957d" primary="true" name="Primarch:"/>
+        <categoryLink targetId="aa94-5c65-d1f1-46a4" id="b7aa-82fc-8c2b-472d" primary="false" name="Unique Sub-type"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>

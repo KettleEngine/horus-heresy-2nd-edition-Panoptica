@@ -1455,7 +1455,7 @@ Any model with Swooping Hawk Wings also gains the Bulky (2) and Deep Strike Spe
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Scorpion’s Claw" hidden="false" id="d500-9c3f-6f6d-94a8">
       <profiles>
-        <profile name="- Ranged" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="53eb-b29f-3931-7671">
+        <profile name="Scorpion’s Claw - Ranged" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="53eb-b29f-3931-7671">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -1463,7 +1463,7 @@ Any model with Swooping Hawk Wings also gains the Bulky (2) and Deep Strike Spe
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Breaching (6+)</characteristic>
           </characteristics>
         </profile>
-        <profile name="- Melee" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="f073-7812-55a8-83c9">
+        <profile name="Scorpion’s Claw - Melee" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="f073-7812-55a8-83c9">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
@@ -1780,7 +1780,7 @@ In addition to the bonus move during the Movement phase, a unit composed entire
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Singing Spear" hidden="false" id="103e-211b-7562-8c02">
       <profiles>
-        <profile name="- Ranged" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="cbc5-ba5f-169a-53f3">
+        <profile name="Singing Spear - Ranged" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="cbc5-ba5f-169a-53f3">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
@@ -1788,7 +1788,7 @@ In addition to the bonus move during the Movement phase, a unit composed entire
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Soul Tear</characteristic>
           </characteristics>
         </profile>
-        <profile name="- Melee" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="0a2f-22e5-25a8-1c03">
+        <profile name="Singing Spear - Melee" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="0a2f-22e5-25a8-1c03">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
@@ -2545,14 +2545,18 @@ Limitations
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="e677-6b4c-889c-239d-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e677-6b4c-889c-239d-max" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3e6c-cbe7-9a8f-ee12-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e6c-cbe7-9a8f-ee12-max" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="3d8e-57b9-a24d-dd4c" id="5775-889d-b6ad-dda6" primary="true" name="World-Rune"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="8da3-dec0-eaa1-1f08-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8da3-dec0-eaa1-1f08-max" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Pulse Laser" hidden="false" id="ff1d-aac6-3fa3-774b">
       <profiles>
@@ -2679,7 +2683,7 @@ Limitations
         <profile name="Prism Cannon - Dispersed" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="0bc9-7472-c776-d696">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">60&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5“)</characteristic>
           </characteristics>
@@ -4343,6 +4347,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
   <forceEntries>
     <forceEntry name="4. Asuryani Force Organisation Chart" id="41fe-9289-1062-f819" hidden="false">
       <categoryLinks>
+        <categoryLink name="World-Rune" hidden="false" id="d13f-163b-551c-fd77" targetId="3d8e-57b9-a24d-dd4c"/>
         <categoryLink name="HQ:" hidden="false" id="c41d-11f9-e08e-abca" targetId="4f85-eb33-30c9-8f51" primary="false">
           <modifiers>
             <modifier type="set" value="5" field="4da6-1341-aedb-2f99">
@@ -4630,7 +4635,40 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
           </constraints>
         </categoryLink>
         <categoryLink name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;" hidden="false" id="75c3-d220-572c-0758" targetId="ed41-7006-3494-4c24"/>
-        <categoryLink name="World-Rune" hidden="false" id="d13f-163b-551c-fd77" targetId="3d8e-57b9-a24d-dd4c"/>
+        <categoryLink name="Compulsory HQ:" hidden="false" id="749f-0e14-a266-772f" targetId="f823-8c1d-6a87-26a1" primary="false">
+          <modifiers>
+            <modifier type="increment" value="1" field="0f9f-ca3f-0f9e-d737">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="b23c-e41d-1ffe-1a38" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="0f9f-ca3f-0f9e-d737">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="0f9f-ca3f-0f9e-d737" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Compulsory Troops:" hidden="false" id="fa32-ac48-3648-7cb2" targetId="8f42-a824-fb5f-8fea" primary="false">
+          <modifiers>
+            <modifier type="increment" value="1" field="9a81-8fc6-904a-cf5c">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="b23c-e41d-1ffe-1a38" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="9a81-8fc6-904a-cf5c">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="9a81-8fc6-904a-cf5c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="443b-6d98-af6a-c8b9"/>
