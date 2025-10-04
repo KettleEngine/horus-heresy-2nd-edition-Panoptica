@@ -1571,7 +1571,6 @@ Any model with a Spectre Jet Pack also gains the Bulky (2) and Deep Strike Spec
         </profile>
       </profiles>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="47e2-3217-096d-44d9-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47e2-3217-096d-44d9-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
