@@ -1540,7 +1540,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b55a-c145-f7be-cb62" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="b55a-c145-f7be-cb62" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1762,6 +1762,82 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Warlock" hidden="false" id="ba58-3569-f9c4-e57c">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+          </costs>
+          <profiles>
+            <profile name="Warlock" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="1a5c-8075-cee2-3c68">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Warlock: Infantry (Asuryani, Psyker)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Psychic Discipline: Thaumaturgy" hidden="false" id="2a51-5fe7-a849-35cc" type="selectionEntry" targetId="f7ab-1fb2-91b0-028d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4199-3a6e-2c26-550d" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fa0-e891-8900-8999" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Psychic Discipline: The Runes of Battle" hidden="false" id="1f18-fb54-f015-e051" type="selectionEntry" targetId="7fae-93ca-385d-6657"/>
+            <entryLink import="true" name="Rune Armour" hidden="false" id="3e11-3848-ef9c-9461" type="selectionEntry" targetId="5fca-2feb-2f5b-3b07"/>
+            <entryLink import="true" name="Shuriken Pistol" hidden="false" id="d2c5-e0eb-ffdf-ae42" type="selectionEntry" targetId="c1af-d7e7-d404-7a33">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc9c-c113-186a-ac8a" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6bd-87d6-9819-e68f" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Plasma Grenades" hidden="false" id="874d-f4c3-5b19-f7fc" type="selectionEntry" targetId="0a4e-f69a-2e83-cb4c"/>
+            <entryLink import="true" name="One Model may take:" hidden="false" id="39ae-18bf-e930-f0dc" type="selectionEntryGroup" targetId="2314-1de8-8c22-e311"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="63fc-5690-8a00-75cb" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Fleet (X)" id="7e68-2593-e0b2-5af7" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+              <modifiers>
+                <modifier type="set" value="Fleet (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Communion of Minds" id="f253-f60b-8644-32eb" hidden="false" type="rule" targetId="fde8-b535-0100-95a7"/>
+            <infoLink name="Seer Council Retinue" id="abd2-b039-b744-845a" hidden="false" type="rule" targetId="cdcd-c5cc-9f87-30ba"/>
+            <infoLink name="The Runes of War" id="cfad-d645-3b7b-8915" hidden="false" type="rule" targetId="9850-b040-b193-f187"/>
+            <infoLink name="Chosen Warriors" id="7caf-091b-c4b9-693e" hidden="false" type="rule" targetId="13d1-9270-6539-08ed"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Any Warlock may exchange their Witch Weapon for a:" id="060a-db74-6abe-7fd4" hidden="false" defaultSelectionEntryId="none">
+              <entryLinks>
+                <entryLink import="true" name="Witch Weapon" hidden="false" id="afe5-b06e-8f98-ad39" type="selectionEntryGroup" targetId="db21-ea7a-c1bc-192b"/>
+                <entryLink import="true" name="Singing Spear" hidden="false" id="921e-0e77-06d9-f567" type="selectionEntry" targetId="103e-211b-7562-8c02">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c453-839b-5c73-b973" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="b55a-c145-f7be-cb62" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
@@ -1920,6 +1996,157 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
               </modifiers>
             </infoLink>
           </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Warlock" hidden="false" id="a005-e618-3d6e-fe7e">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+          </costs>
+          <profiles>
+            <profile name="Warlock" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="3fa8-8236-65ce-22f2">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Warlock: Infantry (Asuryani, Psyker)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Psychic Discipline: Thaumaturgy" hidden="false" id="39f2-7410-a97e-9fe1" type="selectionEntry" targetId="f7ab-1fb2-91b0-028d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a4d-989b-d0a2-1d8a" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="617f-caa3-a2b4-24a0" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Psychic Discipline: The Runes of Battle" hidden="false" id="dc77-4ee5-ebcc-4322" type="selectionEntry" targetId="7fae-93ca-385d-6657"/>
+            <entryLink import="true" name="Rune Armour" hidden="false" id="980d-39b2-c9b7-7f94" type="selectionEntry" targetId="5fca-2feb-2f5b-3b07"/>
+            <entryLink import="true" name="Shuriken Pistol" hidden="false" id="3254-1642-50a4-d805" type="selectionEntry" targetId="c1af-d7e7-d404-7a33">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="677e-c492-7f62-770b" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f31-9638-3430-06be" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Plasma Grenades" hidden="false" id="5a75-3bc8-9350-a851" type="selectionEntry" targetId="0a4e-f69a-2e83-cb4c"/>
+            <entryLink import="true" name="One Model may take:" hidden="false" id="baec-c24e-27ea-feb0" type="selectionEntryGroup" targetId="2314-1de8-8c22-e311"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2cee-5617-32c8-14b7" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Fleet (X)" id="0531-428e-eb4d-93f0" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+              <modifiers>
+                <modifier type="set" value="Fleet (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Communion of Minds" id="c85c-4c18-23d6-57fb" hidden="false" type="rule" targetId="fde8-b535-0100-95a7"/>
+            <infoLink name="Seer Council Retinue" id="9906-c69d-ca1d-6e32" hidden="false" type="rule" targetId="cdcd-c5cc-9f87-30ba"/>
+            <infoLink name="The Runes of War" id="3d77-5026-dd2c-f0ba" hidden="false" type="rule" targetId="9850-b040-b193-f187"/>
+            <infoLink name="Chosen Warriors" id="0db8-78ae-4f22-9ace" hidden="false" type="rule" targetId="13d1-9270-6539-08ed"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Any Warlock may exchange their Witch Weapon for a:" id="9286-71cb-1994-98a3" hidden="false" defaultSelectionEntryId="none">
+              <entryLinks>
+                <entryLink import="true" name="Witch Weapon" hidden="false" id="f1dc-fcbe-069d-a24a" type="selectionEntryGroup" targetId="db21-ea7a-c1bc-192b"/>
+                <entryLink import="true" name="Singing Spear" hidden="false" id="0325-77a9-ae88-aa94" type="selectionEntry" targetId="103e-211b-7562-8c02">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7079-af9c-b9e3-b928" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="b55a-c145-f7be-cb62" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Skyrunner Jetbike" hidden="false" id="a812-1278-bfc6-47c1">
+              <profiles>
+                <profile name="Skyrunner Jetbike" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="b10b-b826-4911-8a39">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">a model with a Skyrunner Jetbike may choose to move up to their unmodified Initiative Characteristic at the start of the Controlling Player’s Charge Sub-Phase. A model that chooses to do so may not declare a Charge</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="add" value="6d79-a3e4-381f-7b0f" field="category" scope="parent"/>
+                <modifier type="add" value="4303-1348-cce4-9501" field="category" scope="parent"/>
+                <modifier type="set" value="18" field="893e-2d76-8f04-44e5" scope="parent" affects="profiles.Unit"/>
+              </modifiers>
+              <infoLinks>
+                <infoLink name="Fleet (X)" id="424d-0a67-8c6b-0d76" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+                  <modifiers>
+                    <modifier type="set" value="Fleet (2)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Firing Protocols (X)" id="6e18-3939-4a6d-c82f" hidden="false" type="rule" targetId="32a3-f599-5c92-2945">
+                  <modifiers>
+                    <modifier type="set" value="Firing Protocols (2)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Hit &amp; Run" id="b2a4-1d66-b182-6235" hidden="false" type="rule" targetId="5986-e960-d432-affd"/>
+                <infoLink name="Hammer of Wrath (X)" id="7923-e0fe-aea2-b931" hidden="false" type="rule" targetId="aec0-c3aa-1e4e-1779">
+                  <modifiers>
+                    <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Relentless" id="4529-0f59-1017-1b11" hidden="false" type="rule" targetId="7adf-ac9a-5035-522d"/>
+                <infoLink name="Battle-Hardened (X)" id="fc26-fb07-c32c-2ff1" hidden="false" type="rule" targetId="5c3b-ed0b-4ad0-d547">
+                  <modifiers>
+                    <modifier type="set" value="Battle-Hardened (1)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Shrouded (X)" id="d5cb-511a-96d6-48f8" hidden="false" type="rule" targetId="10c3-fdb0-089f-ca65">
+                  <modifiers>
+                    <modifier type="set" value="Shrouded (5+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Deep Strike" id="afab-435a-53c1-37a9" hidden="false" type="rule" targetId="f1e1-986f-c783-ca9e"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="988a-15fd-d53e-62b8" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42df-dd90-961b-5728" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Any model in the unit may replace its Skyrunner Jetbike’s Twin-Linked Shuriken Catapult with one of the following:" id="714f-3ac7-3943-393a" hidden="false" defaultSelectionEntryId="262c-6475-161f-8228">
+                  <entryLinks>
+                    <entryLink import="true" name="Twin-Linked Shuriken Catapult" hidden="false" id="54b4-12a2-32fb-30ab" type="selectionEntry" targetId="9ec7-cc82-393e-0a78" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8a6-1943-16b5-5882" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Shuriken Cannon " hidden="false" id="9253-cbb4-f11a-80a6" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14" sortIndex="2">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Scatter Laser" hidden="false" id="de10-a460-525e-92e1" type="selectionEntry" targetId="cae5-d08d-3659-7cc7" sortIndex="3">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6627-1931-7cd2-066e" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7827-acbb-2ca0-c718" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -3206,6 +3433,82 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e71e-ae15-fdab-031f" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c71c-ff00-3bbe-8a70" includeChildSelections="false"/>
           </constraints>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Warlock" hidden="false" id="e3b7-696b-b99d-263c">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+          </costs>
+          <profiles>
+            <profile name="Warlock" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="de4f-9ef5-c785-540a">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Warlock: Infantry (Asuryani, Psyker)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Psychic Discipline: Thaumaturgy" hidden="false" id="f3ef-981b-58f3-d42f" type="selectionEntry" targetId="f7ab-1fb2-91b0-028d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d45f-75e2-c0fb-d986" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="022f-dc55-c74a-1e5f" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Psychic Discipline: The Runes of Battle" hidden="false" id="a9d1-186b-d77b-94ff" type="selectionEntry" targetId="7fae-93ca-385d-6657"/>
+            <entryLink import="true" name="Rune Armour" hidden="false" id="4575-f895-0622-baca" type="selectionEntry" targetId="5fca-2feb-2f5b-3b07"/>
+            <entryLink import="true" name="Shuriken Pistol" hidden="false" id="9515-c9ed-89e9-47f2" type="selectionEntry" targetId="c1af-d7e7-d404-7a33">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bed4-527d-036f-0c73" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2efe-4719-6b26-3c94" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Plasma Grenades" hidden="false" id="ac54-9357-808f-f587" type="selectionEntry" targetId="0a4e-f69a-2e83-cb4c"/>
+            <entryLink import="true" name="One Model may take:" hidden="false" id="4674-6fea-7a60-f999" type="selectionEntryGroup" targetId="2314-1de8-8c22-e311"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b13-f4a1-64d4-124e" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Fleet (X)" id="98ad-8ccc-90ff-07c7" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+              <modifiers>
+                <modifier type="set" value="Fleet (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Communion of Minds" id="7c19-9ce4-fbd1-9978" hidden="false" type="rule" targetId="fde8-b535-0100-95a7"/>
+            <infoLink name="Seer Council Retinue" id="d817-533e-decf-750c" hidden="false" type="rule" targetId="cdcd-c5cc-9f87-30ba"/>
+            <infoLink name="The Runes of War" id="ae21-e598-ca27-ae88" hidden="false" type="rule" targetId="9850-b040-b193-f187"/>
+            <infoLink name="Chosen Warriors" id="d9e0-db5d-15c9-fe68" hidden="false" type="rule" targetId="13d1-9270-6539-08ed"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Any Warlock may exchange their Witch Weapon for a:" id="54ba-26fb-5e4c-1336" hidden="false" defaultSelectionEntryId="none">
+              <entryLinks>
+                <entryLink import="true" name="Witch Weapon" hidden="false" id="f1f3-6a18-4c6c-baf3" type="selectionEntryGroup" targetId="db21-ea7a-c1bc-192b"/>
+                <entryLink import="true" name="Singing Spear" hidden="false" id="6675-4f8f-5de1-72e1" type="selectionEntry" targetId="103e-211b-7562-8c02">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b302-cdd1-4654-9156" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="b55a-c145-f7be-cb62" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
