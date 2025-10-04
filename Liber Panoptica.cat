@@ -3277,7 +3277,7 @@ with a Helical Targeting Array while it is active.
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Heavy Aspect Armour" hidden="false" id="aa1e-5f4f-d0b0-9479" type="selectionEntry" targetId="c81b-3334-7a37-1473"/>
-            <entryLink import="true" name="Swooping Hawk Wings" hidden="false" id="76e0-6010-6c90-8be3" type="selectionEntry" targetId="2249-9be3-08fa-f818">
+            <entryLink import="true" name="Spectre Jet Pack" hidden="false" id="76e0-6010-6c90-8be3" type="selectionEntry" targetId="5e11-3be6-6b8f-75a6">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="87d5-ae69-9cac-09ca-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87d5-ae69-9cac-09ca-max" includeChildSelections="false"/>
@@ -3884,7 +3884,7 @@ with a Helical Targeting Array while it is active.
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Heavy Aspect Armour" hidden="false" id="a8ca-7cf7-0c6b-4f62" type="selectionEntry" targetId="c81b-3334-7a37-1473"/>
-            <entryLink import="true" name="Swooping Hawk Wings" hidden="false" id="865b-b61d-075f-e973" type="selectionEntry" targetId="2249-9be3-08fa-f818">
+            <entryLink import="true" name="Spectre Jet Pack" hidden="false" id="865b-b61d-075f-e973" type="selectionEntry" targetId="5e11-3be6-6b8f-75a6">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b860-45e0-e59c-5b58" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b61-600e-b085-d64e" includeChildSelections="false"/>
