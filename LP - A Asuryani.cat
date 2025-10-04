@@ -151,6 +151,7 @@
         <categoryLink targetId="cf01-e0e7-4567-a4b9" id="2db1-e1aa-91ed-672b" primary="false" name="Asuryani Unit Sub-Type:"/>
         <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="e420-3f50-fc51-4dd4" primary="false" name="Character"/>
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="8947-4875-b6a7-39aa" primary="false" name="Infantry Unit Type"/>
+        <categoryLink targetId="f823-8c1d-6a87-26a1" id="0c70-bc8d-62f7-9c05" primary="false" name="Compulsory HQ:"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Heavy Aspect Armour" hidden="false" id="252e-3a0b-25f3-cb12" type="selectionEntry" targetId="c81b-3334-7a37-1473">
@@ -332,6 +333,7 @@
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="9b21-4614-bfe9-3abc" primary="false" name="Infantry Unit Type"/>
         <categoryLink targetId="cf01-e0e7-4567-a4b9" id="31b2-045e-c1dc-388f" primary="false" name="Asuryani Unit Sub-Type:"/>
         <categoryLink targetId="4f07-3d45-4f28-a0c6" id="6b0d-20e8-7a99-caf4" primary="false" name="Independent Character"/>
+        <categoryLink targetId="f823-8c1d-6a87-26a1" id="b4fe-2963-64b5-bcd6" primary="false" name="Compulsory HQ:"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Psychic Mastery (X)" id="f4d7-efef-7409-4174" hidden="false" type="rule" targetId="a634-83b3-55bb-06fb">
@@ -346,6 +348,15 @@
         </infoLink>
         <infoLink name="Runes of Warding" id="bdf5-1674-b41f-71fe" hidden="false" type="rule" targetId="4864-30b9-e7b0-9555"/>
         <infoLink name="Runes of Witnessing" id="a19f-d67f-d846-4fa9" hidden="false" type="rule" targetId="ffc1-26eb-7e2e-f137"/>
+        <infoLink name="Path of Command" id="841b-6bba-fcff-09aa" hidden="false" type="rule" targetId="6c1f-f159-33de-9ad2">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="b55a-c145-f7be-cb62" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <profiles>
         <profile name="Farseer" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="140c-e8ac-5f3f-9ec9">
@@ -1544,6 +1555,9 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
               </conditions>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="6e0c-29ba-a445-8321" id="3029-755b-40ba-f3de" primary="false" name="Psyker:"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -1554,6 +1568,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink targetId="cf01-e0e7-4567-a4b9" id="aa08-fe09-72fb-fa3f" primary="false" name="Asuryani Unit Sub-Type:"/>
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="1a8a-647e-357f-00e2" primary="false" name="Infantry Unit Type"/>
         <categoryLink targetId="6399-5c65-7833-1025" id="9a39-92a5-d932-c3f7" primary="false" name="Line Sub-type"/>
+        <categoryLink targetId="8f42-a824-fb5f-8fea" id="cd95-f007-a735-5b60" primary="false" name="Compulsory Troops:"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Dedicated Transport" hidden="false" id="292c-3fe7-cc7e-93ac" type="selectionEntryGroup" targetId="2143-410c-0690-5d43"/>
@@ -1847,6 +1862,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="f5c8-bad7-bd7e-0ef7" primary="false" name="Infantry Unit Type"/>
         <categoryLink targetId="6399-5c65-7833-1025" id="37c8-cfc6-c860-b58d" primary="false" name="Line Sub-type"/>
         <categoryLink targetId="9b5d-fac7-799b-d7e7" id="5d27-1076-532c-b2d5" primary="true" name="Troops:"/>
+        <categoryLink targetId="8f42-a824-fb5f-8fea" id="daa7-7b01-b73c-5c76" primary="false" name="Compulsory Troops:"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Dedicated Transport" hidden="false" id="69fc-db65-5ef3-80ed" type="selectionEntryGroup" targetId="2143-410c-0690-5d43"/>
@@ -2147,6 +2163,9 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
               </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="6e0c-29ba-a445-8321" id="7cd7-bfa1-18fb-2595" primary="false" name="Psyker:"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -2262,6 +2281,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="5a7b-1eda-703b-e5f7" primary="false" name="Infantry Unit Type"/>
         <categoryLink targetId="cf01-e0e7-4567-a4b9" id="b842-212e-7113-3954" primary="false" name="Asuryani Unit Sub-Type:"/>
         <categoryLink targetId="6399-5c65-7833-1025" id="21e0-c519-a37b-5ae5" primary="false" name="Line Sub-type"/>
+        <categoryLink targetId="8f42-a824-fb5f-8fea" id="181d-c7b7-6ef0-8d34" primary="false" name="Compulsory Troops:"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Rangers" hidden="false" id="914b-09d1-1ecd-e681">
@@ -3509,6 +3529,9 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
               </conditions>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="6e0c-29ba-a445-8321" id="8a13-b4fd-9fed-d2ad" primary="false" name="Psyker:"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
