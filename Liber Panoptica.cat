@@ -305,6 +305,9 @@ In addition, for each additional model in the unit equipped with a weapon with 
     <rule name="Wraith Conclave" id="452c-7f58-3960-b763" hidden="false">
       <description>When deployed onto the battlefield (either at the start of the battle or when arriving from Reserves), all models with this Special Rule in a unit must be placed within unit coherency, but afterwards operate independently and are not treated as a unit. Once a unit with this Special Rule has separated, each model counts as its own unit for the purposes of Victory Points, Units Destroyed, and similar rules.</description>
     </rule>
+    <rule name="Guardian of the Gates" id="d610-79fc-d896-608a" hidden="false">
+      <description>A model with this Special Rule may only be selected in an army that also includes a Webway Gate Fortification. In addition, it must be assigned to Reserves, and deployed via the Webway Strike Special Rule.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Aspect Armour" hidden="false" id="7c09-bc4e-e8a9-4a75" publicationId="a179-8e8f-4601-987c" page="160">
@@ -2995,6 +2998,137 @@ with a Helical Targeting Array while it is active.
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ffd0-d802-3702-5c74" includeChildSelections="true"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy Wraithcannon" hidden="false" id="baa1-3913-9fc2-8638">
+      <profiles>
+        <profile name="Heavy Wraithcannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="9a66-665b-6493-7d88">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Murderous Strike (5+), Blast (3”)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Murderous Strike (X)" id="203d-b76b-1576-ce7c" hidden="false" type="rule" targetId="93b9-1454-0e7c-42ae">
+          <modifiers>
+            <modifier type="set" value="Murderous Strike (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Blast" id="bf91-d00b-3791-421a" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ghostglaive" hidden="false" id="4c0f-b3bd-5bbf-1e99">
+      <profiles>
+        <profile name="Ghostglaive - Piercing Blow " typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="88b8-178e-dbd5-67df">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-Handed, Murderous Strike (5+), Brutal (2), Armourbane (Melee)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ghostglaive - Sweeping Strike" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="d49f-2763-91ae-9c9d">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Reaping Blow (3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Reaping Blow (X)" id="ce05-e799-66b4-4778" hidden="false" type="rule" targetId="bd8c-4f52-d682-1b40">
+          <modifiers>
+            <modifier type="set" value="Reaping Blow (3)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Armourbane (X)" id="b96b-80a1-5c7e-99b0" hidden="false" type="rule" targetId="cb59-f920-f071-7cd4">
+          <modifiers>
+            <modifier type="set" value="Armourbane (Melee)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Brutal (X)" id="9e07-66be-9ac7-60a1" hidden="false" type="rule" targetId="5079-1fec-d32b-8b84">
+          <modifiers>
+            <modifier type="set" value="Brutal (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Two-handed" id="6212-ece4-8b57-0d20" hidden="false" type="rule" targetId="4c23-e863-a569-7617"/>
+        <infoLink name="Murderous Strike (X)" id="4fa0-57e8-ae00-37d3" hidden="false" type="rule" targetId="93b9-1454-0e7c-42ae">
+          <modifiers>
+            <modifier type="set" value="Murderous Strike (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Scattershield" hidden="false" id="019e-2660-c1d8-9baa">
+      <profiles>
+        <profile name="Scattershield" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="393d-5b9e-67f7-1353">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Scattershield confers a 5+ Invulnerable Save.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Suncannon" hidden="false" id="b362-1022-a61b-0bac">
+      <profiles>
+        <profile name="Suncannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="09bc-2f78-813e-693d">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Massive Blast (7”), Rending (4+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rending (X)" id="d627-91d1-4531-9a6c" hidden="false" type="rule" targetId="0ac9-fab7-aef3-de1d">
+          <modifiers>
+            <modifier type="set" value="Rending (4+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Blast" id="4d12-3db8-36df-683c" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Deathshroud Cannon" hidden="false" id="94ae-3cb9-5eb7-b849">
+      <profiles>
+        <profile name="Deathshroud Cannon - Dispersed" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="d868-cde6-d117-bf76">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5”), Pinning, Rending (5+), Monofilament</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Deathshroud Cannon - Focused " typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="fa63-811d-8ce8-3f13">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Hellstorm</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Pinning, Rending (5+), Monofilament</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rending (X)" id="64cb-151f-ac1f-a874" hidden="false" type="rule" targetId="0ac9-fab7-aef3-de1d">
+          <modifiers>
+            <modifier type="set" value="Rending (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Pinning" id="46a3-085d-d43d-ab04" hidden="false" type="rule" targetId="1c96-205c-59a0-3cf2"/>
+        <infoLink name="Monofilament" id="bb16-5731-610a-ffc6" hidden="false" type="rule" targetId="568e-21b3-67c8-de50"/>
+        <infoLink name="Blast" id="75d8-0a8e-3ea4-45bc" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Webway Shunt Generator" hidden="false" id="9aa2-b2df-6b4b-dfe7">
+      <profiles>
+        <profile name="Webway Shunt Generator" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="63cc-a410-0dfe-9117">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model equipped with a Webway Shunt Generator may choose to activate it once per game during the Controlling Player’s Movement Phase, before it moves. If you choose to activate the Webway Shunt Generator, instead of moving normally, pick a point anywhere on the board and place the model equipped with a Webway Shunt Generator there, then follow the procedure for Performing a Deep Strike Assault (see Page 310 of the Horus Heresy: Age of Darkness Core Rulebook). Note that the model is counted as having already passed its Reserve roll. A model which uses a Webway Shunt Generator cannot charge on the same turn in which it chooses to activate it.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
