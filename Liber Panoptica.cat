@@ -308,6 +308,32 @@ In addition, for each additional model in the unit equipped with a weapon with 
     <rule name="Guardian of the Gates" id="d610-79fc-d896-608a" hidden="false">
       <description>A model with this Special Rule may only be selected in an army that also includes a Webway Gate Fortification. In addition, it must be assigned to Reserves, and deployed via the Webway Strike Special Rule.</description>
     </rule>
+    <rule name="Webway Strike" id="3998-8c11-c472-499d" hidden="false">
+      <description>Before the start of Game Turn 1, when placing units into Reserve, a player whose army includes a Webway Gate may choose to assign one or more of their units in Reserve to perform a Webway Strike.
+
+
+Starting on Turn 2, the Controlling Player may choose to deploy one unit assigned to a Webway Strike onto the battlefield per turn (without the need to make a Reserve roll). A unit assigned to a Webway Strike moves onto the battlefield as though the line between each Wraithbone Arch was the Controlling Player’s battlefield edge.
+
+
+Once the unit is deployed, any enemy units that have one or more models within 6” of any unit deployed as part of the Webway Strike must make an immediate Pinning test. Once all Pinning tests are resolved, any enemy units that are neither Pinned or Falling Back and are within line of sight and range may choose to make the Interceptor Advanced Reaction targeting any one of the units deployed as part of the Webway Strike. Note that no Reaction other than Interceptor may be made against the deployment of a unit as part of a Webway Strike.
+
+
+Once a unit making a Webway Strike has been deployed and any Interceptor Reactions have been resolved, the turn proceeds as normal. Units that have been deployed as part of a Webway Strike may not Move or Run in the same movement phase as they are deployed, but may Shoot and Assault as normal.
+
+
+If there are any units assigned to a Webway Strike, but no Wraithbone Arch remains in play, then those units are instead reassigned to Reserves instead.</description>
+    </rule>
+    <rule name="Mysterious Statuary" id="2d44-df0e-c6e8-d9d7" hidden="false">
+      <description>After Deployment Zones are determined but before any other models are deployed, a Webway Gate must be set up on the battlefield as follows:
+
+
+• When this unit is set up on the battlefield, place the 2 Wraithbone Arches so that an arch is formed with the bases 5” apart.
+• The Webway Gate must be deployed at least 6” away from the Opposing Player’s Deployment Zone.
+• No Webway Gate can be placed within Difficult Terrain, Dangerous Terrain, Impassable terrain or inside a Building or Fortification.
+
+
+Units with the Asuryani Sub-type gain the Stubborn Special Rule whilst within 3” of a Webway Gate. Any model in cover behind a Wraithbone Arch has a 5+ Cover Save.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Aspect Armour" hidden="false" id="7c09-bc4e-e8a9-4a75" publicationId="a179-8e8f-4601-987c" page="160">
@@ -3129,6 +3155,21 @@ with a Helical Targeting Array while it is active.
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pulsar" hidden="false" id="780b-5b0f-24c4-3f32">
+      <profiles>
+        <profile name="Pulsar" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="aef0-912e-efa7-d4d5">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">60&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 2, Blast (3“)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="b42e-1871-3f9d-2cfc" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

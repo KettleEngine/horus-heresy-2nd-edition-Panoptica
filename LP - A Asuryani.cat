@@ -54,6 +54,9 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Wraithknight" hidden="false" id="fc4c-8a28-f52d-6d02" type="selectionEntry" targetId="9252-efa7-a044-651f"/>
+    <entryLink import="true" name="Skathach Wraithknight" hidden="false" id="9dd7-babe-7883-9509" type="selectionEntry" targetId="f373-d6eb-d522-0f62"/>
+    <entryLink import="true" name="Vampire Hunter" hidden="false" id="e10b-cb33-0d2e-561c" type="selectionEntry" targetId="6d6f-d792-8c32-4653"/>
+    <entryLink import="true" name="Webway Gate" hidden="false" id="2865-bc76-7e65-ea7f" type="selectionEntry" targetId="fe99-caa6-048d-836e"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Howling Banshees" hidden="false" id="cef9-7428-bebc-312e" publicationId="a179-8e8f-4601-987c" page="41">
@@ -4664,7 +4667,7 @@ In addition, when a model with a Molten Body and a Wounds Characteristic loses i
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
               <modifiers>
-                <modifier type="prepend" value=" Hull (Front) Mounted " field="name"/>
+                <modifier type="prepend" value=" Hull (Front) Mounted" field="name"/>
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Scatter Laser" hidden="false" id="0136-df45-061d-ead9" type="selectionEntry" targetId="cae5-d08d-3659-7cc7" sortIndex="2">
@@ -4672,7 +4675,7 @@ In addition, when a model with a Molten Body and a Wounds Characteristic loses i
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
               <modifiers>
-                <modifier type="prepend" value=" Hull (Front) Mounted " field="name"/>
+                <modifier type="prepend" value=" Hull (Front) Mounted" field="name"/>
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Starcannon" hidden="false" id="feee-1e42-0562-0106" type="selectionEntry" targetId="cef9-67ab-7179-e737" sortIndex="3">
@@ -4680,7 +4683,7 @@ In addition, when a model with a Molten Body and a Wounds Characteristic loses i
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
               <modifiers>
-                <modifier type="prepend" value=" Hull (Front) Mounted " field="name"/>
+                <modifier type="prepend" value=" Hull (Front) Mounted" field="name"/>
               </modifiers>
             </entryLink>
           </entryLinks>
@@ -4692,22 +4695,22 @@ In addition, when a model with a Molten Body and a Wounds Characteristic loses i
           <entryLinks>
             <entryLink import="true" name="Heavy Wraithcannon" hidden="false" id="e9c7-aa1e-a236-07cd" type="selectionEntry" targetId="baa1-3913-9fc2-8638" sortIndex="1">
               <modifiers>
-                <modifier type="prepend" value="Arm Mounted " field="name"/>
+                <modifier type="prepend" value="Arm Mounted" field="name"/>
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Ghostglaive" hidden="false" id="e725-0aad-623d-bf77" type="selectionEntry" targetId="4c0f-b3bd-5bbf-1e99" sortIndex="2">
               <modifiers>
-                <modifier type="prepend" value="Arm Mounted " field="name"/>
+                <modifier type="prepend" value="Arm Mounted" field="name"/>
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Scattershield" hidden="false" id="d951-7715-50f2-132d" type="selectionEntry" targetId="019e-2660-c1d8-9baa" sortIndex="3">
               <modifiers>
-                <modifier type="prepend" value="Arm Mounted " field="name"/>
+                <modifier type="prepend" value="Arm Mounted" field="name"/>
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Suncannon" hidden="false" id="ba31-1fdf-7697-eb4e" type="selectionEntry" targetId="b362-1022-a61b-0bac" sortIndex="4">
               <modifiers>
-                <modifier type="prepend" value="Arm Mounted " field="name"/>
+                <modifier type="prepend" value="Arm Mounted" field="name"/>
               </modifiers>
             </entryLink>
           </entryLinks>
@@ -4764,6 +4767,221 @@ In addition, when a model with a Molten Body and a Wounds Characteristic loses i
         <categoryLink targetId="a7b4-47c6-acba-5c47" id="638a-8e49-a4e2-07c9" primary="false" name="Phoenix Lord Unit Type:"/>
         <categoryLink targetId="e031-3c2-e3f8-d40a" id="027f-c8b6-fa08-957d" primary="true" name="Primarch:"/>
         <categoryLink targetId="aa94-5c65-d1f1-46a4" id="b7aa-82fc-8c2b-472d" primary="false" name="Unique Sub-type"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Skathach Wraithknight" hidden="false" id="f373-d6eb-d522-0f62">
+      <categoryLinks>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="e2a2-6b9e-d412-b3f5" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="c658-dc6b-727b-c488" id="b01d-77bb-ca3c-3714" primary="true" name="Lords of War:"/>
+        <categoryLink targetId="437f-7773-a0d0-6061" id="e62b-325e-f19b-ce88" primary="false" name="Knight Sub-type"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Skathach Wraithknight" typeId="75b5-9f7a-156e-6889" typeName="Knights and Titans" hidden="false" id="832d-0fe8-45bc-28fd">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="3c44-1e2a-23fe-c9e0">Vehicle (Asuryani, Knight)</characteristic>
+            <characteristic name="Move" typeId="7f12-0cc3-9dcd-25bc">16</characteristic>
+            <characteristic name="WS" typeId="4227-8eed-0c5c-a2d9">5</characteristic>
+            <characteristic name="BS" typeId="6c5a-df71-fefa-2ee3">5</characteristic>
+            <characteristic name="S" typeId="02ba-082e-e385-1ede">10</characteristic>
+            <characteristic name="Front" typeId="0d00-68d8-0535-e898">13</characteristic>
+            <characteristic name="Side" typeId="cb92-5809-d327-6981">13</characteristic>
+            <characteristic name="Rear" typeId="8fa4-6e34-29c4-d8c6">12</characteristic>
+            <characteristic name="I" typeId="91b3-4335-71bf-3fa9">4</characteristic>
+            <characteristic name="A" typeId="d54a-56a6-68c5-ae72">4</characteristic>
+            <characteristic name="HP" typeId="2490-aa2f-f5db-6070">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="It Will Not Die (X)" id="c95d-b939-669b-09d9" hidden="false" type="rule" targetId="2784-d0be-a4e2-890f">
+          <modifiers>
+            <modifier type="set" value="It Will Not Die (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Hit &amp; Run" id="5905-fbb8-af35-9393" hidden="false" type="rule" targetId="5986-e960-d432-affd"/>
+        <infoLink name="Guardian of the Gates" id="3605-48e2-dc4f-8681" hidden="false" type="rule" targetId="d610-79fc-d896-608a"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="600"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Holo-Fields" hidden="false" id="c882-c0d7-63f6-54c8" type="selectionEntry" targetId="be3f-6e6d-fc9e-37a4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="175a-6b56-71b5-b55d-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="175a-6b56-71b5-b55d-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Webway Shunt Generator" hidden="false" id="97b4-ecd4-ad75-6708" type="selectionEntry" targetId="9aa2-b2df-6b4b-dfe7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fd77-dbbf-de75-ff5f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd77-dbbf-de75-ff5f-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="A Wraithknight may select up to two of the following options in any combination:" id="e939-02d9-5fcc-905e" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Shuriken Cannon " hidden="false" id="1627-3c4f-c452-6334" type="selectionEntry" targetId="23d0-9b9c-2abd-ce14" sortIndex="1">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+              <modifiers>
+                <modifier type="prepend" value=" Hull (Front) Mounted" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Scatter Laser" hidden="false" id="d1be-8a07-b80a-cf99" type="selectionEntry" targetId="cae5-d08d-3659-7cc7" sortIndex="2">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+              <modifiers>
+                <modifier type="prepend" value=" Hull (Front) Mounted" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Starcannon" hidden="false" id="a616-c4cc-3cff-2774" type="selectionEntry" targetId="cef9-67ab-7179-e737" sortIndex="3">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+              </costs>
+              <modifiers>
+                <modifier type="prepend" value=" Hull (Front) Mounted" field="name"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7565-d193-6693-3f45" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="A Wraithknight may exchange an Arm Mounted Heavy Wraithcannon for one of the following options:" id="6eba-8ab4-82c7-5aa8" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Deathshroud Cannon" hidden="false" id="f450-431d-c482-108a" type="selectionEntry" targetId="94ae-3cb9-5eb7-b849" sortIndex="1">
+              <modifiers>
+                <modifier type="prepend" value="Arm Mounted" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Ghostglaive" hidden="false" id="d3a3-e587-231d-493d" type="selectionEntry" targetId="4c0f-b3bd-5bbf-1e99" sortIndex="2">
+              <modifiers>
+                <modifier type="prepend" value="Arm Mounted" field="name" join=" "/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Scattershield" hidden="false" id="d19f-7286-7f06-adbf" type="selectionEntry" targetId="019e-2660-c1d8-9baa" sortIndex="4">
+              <modifiers>
+                <modifier type="prepend" value="Arm Mounted" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Inferno Lance" hidden="false" id="6f05-0ddf-8831-4d41" type="selectionEntry" targetId="19f3-f5ec-d6f2-7354" sortIndex="3">
+              <modifiers>
+                <modifier type="prepend" value="Arm Mounted" field="name"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="50c4-7dfd-2d64-3dc9-min" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="50c4-7dfd-2d64-3dc9-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="add" value="{this} is not allowed Without a Webway gate" field="error" affects="fe99-caa6-048d-836e">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe99-caa6-048d-836e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Vampire Hunter" hidden="false" id="6d6f-d792-8c32-4653">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="700"/>
+      </costs>
+      <profiles>
+        <profile name="Vampire Hunter" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="e93e-b7e6-95d5-5bd4">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Flyer, Lumbering, Hover)</characteristic>
+            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">20</characteristic>
+            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
+            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">12</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="5cfc-40c4-bdf6-c1b2" hidden="false" type="rule" targetId="f1e1-986f-c783-ca9e"/>
+        <infoLink name="Agile" id="d1b2-40ef-a4bc-1f87" hidden="false" type="rule" targetId="fddd-fbda-83b5-4a13"/>
+        <infoLink name="Strafing Run (X)" id="74b7-7d76-abfd-b341" hidden="false" type="rule" targetId="6b78-4ec2-3604-78a3"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="c658-dc6b-727b-c488" id="f27d-9a7d-5628-eb1e" primary="true" name="Lords of War:"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="2792-c4c8-b974-a9c4" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="4e84-2d57-4986-2b23" id="4426-988b-be29-7eb3" primary="false" name="Flyer Sub-type"/>
+        <categoryLink targetId="7f9b-c5ed-7edb-02dc" id="cb70-98a5-9c24-a7ee" primary="false" name="Lumbering Sub-type"/>
+        <categoryLink targetId="3a7a-8bb7-b0d3-e2e7" id="7e5b-8bcb-1501-fa7f" primary="false" name="Hover Sub-type"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Improved Holo-Fields" hidden="false" id="60f0-d790-5ff6-7a5a" type="selectionEntry" targetId="bcf1-504a-8615-c161">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a67a-1267-41ec-ace0" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Scatter Laser" hidden="false" id="d076-ac6f-ae17-3026" type="selectionEntry" targetId="cae5-d08d-3659-7cc7">
+          <modifiers>
+            <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c973-8f39-ba75-0ed8-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c973-8f39-ba75-0ed8-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Pulsar" hidden="false" id="1c2e-2191-6878-628a" type="selectionEntry" targetId="780b-5b0f-24c4-3f32">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="181d-896b-7e57-0f27-min" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="181d-896b-7e57-0f27-max" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Phoenix Missile Launchers" hidden="false" id="10bb-9014-61ab-b05f" type="selectionEntry" targetId="9286-15a5-8826-0e2b">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5703-5062-98a8-0750-min" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5703-5062-98a8-0750-max" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="prepend" value="Hull (Front) Mounted Twin-Linked" field="name"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Webway Gate" hidden="false" id="fe99-caa6-048d-836e">
+      <profiles>
+        <profile name="Webway Gate" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification" hidden="false" id="87a1-36ed-0bd7-c09c">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortification (Building)</characteristic>
+            <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
+            <characteristic name="Front" typeId="d8de-057f-70b2-4a08">13</characteristic>
+            <characteristic name="Side" typeId="bf04-0a1d-3347-3320">13</characteristic>
+            <characteristic name="Rear" typeId="5915-639f-15d6-230e">13</characteristic>
+            <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">4</characteristic>
+            <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">-</characteristic>
+            <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Power Field" hidden="false" id="62df-ce13-3fca-9750" type="selectionEntry" targetId="97e4-e925-d6a4-3463"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Webway Strike" id="5ee8-a89f-7aa4-742f" hidden="false" type="rule" targetId="3998-8c11-c472-499d"/>
+        <infoLink name="Mysterious Statuary" id="5b18-6da3-82af-9c54" hidden="false" type="rule" targetId="2d44-df0e-c6e8-d9d7"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="6ddc-fdca-a040-0f80" primary="true" name="Fortification:"/>
+        <categoryLink targetId="9f1e-fbf0-3032-32fe" id="864a-12ca-8769-48f5" primary="false" name="Building Sub-type"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="84c8-e80a-38a5-d3ed" primary="false" name="Asuryani Unit Sub-Type:"/>
       </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
