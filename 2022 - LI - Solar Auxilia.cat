@@ -5121,7 +5121,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
             <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
             <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
             <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
-            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">10</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
             <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">One Access Point on each side of the hull and one at the rear.</characteristic>
           </characteristics>
         </profile>
@@ -5358,6 +5358,11 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c64-2d41-bd11-8125" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e002-31ec-a834-7e98" type="min"/>
           </constraints>
+        </entryLink>
+        <entryLink import="true" name="Heavy Stubber" hidden="false" id="83fb-b1eb-360a-3a3b" type="selectionEntry" targetId="f227-a61a-3215-932b">
+          <modifiers>
+            <modifier type="prepend" value="Hull (Front) Mounted" field="name" join=" "/>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <costs>
@@ -7283,9 +7288,9 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="fb93-5d17-0d26-e0a4" name="Two Turret Mounted Gravis Autocannons" hidden="false" collective="false" import="true" type="upgrade">
+                    <selectionEntry id="fb93-5d17-0d26-e0a4" name="Turret Mounted Exterminator Autocannon" hidden="false" collective="false" import="true" type="upgrade">
                       <entryLinks>
-                        <entryLink id="2f8a-4ca4-f95e-5314" name="Gravis Autocannon" hidden="false" collective="false" import="true" targetId="8a23-e57d-b4a8-14a9" type="selectionEntry">
+                        <entryLink id="2f8a-4ca4-f95e-5314" name="Exterminator Autocannon " hidden="false" collective="false" import="true" targetId="75e5-bace-eb90-dcd2" type="selectionEntry">
                           <constraints>
                             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06ee-c70e-4301-c69b" type="min"/>
                             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0830-5f1f-4b1f-ee46" type="max"/>
@@ -7296,9 +7301,9 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="4472-8cb0-1c2b-90a6" name="Turret Mounted Gravis Lascannons" hidden="false" collective="false" import="true" type="upgrade">
+                    <selectionEntry id="4472-8cb0-1c2b-90a6" name="Turret Mounted Gravis Heavy Lascannons" hidden="false" collective="false" import="true" type="upgrade">
                       <entryLinks>
-                        <entryLink id="85bf-2522-ddd1-409b" name="Gravis Lascannon" hidden="false" collective="false" import="true" targetId="1fe0-7c96-5200-0e39" type="selectionEntry">
+                        <entryLink id="85bf-2522-ddd1-409b" name="Gravis Heavy Lascannon" hidden="false" collective="false" import="true" targetId="a568-d963-efea-0372" type="selectionEntry">
                           <constraints>
                             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="122a-7c8e-e02b-6e6f" type="min"/>
                             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc68-3087-d760-bef8" type="max"/>
