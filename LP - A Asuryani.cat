@@ -491,17 +491,6 @@
             <characteristic name="Save" typeId="e593-6b3c-f169-04f0">-</characteristic>
           </characteristics>
         </profile>
-        <profile name="Fate Reader" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="8f9c-2bbf-d380-fbe1">
-          <characteristics>
-            <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If chosen as the army’s Warlord, Eldrad Ulthran automatically has Fate Reader as his Warlord Trait and may not select any other.
-
-
-If an army’s Warlord has this Trait, then at the start of the battle before any models are deployed, up to three units with the Infantry or Cavalry Unit Type in your army may be given the Infiltrate and Scout Special Rule.
-
-
-In addition, an army whose Warlord has this Trait may make an additional Reaction in any one Phase of the Controlling Player’s choice once per turn, as long as the Warlord has not been removed as a casualty.</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Armour of the Last Runes" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="fd23-9970-5e5c-f014">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Armour of the Last Runes confers a 3+ Invulnerable Save.</characteristic>
@@ -518,6 +507,21 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Path of the Farseer" hidden="false" id="dd78-3fe7-eee8-15be" type="selectionEntry" targetId="73ba-7f16-6d48-4a99"/>
+        <entryLink import="true" name="Warlord" hidden="false" id="7526-cdb8-883d-961c" type="selectionEntry" targetId="f3fc-199a-332c-a001">
+          <profiles>
+            <profile name="Fate Reader" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="8f9c-2bbf-d380-fbe1">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If chosen as the army’s Warlord, Eldrad Ulthran automatically has Fate Reader as his Warlord Trait and may not select any other.
+
+
+If an army’s Warlord has this Trait, then at the start of the battle before any models are deployed, up to three units with the Infantry or Cavalry Unit Type in your army may be given the Infiltrate and Scout Special Rule.
+
+
+In addition, an army whose Warlord has this Trait may make an additional Reaction in any one Phase of the Controlling Player’s choice once per turn, as long as the Warlord has not been removed as a casualty.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="Fleet (X)" id="cb8d-12ac-54fc-2e25" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
@@ -4879,13 +4883,6 @@ In addition, when a model with a Molten Body and a Wounds Characteristic loses i
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <modifiers>
-        <modifier type="add" value="{this} is not allowed Without a Webway gate" field="error" affects="fe99-caa6-048d-836e">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe99-caa6-048d-836e" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Vampire Hunter" hidden="false" id="6d6f-d792-8c32-4653">
       <costs>
@@ -4985,4 +4982,246 @@ In addition, when a model with a Molten Body and a Wounds Characteristic loses i
       </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
+  <selectionEntries>
+    <selectionEntry type="unit" import="true" name="Vampire Raider" hidden="false" id="1631-9ebf-81dd-73db">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="600"/>
+      </costs>
+      <profiles>
+        <profile name="Vampire Raider" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="40fb-2dd2-1561-13bf">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Flyer, Lumbering, Hover, Transport)</characteristic>
+            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">20</characteristic>
+            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
+            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">12</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">32</characteristic>
+            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">A Vampire Raider has one access point on its rear.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="994c-d68f-8c2c-b610" hidden="false" type="rule" targetId="f1e1-986f-c783-ca9e"/>
+        <infoLink name="Agile" id="84a9-0a3d-1ba8-0be0" hidden="false" type="rule" targetId="fddd-fbda-83b5-4a13"/>
+        <infoLink name="Strafing Run (X)" id="a673-554b-60ae-02ff" hidden="false" type="rule" targetId="6b78-4ec2-3604-78a3"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="c658-dc6b-727b-c488" id="2bef-596e-bb66-fd82" primary="true" name="Lords of War:"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="da24-dad6-ec03-ccbc" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="4e84-2d57-4986-2b23" id="6ee7-9b49-b3e8-bcd6" primary="false" name="Flyer Sub-type"/>
+        <categoryLink targetId="7f9b-c5ed-7edb-02dc" id="7d7c-d8a1-12b9-6455" primary="false" name="Lumbering Sub-type"/>
+        <categoryLink targetId="3a7a-8bb7-b0d3-e2e7" id="e83f-72c0-1cca-0af2" primary="false" name="Hover Sub-type"/>
+        <categoryLink targetId="7b0a-a743-a8da-3a39" id="3255-7f79-cdc8-b9c4" primary="false" name="Transport Sub-type"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Improved Holo-Fields" hidden="false" id="3962-4dfa-6e8f-ba68" type="selectionEntry" targetId="bcf1-504a-8615-c161">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="610f-f2fc-0c00-afdf" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Scatter Laser" hidden="false" id="02ac-5af7-5292-e371" type="selectionEntry" targetId="cae5-d08d-3659-7cc7">
+          <modifiers>
+            <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="100d-33e1-fd4b-b8d9" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc85-c2bc-9973-bc0d" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Pulsar" hidden="false" id="ca8d-9870-95f6-d904" type="selectionEntry" targetId="780b-5b0f-24c4-3f32">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db4c-101e-6d9b-453d" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="prepend" value="Centreline Mounted" field="name"/>
+            <modifier type="set" value="22" field="0c90-79e2-f768-e547" affects="self.entries.1631-9ebf-81dd-73db.profiles.Vehicle" scope="parent"/>
+          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="A Vampire Raider may exchange its Two Hull (Front) Gravis Shuriken Cannons for:" id="119d-9e71-f3de-aa6a" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Two Hull (Front) Mounted Gravis Shuriken Cannons" hidden="false" id="e463-dfe2-5f43-64ff" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Gravis Shuriken Cannon" hidden="false" id="cc17-8442-fd9d-3f01" type="selectionEntry" targetId="4197-9e5c-412b-b13c">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="07c6-69b6-f3f7-ca7e-min" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="07c6-69b6-f3f7-ca7e-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Two Hull (Front) Mounted Twin-Linked Pulse Lasers" hidden="false" id="1db6-49ef-f866-9a13" sortIndex="2">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Pulse Laser" hidden="false" id="4a8e-78e7-dfb2-c866" type="selectionEntry" targetId="ff1d-aac6-3fa3-774b">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2dc5-a2da-5c46-6d75-min" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2dc5-a2da-5c46-6d75-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eafc-17db-4a84-6b2e-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eafc-17db-4a84-6b2e-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Two Hull (Front) Mounted Twin-Linked Phoenix Missile Launchers" hidden="false" id="cb4e-98fb-28ae-3569">
+          <entryLinks>
+            <entryLink import="true" name="Phoenix Missile Launchers" hidden="false" id="d256-ff50-cf43-b591" type="selectionEntry" targetId="9286-15a5-8826-0e2b">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="bf33-1f92-133d-8f9f-min" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bf33-1f92-133d-8f9f-max" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="prepend" value="Hull (Front) Mounted Twin-Linked" field="name"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ae2-20d1-2ea1-c773" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Phantom Titan" hidden="false" id="80ee-ef65-4abe-ffaa">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2500"/>
+      </costs>
+      <profiles>
+        <profile name="Phantom Titan" typeId="75b5-9f7a-156e-6889" typeName="Knights and Titans" hidden="false" id="eaeb-a2d4-07b7-233d">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="3c44-1e2a-23fe-c9e0">Vehicle (Asuryani, Titan)</characteristic>
+            <characteristic name="Move" typeId="7f12-0cc3-9dcd-25bc">24</characteristic>
+            <characteristic name="WS" typeId="4227-8eed-0c5c-a2d9">9</characteristic>
+            <characteristic name="BS" typeId="6c5a-df71-fefa-2ee3">5</characteristic>
+            <characteristic name="S" typeId="02ba-082e-e385-1ede">10</characteristic>
+            <characteristic name="Front" typeId="0d00-68d8-0535-e898">14</characteristic>
+            <characteristic name="Side" typeId="cb92-5809-d327-6981">14</characteristic>
+            <characteristic name="Rear" typeId="8fa4-6e34-29c4-d8c6">13</characteristic>
+            <characteristic name="I" typeId="91b3-4335-71bf-3fa9">5</characteristic>
+            <characteristic name="A" typeId="d54a-56a6-68c5-ae72">5</characteristic>
+            <characteristic name="HP" typeId="2490-aa2f-f5db-6070">24</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Holo-Fields" hidden="false" id="076b-4d8f-c045-f6dc" type="selectionEntry" targetId="be3f-6e6d-fc9e-37a4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ab0a-2adc-3b70-ef3a-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab0a-2adc-3b70-ef3a-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Cloudburst Missile Launcher" hidden="false" id="3f3e-b383-1064-07a4" type="selectionEntry" targetId="a767-3659-ce51-6783">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4bad-1716-3f7b-7404-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4bad-1716-3f7b-7404-max" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Voidstorm Missile Launcher" hidden="false" id="d962-599d-abee-a0c1" type="selectionEntry" targetId="e90d-39c8-8e32-5c7a">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7030-ce0d-435e-0096-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7030-ce0d-435e-0096-max" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="It Will Not Die (X)" id="cc96-7057-25d8-a27a" hidden="false" type="rule" targetId="2784-d0be-a4e2-890f">
+          <modifiers>
+            <modifier type="set" value="It Will Not Die (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Night Vision" id="0642-c89a-69ec-ad84" hidden="false" type="rule" targetId="683e-b4f2-f032-d31b"/>
+        <infoLink name="Wraithbone Core" id="1f19-215b-ef66-2211" hidden="false" type="rule" targetId="9ffd-b011-1956-6b59"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="A Phantom Titan may exchange either of its Arm Mounted Phantom-Pulsars for one of the following:" id="dd12-5236-4982-dd58" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Phantom-Pulsar" hidden="false" id="9618-4701-a6bf-0c76" type="selectionEntry" targetId="2030-327d-350c-d68e" sortIndex="1">
+              <modifiers>
+                <modifier type="prepend" value="Arm Mounted" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="D-Bombard" hidden="false" id="59c9-d25e-1725-bdcc" type="selectionEntry" targetId="815b-2e6e-f702-b5fe" sortIndex="2">
+              <modifiers>
+                <modifier type="prepend" value="Arm Mounted" field="name"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Arm Mounted Wraith Glaive and Twin-Linked Gravis Starcannon" hidden="false" id="e7cf-3d3a-2756-4663">
+              <entryLinks>
+                <entryLink import="true" name="Wraith Glaive" hidden="false" id="3c90-2449-441d-94ad" type="selectionEntry" targetId="82be-f748-72aa-bfa9">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9fd3-de48-74bf-6457-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9fd3-de48-74bf-6457-max" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="prepend" value="Arm Mounted" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Gravis Starcannon" hidden="false" id="d8ac-05d6-e8f0-5ac0" type="selectionEntry" targetId="99ae-090e-9d2c-c498">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="060f-e79a-31ed-4b45-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="060f-e79a-31ed-4b45-max" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="prepend" value="Twin-Linked" field="name"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2751-ad08-c943-a228-min" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2751-ad08-c943-a228-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="A Phantom Titan may exchange its Hull (Front) Mounted Gravis Starcannon for the following:" id="d298-ffb1-931a-3ab0" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Gravis Starcannon" hidden="false" id="0bdd-fe59-5629-0fa0" type="selectionEntry" targetId="99ae-090e-9d2c-c498">
+              <modifiers>
+                <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Pulse Laser" hidden="false" id="cffc-bf77-90c3-4f5c" type="selectionEntry" targetId="ff1d-aac6-3fa3-774b">
+              <modifiers>
+                <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a01a-5a9c-0602-7f15-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a01a-5a9c-0602-7f15-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="c658-dc6b-727b-c488" id="4a0a-ed2e-fbda-08f2" primary="true" name="Lords of War:"/>
+        <categoryLink targetId="e2b6-b770-784c-9e95" id="e012-9a0f-9c76-8723" primary="false" name="Vehicle:"/>
+        <categoryLink targetId="cf01-e0e7-4567-a4b9" id="b8c9-0156-1eca-d7b8" primary="false" name="Asuryani Unit Sub-Type:"/>
+        <categoryLink targetId="4280-2d8-16c6-d60b" id="c4ea-ee8f-8fbf-d6fa" primary="false" name="Titan Sub-type"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

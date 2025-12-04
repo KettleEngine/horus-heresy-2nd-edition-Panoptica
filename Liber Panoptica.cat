@@ -334,6 +334,12 @@ If there are any units assigned to a Webway Strike, but no Wraithbone Arch rema
 
 Units with the Asuryani Sub-type gain the Stubborn Special Rule whilst within 3” of a Webway Gate. Any model in cover behind a Wraithbone Arch has a 5+ Cover Save.</description>
     </rule>
+    <rule name="Wraithbone Core" id="9ffd-b011-1956-6b59" hidden="false">
+      <description>A model with this Special Rule ignores all Psychic Powers and Cybertheurgic Rites and Attacks made by Psychic and Cybertheurgic Weapons. In addition, a model with this special rule ignores the effects of Haywire and Disruption(X) special rules. In all cases, weapons which benefit from these special rules must attempt to damage a model with this special rule normally using the attack’s strength value. Furthermore, when a model with this special rule is destroyed, the damage caused by its Catastrophic Damage is altered to resolve at AP2.</description>
+    </rule>
+    <rule name="Distortion Impalement" id="6505-d508-cc03-d782" hidden="false">
+      <description>A weapon with this Special Rule ignores the effects of Void Shields on a model it targets. Before firing a weapon with this Special Rule, roll a D6. On a 6, the attack is resolved with the Vortex Special Rule.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Aspect Armour" hidden="false" id="7c09-bc4e-e8a9-4a75" publicationId="a179-8e8f-4601-987c" page="160">
@@ -3021,9 +3027,6 @@ with a Helical Targeting Array while it is active.
       <entryLinks>
         <entryLink import="true" name="Warlord Trait" hidden="false" id="93f6-c35d-e688-52a8" type="selectionEntryGroup" targetId="dcdf-9c62-41d0-6155"/>
       </entryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ffd0-d802-3702-5c74" includeChildSelections="true"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy Wraithcannon" hidden="false" id="baa1-3913-9fc2-8638">
       <profiles>
@@ -3169,6 +3172,94 @@ with a Helical Targeting Array while it is active.
       </profiles>
       <infoLinks>
         <infoLink name="Blast" id="b42e-1871-3f9d-2cfc" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cloudburst Missile Launcher" hidden="false" id="a767-3659-ce51-6783">
+      <profiles>
+        <profile name="Cloudburst Missile Launcher" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="c591-0987-efac-c3a6">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Skyfire, Guided Fire, Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Skyfire" id="70cb-2a12-feaf-9a27" hidden="false" type="rule" targetId="f2bf-5daa-9f93-0b01"/>
+        <infoLink name="Guided Fire" id="4d68-ae95-6fe0-a9e7" hidden="false" type="rule" targetId="fa1e-0112-943e-b1f6"/>
+        <infoLink name="Pinning" id="9f0e-73ac-18ab-07a9" hidden="false" type="rule" targetId="1c96-205c-59a0-3cf2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Voidstorm Missile Launcher" hidden="false" id="e90d-39c8-8e32-5c7a">
+      <profiles>
+        <profile name="Voidstorm Missile Launcher" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5b37-a8e8-af3a-3c0f">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5”), Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="69f6-6465-3830-7958" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
+        <infoLink name="Pinning" id="67ee-3b62-b5d6-2e05" hidden="false" type="rule" targetId="1c96-205c-59a0-3cf2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Phantom-Pulsar" hidden="false" id="2030-327d-350c-d68e">
+      <profiles>
+        <profile name="Phantom-Pulsar" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="6e08-9a40-b722-fe2b">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">120&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 2, Large Blast (5”)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="b757-2b3b-6221-4963" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
+        <infoLink name="Destroyer" id="1a10-05d1-c329-7d28" hidden="false" type="rule" targetId="44d6-09b2-3bd3-b2d6"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="D-Bombard" hidden="false" id="815b-2e6e-f702-b5fe">
+      <profiles>
+        <profile name="D-Bombard" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ecb1-f68d-9c3f-4b20">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">14/12/10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Apocalyptic Mega-Blast, Instant Death, Distortion Impalement</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Destroyer" id="cd62-f891-d4bd-dff4" hidden="false" type="rule" targetId="44d6-09b2-3bd3-b2d6"/>
+        <infoLink name="Blast" id="7cf6-379f-8eab-90f9" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
+        <infoLink name="Instant Death" id="0fb1-f05e-6de5-d871" hidden="false" type="rule" targetId="9e96-fff1-b916-d9a3"/>
+        <infoLink name="Distortion Impalement" id="1aa0-440d-75bf-85df" hidden="false" type="rule" targetId="6505-d508-cc03-d782"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Wraith Glaive" hidden="false" id="82be-f748-72aa-bfa9">
+      <profiles>
+        <profile name="Wraith Glaive" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ffe2-b023-c975-64d1">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">14</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Destructor, Instant Death, Reaping Blow (3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Destructor" id="834e-e3ce-fea8-b500" hidden="false" type="rule" targetId="1f93-c765-f7b2-a025"/>
+        <infoLink name="Instant Death" id="e03e-2d57-b984-ca82" hidden="false" type="rule" targetId="9e96-fff1-b916-d9a3"/>
+        <infoLink name="Reaping Blow (X)" id="4459-23bb-ae0a-290a" hidden="false" type="rule" targetId="bd8c-4f52-d682-1b40">
+          <modifiers>
+            <modifier type="set" value="Reaping Blow (3)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>

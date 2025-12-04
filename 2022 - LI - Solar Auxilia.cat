@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6af7-3fee-5bc1-7533" name="LI - Solar Auxilia" revision="48" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6af7-3fee-5bc1-7533" name="LI - Solar Auxilia" revision="49" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <categoryEntries>
     <categoryEntry id="19f3-8727-02db-3ce5" name="Static Artillery" hidden="false">
       <rules>
@@ -765,6 +765,9 @@
         <categoryLink id="6cf0-49c6-7388-e0cc" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="02e0-513b-8a00-470c" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
     </entryLink>
     <entryLink id="0741-744f-034a-1221" name="Macharius Heavy Tank Squadron" hidden="true" collective="false" import="false" targetId="e59c-1b65-8de1-4490" type="selectionEntry">
       <modifiers>
@@ -1305,17 +1308,17 @@
               <profiles>
                 <profile name="Auxilia Protector" hidden="false" id="3af-5f85-c5bc-9875" publicationId="d882-d2a-5da1-92c4" page="186" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
                   <characteristics>
-                    <characteristic name="Unit Type" id="bc75-1a50-dbad-100f" hidden="false" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
-                    <characteristic name="Move" id="f10e-7724-2f5f-369d" hidden="false" typeId="893e-2d76-8f04-44e5">6</characteristic>
-                    <characteristic name="WS" id="7aa2-c8af-b1fe-94ca" hidden="false" typeId="cc42-7ed5-7092-5c84">4</characteristic>
-                    <characteristic name="BS" id="18e2-451e-943a-ce0e" hidden="false" typeId="74ae-c840-0036-d244">4</characteristic>
-                    <characteristic name="S" id="69ba-ce11-81d1-3381" hidden="false" typeId="e478-41d4-a092-48a8">3</characteristic>
-                    <characteristic name="T" id="e6c4-b9db-d740-4ec4" hidden="false" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
-                    <characteristic name="W" id="33a5-d959-5cdd-1814" hidden="false" typeId="57ee-1126-32a9-5672">2</characteristic>
-                    <characteristic name="I" id="4e84-1cf2-2e5d-6165" hidden="false" typeId="62d3-22d7-2d49-52dc">4</characteristic>
-                    <characteristic name="A" id="56e7-f502-245f-c310" hidden="false" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
-                    <characteristic name="Ld" id="167b-80d4-b316-2f53" hidden="false" typeId="e8a6-1da9-d384-8727">8</characteristic>
-                    <characteristic name="Save" id="e1c2-28e2-a787-a590" hidden="false" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1529,8 +1532,9 @@
                 <modifier type="set" value="Battle-Hardened (1)" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Stubborn" id="f040-df01-1e41-c795" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
+            <infoLink name="Relentless" id="f040-df01-1e41-c795" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
             <infoLink name="Chosen Warriors" id="668f-863e-cb55-5cde" hidden="false" type="rule" targetId="13d1-9270-6539-08ed"/>
+            <infoLink name="Stubborn" id="fa30-43d6-8c4a-b026" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -8738,7 +8742,15 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7451-8d8c-cd2c-95c5" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="8750-c276-e393-8d8d" name="Earthshaker cannon" hidden="false" collective="false" import="true" targetId="cc2e-df5f-1778-29d8" type="selectionEntry"/>
+            <entryLink id="8750-c276-e393-8d8d" name="Earthshaker cannon" hidden="false" collective="false" import="true" targetId="cc2e-df5f-1778-29d8" type="selectionEntry">
+              <infoLinks>
+                <infoLink name="Breaching (X)" id="244f-ef6e-8bd7-234f" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
+                  <modifiers>
+                    <modifier type="set" value="Breaching (5+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </entryLink>
             <entryLink id="5356-9612-2b7f-3f28" name="Medusa Mortar" hidden="false" collective="false" import="true" targetId="aafc-7435-8805-0e0f" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
@@ -8885,6 +8897,9 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
             <categoryLink targetId="e2b6-b770-784c-9e95" id="aecb-cd92-4e6f-8f2c" name="Vehicle:" primary="false"/>
             <categoryLink targetId="9b0d-738c-10e4-4ec1" id="cce9-8949-4d9e-b9c4" name="Reinforced Sub-type" primary="false"/>
           </categoryLinks>
+          <infoLinks>
+            <infoLink name="Independent Fire Control" id="94f1-7f3c-c17f-e764" hidden="false" type="rule" targetId="64ca-719e-b563-e3df"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -9096,8 +9111,8 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
       <categoryLinks>
         <categoryLink id="2be0-c1f0-c1aa-8dee" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
         <categoryLink id="e099-bd75-a34a-7a25" name="Reinforced Sub-type" hidden="false" targetId="9b0d-738c-10e4-4ec1" primary="false"/>
-        <categoryLink id="e500-6757-140f-aa62" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
         <categoryLink name="SA or IM Unit" hidden="false" id="3071-4407-8b63-f5bb" targetId="4aca-2849-7f41-0200" primary="false"/>
+        <categoryLink targetId="7031-469a-1aeb-eab0" id="8c68-5dc2-b416-f003" primary="true" name="Heavy Support:"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="12ee-19a7-66a2-2901" name="Malcador Infernus" hidden="false" collective="false" import="true" type="model">
@@ -9278,6 +9293,9 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
             <categoryLink targetId="e2b6-b770-784c-9e95" id="45df-cce8-4b9c-9750" name="Vehicle:" primary="false"/>
             <categoryLink targetId="9b0d-738c-10e4-4ec1" id="2d35-75bd-4015-b826" name="Reinforced Sub-type" primary="false"/>
           </categoryLinks>
+          <infoLinks>
+            <infoLink name="Independent Fire Control" id="1680-eed4-dce7-2d6f" hidden="false" type="rule" targetId="64ca-719e-b563-e3df"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -9569,7 +9587,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="a959-83a9-88ed-8deb" name="Turret Mounted Twin-linked Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="a959-83a9-88ed-8deb" name="Turret Mounted Gravis Autocannon" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
                   <repeats>
@@ -9578,7 +9596,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 </modifier>
               </modifiers>
               <entryLinks>
-                <entryLink id="d045-b197-7d17-2ab0" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry">
+                <entryLink id="d045-b197-7d17-2ab0" name="Gravis Autocannon Battery" hidden="false" collective="false" import="true" targetId="b294-8f2b-f288-71b5" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="name" value="Turret Mounted Twin-linked Autocannon"/>
                   </modifiers>
@@ -9595,7 +9613,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9f5d-2c09-e44f-6627" name="Turret Mounted Twin-linked Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="9f5d-2c09-e44f-6627" name="Turret Mounted Gravis Lascannon" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="20">
                   <repeats>
@@ -9604,7 +9622,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 </modifier>
               </modifiers>
               <entryLinks>
-                <entryLink id="d67e-2040-07d8-3877" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="3adf-7150-9ee6-b2de" type="selectionEntry">
+                <entryLink id="d67e-2040-07d8-3877" name="Gravis Lascannon" hidden="false" collective="false" import="true" targetId="1fe0-7c96-5200-0e39" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="name" value="Turret Mounted Twin-linked Lascannon"/>
                   </modifiers>
@@ -9618,9 +9636,9 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d822-797e-d15a-435a" name="Turret Mounted Twin-linked Multi-Laser" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="d822-797e-d15a-435a" name="Turret Mounted Gravis Multi-Laser" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
-                <entryLink id="6dd4-29d5-5668-7a3b" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry">
+                <entryLink id="6dd4-29d5-5668-7a3b" name="Gravis Multi-Laser" hidden="false" collective="false" import="true" targetId="9938-d8d4-e0cc-b883" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="name" value="Turret Mounted Twin-linked Multi-Laser"/>
                   </modifiers>
@@ -9678,13 +9696,6 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
               </costs>
             </selectionEntry>
             <selectionEntry id="5f07-95b6-fbff-d53e" name="Two Sponson Mounted Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="2918-e98d-0ab1-811b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e067-3e89-30e3-aed8" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
               <entryLinks>
                 <entryLink id="10c3-e676-05e5-db63" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
                   <modifiers>
@@ -9702,7 +9713,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
             </selectionEntry>
             <selectionEntry id="3e04-7aeb-959d-61ef" name="Two Sponson Mounted Lascannons" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="20">
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
                   <repeats>
                     <repeat field="selections" scope="2918-e98d-0ab1-811b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e067-3e89-30e3-aed8" repeats="1" roundUp="false"/>
                   </repeats>
@@ -9725,7 +9736,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
             </selectionEntry>
             <selectionEntry id="25d6-a17a-5db1-6969" name="Two Sponson Mounted Autocannon" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
                   <repeats>
                     <repeat field="selections" scope="2918-e98d-0ab1-811b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e067-3e89-30e3-aed8" repeats="1" roundUp="false"/>
                   </repeats>
@@ -9747,13 +9758,6 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
               </costs>
             </selectionEntry>
             <selectionEntry id="32ae-5000-8b0a-19ef" name="Two Sponson Mounted Multi-lasers" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="2918-e98d-0ab1-811b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e067-3e89-30e3-aed8" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
               <entryLinks>
                 <entryLink id="c48b-c3ef-5f9f-a1e2" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry">
                   <modifiers>
@@ -9927,7 +9931,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                   <rules>
                     <rule id="38c8-414f-35c2-bf17" name="Field Repair (X)" hidden="false">
                       <modifiers>
-                        <modifier type="set" field="name" value="Field Repair (5+)"/>
+                        <modifier type="set" field="name" value="Field Repair (3+)"/>
                       </modifiers>
                       <description>If a model with the Field Repair (X) special rule is within 3&quot; of one or more friendly damaged Vehicles during the Shooting phase, they can attempt to Repair one damaged Vehicle instead of firing all weapons or using any other abilities that would be used instead of making a Shooting Attack. To attempt a Repair, roll a D6. If the result is equal to or more than the value listed in brackets as part of this special rule then one of the following options may be applied to any one
 Vehicle model within 3&quot; of the Solar Auxilia Trojan Support Vehicle:
@@ -10128,7 +10132,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                     </entryLink>
                   </entryLinks>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="185"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="135"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -10226,7 +10230,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                     </entryLink>
                   </entryLinks>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="185"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="135"/>
                   </costs>
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Proteus Laser Destroyer" hidden="false" id="6b62-613b-1dd7-2d50">
@@ -10240,7 +10244,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                             <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
                             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
                             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-                            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Twin-linked, Exoshock (6+), Gets Hot</characteristic>
+                            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 2, Twin-Linked, Exoshock (5+), Sunder, Gets Hot</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -10248,10 +10252,11 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                         <infoLink name="Twin-linked" hidden="false" id="3e8d-571d-9615-97e0" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
                         <infoLink name="Exoshock (X)" hidden="false" id="ba09-3c43-6460-2b5b" type="rule" targetId="69ca-318a-b47a-7a3c">
                           <modifiers>
-                            <modifier type="set" value="Exoshock (6+)" field="name"/>
+                            <modifier type="set" value="Exoshock (5+)" field="name"/>
                           </modifiers>
                         </infoLink>
-                        <infoLink name="Gets Hot" hidden="false" id="d96b-f5f2-2a89-af93" type="rule" targetId="679f-9d97-5ace-a652"/>
+                        <infoLink name="Sunder" hidden="false" id="d96b-f5f2-2a89-af93" type="rule" targetId="20e2-75cf-bc16-cd8f"/>
+                        <infoLink name="Gets Hot" hidden="false" id="7e55-db58-a3fa-7899" type="rule" targetId="679f-9d97-5ace-a652"/>
                       </infoLinks>
                       <modifiers>
                         <modifier type="set" value="Centreline (Front) Mounted Proteus Laser Destroyer" field="name"/>
@@ -10329,7 +10334,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 </entryLink>
                 <entryLink id="120b-e5ac-6dfc-aed7" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="1bf8-72f8-c331-6900" type="selectionEntry">
                   <modifiers>
-                    <modifier type="set" field="name" value="Hull (Front) Mounted hunter-killer missile"/>
+                    <modifier type="set" field="name" value="Hull (Rear) Mounted hunter-killer missile"/>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a153-39e5-ec1f-597f" type="max"/>
@@ -10344,12 +10349,19 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
           <entryLinks>
             <entryLink id="7e5e-e884-86c6-16e7" name="Earthshaker cannon" hidden="false" collective="false" import="true" targetId="cc2e-df5f-1778-29d8" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="name" value="Hull Centreline (Rear) Mounted twin-linked Earthshaker cannon"/>
+                <modifier type="set" field="name" value="Centreline (Rear) Mounted Earthshaker cannon"/>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bd0-da2f-cfc6-1ef9" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a51d-e9d1-5f9a-2a4e" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink name="Breaching (X)" id="3148-ab24-0b6a-9114" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
+                  <modifiers>
+                    <modifier type="set" value="Breaching (5+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
             </entryLink>
             <entryLink id="a9f4-4f2f-b05e-a41d" name="Smoke Launchers" hidden="false" collective="false" import="true" targetId="0873-34dd-e52d-d33c" type="selectionEntry">
               <constraints>
@@ -10374,12 +10386,12 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       <categoryLinks>
         <categoryLink id="3cf6-cfb2-9cec-19aa" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="0894-5a2a-e649-9e11" name="Super-heavy Sub-type" hidden="false" targetId="7381-1130-ca6e-1806" primary="false"/>
-        <categoryLink id="ef5d-7e4a-3f44-2c74" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
+        <categoryLink targetId="7031-469a-1aeb-eab0" id="d90b-c746-7af3-ecbc" primary="true" name="Heavy Support:"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="83fd-3959-0a1c-1815" name="Macharius Heavy Tank" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2c92-9871-cb11-6f1e" type="max"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2c92-9871-cb11-6f1e" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75f1-9d79-2ce9-8793" type="min"/>
           </constraints>
           <profiles>
@@ -10495,12 +10507,12 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="280"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="335"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
       </costs>
       <selectionEntryGroups>
         <selectionEntryGroup name="1) Main Cannon" hidden="false" id="f63b-b35f-38f5-9de2" collective="false" import="true" defaultSelectionEntryId="4530-f4f8-699a-99d9">
@@ -10535,7 +10547,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
             <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Super-heavy)</characteristic>
             <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">10&quot;</characteristic>
             <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
-            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
             <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
             <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
             <characteristic name="HP" typeId="a76c-83b1-602f-9e62">12</characteristic>
@@ -10632,9 +10644,14 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c81-4dc6-673b-4e5a" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Heavy Bolter" hidden="false" id="d5c8-b8ea-138c-25dd" type="selectionEntry" targetId="6024-6953-b8f4-ce63">
+          <modifiers>
+            <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="650"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="475"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1c10-5772-2e27-1e51" name="Baneblade" hidden="false" collective="false" import="true" type="unit">
@@ -10644,7 +10661,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
             <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Super-heavy)</characteristic>
             <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">10&quot;</characteristic>
             <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
-            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
             <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
             <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
             <characteristic name="HP" typeId="a76c-83b1-602f-9e62">12</characteristic>
@@ -10770,7 +10787,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="650"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="450"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7bb3-2416-aaca-8e40" name="Banehammer" hidden="false" collective="false" import="true" type="unit">
@@ -10780,11 +10797,11 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
             <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Super-heavy, Transport)</characteristic>
             <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">10&quot;</characteristic>
             <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
-            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
             <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
             <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
             <characteristic name="HP" typeId="a76c-83b1-602f-9e62">12</characteristic>
-            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">10</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">22</characteristic>
             <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">1</characteristic>
           </characteristics>
         </profile>
@@ -10888,7 +10905,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="650"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="475"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2bae-aaa9-9840-e2eb" name="Stormlord" hidden="false" collective="false" import="true" type="unit">
@@ -10898,12 +10915,12 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
             <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Super-heavy, Transport)</characteristic>
             <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">10&quot;</characteristic>
             <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
-            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
             <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
             <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
             <characteristic name="HP" typeId="a76c-83b1-602f-9e62">12</characteristic>
-            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">10</characteristic>
-            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">1</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">32</characteristic>
+            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">1 Rear</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -11003,8 +11020,16 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="650"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="450"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Assault Vehicle" id="746c-29f9-00e3-773f" hidden="false" type="rule" targetId="aa61-11f6-2bb5-7c0e"/>
+        <infoLink name="Tank Desant (X)" id="4a1b-d1c0-1c3e-870c" hidden="false" type="rule" targetId="f650-e3a3-e3bc-914e">
+          <modifiers>
+            <modifier type="set" value="Tank Desant (10)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="4713-c9ee-2c57-9457" name="Shadowsword" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -11013,7 +11038,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
             <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Super-heavy)</characteristic>
             <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">10&quot;</characteristic>
             <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
-            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
             <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
             <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
             <characteristic name="HP" typeId="a76c-83b1-602f-9e62">12</characteristic>
@@ -11120,7 +11145,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="650"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="525"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3d0b-9f37-cd30-0db7" name="Stormsword" hidden="false" collective="false" import="true" type="unit">
@@ -11130,7 +11155,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
             <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Super-heavy)</characteristic>
             <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">10&quot;</characteristic>
             <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
-            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
             <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
             <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
             <characteristic name="HP" typeId="a76c-83b1-602f-9e62">12</characteristic>
@@ -11249,7 +11274,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="650"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="475"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2d13-ea6e-e48d-f352" name="Praetor Armoured Assault Launcher" hidden="false" collective="false" import="true" type="unit">
@@ -11281,28 +11306,51 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3c9-e405-6ac5-1e79" type="max"/>
           </constraints>
           <profiles>
-            <profile id="52a7-5459-a9c2-6561" name="Praetor Launcher" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+            <profile id="52a7-5459-a9c2-6561" name="Praetor Launcher - Firestorm Munitions " hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
                 <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Massive Blast (7&quot;), Pinning, Rending (6+)</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 2, Barrage, Massive Blast (7”), Pinning, Shell Shock (2), Rending (5+), Ignores Cover</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="db7b-751e-af7e-037e" name="Praetor Launcher - Foehammer Munitions" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot; - 72&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 12, Guided Fire, Breaching (5+), Ignores Cover</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="63ca-7f5c-c71c-9f53" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+            <infoLink id="7797-a84c-7d76-dc64" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+            <infoLink id="e67d-23f0-37cb-d3c2" name="Ignores Cover" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>
+            <infoLink id="c6d7-6678-3236-f99b" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
+            <infoLink id="3d5d-f3ac-bf6f-04b3" name="Shell Shock (X)" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule">
               <modifiers>
-                <modifier type="set" field="name" value="Rending (+6)"/>
+                <modifier type="set" value="Shell Shock (2)" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink id="7797-a84c-7d76-dc64" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
-            <infoLink id="e67d-23f0-37cb-d3c2" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
-            <infoLink id="c6d7-6678-3236-f99b" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
+            <infoLink id="a0c9-e967-f9c2-e84f" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+              <modifiers>
+                <modifier type="set" value="Rending (5+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="07fe-65b9-c81b-fb90" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+              <modifiers>
+                <modifier type="set" value="Breaching (5+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="681f-95e2-2954-b385" name="Guided Fire" hidden="false" targetId="fa1e-0112-943e-b1f6" type="rule"/>
+            <infoLink id="6ba3-0ef8-dae4-2b6c" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="prepend" value="Centreline Mounted" field="name" join=" "/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -11365,7 +11413,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="500"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="450"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8cec-2913-77a0-c4e4" name="Crassus Armoured Assault Transport" hidden="false" collective="false" import="true" type="unit">
@@ -11392,7 +11440,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
                 <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
                 <characteristic name="HP" typeId="a76c-83b1-602f-9e62">8</characteristic>
-                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">35</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">48</characteristic>
                 <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">One Access Point at the rear of the hull</characteristic>
               </characteristics>
             </profile>
@@ -11465,6 +11513,9 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
             <categoryLink targetId="7381-1130-ca6e-1806" id="3a1c-3747-4b37-9839" name="Super-heavy Sub-type" primary="false"/>
             <categoryLink targetId="7b0a-a743-a8da-3a39" id="d8ed-cff9-47b3-bda9" name="Transport Sub-type" primary="false"/>
           </categoryLinks>
+          <infoLinks>
+            <infoLink name="Transport Bay" id="c7ff-16c9-1fb5-c5cc" hidden="false" type="rule" targetId="0662-8b8d-38e8-60f8"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -11495,14 +11546,14 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                       <characteristics>
                         <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Static Artillery, Heavy)</characteristic>
                         <characteristic name="Move" typeId="893e-2d76-8f04-44e5">-</characteristic>
-                        <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">1</characteristic>
+                        <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">-</characteristic>
                         <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
-                        <characteristic name="S" typeId="e478-41d4-a092-48a8">1</characteristic>
-                        <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
-                        <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-                        <characteristic name="I" typeId="62d3-22d7-2d49-52dc">1</characteristic>
-                        <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
-                        <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">-</characteristic>
+                        <characteristic name="S" typeId="e478-41d4-a092-48a8">7</characteristic>
+                        <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">7</characteristic>
+                        <characteristic name="W" typeId="57ee-1126-32a9-5672">4</characteristic>
+                        <characteristic name="I" typeId="62d3-22d7-2d49-52dc">-</characteristic>
+                        <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">-</characteristic>
+                        <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">5</characteristic>
                         <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
                       </characteristics>
                     </profile>
@@ -11514,6 +11565,12 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                   </rules>
                   <infoLinks>
                     <infoLink id="cd55-2970-90c8-cea9" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
+                    <infoLink name="Immobile" id="2235-2494-e590-29fd" hidden="false" type="rule" targetId="1bea-7e8e-f456-9f65"/>
+                    <infoLink name="Bulky (X)" id="2b7d-63d2-fc77-b7de" hidden="false" type="rule" targetId="676c-7b75-4b6f-9405">
+                      <modifiers>
+                        <modifier type="set" value="Bulky (5)" field="name"/>
+                      </modifiers>
+                    </infoLink>
                   </infoLinks>
                   <selectionEntries>
                     <selectionEntry id="a458-d885-c32a-18f1" name="Auxilia Gunners" hidden="false" collective="true" import="true" type="model">
@@ -11534,7 +11591,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                             <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
                             <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
                             <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
-                            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+                            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">4+</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -11571,6 +11628,11 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                         <infoLink id="38c8-0952-a498-de8e" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
                         <infoLink id="93b3-6e55-3fe3-3538" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
                         <infoLink id="5676-1b33-df68-415a" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+                        <infoLink name="Breaching (X)" id="0679-2ad8-561d-0651" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
+                          <modifiers>
+                            <modifier type="set" value="Breaching (5+)" field="name"/>
+                          </modifiers>
+                        </infoLink>
                       </infoLinks>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -11708,16 +11770,13 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
             <selectionEntryGroup name="May replace multi-laser with:" id="5849-7a09-41a6-b7a6" defaultSelectionEntryId="ad5e-1497-74a4-bd23">
               <entryLinks>
                 <entryLink name="Autocannon" hidden="false" type="selectionEntry" targetId="56b3-de09-9fea-deb6" id="9d8c-2100-4ce3-be82">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-                  </costs>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e14e-cf71-4616-b0f4"/>
                   </constraints>
                 </entryLink>
                 <entryLink name="Volkite Culverin" hidden="false" type="selectionEntry" targetId="170d-44e0-455c-8207" id="290b-6678-4687-bf31">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e65c-16ff-4c3f-875e"/>
@@ -11725,7 +11784,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 </entryLink>
                 <entryLink name="Lascannon" hidden="false" type="selectionEntry" targetId="b252-5a86-6e0f-218b" id="5b13-71a3-43a0-b489">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54b4-58a3-454b-8775"/>
@@ -11739,7 +11798,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Heavy Incinerator" hidden="false" id="3c54-73b6-d719-7a12" publicationId="d882-d2a-5da1-92c4" page="183">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
                   <profiles>
                     <profile name="Heavy Incinerator" hidden="false" id="1bc6-11d3-26ac-4ad3" publicationId="2d3f-82d2-9db5-ca6d" page="2" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
@@ -11761,7 +11820,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Melta lance" hidden="false" id="333e-3b04-ddb-34eb" publicationId="d882-d2a-5da1-92c4" page="183">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                   <profiles>
                     <profile name="Melta lance" hidden="false" id="5e51-b891-c549-3df6" publicationId="2d3f-82d2-9db5-ca6d" page="2" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
@@ -11799,7 +11858,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                         <characteristic name="Range" typeId="95ba-cda7-b831-6066">30&quot;</characteristic>
                         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
                         <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Large Blast (5&quot;), Barrage, Twin-linked</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Large Blast (5&quot;), Barrage, Twin-linked, Pinning</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -11811,6 +11870,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                     </infoLink>
                     <infoLink name="Barrage" hidden="false" id="6c03-3c4e-9a28-794d" type="rule" targetId="7255-b5ee-c3f4-3037"/>
                     <infoLink name="Twin-linked" hidden="false" id="3ed7-a669-cee8-57ad" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
+                    <infoLink name="Pinning" id="dfce-30db-cba3-bb63" hidden="false" type="rule" targetId="1c96-205c-59a0-3cf2"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -11820,7 +11880,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                     <modifier type="set" value="4 Hunter-killer missiles" field="name"/>
                   </modifiers>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -11930,20 +11990,25 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                     </profile>
                     <profile name="Hermes grenade launcher - Krak" hidden="false" id="b479-2b10-d436-f660" page="180" publicationId="d882-d2a-5da1-92c4" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
                       <characteristics>
-                        <characteristic name="Range" id="dba6-b007-f145-48b3" hidden="false" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
-                        <characteristic name="Strength" id="88f0-cd1a-8e7d-da06" hidden="false" typeId="24d9-b8e1-a355-2458">6</characteristic>
-                        <characteristic name="AP" id="b591-5f5c-28a5-b10" hidden="false" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-                        <characteristic name="Type" id="259a-38ee-a78c-f199" hidden="false" typeId="2f86-c8b4-b3b4-3ff9">Assault 2</characteristic>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Rupture (6+)</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink name="Pinning" id="3e95-73be-5ff9-7156" hidden="false" type="rule" targetId="1c96-205c-59a0-3cf2"/>
                     <infoLink name="Blast" id="7762-2a31-60c8-1984" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8">
                       <modifiers>
                         <modifier type="set" value="Blast (3&quot;)" field="name"/>
                       </modifiers>
                     </infoLink>
+                    <infoLink name="Rupture (X)" id="2118-3643-d945-3a52" hidden="false" type="rule" targetId="f742-4781-aad3-2717">
+                      <modifiers>
+                        <modifier type="set" value="Rupture (6+)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Pinning" id="2491-a07f-93a4-11c0" hidden="false" type="rule" targetId="1c96-205c-59a0-3cf2"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -12243,7 +12308,16 @@ The 2nd bullet point about Veletaris Assault Squadrons getting Outflank is not i
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="bf74-20ed-ddc9-8ea1" name="Solar Auxilia Command Tank" publicationId="15a4-fc68-502d-48a9" page="136" hidden="false">
-      <description>A model with this special rule is selected as a separate unit, but during deployment must be assigned to another unit and may not be deployed as a separate unit. If multiple appropriate units are available, the controlling player chooses which unit a model with this special rule is assigned to. Once assigned to a unit, a model with this special rule counts as a part of that unit and may not leave the unit during play for any reason. A Leman Russ Command Tank must be assigned to a Leman Russ Strike Squadron or a Leman Russ Assault Squadron.</description>
+      <description>A model with this special rule is selected as a separate unit, but during deployment must be assigned to another unit and may not be deployed as a separate unit. If multiple appropriate units are available, the controlling player chooses which unit a model with this special rule is assigned to. Once assigned to a unit, a model with this special rule counts as a part of that unit and may not leave the unit during play for any reason.
+
+
+A model with this Special Rule must be assigned to another unit made up entirely of models with the Vehicle Unit Type purchased as part of the same Tercio.
+
+
+An Armoured Legate may nominate a single Auxilia Armoured Tercio in the same Detachment, and may use their Solar Auxilia Command Tank Special Rule to join squads within that Tercio as if they were purchased as part of it.
+
+
+In addition, a model with this Special Rule may still make Shooting Attacks as normal in a turn in which they use their Cognis-Signum to provide +1 Ballistic Skill to all other models in their unit, even though this would normally be prevented by using this Wargear.</description>
     </rule>
     <rule id="25f0-12ed-08dd-0781" name="Auxilia Artillerists" publicationId="15a4-fc68-502d-48a9" page="130" hidden="false">
       <description>A Solar Auxilia Rapier Battery must have one Auxilia Gunner per Rapier Carrier in order for all Rapier Carriers to make Shooting Attacks in the Shooting phase. If, at the start of any of the controlling player’s Shooting phases, the Solar Auxilia Rapier Battery contains fewer Auxilia Gunners than Rapier Carriers, then only a number of Rapier Carriers equal to the number of  Auxilia Gunners may make Shooting Attacks in that Shooting phase. In addition, as long as there are at least as many Auxilia Gunners in the unit as there are Rapier Carriers, then the unit cannot be Pinned, automatically passing any Pinning tests it is called upon to take without any dice being rolled (this benefit is lost immediately once the number of Auxilia Gunners is reduced to less than the number of Rapier Carriers in the unit).</description>
@@ -12256,6 +12330,9 @@ Demo charge		- 	10	1	Melee, Armourbane (Melee), Instant Death, Brutal (2)</descr
     </rule>
     <rule id="2d37-470b-462f-9c99" name="Independent Operators" publicationId="15a4-fc68-502d-48a9" page="133" hidden="false">
       <description>When deployed onto the battlefield (either at the start of the battle, when arriving from Reserves or Disembarking from a model with the Transport Sub-type), all models with this special rule in the same unit must be placed within unit coherency following the normal rules for deploying/Disembarking units, but after deployment or Disembarkation all models in the unit with this special rule are considered to have left the unit, and now form separate units of a single model each. For the remainder of the battle, a model with this special rule is considered a separate unit for all purposes and may not join other units or reform into their original unit. However, the whole unit must be removed as casualties before the opposing player scores any Victory points for the destruction of any model that was part of the unit.</description>
+    </rule>
+    <rule name="Field Officer" id="bc24-be26-6ba5-135c" hidden="false">
+      <description>When this model with this Special Rule joins a unit with the CloseOrder Unit Sub-Type, it automatically gains the Close-Order Unit Sub-Type for as long as it remains part of that unit.</description>
     </rule>
   </sharedRules>
   <catalogueLinks>
