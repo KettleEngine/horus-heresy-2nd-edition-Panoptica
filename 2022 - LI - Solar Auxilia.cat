@@ -1600,7 +1600,7 @@
                 <entryLink import="true" name="Dracosan Armoured Transport" hidden="false" id="e17c-ada3-2e33-b4c1" collective="false" targetId="496b-a01b-3726-0a44" type="selectionEntry"/>
                 <entryLink import="true" name="Defence Line" hidden="false" id="29cf-628c-e372-cf5e" type="selectionEntry" targetId="ea91-0572-393c-e925">
                   <modifiers>
-                    <modifier type="set" value="true" field="hidden">
+                    <modifier type="set" value="false" field="hidden">
                       <conditions>
                         <condition type="equalTo" value="1" field="selections" scope="force" childId="d9a0-4875-fb75-f9a9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                       </conditions>
@@ -2712,7 +2712,7 @@
                 <entryLink id="0ef4-6f77-7615-2346" name="Dracosan Armoured Transport" hidden="false" collective="false" import="true" targetId="496b-a01b-3726-0a44" type="selectionEntry"/>
                 <entryLink import="true" name="Defence Line" hidden="false" id="787c-d294-9ec2-d3da" type="selectionEntry" targetId="ea91-0572-393c-e925">
                   <modifiers>
-                    <modifier type="set" value="true" field="hidden">
+                    <modifier type="set" value="false" field="hidden">
                       <conditions>
                         <condition type="equalTo" value="1" field="selections" scope="force" childId="d9a0-4875-fb75-f9a9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                       </conditions>
@@ -3111,7 +3111,7 @@
                 </entryLink>
                 <entryLink import="true" name="Defence Line" hidden="false" id="06b8-9b8b-0a05-1827" type="selectionEntry" targetId="ea91-0572-393c-e925">
                   <modifiers>
-                    <modifier type="set" value="true" field="hidden">
+                    <modifier type="set" value="false" field="hidden">
                       <conditions>
                         <condition type="equalTo" value="1" field="selections" scope="force" childId="d9a0-4875-fb75-f9a9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                       </conditions>
@@ -5719,7 +5719,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 <entryLink id="e6d3-88d2-2407-9269" name="Dracosan Armoured Transport" hidden="false" collective="false" import="true" targetId="496b-a01b-3726-0a44" type="selectionEntry"/>
                 <entryLink import="true" name="Defence Line" hidden="false" id="cfa6-218b-5109-bc34" type="selectionEntry" targetId="ea91-0572-393c-e925">
                   <modifiers>
-                    <modifier type="set" value="true" field="hidden">
+                    <modifier type="set" value="false" field="hidden">
                       <conditions>
                         <condition type="equalTo" value="1" field="selections" scope="force" childId="d9a0-4875-fb75-f9a9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                       </conditions>
@@ -6328,6 +6328,15 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                   </modifiers>
                 </entryLink>
                 <entryLink id="77f5-573a-7cdb-c441" name="Dracosan Armoured Transport" hidden="false" collective="false" import="true" targetId="496b-a01b-3726-0a44" type="selectionEntry"/>
+                <entryLink import="true" name="Defence Line" hidden="false" id="4fdd-d239-bc9d-9896" type="selectionEntry" targetId="ea91-0572-393c-e925">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="d9a0-4875-fb75-f9a9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="bc4a-9998-2da4-e061" name="Auxilia" hidden="false" collective="false" import="true" defaultSelectionEntryId="516d-d14f-b11d-2879">
@@ -8080,7 +8089,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 <entryLink id="0ecc-ad28-43db-b72a" name="Dracosan Armoured Transport" hidden="false" collective="false" import="true" targetId="496b-a01b-3726-0a44" type="selectionEntry"/>
                 <entryLink import="true" name="Defence Line" hidden="false" id="dcfe-0588-b468-5483" type="selectionEntry" targetId="ea91-0572-393c-e925">
                   <modifiers>
-                    <modifier type="set" value="true" field="hidden">
+                    <modifier type="set" value="false" field="hidden">
                       <conditions>
                         <condition type="equalTo" value="1" field="selections" scope="force" childId="d9a0-4875-fb75-f9a9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                       </conditions>
@@ -9168,7 +9177,7 @@ Twin-Linked
             </entryLink>
             <entryLink import="true" name="Defence Line" hidden="false" id="f89e-d854-ce67-637b" type="selectionEntry" targetId="ea91-0572-393c-e925">
               <modifiers>
-                <modifier type="set" value="true" field="hidden">
+                <modifier type="set" value="false" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="d9a0-4875-fb75-f9a9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
