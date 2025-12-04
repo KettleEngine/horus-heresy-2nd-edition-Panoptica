@@ -7111,6 +7111,13 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                             <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
                             <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
                           </characteristics>
+                          <modifiers>
+                            <modifier type="set" value="11" field="8d4e-2aea-fffc-d556">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e78a-4108-1c56-8250" shared="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
                         </profile>
                       </profiles>
                       <selectionEntryGroups>
@@ -7189,7 +7196,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                         </entryLink>
                       </entryLinks>
                       <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="185"/>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="145"/>
                       </costs>
                       <categoryLinks>
                         <categoryLink targetId="e2b6-b770-784c-9e95" id="5c0b-faa9-4959-ae28" name="Vehicle:" primary="false"/>
@@ -7487,6 +7494,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 </modifier>
               </modifiers>
             </infoLink>
+            <infoLink name="Artillery Spotters" id="e2a8-61dd-fac6-3bb8" hidden="false" type="rule" targetId="ae37-6902-8062-ed89"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="aba2-1ca5-8019-fdff" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -8175,7 +8183,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
                                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
                                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
-                                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+                                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">4+</characteristic>
                               </characteristics>
                             </profile>
                           </profiles>
@@ -8292,12 +8300,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
               </constraints>
               <infoLinks>
                 <infoLink id="03de-2559-ae5f-19b1" name="Sentry Protocols" hidden="false" targetId="97aa-da60-3ccc-7152" type="rule"/>
-                <infoLink id="5ee4-5d5f-398d-47a5" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Bulky (4)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="2662-3817-b139-6c7c" name="Tercio" hidden="false" targetId="6516-f81d-457b-a2cc" type="rule"/>
+                <infoLink id="2662-3817-b139-6c7c" name="Immobile" hidden="false" targetId="1bea-7e8e-f456-9f65" type="rule"/>
                 <infoLink id="7a42-ad21-7547-96ed" name="Furious Charge (X)" hidden="false" targetId="2821-9269-862f-0554" type="rule">
                   <modifiers>
                     <modifier type="set" field="name" value="Furious Charge (1)"/>
@@ -8314,6 +8317,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                     <modifier type="set" field="name" value="Firing Protocols (2)"/>
                   </modifiers>
                 </infoLink>
+                <infoLink id="717e-70c9-1686-a71d" name="Tercio" hidden="false" targetId="6516-f81d-457b-a2cc" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="0f06-68df-a24d-f08d" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -8344,15 +8348,15 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                           <characteristics>
                             <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Automated Artillery)</characteristic>
                             <characteristic name="Move" typeId="893e-2d76-8f04-44e5">-</characteristic>
-                            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">1</characteristic>
-                            <characteristic name="BS" typeId="74ae-c840-0036-d244">2</characteristic>
-                            <characteristic name="S" typeId="e478-41d4-a092-48a8">1</characteristic>
-                            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">-</characteristic>
+                            <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
+                            <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+                            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
                             <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-                            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">1</characteristic>
-                            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">-</characteristic>
+                            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">-</characteristic>
                             <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">5</characteristic>
-                            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3</characteristic>
+                            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -8503,10 +8507,15 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                 </entryLink>
-                <entryLink id="3388-068b-9209-4592" name="Gravis Lascannon" hidden="false" collective="false" import="true" targetId="1fe0-7c96-5200-0e39" type="selectionEntry">
+                <entryLink id="3388-068b-9209-4592" name="Gravis Heavy Lascannon" hidden="false" collective="false" import="true" targetId="a568-d963-efea-0372" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="prepend" value="Hull (Front) Mounted
+Twin-Linked
+" field="name" join=" "/>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -8527,7 +8536,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 </entryLink>
                 <entryLink id="dc68-bfa9-7008-eb02" name="Demolisher Cannon" hidden="false" collective="false" import="true" targetId="1d4a-05a3-1589-915d" type="selectionEntry">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -8563,7 +8572,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                     <modifier type="set" field="name" value="Hull (Left) &amp; Hull (Right) Mounted Lascannon"/>
                   </modifiers>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                 </entryLink>
               </entryLinks>
