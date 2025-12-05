@@ -7805,8 +7805,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                                 </modifier>
                               </modifiers>
                               <constraints>
-                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd68-a8e5-801b-0681-min" includeChildSelections="false"/>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd68-a8e5-801b-0681-max" includeChildSelections="false"/>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd68-a8e5-801b-0681" includeChildSelections="false"/>
                               </constraints>
                             </entryLink>
                           </entryLinks>
