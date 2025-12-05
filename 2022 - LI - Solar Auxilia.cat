@@ -31,6 +31,7 @@
         <categoryLink id="6489-237d-8136-f214" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="1a8b-0e69-4574-ebb1" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="b5c3-bbcb-1830-c624" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink targetId="8f42-a824-fb5f-8fea" id="f555-e4c9-d853-dbe7" primary="false" name="Compulsory Troops:"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="ba87-d770-24f2-e5f5" name="Leman Russ Strike Squadron" hidden="false" collective="false" import="true" targetId="3fce-bf1a-6369-a386" type="selectionEntry">
@@ -12523,7 +12524,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
           <rules>
             <rule id="05af-452b-0e23-3b16" name="Reborn Cohorts" publicationId="15a4-fc68-502d-48a9" page="71" hidden="false">
               <description>Effects
-• All models with the Infantry Unit Type in a Detachment using this Cohort Doctrine gain a bonus of +1 to their Leadership Characteristic and the Stubborn special rule.
+• All models with the Infantry Unit Type in a Detachment using this Cohort Doctrine gain a bonus of +1 to their Leadership Characteristic, to a maximum of Leadership 10, and the Stubborn Special Rule.
 • When making a Shooting Attack during any Game Turn in which the attacking unit has not Moved, a unit from a Detachment using this Cohort Doctrine may re-roll all failed To Hit rolls of ‘1’.
 
 Limitations
@@ -12560,14 +12561,17 @@ Limitations
           <rules>
             <rule id="a28b-aeef-6d88-8985" name="Armoured Fist Pattern Cohorts" publicationId="15a4-fc68-502d-48a9" page="71" hidden="false">
               <description>Effects
-• A Detachment using this Cohort Doctrine may select Auxilia Armoured Tercios as non-Compulsory Troops choices. An Auxilia Armoured Tercio selected as a Troops choice may only consist of a single unit, which must be a Solar Auxilia Leman Russ Strike Squadron.
+• A Detachment using this Cohort Doctrine may select Auxilia Armoured Tercios as Troops choices. An Auxilia Armoured Tercio selected as a Troops choice may only consist of a single unit, Auxilia Armoured Tercios selected as Compulsory Troop Choices in a Primary Detachment using this Cohort Doctrine gain the Line Unit Sub-type.
+• The first time in a game that any models with the Infantry Unit Type Disembark from their own Dedicated Transport, they gain the Relentless Special Rule until the end of that turn.
 • In a Primary Detachment using this Cohort Doctrine, a single Solar Auxilia Armoured Command Section composed of only a single Leman Russ Command Tank, must be selected as a HQ choice. This Leman Russ Command Tank gains the Cohort Doctrines special rule and must be selected as the army’s Warlord and must use the Armoured Legate Warlord trait (see below). A model with the Vehicle Unit Type must be selected as the Warlord of an army using this Cohort Doctrine, regardless of any rules which would require a model to be selected as the army’s Warlord (note this means that some units and Characters cannot be selected as part of this army):
 
 Warlord Trait: Armoured Legate
 A Warlord with this Warlord Trait gains the Cohort Doctrines special rule, a 5+ Invulnerable Save and increases its BS by +1.
 
 Limitations
-• All units composed entirely of models with the Infantry Unit Type must begin the battle Embarked on a model with the Transport Unit Sub-type or in Reserves. (THIS MUST BE MANUALLY CHECKED)</description>
+• All units composed entirely of models with the Infantry Unit Type must begin the battle Embarked on a model with the Transport Unit Sub-type or in Reserves, unless the unit has the Mechanised Unit Sub-type. (THIS MUST BE MANUALLY CHECKED)
+• A Detachment using this Cohort Doctrine may not include any models with a Movement Characteristic of 0 or ‘-’.
+• An army which includes at least one Detachment using this Cohort Doctrine may not select any Fortification choices.</description>
             </rule>
           </rules>
           <costs>
