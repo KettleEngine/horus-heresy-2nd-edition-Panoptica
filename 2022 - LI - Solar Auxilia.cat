@@ -5671,34 +5671,6 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1"/>
                       </costs>
-                      <selectionEntryGroups>
-                        <selectionEntryGroup name="may replace a Bayonet with a Chain Bayonet:" id="e86b-0ef8-7a74-b15d" hidden="false">
-                          <entryLinks>
-                            <entryLink import="true" name="Bayonet" hidden="false" id="941a-fee4-ade9-93f9" collective="false" targetId="6904-6936-d6ca-a0eb" type="selectionEntry">
-                              <constraints>
-                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9081-1299-4c39-ea83" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c83-fa21-ef66-b3b4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                              </constraints>
-                            </entryLink>
-                            <entryLink import="true" name="Chain Bayonet" hidden="false" id="f290-023c-2016-2e3c" type="selectionEntry" targetId="bd82-cef6-67f8-19b5">
-                              <costs>
-                                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1"/>
-                              </costs>
-                            </entryLink>
-                          </entryLinks>
-                          <constraints>
-                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0bb-6fb2-ba99-9059-min" includeChildSelections="false"/>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0bb-6fb2-ba99-9059-max" includeChildSelections="false"/>
-                          </constraints>
-                          <modifiers>
-                            <modifier type="set" value="true" field="hidden">
-                              <conditions>
-                                <condition type="equalTo" value="0" field="selections" scope="force" childId="021e-6841-7375-7862" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                              </conditions>
-                            </modifier>
-                          </modifiers>
-                        </selectionEntryGroup>
-                      </selectionEntryGroups>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -5871,13 +5843,6 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0934-d608-acb1-8dfb" type="min"/>
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df1e-d0fc-4e6d-46b3" type="max"/>
                       </constraints>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="equalTo" value="1" field="selections" scope="force" childId="021e-6841-7375-7862" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </entryLink>
                   </entryLinks>
                   <costs>
@@ -5888,34 +5853,6 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                     <categoryLink targetId="6399-5c65-7833-1025" id="fb3f-9225-445d-a4ed" name="Line Sub-type" primary="false"/>
                     <categoryLink targetId="0af0-ea84-09d7-2b1f" id="85e9-e5c7-439d-ad66" name="Close-order Sub-type" primary="false"/>
                   </categoryLinks>
-                  <selectionEntryGroups>
-                    <selectionEntryGroup name="may replace a Bayonet with a Chain Bayonet:" id="5dbb-835b-95c9-d43d" hidden="false">
-                      <entryLinks>
-                        <entryLink import="true" name="Bayonet" hidden="false" id="7459-a476-5c02-3990" collective="false" targetId="6904-6936-d6ca-a0eb" type="selectionEntry">
-                          <constraints>
-                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="69d3-ea88-75bf-59cb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbcc-083d-f226-417f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                          </constraints>
-                        </entryLink>
-                        <entryLink import="true" name="Chain Bayonet" hidden="false" id="b99a-fb73-33a7-9d67" type="selectionEntry" targetId="bd82-cef6-67f8-19b5">
-                          <costs>
-                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1"/>
-                          </costs>
-                        </entryLink>
-                      </entryLinks>
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="996f-1593-25fb-9bc7-min" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="996f-1593-25fb-9bc7-max" includeChildSelections="false"/>
-                      </constraints>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="equalTo" value="0" field="selections" scope="force" childId="021e-6841-7375-7862" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
                 </selectionEntry>
                 <selectionEntry id="f53f-6476-b0c8-4289" name="Auxilia Veteran w/ Autorifle" hidden="true" collective="false" import="true" type="model">
                   <modifiers>
@@ -7853,31 +7790,48 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1"/>
                       </costs>
                       <selectionEntryGroups>
-                        <selectionEntryGroup name="may replace a Bayonet with a Chain Bayonet:" id="18c2-8813-9fc9-f645" hidden="false">
+                        <selectionEntryGroup name="Bayonet (1)" id="18c2-8813-9fc9-f645" hidden="false">
                           <entryLinks>
                             <entryLink import="true" name="Bayonet" hidden="false" id="f663-7f2d-de08-c675" collective="false" targetId="6904-6936-d6ca-a0eb" type="selectionEntry">
                               <constraints>
                                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b59-66f9-aadc-ef78" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bec4-e5a0-9f28-4938" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                               </constraints>
-                            </entryLink>
-                            <entryLink import="true" name="Chain Bayonet" hidden="false" id="5b61-2a79-a2d9-246d" type="selectionEntry" targetId="bd82-cef6-67f8-19b5">
-                              <costs>
-                                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1"/>
-                              </costs>
+                              <modifiers>
+                                <modifier type="set" value="0" field="3b59-66f9-aadc-ef78">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="021e-6841-7375-7862" shared="true"/>
+                                  </conditions>
+                                </modifier>
+                              </modifiers>
                             </entryLink>
                           </entryLinks>
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c980-01c9-64f9-4bd9-min" includeChildSelections="false"/>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c980-01c9-64f9-4bd9-max" includeChildSelections="false"/>
                           </constraints>
-                          <modifiers>
-                            <modifier type="set" value="true" field="hidden">
-                              <conditions>
-                                <condition type="equalTo" value="0" field="selections" scope="force" childId="021e-6841-7375-7862" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                              </conditions>
-                            </modifier>
-                          </modifiers>
+                          <selectionEntries>
+                            <selectionEntry type="upgrade" import="true" name="may replace a Bayonet with a Chain Bayonet " hidden="false" id="a314-b3ee-8773-8486">
+                              <entryLinks>
+                                <entryLink import="true" name="Chain Bayonet" hidden="false" id="5b61-2a79-a2d9-246d" type="selectionEntry" targetId="bd82-cef6-67f8-19b5">
+                                  <costs>
+                                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1"/>
+                                  </costs>
+                                  <constraints>
+                                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd68-a8e5-801b-0681-min" includeChildSelections="false"/>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd68-a8e5-801b-0681-max" includeChildSelections="false"/>
+                                  </constraints>
+                                </entryLink>
+                              </entryLinks>
+                              <modifiers>
+                                <modifier type="set" value="true" field="hidden">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="021e-6841-7375-7862" shared="true"/>
+                                  </conditions>
+                                </modifier>
+                              </modifiers>
+                            </selectionEntry>
+                          </selectionEntries>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
                     </entryLink>
@@ -7964,13 +7918,6 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57c0-c6fd-1b11-5c31" type="min"/>
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4c0-1265-743d-5433" type="max"/>
                       </constraints>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="equalTo" value="1" field="selections" scope="force" childId="021e-6841-7375-7862" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </entryLink>
                   </entryLinks>
                   <costs>
@@ -7981,34 +7928,6 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                     <categoryLink targetId="6399-5c65-7833-1025" id="032f-5a17-48b2-a045" name="Line Sub-type" primary="false"/>
                     <categoryLink targetId="0af0-ea84-09d7-2b1f" id="fc50-2a81-43e7-9e79" name="Close-order Sub-type" primary="false"/>
                   </categoryLinks>
-                  <selectionEntryGroups>
-                    <selectionEntryGroup name="may replace a Bayonet with a Chain Bayonet:" id="9f5d-cd7a-cfc1-c0ff" hidden="false">
-                      <entryLinks>
-                        <entryLink import="true" name="Bayonet" hidden="false" id="f44f-e1d4-eaec-f573" collective="false" targetId="6904-6936-d6ca-a0eb" type="selectionEntry">
-                          <constraints>
-                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e86b-0b3e-988e-02be" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af8c-1989-7d19-056f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                          </constraints>
-                        </entryLink>
-                        <entryLink import="true" name="Chain Bayonet" hidden="false" id="7dc5-099f-0905-1648" type="selectionEntry" targetId="bd82-cef6-67f8-19b5">
-                          <costs>
-                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1"/>
-                          </costs>
-                        </entryLink>
-                      </entryLinks>
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="869a-44d0-7cc5-09a0-min" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="869a-44d0-7cc5-09a0-max" includeChildSelections="false"/>
-                      </constraints>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="equalTo" value="0" field="selections" scope="force" childId="021e-6841-7375-7862" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
                 </selectionEntry>
                 <selectionEntry id="1306-1e1d-992a-6fc6" name="Auxilia Veteran w/ Autorifle" hidden="true" collective="false" import="true" type="model">
                   <modifiers>
