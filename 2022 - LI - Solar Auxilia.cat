@@ -7792,19 +7792,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                       <selectionEntryGroups>
                         <selectionEntryGroup name="Bayonet (1)" id="18c2-8813-9fc9-f645" hidden="false">
                           <entryLinks>
-                            <entryLink import="true" name="Bayonet" hidden="false" id="f663-7f2d-de08-c675" collective="false" targetId="6904-6936-d6ca-a0eb" type="selectionEntry">
-                              <constraints>
-                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b59-66f9-aadc-ef78" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bec4-e5a0-9f28-4938" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                              </constraints>
-                              <modifiers>
-                                <modifier type="set" value="0" field="3b59-66f9-aadc-ef78">
-                                  <conditions>
-                                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="021e-6841-7375-7862" shared="true"/>
-                                  </conditions>
-                                </modifier>
-                              </modifiers>
-                            </entryLink>
+                            <entryLink import="true" name="Bayonet" hidden="false" id="f663-7f2d-de08-c675" collective="false" targetId="6904-6936-d6ca-a0eb" type="selectionEntry"/>
                           </entryLinks>
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c980-01c9-64f9-4bd9-min" includeChildSelections="false"/>
