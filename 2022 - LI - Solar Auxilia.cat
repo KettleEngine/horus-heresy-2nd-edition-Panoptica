@@ -1362,6 +1362,18 @@
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                       </costs>
                     </entryLink>
+                    <entryLink import="true" name="Chainaxe" hidden="true" id="348a-4ccd-bc14-a26b" type="selectionEntry" targetId="85b9-4e50-af11-c295">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="021e-6841-7375-7862" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Lasrifle" id="2f75-e8fb-402a-c2a1" hidden="false">
@@ -3087,6 +3099,18 @@
                               <costs>
                                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                               </costs>
+                            </entryLink>
+                            <entryLink import="true" name="Chainaxe" hidden="true" id="b64b-8dfc-4d91-f1f4" type="selectionEntry" targetId="85b9-4e50-af11-c295">
+                              <costs>
+                                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
+                              </costs>
+                              <modifiers>
+                                <modifier type="set" value="false" field="hidden">
+                                  <conditions>
+                                    <condition type="equalTo" value="1" field="selections" scope="force" childId="021e-6841-7375-7862" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                                  </conditions>
+                                </modifier>
+                              </modifiers>
                             </entryLink>
                           </entryLinks>
                         </selectionEntryGroup>
@@ -4852,12 +4876,6 @@ If the unit that includes Aevos Jovan also includes one or more Medicae Orderlie
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e742-de0b-73c4-4fb8" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="1c72-89c4-af8d-448b" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="3d50-2f85-06ff-6aee" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fcf-131d-51f4-a5dd" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="332a-5236-d320-c550" type="max"/>
-              </constraints>
-            </entryLink>
             <entryLink id="f632-5501-0cdc-c966" name="Void Armour" hidden="false" collective="false" import="true" targetId="6112-2c54-ceb5-a24d" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e13-7fa6-2ec1-ac08" type="min"/>
@@ -4868,6 +4886,29 @@ If the unit that includes Aevos Jovan also includes one or more Medicae Orderlie
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60"/>
           </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Close Combat Weapon" id="9d26-e71d-3048-a8c7" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Chainaxe" hidden="true" id="f70c-2379-f7d1-6989" type="selectionEntry" targetId="85b9-4e50-af11-c295">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="021e-6841-7375-7862" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="1c72-89c4-af8d-448b" collective="false" targetId="3d50-2f85-06ff-6aee" type="selectionEntry"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5fcf-131d-51f4-a5dd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="332a-5236-d320-c550" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry id="ff07-ca6c-46c8-b8f6" name="Medicae Orderly" hidden="false" collective="false" import="true" type="model">
           <constraints>
@@ -5077,6 +5118,18 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
+                </entryLink>
+                <entryLink import="true" name="Chainaxe" hidden="true" id="2c67-76be-f9f2-5bc0" type="selectionEntry" targetId="85b9-4e50-af11-c295">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="021e-6841-7375-7862" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -5667,6 +5720,18 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                               <costs>
                                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                               </costs>
+                            </entryLink>
+                            <entryLink import="true" name="Chainaxe" hidden="true" id="9fad-b6a3-1015-d8ef" type="selectionEntry" targetId="85b9-4e50-af11-c295">
+                              <costs>
+                                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
+                              </costs>
+                              <modifiers>
+                                <modifier type="set" value="false" field="hidden">
+                                  <conditions>
+                                    <condition type="equalTo" value="1" field="selections" scope="force" childId="021e-6841-7375-7862" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                                  </conditions>
+                                </modifier>
+                              </modifiers>
                             </entryLink>
                           </entryLinks>
                         </selectionEntryGroup>
@@ -6330,6 +6395,18 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                               <costs>
                                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                               </costs>
+                            </entryLink>
+                            <entryLink import="true" name="Chainaxe" hidden="true" id="7b46-2145-242a-69d2" type="selectionEntry" targetId="85b9-4e50-af11-c295">
+                              <costs>
+                                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
+                              </costs>
+                              <modifiers>
+                                <modifier type="set" value="false" field="hidden">
+                                  <conditions>
+                                    <condition type="equalTo" value="1" field="selections" scope="force" childId="021e-6841-7375-7862" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                                  </conditions>
+                                </modifier>
+                              </modifiers>
                             </entryLink>
                           </entryLinks>
                         </selectionEntryGroup>
@@ -7865,6 +7942,18 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                               <costs>
                                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                               </costs>
+                            </entryLink>
+                            <entryLink import="true" name="Chainaxe" hidden="true" id="852a-578c-800f-a27b" type="selectionEntry" targetId="85b9-4e50-af11-c295">
+                              <costs>
+                                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
+                              </costs>
+                              <modifiers>
+                                <modifier type="set" value="false" field="hidden">
+                                  <conditions>
+                                    <condition type="equalTo" value="1" field="selections" scope="force" childId="021e-6841-7375-7862" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                                  </conditions>
+                                </modifier>
+                              </modifiers>
                             </entryLink>
                           </entryLinks>
                         </selectionEntryGroup>
