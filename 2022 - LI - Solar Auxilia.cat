@@ -7799,7 +7799,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c980-01c9-64f9-4bd9-max" includeChildSelections="false"/>
                           </constraints>
                           <selectionEntries>
-                            <selectionEntry type="upgrade" import="true" name="may replace a Bayonet with a Chain Bayonet " hidden="false" id="a314-b3ee-8773-8486">
+                            <selectionEntry type="upgrade" import="true" name="may replace a Bayonet with a Chain Bayonet " hidden="true" id="a314-b3ee-8773-8486">
                               <entryLinks>
                                 <entryLink import="true" name="Chain Bayonet" hidden="false" id="5b61-2a79-a2d9-246d" type="selectionEntry" targetId="bd82-cef6-67f8-19b5">
                                   <costs>
