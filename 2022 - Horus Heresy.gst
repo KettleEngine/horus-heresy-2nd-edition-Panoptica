@@ -11165,7 +11165,7 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
     </selectionEntry>
     <selectionEntry id="6a2a-390e-b182-6e03" name="Earthshaker Battery" publicationId="d0df-7166-5cd3-89fd" page="25" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="3df6-1c43-8803-7dc8" name="Earthshaker cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="3df6-1c43-8803-7dc8" name="Earthshaker Battery" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot; - 240&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
