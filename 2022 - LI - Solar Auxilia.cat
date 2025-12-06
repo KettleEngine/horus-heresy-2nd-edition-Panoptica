@@ -10742,7 +10742,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="7e5e-e884-86c6-16e7" name="Earthshaker cannon" hidden="false" collective="false" import="true" targetId="cc2e-df5f-1778-29d8" type="selectionEntry">
+            <entryLink id="7e5e-e884-86c6-16e7" name="Earthshaker Battery" hidden="false" collective="false" import="true" targetId="6a2a-390e-b182-6e03" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="name" value="Centreline (Rear) Mounted Earthshaker cannon"/>
               </modifiers>
