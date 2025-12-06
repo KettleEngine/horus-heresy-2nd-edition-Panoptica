@@ -4725,14 +4725,9 @@
             <entryLink id="3d65-ee7f-74e6-e11b" name="Dreadclaw Drop Pod" hidden="true" collective="false" import="true" targetId="bbe8-818d-3068-d79c" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
-                        <condition field="selections" scope="1bfa-2413-beb9-5f32" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="atMost"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="1bfa-2413-beb9-5f32" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
                 </modifier>
               </modifiers>
               <constraints>
@@ -4741,20 +4736,7 @@
             </entryLink>
             <entryLink id="32a9-e919-e67d-5610" name="Land Raider Spartan" hidden="false" collective="false" import="true" targetId="bac1-f30e-2c04-d27d" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="1bfa-2413-beb9-5f32" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="false" field="hidden">
-                  <conditions>
-                    <condition type="greaterThan" value="5" field="selections" scope="1bfa-2413-beb9-5f32" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
+                <modifier type="set" value="false" field="hidden"/>
               </modifiers>
             </entryLink>
           </entryLinks>
