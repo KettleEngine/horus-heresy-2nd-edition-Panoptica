@@ -8094,13 +8094,14 @@ A. No.</description>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="4e4f-59d7-cea8-fa2f" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="4e4f-59d7-cea8-fa2f" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
         <infoLink id="0619-3f5c-4161-0e0b" name="Shell Shock (X)" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Shell Shock (1)"/>
           </modifiers>
         </infoLink>
         <infoLink id="7c56-5f2c-0065-41c0" name="Reactor Overload" hidden="false" targetId="a073-b86c-7bc1-d3f9" type="rule"/>
+        <infoLink id="3fcb-9243-0131-1053" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -11187,6 +11188,121 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Vortex Missile" hidden="false" id="61b3-ae15-c66a-855e">
+      <profiles>
+        <profile name="Vortex Missile" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ab6d-94b0-0057-83fe">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot; - 240&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">16</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Destructor, Instant Death, Massive Blast (7”), Vortex, One Use</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Destroyer" id="650a-bd2f-bf3d-6ff4" hidden="false" type="rule" targetId="44d6-09b2-3bd3-b2d6"/>
+        <infoLink name="Instant Death" id="3c26-185e-000c-d6b2" hidden="false" type="rule" targetId="9e96-fff1-b916-d9a3"/>
+        <infoLink name="Blast" id="e860-e2d8-1c3e-ce28" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
+        <infoLink name="One Use/One Shot" id="5e8e-b873-9ebb-824f" hidden="false" type="rule" targetId="df0c-5423-b892-491e"/>
+        <infoLink name="Vortex" id="822b-2690-238a-2f7f" hidden="false" type="rule" targetId="148f-4f32-9273-2974"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Graviton Ruinator" hidden="false" id="f9d9-4109-f367-c3a2">
+      <profiles>
+        <profile name="Graviton Ruinator" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="acdb-adea-685f-907b">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">*</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Apocalyptic Blast (10”), Gravitic Implosion*, Concussive (3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Destroyer" id="5d98-11d5-5cf6-3db7" hidden="false" type="rule" targetId="44d6-09b2-3bd3-b2d6"/>
+        <infoLink name="Blast" id="cf33-778f-77dc-c5e5" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
+        <infoLink name="Concussive (X)" id="3ca7-82bd-630b-e458" hidden="false" type="rule" targetId="7ce5-1bfb-64e6-f826">
+          <modifiers>
+            <modifier type="set" value="Concussive (3)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Gravitic Implosion" id="fcc5-99b0-37e3-3931" hidden="false" type="rule" targetId="3308-8265-31ec-fbd4">
+          <modifiers>
+            <modifier type="append" value="*" field="name" join=""/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Volkite Eradicator" hidden="false" id="2432-6266-64f6-d310">
+      <profiles>
+        <profile name="Volkite Eradicator" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="8519-6e6a-1ef0-566e">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">60&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Heavy Beam, Breaching (5+), Deflagrate, Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Heavy Beam" id="7adf-8f59-d3a9-5b5f" hidden="false" type="rule" targetId="24e7-27da-9bf7-f096"/>
+        <infoLink name="Breaching (X)" id="fbf5-0fdb-2f27-9791" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
+          <modifiers>
+            <modifier type="set" value="Breaching (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Deflagrate" id="54a3-f927-9a9a-b459" hidden="false" type="rule" targetId="60bc-f79a-67ae-be4f"/>
+        <infoLink name="Pinning" id="c5a6-70e3-e016-9ae1" hidden="false" type="rule" targetId="1c96-205c-59a0-3cf2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Graviton Destructor" hidden="false" id="0d8b-e173-93ae-cf67">
+      <profiles>
+        <profile name="Graviton Destructor" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ada0-1b69-5b46-21b1">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">60&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">*</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Massive Blast (7”), Gravitic Implosion*, Concussive (3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Destroyer" id="925c-5b80-4f8b-d407" hidden="false" type="rule" targetId="44d6-09b2-3bd3-b2d6"/>
+        <infoLink name="Blast" id="c7de-b6a8-706f-a81b" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
+        <infoLink name="Concussive (X)" id="9e83-1713-d4f5-fa2c" hidden="false" type="rule" targetId="7ce5-1bfb-64e6-f826">
+          <modifiers>
+            <modifier type="set" value="Concussive (3)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Gravitic Implosion" id="dc57-c419-c2aa-805b" hidden="false" type="rule" targetId="3308-8265-31ec-fbd4">
+          <modifiers>
+            <modifier type="append" value="*" field="name" join=""/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ursus Claw" hidden="false" id="d19b-231e-0ff6-5a84">
+      <profiles>
+        <profile name="Ursus Claw" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="db85-53c9-605f-96f0">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24“</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">11</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Destructor, Sniper, Prey-Snare (Maxima)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Destructor" id="4ccf-3909-059b-4b26" hidden="false" type="rule" targetId="1f93-c765-f7b2-a025"/>
+        <infoLink name="Sniper" id="0eb1-0344-fee7-5449" hidden="false" type="rule" targetId="9cd8-e726-5dbe-b106"/>
+        <infoLink name="Ordnance" id="f468-fd13-50a6-7468" hidden="false" type="rule" targetId="6c55-22c8-1b01-2105"/>
+        <infoLink name="Prey-Snare (X)" id="4b09-6cb4-d9d7-bfc8" hidden="false" type="rule" targetId="12cd-bd01-b7d9-9e1d">
+          <modifiers>
+            <modifier type="set" value="Prey-Snare (Maxima)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -18272,6 +18388,42 @@ Attacks with this special rule have no effect on models with the Vehicle or Prim
     </rule>
     <rule name="Artillery Spotters" id="ae37-6902-8062-ed89" hidden="false">
       <description>A unit with this Special Rule may grant the benefits of a Cognis Signum it has purchased to any unit with at least one model within 6” of a model from this unit, instead of using the benefit itself - though the unit affected must be from the same Tercio as it to grant it the benefits of the Cognis Signum in this way.</description>
+    </rule>
+    <rule name="Vortex" id="148f-4f32-9273-2974" hidden="false">
+      <description>Once an attack with this special rule has been fully resolved, any Blast markers placed as part of that attack are not removed from play and instead are left in place for the remainder of the battle. Such a Blast marker is then referred to as the Vortex marker. The area under a Vortex marker is treated as Area Terrain for the remainder of the battle, and applies the following effects to all models that enter its boundaries:
+
+
+No line of sight may be drawn through, into, or out of the area covered by the Vortex marker (as such, models within such an area of terrain cannot draw line of sight to any other model, nor can other models draw a line of sight to them).
+
+
+Any models that enter the boundary of this area of terrain, or begin the Movement phase of the model’s Controlling Player within its boundaries, immediately suffer one Str 10, AP 1 Hit and the Instant Death and Armourbane (Melee) special rules. If the model has the Vehicle Unit Type and suffers a Penetrating Hit due to this effect then it adds a modifier of +3 to that roll on the Vehicle Damage table.
+
+
+This area of terrain does not confer a Cover Save and no model within its boundary may use a Cover Save granted by any other rule or effect.</description>
+    </rule>
+    <rule name="Gravitic Implosion" id="3308-8265-31ec-fbd4" hidden="false">
+      <description>Instead of rolling To Wound normally with this weapon, any nonVehicle model that suffers a Hit from a weapon with this special rule must instead roll under their Strength on a 2D6 or suffer a Wound (a roll of double ‘6’ always counts as a failure). Armour Saves and Damage Mitigation rolls may be taken as normal - except Shrouded rolls which may not be used. Against targets with an Armour Value, the attacking player rolls 4D6 for Armour Penetration instead.
+
+
+If a Graviton Pulse weapon also has the Blast type, then leave the Blast marker in place after resolving all Wounds, or otherwise mark the area. This area now counts as both Difficult Terrain and Dangerous Terrain until the start of the next turn of the player that made the attack.</description>
+    </rule>
+    <rule name="Prey-Snare (X)" id="12cd-bd01-b7d9-9e1d" hidden="false">
+      <description>If a weapon with this Special Rule successfully hits a target, but the target model is not removed from play, the target model and the firing model must both immediately roll a D6, and add their Strength Characteristic to the roll. The wielder does not use their Strength Characteristic, but instead uses the weapon’s Strength. The target should use their unmodified Strength value - models with no Strength value use their highest Armour Value instead. Compare the results, with the model with the highest result being the winner. If the target loses the test, it is immediately placed in base-to-base contact with the firing model by the shortest route, and is counted as if the firing model had just charged it in the following Assault phase. If the target wins the Strength test, it is freed from the harpoon, and no further effects occur. In the case of a drawn result, both players should re-roll their D6 and compare the results again.
+
+
+Buildings and Zooming Flyers can never be affected by this Special Rule. In addition, if a model is pulled from unit coherency, its unit must move into coherency with it as soon as it is able. The whole unit counts as locked as in combat. If fired as part of an Overwatch Reaction, and a model is Snared and thus moved, the rest of the unit from which the model came may still make a Charge move, with the whole unit counted as having made a Disordered charge, and the Snared model as being the initial model for purposes of base-to-base contact.
+
+
+In addition, all variants of this Special Rule will have a qualifier in brackets after the rule. These apply certain restrictions on what can or cannot be snared - or targeted - and can be found below:
+
+
+Minoris: This Special Rule cannot affect units with the Knight, Titan, or Gargantuan Unit Type or Sub-type.
+
+
+Majoris: A weapon with this Special Rule may only use it to affect a model that does not have a starting Hull Points or Wounds Characteristic of more than double the Firing Model’s Hull Point or Wounds Characteristic.
+
+
+Maxima: A weapon with this Special Rule may only target units with the Vehicle Unit Type or models with a Wounds Characteristic of 8 or greater. In addition, this Special Rule has no effect on any model with a starting Hull Points or Wounds Characteristic of more than double the Firing Model’s Hull Point or Wounds Characteristic.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

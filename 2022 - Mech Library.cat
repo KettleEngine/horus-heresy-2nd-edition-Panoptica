@@ -970,6 +970,13 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
               </constraints>
               <entryLinks>
                 <entryLink id="e134-8a55-0bb8-c02f" name="Apocalypse Missile Launcher" hidden="false" collective="false" import="true" targetId="e127-4c28-1a5b-e372" type="selectionEntry"/>
+                <entryLink import="true" name="Inferno Gun" hidden="false" id="ed69-7716-a3d4-a8ee" type="selectionEntry" targetId="aa57-fc73-86fe-217c"/>
+                <entryLink import="true" name="Volkite Eradicator" hidden="false" id="b7ea-5531-1384-203f" type="selectionEntry" targetId="2432-6266-64f6-d310"/>
+                <entryLink import="true" name="Graviton Destructor" hidden="false" id="d282-bfa0-25ff-d12a" type="selectionEntry" targetId="0d8b-e173-93ae-cf67"/>
+                <entryLink import="true" name="Vulcan Mega-Bolter" hidden="false" id="42d2-1231-cafa-41ec" type="selectionEntry" targetId="b953-83d7-6cc1-5695"/>
+                <entryLink import="true" name="Plasma Blastgun" hidden="false" id="6dd6-6729-1f09-0f42" type="selectionEntry" targetId="c666-29f6-42da-2e07"/>
+                <entryLink import="true" name="Twin-linked Turbo Laser-Destructor" hidden="false" id="49c8-eea4-e1c1-cc9d" type="selectionEntry" targetId="f947-d7f1-40bd-f425"/>
+                <entryLink import="true" name="Vortex Missile" hidden="false" id="9e89-f144-4a44-60ff" type="selectionEntry" targetId="61b3-ae15-c66a-855e"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -1302,6 +1309,9 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <entryLink id="d7e1-874e-679e-bb26" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="b953-83d7-6cc1-5695" type="selectionEntry"/>
                 <entryLink id="b277-877d-220d-a685" name="Plasma Blastgun" hidden="false" collective="false" import="true" targetId="c666-29f6-42da-2e07" type="selectionEntry"/>
                 <entryLink id="bff0-1ef8-6b6f-e6a7" name="Inferno Gun" hidden="false" collective="false" import="true" targetId="aa57-fc73-86fe-217c" type="selectionEntry"/>
+                <entryLink import="true" name="Ursus Claw" hidden="false" id="2c68-feb3-df3f-8741" type="selectionEntry" targetId="d19b-231e-0ff6-5a84"/>
+                <entryLink import="true" name="Volkite Eradicator" hidden="false" id="120d-f756-96e6-454b" type="selectionEntry" targetId="2432-6266-64f6-d310"/>
+                <entryLink import="true" name="Graviton Destructor" hidden="false" id="34ae-2129-01f3-433a" type="selectionEntry" targetId="0d8b-e173-93ae-cf67"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="2b18-4de0-85f9-e89b" name="Right Arm Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="10b6-946d-d13e-c214">
@@ -1314,6 +1324,9 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <entryLink id="10b6-946d-d13e-c214" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="b953-83d7-6cc1-5695" type="selectionEntry"/>
                 <entryLink id="bc1f-f183-99db-a90b" name="Plasma Blastgun" hidden="false" collective="false" import="true" targetId="c666-29f6-42da-2e07" type="selectionEntry"/>
                 <entryLink id="7be4-7cd1-2c01-4cb4" name="Inferno Gun" hidden="false" collective="false" import="true" targetId="aa57-fc73-86fe-217c" type="selectionEntry"/>
+                <entryLink import="true" name="Graviton Destructor" hidden="false" id="e370-f4ed-4045-20dc" type="selectionEntry" targetId="0d8b-e173-93ae-cf67"/>
+                <entryLink import="true" name="Ursus Claw" hidden="false" id="6e99-d760-9b84-d4a7" type="selectionEntry" targetId="d19b-231e-0ff6-5a84"/>
+                <entryLink import="true" name="Volkite Eradicator" hidden="false" id="ec03-0543-b8a7-ba2e" type="selectionEntry" targetId="2432-6266-64f6-d310"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -1402,7 +1415,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           <infoLinks>
             <infoLink id="eeba-8a20-d62c-cacb" name="Void Shields" hidden="false" targetId="c503-f5b8-3da0-16e6" type="rule">
               <modifiers>
-                <modifier type="set" field="name" value="Void Shields (6)"/>
+                <modifier type="set" field="name" value="Void Shields (8)"/>
               </modifiers>
             </infoLink>
             <infoLink id="5b96-ad84-3640-2604" name="Night Vision" hidden="false" targetId="683e-b4f2-f032-d31b" type="rule"/>
@@ -1440,6 +1453,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <entryLink id="ec42-64c6-e966-fc0b" name="Belicosa Volcano Cannon" hidden="false" collective="false" import="true" targetId="454e-eb44-05fc-0471" type="selectionEntry"/>
                 <entryLink id="a7ee-bfb1-fc79-55bb" name="Macro-Gatling Blaster" hidden="false" collective="false" import="true" targetId="2c0d-36ba-7cfa-6915" type="selectionEntry"/>
                 <entryLink id="7112-7a32-7bae-2825" name="Sunfury Plasma Annihilator" hidden="false" collective="false" import="true" targetId="f4dc-88a0-0ad9-4c61" type="selectionEntry"/>
+                <entryLink import="true" name="Graviton Ruinator" hidden="false" id="e58c-777f-08b2-6906" type="selectionEntry" targetId="f9d9-4109-f367-c3a2">
+                  <modifiers>
+                    <modifier type="prepend" value="Twin-Linked" field="name" join=" "/>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="e9e0-2bc5-255b-0bd4" name="Right Arm Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="ecb9-a680-093f-de7d">
@@ -1463,6 +1481,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <entryLink id="d162-235e-8ea8-4090" name="Belicosa Volcano Cannon" hidden="false" collective="false" import="true" targetId="454e-eb44-05fc-0471" type="selectionEntry"/>
                 <entryLink id="8ad6-d36f-8b1a-41a0" name="Macro-Gatling Blaster" hidden="false" collective="false" import="true" targetId="2c0d-36ba-7cfa-6915" type="selectionEntry"/>
                 <entryLink id="ec5f-4499-6365-b9c0" name="Sunfury Plasma Annihilator" hidden="false" collective="false" import="true" targetId="f4dc-88a0-0ad9-4c61" type="selectionEntry"/>
+                <entryLink import="true" name="Graviton Ruinator" hidden="false" id="757f-32ae-d0e5-e3d9" type="selectionEntry" targetId="f9d9-4109-f367-c3a2">
+                  <modifiers>
+                    <modifier type="prepend" value="Twin-Linked" field="name" join=" "/>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="2728-c1f9-389d-196b" name="Two Carapace Mounted Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="223a-0c19-9a43-5488">
@@ -1479,6 +1502,31 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <entryLink id="ed34-aff7-21b6-270b" name="Laser Blaster" hidden="false" collective="false" import="true" targetId="1071-7d27-420c-07b9" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="name" value="Two Laser Blasters"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="c005-4a8d-93e1-cf12" name="Plasma Blastgun" hidden="false" collective="false" import="true" targetId="c666-29f6-42da-2e07" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="prepend" value="Two" field="name" join=" "/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="42a0-92e8-fbeb-30e2" name="Melta Cannon" hidden="false" collective="false" import="true" targetId="7a16-0e23-c633-c668" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="prepend" value="Two" field="name" join=" "/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="ee0c-c17b-f14e-0ea0" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="b953-83d7-6cc1-5695" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="prepend" field="name" value="Two Twin-Linked" join=" "/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="96f1-1c42-07ef-492e" name="Vortex Missile" hidden="false" collective="false" import="true" targetId="61b3-ae15-c66a-855e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="prepend" value="Two" field="name" join=" "/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="30a3-4cae-4be3-36b0" name="Gatling Blaster" hidden="false" collective="false" import="true" targetId="12c4-10db-40e2-04c4" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="prepend" value="Two" field="name" join=" "/>
                   </modifiers>
                 </entryLink>
               </entryLinks>
